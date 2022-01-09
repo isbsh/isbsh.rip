@@ -1,5 +1,5 @@
-baseURL = "https://isbsh-rip.pages.dev"
-title   = "いちごカレー経済ぬかづけフォーラム5000"
+baseURL = "https://isbsh.rip"
+title   = "isbsh.rip"
 languageCode = "ja"
 theme = ["hello-friend-ng", "hugo-shortcode-gallery"]
 
