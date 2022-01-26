@@ -1,5 +1,5 @@
 baseURL = "https://isbsh.rip"
-title   = "isbsh.rip"
+title   = "isbsh"
 languageCode = "ja"
 theme = ["hello-friend-ng", "hugo-shortcode-gallery"]
 
@@ -28,13 +28,15 @@ buildExpired = false
 canonifyURLs = true
 
 enableRobotsTXT = true
-enableGitInfo   = false
+enableGitInfo   = true
 enableEmoji     = true
 enableMissingTranslationPlaceholders = false
 disableRSS     = false
 disableSitemap = false
 disable404     = false
 disableHugoGeneratorInject = false
+
+
 
 [permalinks]
   posts = "/posts/:year/:month/:title/"
