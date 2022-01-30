@@ -8,7 +8,6 @@
         </h1>
 
         <p>
-
           {{ if .Site.Params.dateformNumTime }}
             {{ dateFormat .Site.Params.dateformNumTime .Date.Local }}
           {{ else }}
@@ -25,21 +24,16 @@
             {{ end }}
           {{ end }}
         </p>
-
-
-        <p>
-
-          {{ i18n "wordCount" .Page.WordCount }}
-      //
         
+        <p>
+          {{ i18n "wordCount" .Page.WordCount }} //  
+          {{ i18n "readingTime" .Page.ReadingTime }}
 
-        {{ i18n "readingTime" .Page.ReadingTime }}
-
-        {{ if .IsTranslated }} | {{ i18n "postAvailable" }}
-          {{ range .Translations }}
-              <a href="{{ .Permalink }}"><span class="flag flag-icon flag-icon-{{ index $.Site.Data.langFlags (.Lang) }} flag-icon-squared"></span></a>
-          {{ end}}
-        {{ end }}
+          {{ if .IsTranslated }} | {{ i18n "postAvailable" }}
+            {{ range .Translations }}
+                <a href="{{ .Permalink }}"><span class="flag flag-icon flag-icon-{{ index $.Site.Data.langFlags (.Lang) }} flag-icon-squared"></span></a>
+            {{ end}}
+          {{ end }}
        </p>
     </div>
 
