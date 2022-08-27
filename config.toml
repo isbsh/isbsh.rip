@@ -6,7 +6,7 @@ theme = ["hello-friend-ng", "hugo-shortcode-gallery"]
 PygmentsCodeFences = true
 PygmentsStyle = "monokai"
 
-paginate  = 10
+paginate  = 54
 rssLimit  = 10  # Maximum number of items in the RSS feed.
 #copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
 
@@ -40,7 +40,6 @@ disableHugoGeneratorInject = false
 
 [permalinks]
   posts = "/posts/:year/:month/:title/"
-  rssLimit = 10
 
 [author]
   name = "isbsh"
