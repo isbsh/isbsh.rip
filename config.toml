@@ -40,6 +40,7 @@ disableHugoGeneratorInject = false
 
 [permalinks]
   posts = "/posts/:year/:month/:title/"
+  rssLimit = 10
 
 [author]
   name = "isbsh"
