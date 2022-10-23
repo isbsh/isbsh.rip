@@ -196,3 +196,5 @@ disableHugoGeneratorInject = false
     url        = "images/"
     weight     = 20
 
+[imaging.exif]
+    includeFields = ".*"
