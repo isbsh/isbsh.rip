@@ -13,3 +13,5 @@ title: "About"
 - [github.com/isbsh/archives](http://github.com/isbsh/archives)
 - [pinboard.in/u:isbsh](http://pinboard.in/u:isbsh)
 - [steamcommunity.com/id/isbsh](http:///steamcommunity.com/id/isbsh)
+- [bandcamp.com/isbsh](https://bandcamp.com/isbsh)
+- [discordapp.com/users/389626431195578380](http://discordapp.com/users/389626431195578380")
