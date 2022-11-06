@@ -198,3 +198,8 @@ disableHugoGeneratorInject = false
 
 [imaging.exif]
     includeFields = ".*"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
