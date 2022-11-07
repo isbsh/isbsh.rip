@@ -167,15 +167,6 @@ disableHugoGeneratorInject = false
     name = "mastodon"
     url  = "https://fedibird.com/@isbsh"
     html_attrs = "rel=\"me\" target=\"_blank\""
-  [[params.social]]
-    name = "tumblr"
-    url  = "http://isbsh.tumblr.com/"
-  [[params.social]]
-    name = "steam"
-    url  = "http:///steamcommunity.com/id/isbsh"
-  [[params.social]]
-    name = "discord"
-    url  = "http://discordapp.com/users/389626431195578380"
 
 
 [languages]
