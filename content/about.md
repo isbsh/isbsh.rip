@@ -2,7 +2,7 @@
 title: "About"
 ---
 
-- <a rel="me" href="https://fedibird.com/@isbsh">fedibird.com/@isbsh</a>
+- <a rel="me" href="https://nightly.fedibird.com/@isbsh">nightly.fedibird.com/@isbsh</a>
 - [twitter.com/isbsh](http://twitter.com/isbsh)
 - [scrapbox.io/isbsh](http://scrapbox.io/isbsh)
 - [isbsh.tumblr.com](http://isbsh.tumblr.com)
