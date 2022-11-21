@@ -165,7 +165,7 @@ disableHugoGeneratorInject = false
   # Social icons
   [[params.social]]
     name = "mastodon"
-    url  = "https://fedibird.com/@isbsh"
+    url  = "https://nightly.fedibird.com/@isbsh"
     html_attrs = "rel=\"me\" target=\"_blank\""
 
 
