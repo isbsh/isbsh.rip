@@ -182,20 +182,25 @@ disableHugoGeneratorInject = false
 
 [menu]
   [[menu.main]]
-    identifier = "about"
-    name       = "About"
-    url        = "about/"
-    weight     = 30
-  [[menu.main]]
     identifier = "posts"
     name       = "Posts"
     url        = "posts/"
     weight     = 10
   [[menu.main]]
+    identifier = "tags"
+    name       = "Tags"
+    url        = "tags/"
+    weight     = 20
+  [[menu.main]]
     identifier = "images"
     name       = "Images"
     url        = "images/"
-    weight     = 20
+    weight     = 30
+  [[menu.main]]
+    identifier = "about"
+    name       = "About"
+    url        = "about/"
+    weight     = 40
 
 [imaging.exif]
     includeFields = ".*"
