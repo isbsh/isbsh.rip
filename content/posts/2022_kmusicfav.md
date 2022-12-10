@@ -4,7 +4,10 @@ date: 2022-12-10T16:33:28+09:00
 draft: false
 toc: false
 images:
-tags: ["2022", "music", "annual report"]
+categories: 
+- Annual Report
+tags: 
+- music
 ---
 
 {{<youtubelist PLMUI6fg2BnHL0UFWCfwgDde4DD2gONxV->}}
