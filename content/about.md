@@ -3,7 +3,7 @@ title: "About"
 ---
 
 - <a rel="me" href="https://nightly.fedibird.com/@isbsh">nightly.fedibird.com/@isbsh</a>
-- [twitter.com/isbsh](http://twitter.com/isbsh)
+- [fedisnap.com/isbsh](http://fedisnap.com/isbsh)
 - [scrapbox.io/isbsh](http://scrapbox.io/isbsh)
 - [isbsh.tumblr.com](http://isbsh.tumblr.com)
 - [amebamustdienow.tumblr.com](http://amebamustdienow.tumblr.com)
