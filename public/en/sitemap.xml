@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2024-05-13T21:23:10+09:00</lastmod>
+    <lastmod>2024-05-20T22:36:17+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-05-13T21:23:10+09:00</lastmod>
+    <lastmod>2024-05-20T22:36:17+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -28,11 +28,14 @@
                 href="http://localhost:1313/"
                 />
   </url><url>
-    <loc>http://localhost:1313/posts/2024/05/week19-girls-never-die/</loc>
-    <lastmod>2024-05-13T21:23:10+09:00</lastmod>
+    <loc>http://localhost:1313/posts/2024/05/week20-voices-from-laymen-dont-reach-the-fanatics/</loc>
+    <lastmod>2024-05-20T22:36:17+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/weekly-log/</loc>
-    <lastmod>2024-05-13T21:23:10+09:00</lastmod>
+    <lastmod>2024-05-20T22:36:17+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/2024/05/week19-girls-never-die/</loc>
+    <lastmod>2024-05-13T21:34:20+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2024/05/week18-pa-pa-ya-pa-pa-pa-pia/</loc>
     <lastmod>2024-05-10T12:30:05+09:00</lastmod>
