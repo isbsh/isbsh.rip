@@ -2,17 +2,117 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on isbsh</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>http://localhost:4032/posts/</link>
     <description>Recent content in Posts on isbsh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 13 Feb 2018 12:21:57 -0500</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 13 Feb 2018 12:21:57 -0500</lastBuildDate><atom:link href="http://localhost:4032/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Week21: Season to break down the unread pile</title>
+      <link>http://localhost:4032/posts/2024/05/week21-season-to-break-down-the-unread-pile/</link>
+      <pubDate>Tue, 28 May 2024 13:15:17 +0900</pubDate>
+      
+      <guid>http://localhost:4032/posts/2024/05/week21-season-to-break-down-the-unread-pile/</guid>
+      <description>&lt;p&gt;2024/05/20~26。&lt;/p&gt;
+
+    &lt;img src=&#34;http://localhost:4032/images/images/240522.webp&#34;  class=&#34;left&#34;  /&gt;
+
+
+&lt;p&gt;描いたもの保管庫はここでいいかという事にしていたのだけど、あんまり閉じすぎるのもなんだしなみたいな気分になってきたので、以前Stable Diffusionの生成画像を投稿するように作ったFedisnapのアカウントを整理してそっちにもアップすることにしました。&lt;br&gt;
+&lt;a href=&#34;https://fedisnap.com/isbsh&#34;&gt;https://fedisnap.com/isbsh&lt;/a&gt;&lt;/p&gt;</description>
+      <content:encoded>
+              <![CDATA[
+              <p>2024/05/20~26。</p>
+
+    <img src="/images/images/240522.webp"  class="left"  />
+
+
+<p>描いたもの保管庫はここでいいかという事にしていたのだけど、あんまり閉じすぎるのもなんだしなみたいな気分になってきたので、以前Stable Diffusionの生成画像を投稿するように作ったFedisnapのアカウントを整理してそっちにもアップすることにしました。<br>
+<a href="https://fedisnap.com/isbsh">https://fedisnap.com/isbsh</a></p>
+<h2 id="納品に次ぐ納品">納品に次ぐ納品</h2>
+<p>ずっとやってるレギュラー仕事と、突如降ってわいたCMのまじでちょっとした改訂作業（キャンペーン実施中的なカットの追加）と、A案B案どっち使うかわかんないけど見ないと分かんないからどっちも作れと言われたCM仕事が今週立て続けに終わった。<br>
+3つ重なっていたもののどれもスケジュールに余裕があったので、油断からダラダラしては焦って手を動かし、チェックへ回してはやる事がなくなって手持無沙汰になる事の繰り返しで、そんな弛緩した状態に薄く不安になってしまうのは何かに毒されている気もする。</p>
+<p>とにかく全部納品したので今週以降は完全に無の状態に突入。<br>
+Homerで展示とか観に行って回ろうかとも思ったのだけど、しばらく雨が多いみたいだし、ここはひとつ積みあがった未読の本を読み崩してく機運。</p>
+<h2 id="今週読んだ本">今週読んだ本</h2>
+<ul>
+<li>『あなたとわたしは分かり合えないけど 「ジャニーズ性加害問題」をどう捉えたか』</li>
+<li>『群像1年分の1年』</li>
+<li>『シミズくんとヤマウチくん われら非実在の恋人たち』</li>
+<li>『空白の天気図』</li>
+</ul>
+<p>文フリで買った『あなたとわたしは分かり合えないけど』は、ジャニーズ性加害問題についてそれまでファンだったけど距離を置くようになったようなタイプの人達がテキストを寄せた本。</p>
+<p>あらゆる出来事がナラティブとして回収されがちなアイドルの活動を楽しむ（消費する）時に、考えたくはないけど、どうしてもその搾取的な構造に加担する形になってしまう事実をすごく極端な形で突きつけられた時、我々はどうしたらいいんだろうかというモヤモヤを覗く感覚は自分にも覚えがある。書く事で整理される面もあるのだろうけど、どれも意見として落ち着いていて、こういう事があった時の自分の中での処理の仕方として参考になる気がした。</p>
+<blockquote>
+<p>半年間、ずっと違和感があったのは、ファンが「私」と「自坦／自軍」だけで完結した閉鎖的な世界の中にこもっていて、社会に対しての視点がないことだった。会見を見て、ジャニーズ事務所／所属タレントもまた同じように「タレント」と「ファン」で閉じた世界にいるのかもしれないと感じ、なんだか恐ろしくなった。攻撃的な「外野」がいる一方で、「タレントが悪いのではない。そういう話ではなく……」とファンの気持ちに寄り添おうとする「外野」もいる。けれども、その声がファンに届くことはなさそうな様子に、一部理解できるところもありつつ、だけどやはり徒労感のような、なんとも言えない感情を抱いてしまう。<br>
+　ジャニーズ事務所に入所した人物がどれだけつらい思いをしたとしても、現在「成功」していれば、それは「逆境を乗り越えた美しい物語」として受け止められてしまう。傷ついた経験をそれとして受け入れるのではなく、あくまで現在の成功した姿に至るまでに乗り越えなければいけなかった何かとして物語に組み込んでしまうこと。生身の人間を物語として消化することに慣れすぎているようにも思うが、自分もそれに加担しているので、ここをどう切り離すべきなのか、切り離さないまま語るにはどうしたらいいのか、まだ分からなくて逡巡している。<br>
+（『あなたとわたしは分かり合えないけど 「ジャニーズ性加害問題」をどう捉えたか』 p40~41）</p>
+</blockquote>
+<p>『空白の天気図』は広島の原爆と、原爆が投下されたその1か月後に上陸し2000人以上の死者を出した枕崎台風に対峙した広島気象台の職員たちの記録を再構成したノンフィクション。</p>
+<p>そもそも、恥ずかしながら原爆と広島についてのまとまった本をちゃんと読んだ事がこれまで無かったので、単純に8月6日の描写の地獄っぷりに絶句してしまう。それと同時に登場するのが気象職員だからなのか、原爆が爆発した瞬間を人の体がどのように捉えたのかがものすごく克明に言語化されていて、変な映像を見るよりも情報の密度が高い。<br>
+また放射能の被害を受けながら業務の再開のために奔走したり、とにかく記録する事は続けなくてはいけないという使命のもと、市民の口述の記録をかき集める様子だとかを読むと、結局自分の所属する社会がどういう状況であれ、自分の受け持った仕事に責任を持って全うする事でしか前に進まないんだな、みたいな単純なところに行き着いてしまう。</p>
+<p>しかしそれも受け取り方に気をつけないと、日本の職人すげーとか組織やべーみたいなポルノに陥りかねないし、はたまたアイヒマン的な凡庸な悪みたいな事にも繋がりかねず、それ以前に公共性や倫理感の構築がなくてはならないのだとは思うけど。</p>
+<h2 id="gender-apathetic">Gender Apathetic</h2>
+<p>最近トランスジェンダーやノンバイナリーの人の本だとかテキストに触れる事も増えてきているせいか、自分自身の性についてもぼんやりとではあるけど意識が行くようになる。</p>
+<p>って別に自分は性別違和の苦痛を抱えたトランスの人間ではないし、かといって問答無用でシスヘテロ男性ですって断言できるほど、いわゆる「男性性」を発動したり求められて自覚する機会という感じでも全然ない。無自覚でいられるのが今の社会で男性性を享受している証拠じゃろがいと言われたらそうなんだけど。</p>
+<p>ただ過去に人と付き合っていた時も恋愛やセックスを楽しめていたのか正直わからないところがあるし、現時点においてもそこのモチベーション無さすぎなのでは…的な疑問はあって、これってもしやアロマンス・アセクシャルってやつの傾向なのかと自問してみるものの、そうはっきり言い切れるものでもないしなあ…みたいな、断言していいものなのか踏みとどまりたくなるあやふやな感覚に気づくというか。</p>
+<p>そこで自分をアイデンティファイする言葉を探し求めていたという訳でもないのだが、軽くいろいろ見たりClaudeとくっちゃべったりしていたら「Gender Apathetic（ジェンダー無関心）」っていう括りがあるらしく、まあなんかその辺なのではなかろうか、どちらかと言えば…くらいのポジションがある事を知る。厳密にはそれぞれニュアンスが違うらしいけど、Apagender、Inergender、Anvisgenderという表現もある模様。<br>
+アロマ・アセクなんかもそうだけど、そういう定義がジャストフィットする訳ではないにしても、言葉があるだけで少し楽になるところは確かにあるよなと思う。</p>
+<p>なんて、ただ面倒な事から避けてるだけな話にもっともらしい理由をつけてるだけと言われたらそうかもしれないし、本当にしんどくて困っている人からしたら軽く語りやがってふざけんなと言われてもしょうがない適当さではあるのかもしれませんすいませんと思いつつ、性をグラデーションのあるものとするのであれば、おのおのこういう感覚がどこかにあると気付く事も大事なのではと思っている今現在。</p>
+<h2 id="ペーパーマリオrpgリメイクのビビアン">ペーパーマリオRPGリメイクのビビアン</h2>
+<p>自分はオリジナルもリメイクも全く触っていないのだけど、ペーパーマリオRPGに出てくるビビアンというキャラの描写がリメイクされるにあたってどうなっているのかという一点に着目したライターのお茶缶さんの記事と、実際にプレイした時のリアクションがよかったというか考えさせられるものがあった。</p>
+<p>ゲーム全体で描かれるボリュームで言ったらほんの一部のほんの少しでしかない会話の、言葉の一つ一つにここまで問題意識をもって臨めるのがただすごいなと思うし、ちゃんとしすぎるなんて事はないんだなと思わされる。</p>
+<ul>
+<li><a href="https://automaton-media.com/articles/columnjp/20240506-292326/">https://automaton-media.com/articles/columnjp/20240506-292326/</a></li>
+</ul>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/QocaUc-B2iw?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+
+<h2 id="カミナリの記録ライヴ-素晴らしきデビッドワイズの世界">カミナリの記録ライヴ ～素晴らしきデビッド・ワイズの世界～</h2>
+<p>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/hCrgveAjy6Y?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+<br>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/IFVEvEhEXQg?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+</p>
+<p>会いに行って会えたのも面白かったけど、ちゃんとイベント企画してワイズも来てくれて、諸々になんか泣ける。ワイズの黒いサックス。</p>
+<h2 id="ジロデイタリア2024">ジロ・デ・イタリア2024</h2>
+<p>全21ステージが終わって、総合順位は下馬評通りと言うか下馬評以上にと言うかとにかくポガチャルの土壇場で、そこのスペクタクルはもはやあんまりなく、どちらかというとペリッツァーリやシュタインハウザーやパレパントルといった若い選手たちの台頭を感じられたのが良かった。シュタインハウザーは血こそ繋がっていないらしいが、あのウルリッヒの甥っ子なんだとか。<br>
+あるいは勝てない時間が長かったアラフィリップがステージ獲ったのとか、キンタナがめちゃめちゃ頑張ってるのをポガチャルがあっさりぶちぬいていった時に、おそらくコロンビア人のファンの子供が泣き叫んでいる様子などが印象的だった。</p>
+<p>まあしかし、そうは言ってもやっぱりこれはポガチャルのためのジロだったのであって、ほとんど伝説のエディ・メルクスと比肩するようなステージの獲り方は、つくづくすごいものをリアルタイムで見せてもらっているのだという気持ちにさせられる。</p>
+<p>現状ヴィンゲゴー以外に総合で太刀打ちできる選手がいない事を改めて見せつけられると、去年ヴィンゲゴーにポガチャルがコテンパンに負けてしまった時こそ悲しくてしょうがなかったのだけど、ヴィンゲゴーがここまでの選手に成長していなかったら、ものすごく退屈な数シーズンを観る事になっていたのは確実で、ヴィンゲゴーに対する感謝とリスペクトも増してくる気がする。</p>
+<p>だから全開のヴィンゲゴーとバチバチやってポガチャルの勝つところが見たいのに、バスクツアーの落車がだいぶ酷くて、練習再開こそしているらしいがチーム関係者曰く「100%じゃなければ出場させない」らしくどうなる事やら。</p>
+<h2 id="そのほか">そのほか</h2>
+<ul>
+<li>清宮さんが卒業発表。</li>
+<li>袴田事件再審公判、検察が死刑を求刑。検索のどうしようもなさ。</li>
+<li>Adobe Creative Cloudの料金がまた値上げ。</li>
+</ul>
+              ]]>
+      </content:encoded>
+    </item>
+    
     <item>
       <title>Week20 : Voices from laymen don&#39;t reach the fanatics</title>
-      <link>http://localhost:1313/posts/2024/05/week20-voices-from-laymen-dont-reach-the-fanatics/</link>
+      <link>http://localhost:4032/posts/2024/05/week20-voices-from-laymen-dont-reach-the-fanatics/</link>
       <pubDate>Mon, 20 May 2024 22:36:17 +0900</pubDate>
       
-      <guid>http://localhost:1313/posts/2024/05/week20-voices-from-laymen-dont-reach-the-fanatics/</guid>
+      <guid>http://localhost:4032/posts/2024/05/week20-voices-from-laymen-dont-reach-the-fanatics/</guid>
       <description>&lt;p&gt;2024/5/13~19。&lt;/p&gt;
 &lt;p&gt;仕事が複数あるんだけど、どれもスケジュールが緩めなせいで却って不安になる。&lt;/p&gt;
 &lt;p&gt;&amp;ldquo;Voices from laymen don&amp;rsquo;t reach the fanatics.（ファンに「外野」の声は届かない）&amp;rdquo;&lt;br&gt;
@@ -25,16 +125,16 @@
 は文フリで買った『あなたとわたしは分かり合えないけど 「ジャニーズ性加害問題」をどう捉えたか』からの引用。ジャニーズに限らずつくづくほんとそうだなっていう。</p>
 <h2 id="マイ-a-homer-hilsen-を入手">マイ A. Homer Hilsen を入手</h2>
 <p>無事納車されました。うひょー。</p>
-<p>元々打ち合わせで決めていたシルバーのフロントハブが欠品しちゃったのでブラックで行こうという話に2週間くらい前になっていたのが、先週末更に連絡があり、予定よりだいぶ早くシルバーのハブが入荷したので今からでも組み直すかどうか確認されて、とりあえず月曜に現状のブラックの状態で具合を見て、問題なければそのまま納車ということにしてもらう。</p>
-<p>ところが月曜は結構な雨。言ってもハブの色自体は問題ないだろうなと思っていたので納車してそのまま乗って富ヶ谷から恵比寿まで走っていこうという方向に気持ちが完全に傾いていたのが、めちゃめちゃに萎えたものの、とりあえず確認するためだけにお店に行くという余裕ある時間の使い方もまたよし的な気持ちで代々木公園のBlueLugへ。<br>
+<p>元々打ち合わせで決めていたシルバーのフロントハブが欠品しちゃったのでブラックで行こうという話に2週間くらい前になっていたのが、先週末更に連絡があり、予定よりだいぶ早くシルバーのハブが入荷したので今からでも組み直すかどうか確認されて、とりあえず月曜に現状のブラックの状態で具合を確認し、問題なければそのまま納車ということにしてもらう。</p>
+<p>ところが月曜は結構な雨。言ってもハブの色自体は問題ないだろうなと思っていたので、この日に納車してもらってそのまま乗って富ヶ谷から恵比寿まで走っていこうという方向に気持ちが完全に傾いていたのが、めちゃめちゃに萎えたものの、とりあえず確認するためだけにお店に行くという余裕ある時間の使い方もまたよし的な気持ちで代々木公園のBlueLugへ。<br>
 組み込まれたハブはまったく違和感もなくむしろ締まって他のパーツもいい感じ。ということで、いろいろ説明を受けつつ、バッグやらリフレクターやらオプション的なものを追加で相談させてもらった後で、盗難登録などをして決済をし、また翌々日の水曜に受け渡しだけという状態で退店。</p>
-<p>そして水曜軽く試乗などした後、無事に引き取って今自分の手元に憧れのRivendell、A. Homer Hilsenがある。</p>
+<p>そして水曜、軽く試乗などした後、無事に引き取って今自分の手元に憧れのRivendell、A. Homer Hilsenがある。やったー。</p>
 
     <img src="/images/2024/0518_ahh.webp"  class="left"  />
 
 
-<p>実際に通勤の、だいたい10kmくらいを何度か走ってみると、フレームのジオメトリだとかタイヤの太さだとかからくるものなのか、これまで乗ってきていたシングルギアのピストフレームよりも結構重いことに戸惑ったり、ハンドル幅の広さや変速などの扱いに慣れないながらも操作が楽しい。<br>
-実を言うと、恥ずかしながらギア―ドの自転車にまともに乗るのってほぼほぼ初めてで、しかも変速機が普通のカチカチ段階的に切り替えられるインデックス式ではなく、レバーが無段階式で動かした分だけディレイラーが動かされるフリクション式というタイプな事もあり、引き具合の塩梅がまだちょっと掴み切れず、変速した後で時々変な音が鳴ってちょい恥ずかしい。早く慣れなくては。</p>
+<p>実際に通勤の、だいたい10kmくらいを何度か走ってみると、フレームのジオメトリだとかタイヤの太さだとかからくるものなのか、これまで乗ってきていたシングルギアのピストフレームと比べて結構重いことに戸惑ったり、ハンドル幅の広さや変速などの扱いに慣れないながらも操作が楽しい。<br>
+実を言うと、恥ずかしながらギア―ドの自転車にまともに乗るのってほぼほぼ初めてで、しかも変速機が普通のカチカチと段階的に切り替えられるインデックス式ではなく、無段階にレバーを動かした分だけディレイラーが動かされるフリクション式というタイプな事もあり、引き具合の塩梅がまだちょっと掴み切れず、変速した後で時々変な音が鳴ってしまうのがちょい恥ずかしい。早く慣れなくては。</p>
 <p>構成のこだわりじゃないけど、組むに当たって「ハンドルはこれで組みたいんです」とピンポイントで指定したアルバスターシュバーはとても気に入っていて、思った以上に見た目のボリュームはあるものの、風が強い時や少し速く走りたい気分の時は前を握れるし、適当にちんたら乗り回したい時にはエンド側を握ればいいっていうポジションの幅が気持ちいい。（ただそこまで手前にスイープバックしてなくてもよいような気はしていて、一回り小ぶりなマスターシュバーでも良かったのかも知れず、いつか組み替えて違いを確認してみたいかも）<br>
 また、同じハンドル周りで言うと、バーテープを決める時にブラケットの部分に何か差し色を入れてもらいたい旨伝えたところ、左右色違いで青と緑を入れてもらったりしたのもめっちゃ嬉しかった。</p>
 <p>パーツを決めるに当たって、フレームカラーも結構彩度が低めだし、あんまりクラシカルバイクみたいな組み方をすると渋い方向に行きすぎてしまいそうなのがなんだなと思って、適当にいなたいポイント入れて外してもらうよう頼んだというのは何週か前にも書いたような気はするのだけど、もっと思い切った色とか入れない限りはなんだかんだでRivendellっぽいところに落ち着いちゃうものだなとは思っている。サドルが茶色いせいもあるかもしれない。まあ、その辺りもこれから先のいじりどころなのかもと思うと、まだまだビルドのお楽しみは残されておりそれも楽しい。</p>
@@ -42,8 +142,8 @@
 <h2 id="文学フリマ東京38">文学フリマ東京38</h2>
 <p>盛況ぶりに限界も感じたり慄きながらも会場に行った。本当なら自転車で行きたかったけど、まあまあ雨っぽいので日和って電車とモノレールで。</p>
 <p>事前にカタログで目星つけたブースをメインに回りつつ、見本誌コーナーで気になったもの、プラス歩いていて目についたものなどを買う。それだけで結構疲れる。</p>
-<p>見本誌コーナーでは、ブランチプレートというブースの『あなたとわたしは分かり合えないけど 「ジャニーズ性加害問題」をどう捉えたか』というジャニーズのファンの人とか元ファンの人達がかの問題についての文章を寄せている本が気になって買いに行ったのだけど、その内のひとつに、自分が12年前の文フリで買った『少年コレクション』というジャニーズにまつわるオタク語り的な本でも書いていたのと同じ人のコラムがあったのに帰ってから気が付いて、なんかちょっとくらくらした。</p>
-<p>自分はそもそも出店している知り合いもおらず、そんなにぐいぐい書き手の人とコミュニケーションとれるタイプではないので、淡々とした現金と品物のやり取りに終始しがちな中、Mastodonにおりますという事で認知されている西川口圭さんとは軽く挨拶をして、以前彼が書き込んでいた変な女の話を聞かせていただいた。本当にやばい人とか変な病気もらったりしないよう気を付けて欲しい。</p>
+<p>見本誌コーナーでは、ブランチプレートというブースの『あなたとわたしは分かり合えないけど 「ジャニーズ性加害問題」をどう捉えたか』というジャニーズのファンの人とか元ファンの人達が、かの問題についての文章を寄せている本が気になって買いに行ったのだけど、その内のひとつに、自分が12年前の文フリで買った『少年コレクション』というジャニーズにまつわるオタク語り的な本でも書いていたのと同じ人のコラムがあったのに帰ってから気が付いて、なんかちょっとくらくらした。</p>
+<p>自分はそもそも出店している知り合いもほとんどおらず、そんなにぐいぐい書き手の人とコミュニケーションとれるタイプではないので、淡々とした現金と品物のやり取りに終始しがちな中、Mastodonにおりますという事で認知されている西川口圭さんとは軽く挨拶をして、以前彼が書き込んでいた変な女の話を聞かせていただいた。本当にやばい人とか変な病気もらったりしないよう気を付けて欲しい。</p>
 <p>以下買った本</p>
 <ul>
 <li>『おゆZINE①』</li>
@@ -85,10 +185,10 @@
     
     <item>
       <title>Week19 : Girls Never Die</title>
-      <link>http://localhost:1313/posts/2024/05/week19-girls-never-die/</link>
+      <link>http://localhost:4032/posts/2024/05/week19-girls-never-die/</link>
       <pubDate>Mon, 13 May 2024 21:23:10 +0900</pubDate>
       
-      <guid>http://localhost:1313/posts/2024/05/week19-girls-never-die/</guid>
+      <guid>http://localhost:4032/posts/2024/05/week19-girls-never-die/</guid>
       <description>&lt;p&gt;2024/5/6~12。&lt;br&gt;
 今週は比較的まじめに仕事をしました。ニュー自転車はまだおあずけ。&lt;/p&gt;</description>
       <content:encoded>
@@ -175,10 +275,10 @@ A. G. Cook のアルバムが良かったです。</p>
     
     <item>
       <title>Week18 : PA PA YA PA PA PA PIA</title>
-      <link>http://localhost:1313/posts/2024/05/week18-pa-pa-ya-pa-pa-pa-pia/</link>
+      <link>http://localhost:4032/posts/2024/05/week18-pa-pa-ya-pa-pa-pa-pia/</link>
       <pubDate>Mon, 06 May 2024 13:00:12 +0900</pubDate>
       
-      <guid>http://localhost:1313/posts/2024/05/week18-pa-pa-ya-pa-pa-pa-pia/</guid>
+      <guid>http://localhost:4032/posts/2024/05/week18-pa-pa-ya-pa-pa-pa-pia/</guid>
       <description>&lt;p&gt;2024/04/29~5/5。&lt;br&gt;
 ゴールデンウィークは3日から休んで週末までの後半のみではあったけど、自分にしてはなんだかパーティー三昧で飲み過ぎた。PARTY TIME はじまるよ♪ なんて歳ではないし、これを書いている月曜の今も疲労が抜けていない。&lt;/p&gt;</description>
       <content:encoded>
@@ -569,10 +669,10 @@ src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/16
     
     <item>
       <title>Week17 : A Pig Colored Dress Remained by Elimination</title>
-      <link>http://localhost:1313/posts/2024/04/week17-a-pig-colored-dress-remained-by-elimination/</link>
+      <link>http://localhost:4032/posts/2024/04/week17-a-pig-colored-dress-remained-by-elimination/</link>
       <pubDate>Mon, 29 Apr 2024 22:25:58 +0900</pubDate>
       
-      <guid>http://localhost:1313/posts/2024/04/week17-a-pig-colored-dress-remained-by-elimination/</guid>
+      <guid>http://localhost:4032/posts/2024/04/week17-a-pig-colored-dress-remained-by-elimination/</guid>
       <description>&lt;p&gt;2024/4/22~28。&lt;/p&gt;
 &lt;p&gt;自転車に乗る頻度の上昇に反比例して読書が滞りまくり。とくればAudibleチャンスな気もするが、Amazonに課金したくないので対抗サービスを探るも、物量的に比較にならなくてつらい。&lt;/p&gt;</description>
       <content:encoded>
@@ -669,13 +769,13 @@ src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/16
     
     <item>
       <title>Week16 : This moment, wonderful yet unreal, is all there is.</title>
-      <link>http://localhost:1313/posts/2024/04/week16-this-moment-wonderful-yet-unreal-is-all-there-is./</link>
+      <link>http://localhost:4032/posts/2024/04/week16-this-moment-wonderful-yet-unreal-is-all-there-is./</link>
       <pubDate>Mon, 22 Apr 2024 21:22:10 +0900</pubDate>
       
-      <guid>http://localhost:1313/posts/2024/04/week16-this-moment-wonderful-yet-unreal-is-all-there-is./</guid>
+      <guid>http://localhost:4032/posts/2024/04/week16-this-moment-wonderful-yet-unreal-is-all-there-is./</guid>
       <description>&lt;p&gt;2024/4/15~21。&lt;/p&gt;
 &lt;video width=100% controls autoplay loop&gt;
-    &lt;source src=&#34;http://localhost:1313/videos/2024/0417_AHH.mp4&#34; type=&#34;video/mp4&#34;&gt;
+    &lt;source src=&#34;http://localhost:4032/videos/2024/0417_AHH.mp4&#34; type=&#34;video/mp4&#34;&gt;
     Your browser does not support the video tag.  
 &lt;/video&gt;
 &lt;p&gt;ほとばしるHomerへの熱い想いがアニメを久しぶりに描かせる。アウターのチェーンリングがでかい。右足の踏み込みが強い。足首が時々外旋する。 &lt;br&gt;
@@ -801,14 +901,14 @@ YUKIの、この曲で言えば「笑ってぇーいる～♪」の「てぇー�
     
     <item>
       <title>Week15 : Baddest Mother Fuckin’ Knockout Ever</title>
-      <link>http://localhost:1313/posts/2024/04/week15-baddest-mother-fuckin-knockout-ever/</link>
+      <link>http://localhost:4032/posts/2024/04/week15-baddest-mother-fuckin-knockout-ever/</link>
       <pubDate>Tue, 16 Apr 2024 00:34:53 +0900</pubDate>
       
-      <guid>http://localhost:1313/posts/2024/04/week15-baddest-mother-fuckin-knockout-ever/</guid>
+      <guid>http://localhost:4032/posts/2024/04/week15-baddest-mother-fuckin-knockout-ever/</guid>
       <description>&lt;p&gt;2024/4/8~14。 &lt;br&gt;
 自転車が待ち遠しいこの気持ちおわかりいただけますでしょうか。&lt;/p&gt;
 &lt;video width=100% controls autoplay loop&gt;
-    &lt;source src=&#34;http://localhost:1313/videos/2024/0415_AHH.mp4&#34; type=&#34;video/mp4&#34;&gt;
+    &lt;source src=&#34;http://localhost:4032/videos/2024/0415_AHH.mp4&#34; type=&#34;video/mp4&#34;&gt;
     Your browser does not support the video tag.  
 &lt;/video&gt;</description>
       <content:encoded>
@@ -872,10 +972,10 @@ YUKIの、この曲で言えば「笑ってぇーいる～♪」の「てぇー�
     
     <item>
       <title>Week14 : The true Chemex breaks out</title>
-      <link>http://localhost:1313/posts/2024/04/week14-the-true-chemex-breaks-out/</link>
+      <link>http://localhost:4032/posts/2024/04/week14-the-true-chemex-breaks-out/</link>
       <pubDate>Mon, 08 Apr 2024 23:13:14 +0900</pubDate>
       
-      <guid>http://localhost:1313/posts/2024/04/week14-the-true-chemex-breaks-out/</guid>
+      <guid>http://localhost:4032/posts/2024/04/week14-the-true-chemex-breaks-out/</guid>
       <description>&lt;p&gt;2024/4/1~7。
 最近入眠がだるだるで寝不足みたいな日々。仕事にも身が入らず。絵とか描くモードにもならず。ただオーダーした自転車だけが楽しみみたいな状態。&lt;/p&gt;</description>
       <content:encoded>
@@ -926,10 +1026,10 @@ YUKIの、この曲で言えば「笑ってぇーいる～♪」の「てぇー�
     
     <item>
       <title>Week13 : LUXURY under the Philippines</title>
-      <link>http://localhost:1313/posts/2024/04/week13-luxury-under-the-philippines/</link>
+      <link>http://localhost:4032/posts/2024/04/week13-luxury-under-the-philippines/</link>
       <pubDate>Mon, 01 Apr 2024 21:01:16 +0900</pubDate>
       
-      <guid>http://localhost:1313/posts/2024/04/week13-luxury-under-the-philippines/</guid>
+      <guid>http://localhost:4032/posts/2024/04/week13-luxury-under-the-philippines/</guid>
       <description>&lt;p&gt;2024/3/25～31。&lt;br&gt;
 やっと暖かくなってきたと思ったら雨が多かったり風が強くて、ただ寒いだけよりむかついてくる。&lt;br&gt;
 仕事も一旦落ち着いてゲームしまくりと思わせて、自転車のこと考えてる時間が長かった1週間。&lt;/p&gt;</description>
@@ -1106,14 +1206,14 @@ YUKIの、この曲で言えば「笑ってぇーいる～♪」の「てぇー�
     
     <item>
       <title>Week12 : From Metaverse To Fediverse</title>
-      <link>http://localhost:1313/posts/2024/03/week12-from-metaverse-to-fediverse/</link>
+      <link>http://localhost:4032/posts/2024/03/week12-from-metaverse-to-fediverse/</link>
       <pubDate>Mon, 25 Mar 2024 20:40:47 +0900</pubDate>
       
-      <guid>http://localhost:1313/posts/2024/03/week12-from-metaverse-to-fediverse/</guid>
+      <guid>http://localhost:4032/posts/2024/03/week12-from-metaverse-to-fediverse/</guid>
       <description>&lt;p&gt;2024/3/18~24。&lt;br&gt;
 なんでまた寒くなってるんだって言うか風が強い。母は本八幡のビル風で飛ばされて転んだらしい。&lt;/p&gt;
 
-    &lt;img src=&#34;http://localhost:1313/images/images/240324.webp&#34;  class=&#34;left&#34;  /&gt;</description>
+    &lt;img src=&#34;http://localhost:4032/images/images/240324.webp&#34;  class=&#34;left&#34;  /&gt;</description>
       <content:encoded>
               <![CDATA[
               <p>2024/3/18~24。<br>
@@ -1150,72 +1250,6 @@ Xenselabsが16インチクラスの液晶タブレットだしたら迷わず買
 </ul>
 <p>RIZINの井上直樹vs.佐藤将光が楽しかった。しかし井上はハイスピードなスタンドの展開に相手が慣れてくるにつれ、自身の動きもいくらか落ちていってしまうのはなかなか避けられないので、もっと早めに自分から崩しに行くようなアプローチだったり、後半になっても主導権を自分に手繰り寄せるようなギアの変え方みたいなものが必要なんじゃないかなというのが顕わになってきてしまっているようにも思う。</p>
 <p>あとはサトシの打撃がどんどん普通な感じになっているのにおどろくなど。</p>
-              ]]>
-      </content:encoded>
-    </item>
-    
-    <item>
-      <title>Week11 : Beyond the mountains</title>
-      <link>http://localhost:1313/posts/2024/03/week11-beyond-the-mountains/</link>
-      <pubDate>Mon, 18 Mar 2024 22:26:59 +0900</pubDate>
-      
-      <guid>http://localhost:1313/posts/2024/03/week11-beyond-the-mountains/</guid>
-      <description>&lt;p&gt;2024/3/11~17。&lt;br&gt;
-ちょっと伸ばしてみるのもアリか～なんて何週か前に書いたけど、モサモサでしんどいので結局散髪した。&lt;/p&gt;</description>
-      <content:encoded>
-              <![CDATA[
-              <p>2024/3/11~17。<br>
-ちょっと伸ばしてみるのもアリか～なんて何週か前に書いたけど、モサモサでしんどいので結局散髪した。</p>
-<h2 id="仕事">仕事</h2>
-<p>先週までやっていただるめの仕事によってレギュラー仕事が押せ押せになってしまったのに加え、稲葉さんが翌週からスペインに行ってしまうので少し早めにまとめていく必要があったりで、なんか一息つく感じもなく煽られるように仕事してしまっている。</p>
-<h2 id="自転車ほしい">自転車ほしい</h2>
-<p>欲しくなってきた。今持ってるのはシングルスピードなのでギア付きのが欲しい。</p>
-<p>といってもバコバコにスピード出したいと言う訳ではなく少し坂道とかで楽したいような感じで、具体的にいえば Rivendell のA . Homer Hilsen か Roadini あたりのフレームのクラシックなフレームで組みたくて、完成車の写真とかジオメトリをガン見しまくり。<br>
-フレームセ  ットだけで20万以上するのでホイホイ買うわけには行かないけども、不意にTwitterを見たりすると同世代の人たちが、なんか普通に家買う話とかしてるので、そのくらいの値段なんてはした金なのではなんて気になってくる。</p>
-<p>まあしかし掛け布団も古くなって穴から羽毛が漏れてくるようになってきていたり、デスクライトとして使っていたBenQのモニタライトもUSB端子の部分がガバガバになっていて不意に切れたりするのがストレスで、そもそも今の机の大きさをカバーできる光ではないのでデスクライトを新調するタイミングのような気もしており、もろもろのプライオリティとタイミングを考え中。</p>
-<h2 id="3j">3J</h2>
-<p>土曜日のレコードコンビニにて。</p>
-<ul>
-<li>一岡さんがいなくなることについて</li>
-<li>自転車乗ってて一番つらいのは風</li>
-<li>ハロプロの集客が減ってるらしい件</li>
-<li>櫻井さんのヤンキー感は重要</li>
-<li>bkkoさんのクロミスカジャン</li>
-<li>BEYOOOOONDSはずっと滑ってる説</li>
-<li>ロックに進化がないばっかりに我々も老害化しがち</li>
-<li>いまシティポップはむずかしい</li>
-<li>リバイバルとかろくでもない</li>
-<li>柴田聡子の新譜</li>
-<li>PAPAYAPAPAYAPIYA</li>
-<li>mp3を再生してたCDJにCDを入れて音楽を止める</li>
-</ul>
-<h2 id="今週の読書">今週の読書</h2>
-<blockquote>
-<p>山の向こうに山以上の何かがあるのでなく、山がある。山を見て人が山より大いなる何かを予感したのだとしても、それはまだ汲み尽くしていない山のことだ。目の前にある山を見て、言葉はわずかな事しか語らず、語り切れないものが山の向こうにある何かであると人は感じるのだがそれが山だ。<br>
-（保坂和志『試行錯誤に漂う』 p133）</p>
-</blockquote>
-<p>移動中の電車の中で読んでいた保坂和志の『試行錯誤に漂う』を読み終わった。<br>
-以前読んだ『書きあぐねている人のための小説入門』と通底しているものは同じで、それにつながる保坂和志本人が読んだり触れてきた本や音楽について述べられているので、また読みたい本がドサッと増えた。坂口ふみとか中井久夫とかフラナリー・オコナーとか。</p>
-<p>一方、同じタイミングで寝る前に読み始めた山本貴光の『文学のエコロジー』はむちゃくちゃ退屈で、流し読みでもなかなかしんどい。文学作品の本文から想定される具体的な時間なり空間の状況を一つ一つ解きほぐして書き起してみる的な読み方の解説書なんだけど、細かさや精度はさておきそんなのは誰しも普通にしているものなのではないかとしか思えないのに、ひたすら細かく書かれていてボリュームもまあまああって先がまだ長いのがつらい、読むにしても新書くらいのボリュームで良い話なのではと思ってしまう。とりあえず最後まで読んでみるけど。</p>
-<h2 id="今週遊んだゲーム">今週遊んだゲーム</h2>
-<p>ひたすら『ユニコーン・オーバーロード』をやりまくっている。</p>
-<p>今プレイ時間で言うと20時間、マップの解放率が45%くらいの感じで、サブクエを潰しながらメインをぬらぬら進めている感じ。今のところはまだずっと同じテンションで、拠点を制圧してはそこのボスの洗脳を解いて仲間にすることの繰り返しといえば繰り返しで、そこが少しチープな感触ではあるなと思っているところなのだけど、おそらくずっとこの調子ではないだろうし、どっかのタイミングで手塩にかけて育てたキャラクターが裏切ったりするのかもしれない。</p>
-<p>現状メリザンドさまが性格・性能ともに気持ちよくて行動速度上げたり追い討ち系のスキルがつく防具とかつけて重用しがち。</p>
-<h2 id="音楽">音楽</h2>
-
-
-    
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/UW3zw0Mlxlg?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
-      ></iframe>
-    </div>
-
-<h2 id="その他">その他</h2>
-<ul>
-<li>「結婚の自由をすべての人に」訴訟で違憲判決。良かったっていうかさっさと法改正してしまえ。</li>
-<li>この期に及んでの不適切パーティー（なんだそれ）で、挙句の果ての言い訳でこともあろうに「多様性」なんて言葉を出して来ていて自民党の大方の議員は本当に社会の事を舐めているんだなと思う。</li>
-<li>ミラノ〜サンレモはポッジオでポガチャルが抜け出すの失敗して、かつそのタイミングでフィリプセンが残れていた時点でフィリプセンが勝つような気がしていた。だいぶぎりぎりだったけど。</li>
-</ul>
               ]]>
       </content:encoded>
     </item>
