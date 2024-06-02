@@ -2,20 +2,161 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on isbsh</title>
-    <link>http://localhost:4032/posts/</link>
+    <link>http://localhost:1313/posts/</link>
     <description>Recent content in Posts on isbsh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 13 Feb 2018 12:21:57 -0500</lastBuildDate><atom:link href="http://localhost:4032/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 13 Feb 2018 12:21:57 -0500</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Week22: The Zone of Interest</title>
+      <link>http://localhost:1313/posts/2024/06/week22-the-zone-of-interest/</link>
+      <pubDate>Sun, 02 Jun 2024 22:28:13 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/2024/06/week22-the-zone-of-interest/</guid>
+      <description>&lt;p&gt;2024/5/27~6/2。&lt;br&gt;
+仕事はデータの整理をしただけで、あちこち遊びに行ったというか人の話を聞きに行った週。会話に飢えているのかも知れない。そんなに話すこともないのに。&lt;/p&gt;
+
+    &lt;img src=&#34;http://localhost:1313/images/images/240528.webp&#34;  class=&#34;left&#34;  /&gt;</description>
+      <content:encoded>
+              <![CDATA[
+              <p>2024/5/27~6/2。<br>
+仕事はデータの整理をしただけで、あちこち遊びに行ったというか人の話を聞きに行った週。会話に飢えているのかも知れない。そんなに話すこともないのに。</p>
+
+    <img src="/images/images/240528.webp"  class="left"  />
+
+
+<h2 id="bluelugへ">BlueLugへ</h2>
+<p>梅雨も近づいて心なしか雨も増えてきたので、サドルカバーとサコッシュを買いに富ヶ谷まで行ったところ、時間帯的にもあんまりお客さんがいなかったからか、自転車を組んでいただいたクリントさんに声を掛けてもらい、流れで少し雑談。</p>
+<p>組んでもらったHomerは調子よいです、変速にも慣れましたという経過報告に始まり、<a href="https://bluelug.com/blog/yoyogi-park/150913/">彼がお店のYouTubeとブログで紹介されていたごついMidnight Specialの話</a>や、パーツの話なんかもあれこれ教えてもらう。</p>
+<p>かのMidnight Specialのビルドの肝はおそらくStridslandのフォークをぶっ挿したところにあるんだとYouTubeを観た時は思ったのだけど、その後に公開されたブログでさらっと書かれていたCane Creekのクランクの値段がだいぶぶっ飛んでたのでついついその事に突っ込んでしまい、ややもすると、すぐものの値段とか金の話をしがちなところが自分にはあるという自覚があるので、話を聞きながらもバックグラウンドで自己嫌悪のプロセスが走る。</p>
+<p>それはともかく件のクランクはチタン製で軽くて剛性が高く、やはり乗り心地も違うとのこと。そりゃきっとそうだろう、というか自分だったら実際わかりにくい違いでもめちゃくちゃ違うと思い込みたくなるというプラシーボが発生してしまいそうなところだけど、クランク自体がそもそも自転車全体の重量の中で占める割合が大きいパーツだから云々という話なども聞くと、そこが軽くなるだけで普通にフィーリングが違ってくるというのは納得感がある。</p>
+<p>流れで自分のHomerでクランク替えるなら的な話にもなり、Middleburnのが最近は組むことも増えててなかなかいいっぽい、逆にWhite Industriesは微妙かもみたいなアドバイスを頂いたりもした。まあしばらくは変えるつもりもない部分ではあるのだけど、何がイケてて何がそうでもないのかという塩梅は定期的に教えてもらいたい話ではある。</p>
+<p>その他お店に吊るされていた他のスタッフの自転車などを見せてもらったりした後、今度鎌倉行こうと思ってる旨なども話して、また点検の時によろしくお願いしますという事で会計をしてお別れ。</p>
+<h2 id="arranberg-podcast-公開収録を観覧">Arranberg Podcast 公開収録を観覧</h2>
+<p>目黒の自転車文化センターで、小俣雄風太さんの著書『旅するツール・ド・フランス』発売記念で、彼のやっているArranbergという個人メディアのポッドキャストの公開収録がJ Sportsの解説等々でおなじみの栗村修さんをゲストに行われたので観覧しに行ってきた。</p>
+<p>ド平日の15時からとかどのくらいの人が来るんだろうかと思ったら、普通に20人前後くらい入っていてにぎやかで良かった。</p>
+<p>「旅と自転車レース」というテーマで、話題の多くはつい最近行われたばかりのTour of Japanの大会運営についての話が多く、組織委員長としての一日の動きだとか、日本の国内レースの立ち位置や参加選手のモチベーションはどうあるべきなのかなどなど、思っていたよりシリアスな濃い内容で聴きごたえがあった。</p>
+<p>また自転車レースの中継についての質問があり、その際小俣さんの方から「レースを振り返って各チームの戦術などを分析するようなプログラムがあっていいのでは」という提言もあって、うんうんと激しく頷くなど。<br>
+また別の質問では日本国内でどういうコースでレースをやってみたいかみたいな話から、東京オリンピックで三国峠が使われた事で、世界のトップ選手の登攀タイムがその坂のレガシーになることの重要性についても触れられていて、ここでも確かにそうだなとなる。</p>
+<p>普段だったらあんまり参加しないけど、それほど人数も多い催しではなかったので、にぎやかしと応援の意を込めて記念写真とサイン会にも参加する。</p>
+<ul>
+<li><a href="https://arenberg.press/podcasts/osamukurimura/">https://arenberg.press/podcasts/osamukurimura/</a></li>
+</ul>
+<h2 id="jisseleリリース記念ミニライブ">Jisseleリリース記念ミニライブ</h2>
+<p>ぼーっとしてると全く気付かないのだけど、王冠さんがMastodonに書いていたのでこんなイベントがある事を知って、週末に渋谷のタワレコまで。</p>
+<p>無銭のミニライブを観にタワレコに行くという行為が久しぶり過ぎで感覚がわからなくなってるのと、自転車で行くのもあって少し余裕をみたかったのとで、イベントの始まる1時間前には到着してしまう。しかし流石にする事ないし人も多くて疲れるのでルノアールで時間を潰し、再度向かってみると待機列に王冠さんがおり、入場後に合流する。</p>
+<p>客入りはあんまり多いとも言えず、JisseleくらいのソロのR&amp;Bシンガーの日本における立ち位置ってまあこんな感じなのか……というのを知る。AOMGのライブに以前行った時は大盛況だったので、この辺りのリスナーのボリュームって本当によく分からないが、王冠さん曰く、ソロのイベントに行くほど個別のシンガーやラッパーのファンではないけど色んな演者が出るなら行ってもいいってなる人が多いのでは、とのことでなんとなくわかったような。でもタダだしなと思うと、イベントの告知が足りてないというのもいくらかありそうな気はする。</p>
+<p>Jisseleは日本語のMCもあんまり違和感ない、というか結構上手で、それなりに日本の活動もやるのかなという雰囲気で、それだったら普通にクラブとかでライブをやって欲しいなと思った。<br>
+それはそれとして数少ない自分がちゃんと憶えている曲、Steamy  Hotもやってくれて、ほどよくアゲ感のあるよい無銭イベでした。</p>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/ckom1Ikvj-M?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+
+<p>観終えた後は完全に外飲みのヴァイブスしかない気候だったので、いそいそ雑踏を離脱して代々木公園近くのコンビニで缶ビールを買ってしっぽり飲みながら、ペットの話とか、仕事っぽい話とか、観たドラマや映画の話とかをした。</p>
+<h2 id="今週観た映画">今週観た映画</h2>
+<h3 id="関心領域">『関心領域』</h3>
+<p>これはやっぱりどういう構図の映画なのか知らないで観るのが一番よい仕掛けの作品だと思うのだけど、アカデミー賞とか獲ってしまうと流石に情報もガンガン入って来て、観る前から構えて観てしまったところがあり、結果としてあれもこれも少しこれ見よがしに感じられてしまって勿体ない体験になってしまったなというのが正直な感想。</p>
+<p>とは言え観ながら時勢的に考えさせられることは多々あって、パレスチナであったりジャニーズであったり、ホロコースト以外の事象に無暗にレンジを拡げてしまうのが良いのかはわからないが、自分は劇中のような悲惨な状況の時にどうあるのか考えるとどうしてもつなげてしまう。</p>
+<p>自分が受け持つ仕事や職業に対してプロフェッショナルであろうとする際の倫理観とか、権力や空気にまきとられない意志や連帯とか本当に保てるんだろうかっていう自分自身に対する自信の持てなさが怖い。</p>
+<h3 id="フュリオサ">『フュリオサ』</h3>
+<p>前作『フューリーロード』と比較するとなかなかまったりした調子で、どこか『フューリーロード』以前の作品の午後ロー感があり、そこがなんか良かったような気がする。</p>
+<p>また、主人公が復讐へと突っ走るに至る怒るきっかけというのは当然物語上にいくつも作られているのだけれど、その時に観客がつい反射的に感情移入したくなってしまうような凄惨な描写というのはだいぶ抑えられているように感じたのも結構印象的だった。問答無用でディメンタスは酷いんだけど、その酷さに観客がフュリオサと同化してぶちギレる他ないという見え方にはなっていないというか。</p>
+<p>その辺りについて物足りなく感じるという声も当然あると思うし、自分も実際そう感じるところはあるのだけど、前作の公開から今に至るまでに表面化したSNSの状況だったり戦争だったりといった世界のグロさを考えると、必要な、配慮というよりは作り手の意識の変化なのだと受け取った。</p>
+<p>しかしフュリオサの幼少期のパートでは役者がこどもである事や、クリス・ヘムズワース演じるディメンタスのデタラメさ（ディメンタス・チャリオッツの馬鹿馬鹿しさとかやばい）だったり、そもそもの作劇自体のゆるさなども相まって、なんだかディズニーのアニメ映画か何かを観てるようなファンタジー感さえあったのだけど、そこから一転、成長したフュリオサことアニャ・テイラージョイの真っ白くてデカい眼が油まみれの中ガン開きになった瞬間、一気に画面が締まったように感じられ、とにかくピカピカのウォータンクだのボミ―ノッカーだのなんだのにニコニコしっぱなしになれるのであった。あの眼だけでもシャーリーズ・セロンから変更してしまった理由として十分説得力があると思う。</p>
+<p>そのほか、ラジエーターを冷やす為ボトルに入れた自分の小便をかけに登場するピスボーイとか、どう考えても無駄というかただ危ないだけの長い布をバタつかせながら凧みたいなバイクで攻撃してくると思ったら案の定の結果になるオクトボスあたりが、今回好きなキャラとして心に残っています。</p>
+<p>いろいろ書いたけどとりあえず暇だしまた観に行くと思う。</p>
+<h2 id="今週読んだ本">今週読んだ本</h2>
+<ul>
+<li>『凍』</li>
+<li>『旅するツール・ド・フランス』</li>
+<li>『校正のたね』</li>
+<li>『おゆZINE①』</li>
+<li>『哲学対話日記』</li>
+</ul>
+<p>『凍』は沢木幸太郎の、山野井泰史さんとパートナーの山野井妙子さんのギャチュンカン北壁の登攀における遭難から生還に至るまでのノンフィクション。自分が自分の命の手綱を握れない状態で生き残れるかどうかという壮絶さ。ただただすごい。</p>
+<p>『旅する～』は上に書いた小俣雄風太さんによる、昨年のツール・ド・フランス取材の旅行記で、自転車レースの話と各ステージで訪れた街や出会った沿道の観客を通してバスクやフランスの自転車文化を覗くような本。各ステージごとに訪れる街も変わるからか、章もステージごとに分かれているような構成が読みやすい反面、短めのエッセイの連続のような感じが少し食い足りなく感じるところもあるというか、もう少し踏み込んで掘り下げて欲しいような話もあったなと思う。ツールのような長いステージレースだとどうしてもそういう感じになりそうだし、春先のクラシックシーズンにおけるフランドル辺りでの記録をもっと一つの旅としてまとまったテキストとして読んでみたくなった。</p>
+<h2 id="今週遊んだゲーム">今週遊んだゲーム</h2>
+<ul>
+<li>『In Stars And Time』</li>
+</ul>
+<p>ループもののRPG、まだ途中。</p>
+<h2 id="今週のmma">今週のMMA</h2>
+<ul>
+<li>UFC302</li>
+</ul>
+<p>マカチェフとポーイエのメインがとてもよかった。<br>
+1R序盤に割と粗くマカチェフがタックルに入ったと思ったら強引にリフトしてそのままテイクダウンが決まり、これはもうオワですわ…と思ったら、マカチェフも結構焦っていたのかポーイエの粘りに負けて極めきれず、そのままズルズルとテイクダウンも成功しなくなっていく中、スタンドの打撃ではポーイエがやや優勢でこれはもしかするともしかするのかと思ったのだけど、結局5Rにマカチェフが気合で引きずり倒してからダースチョークが極まってフィニッシュ。マカチェフのこれまでの試合で一番面白くなった。</p>
+<p>会場の空気が選挙前の共和党大会というかトランピスト集会みたいなだいぶきつい空間だったので、そういう雰囲気の圧もどこかで受けていたのかも知れないと想像すると、久しぶりにセコンドについたハビブが後ろにいたのは凄く心強かっただろうなと思う。にしても民主党支持のUFCファイターっていないんでしょうか……</p>
+<p>しかしつくづくポーイエはいい選手だなと思う。引退も示唆してはいるけど、せめてもう1試合くらいは観たい。</p>
+<h2 id="今週のプレ">今週のプレ</h2>
+<p>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/Z6UQKESPFBw?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+<br>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/M8r3x4Re8-I?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+<br>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/4MfNWJtgvno?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+<br>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/bvy6aox2Sgw?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+<br>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/aUs0Y0vGgW0?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+</p>
+<h2 id="そのほか">そのほか</h2>
+<ul>
+<li>銀座からド近所に移転してきたコーヒー屋を覗いたら、自分には前以上に綺麗すぎる空間になっていてもののめちゃくちゃ広いし、時間制でコーヒー飲み放題な業態になっていて普通に良かった、豆も買う</li>
+<li>蓮舫が都知事選へ</li>
+<li><a href="https://www.ntv.co.jp/info/pressrelease/20240531.html">「セクシー田中さん」問題の日テレ社内特別調査チームの調査結果報告</a>が公開</li>
+<li>トランプ有罪だけど…トランピストの信心が強固にだっただけ疑惑</li>
+<li>夜にうちの勝手口で小便する酔っ払いがいてドアをガンガンに蹴っ飛ばした</li>
+<li>買って付け替えようと思ってたシートポスト（NITTO S-83）をなぜか自宅の奥から発掘（4年前に買ったものの外径を間違えていて付けられなかったのをそのままにしていたっぽい）</li>
+<li>UFC FightPassを解約、U-NEXTでも観れるので</li>
+<li>Weverseの諸々を退会</li>
+</ul>
+              ]]>
+      </content:encoded>
+    </item>
+    
     <item>
       <title>Week21: Season to break down the unread pile</title>
-      <link>http://localhost:4032/posts/2024/05/week21-season-to-break-down-the-unread-pile/</link>
+      <link>http://localhost:1313/posts/2024/05/week21-season-to-break-down-the-unread-pile/</link>
       <pubDate>Tue, 28 May 2024 13:15:17 +0900</pubDate>
       
-      <guid>http://localhost:4032/posts/2024/05/week21-season-to-break-down-the-unread-pile/</guid>
+      <guid>http://localhost:1313/posts/2024/05/week21-season-to-break-down-the-unread-pile/</guid>
       <description>&lt;p&gt;2024/05/20~26。&lt;/p&gt;
 
-    &lt;img src=&#34;http://localhost:4032/images/images/240522.webp&#34;  class=&#34;left&#34;  /&gt;
+    &lt;img src=&#34;http://localhost:1313/images/images/240522.webp&#34;  class=&#34;left&#34;  /&gt;
 
 
 &lt;p&gt;描いたもの保管庫はここでいいかという事にしていたのだけど、あんまり閉じすぎるのもなんだしなみたいな気分になってきたので、以前Stable Diffusionの生成画像を投稿するように作ったFedisnapのアカウントを整理してそっちにもアップすることにしました。&lt;br&gt;
@@ -109,10 +250,10 @@ Homerで展示とか観に行って回ろうかとも思ったのだけど、し
     
     <item>
       <title>Week20 : Voices from laymen don&#39;t reach the fanatics</title>
-      <link>http://localhost:4032/posts/2024/05/week20-voices-from-laymen-dont-reach-the-fanatics/</link>
+      <link>http://localhost:1313/posts/2024/05/week20-voices-from-laymen-dont-reach-the-fanatics/</link>
       <pubDate>Mon, 20 May 2024 22:36:17 +0900</pubDate>
       
-      <guid>http://localhost:4032/posts/2024/05/week20-voices-from-laymen-dont-reach-the-fanatics/</guid>
+      <guid>http://localhost:1313/posts/2024/05/week20-voices-from-laymen-dont-reach-the-fanatics/</guid>
       <description>&lt;p&gt;2024/5/13~19。&lt;/p&gt;
 &lt;p&gt;仕事が複数あるんだけど、どれもスケジュールが緩めなせいで却って不安になる。&lt;/p&gt;
 &lt;p&gt;&amp;ldquo;Voices from laymen don&amp;rsquo;t reach the fanatics.（ファンに「外野」の声は届かない）&amp;rdquo;&lt;br&gt;
@@ -185,10 +326,10 @@ Homerで展示とか観に行って回ろうかとも思ったのだけど、し
     
     <item>
       <title>Week19 : Girls Never Die</title>
-      <link>http://localhost:4032/posts/2024/05/week19-girls-never-die/</link>
+      <link>http://localhost:1313/posts/2024/05/week19-girls-never-die/</link>
       <pubDate>Mon, 13 May 2024 21:23:10 +0900</pubDate>
       
-      <guid>http://localhost:4032/posts/2024/05/week19-girls-never-die/</guid>
+      <guid>http://localhost:1313/posts/2024/05/week19-girls-never-die/</guid>
       <description>&lt;p&gt;2024/5/6~12。&lt;br&gt;
 今週は比較的まじめに仕事をしました。ニュー自転車はまだおあずけ。&lt;/p&gt;</description>
       <content:encoded>
@@ -275,10 +416,10 @@ A. G. Cook のアルバムが良かったです。</p>
     
     <item>
       <title>Week18 : PA PA YA PA PA PA PIA</title>
-      <link>http://localhost:4032/posts/2024/05/week18-pa-pa-ya-pa-pa-pa-pia/</link>
+      <link>http://localhost:1313/posts/2024/05/week18-pa-pa-ya-pa-pa-pa-pia/</link>
       <pubDate>Mon, 06 May 2024 13:00:12 +0900</pubDate>
       
-      <guid>http://localhost:4032/posts/2024/05/week18-pa-pa-ya-pa-pa-pa-pia/</guid>
+      <guid>http://localhost:1313/posts/2024/05/week18-pa-pa-ya-pa-pa-pa-pia/</guid>
       <description>&lt;p&gt;2024/04/29~5/5。&lt;br&gt;
 ゴールデンウィークは3日から休んで週末までの後半のみではあったけど、自分にしてはなんだかパーティー三昧で飲み過ぎた。PARTY TIME はじまるよ♪ なんて歳ではないし、これを書いている月曜の今も疲労が抜けていない。&lt;/p&gt;</description>
       <content:encoded>
@@ -669,10 +810,10 @@ src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/16
     
     <item>
       <title>Week17 : A Pig Colored Dress Remained by Elimination</title>
-      <link>http://localhost:4032/posts/2024/04/week17-a-pig-colored-dress-remained-by-elimination/</link>
+      <link>http://localhost:1313/posts/2024/04/week17-a-pig-colored-dress-remained-by-elimination/</link>
       <pubDate>Mon, 29 Apr 2024 22:25:58 +0900</pubDate>
       
-      <guid>http://localhost:4032/posts/2024/04/week17-a-pig-colored-dress-remained-by-elimination/</guid>
+      <guid>http://localhost:1313/posts/2024/04/week17-a-pig-colored-dress-remained-by-elimination/</guid>
       <description>&lt;p&gt;2024/4/22~28。&lt;/p&gt;
 &lt;p&gt;自転車に乗る頻度の上昇に反比例して読書が滞りまくり。とくればAudibleチャンスな気もするが、Amazonに課金したくないので対抗サービスを探るも、物量的に比較にならなくてつらい。&lt;/p&gt;</description>
       <content:encoded>
@@ -769,13 +910,13 @@ src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/16
     
     <item>
       <title>Week16 : This moment, wonderful yet unreal, is all there is.</title>
-      <link>http://localhost:4032/posts/2024/04/week16-this-moment-wonderful-yet-unreal-is-all-there-is./</link>
+      <link>http://localhost:1313/posts/2024/04/week16-this-moment-wonderful-yet-unreal-is-all-there-is./</link>
       <pubDate>Mon, 22 Apr 2024 21:22:10 +0900</pubDate>
       
-      <guid>http://localhost:4032/posts/2024/04/week16-this-moment-wonderful-yet-unreal-is-all-there-is./</guid>
+      <guid>http://localhost:1313/posts/2024/04/week16-this-moment-wonderful-yet-unreal-is-all-there-is./</guid>
       <description>&lt;p&gt;2024/4/15~21。&lt;/p&gt;
 &lt;video width=100% controls autoplay loop&gt;
-    &lt;source src=&#34;http://localhost:4032/videos/2024/0417_AHH.mp4&#34; type=&#34;video/mp4&#34;&gt;
+    &lt;source src=&#34;http://localhost:1313/videos/2024/0417_AHH.mp4&#34; type=&#34;video/mp4&#34;&gt;
     Your browser does not support the video tag.  
 &lt;/video&gt;
 &lt;p&gt;ほとばしるHomerへの熱い想いがアニメを久しぶりに描かせる。アウターのチェーンリングがでかい。右足の踏み込みが強い。足首が時々外旋する。 &lt;br&gt;
@@ -901,14 +1042,14 @@ YUKIの、この曲で言えば「笑ってぇーいる～♪」の「てぇー�
     
     <item>
       <title>Week15 : Baddest Mother Fuckin’ Knockout Ever</title>
-      <link>http://localhost:4032/posts/2024/04/week15-baddest-mother-fuckin-knockout-ever/</link>
+      <link>http://localhost:1313/posts/2024/04/week15-baddest-mother-fuckin-knockout-ever/</link>
       <pubDate>Tue, 16 Apr 2024 00:34:53 +0900</pubDate>
       
-      <guid>http://localhost:4032/posts/2024/04/week15-baddest-mother-fuckin-knockout-ever/</guid>
+      <guid>http://localhost:1313/posts/2024/04/week15-baddest-mother-fuckin-knockout-ever/</guid>
       <description>&lt;p&gt;2024/4/8~14。 &lt;br&gt;
 自転車が待ち遠しいこの気持ちおわかりいただけますでしょうか。&lt;/p&gt;
 &lt;video width=100% controls autoplay loop&gt;
-    &lt;source src=&#34;http://localhost:4032/videos/2024/0415_AHH.mp4&#34; type=&#34;video/mp4&#34;&gt;
+    &lt;source src=&#34;http://localhost:1313/videos/2024/0415_AHH.mp4&#34; type=&#34;video/mp4&#34;&gt;
     Your browser does not support the video tag.  
 &lt;/video&gt;</description>
       <content:encoded>
@@ -972,10 +1113,10 @@ YUKIの、この曲で言えば「笑ってぇーいる～♪」の「てぇー�
     
     <item>
       <title>Week14 : The true Chemex breaks out</title>
-      <link>http://localhost:4032/posts/2024/04/week14-the-true-chemex-breaks-out/</link>
+      <link>http://localhost:1313/posts/2024/04/week14-the-true-chemex-breaks-out/</link>
       <pubDate>Mon, 08 Apr 2024 23:13:14 +0900</pubDate>
       
-      <guid>http://localhost:4032/posts/2024/04/week14-the-true-chemex-breaks-out/</guid>
+      <guid>http://localhost:1313/posts/2024/04/week14-the-true-chemex-breaks-out/</guid>
       <description>&lt;p&gt;2024/4/1~7。
 最近入眠がだるだるで寝不足みたいな日々。仕事にも身が入らず。絵とか描くモードにもならず。ただオーダーした自転車だけが楽しみみたいな状態。&lt;/p&gt;</description>
       <content:encoded>
@@ -1026,10 +1167,10 @@ YUKIの、この曲で言えば「笑ってぇーいる～♪」の「てぇー�
     
     <item>
       <title>Week13 : LUXURY under the Philippines</title>
-      <link>http://localhost:4032/posts/2024/04/week13-luxury-under-the-philippines/</link>
+      <link>http://localhost:1313/posts/2024/04/week13-luxury-under-the-philippines/</link>
       <pubDate>Mon, 01 Apr 2024 21:01:16 +0900</pubDate>
       
-      <guid>http://localhost:4032/posts/2024/04/week13-luxury-under-the-philippines/</guid>
+      <guid>http://localhost:1313/posts/2024/04/week13-luxury-under-the-philippines/</guid>
       <description>&lt;p&gt;2024/3/25～31。&lt;br&gt;
 やっと暖かくなってきたと思ったら雨が多かったり風が強くて、ただ寒いだけよりむかついてくる。&lt;br&gt;
 仕事も一旦落ち着いてゲームしまくりと思わせて、自転車のこと考えてる時間が長かった1週間。&lt;/p&gt;</description>
@@ -1200,56 +1341,6 @@ YUKIの、この曲で言えば「笑ってぇーいる～♪」の「てぇー�
 </p>
 <p>前哨戦的な別のレースでワウトが悲劇的な落車で鎖骨やら胸骨やら折るほどの怪我をしてしまったために、一番狙っていたであろうロンドファンフラーンデレンと来週のパリルーベに出れなくなってしまい、ポガチャルも出ない以上、今一番強すぎるマチューに敵う選手いないだろう…と思ったら、実際その通りでした。</p>
 <p>雨で濡れたコッペンベルクの石畳の登攀の様子は次元が違い過ぎて笑うし、そして、つくづくここを駆け上がるワウトとマチューの2人だけの世界みたいな絵を見たかった…と思ってしまう。</p>
-              ]]>
-      </content:encoded>
-    </item>
-    
-    <item>
-      <title>Week12 : From Metaverse To Fediverse</title>
-      <link>http://localhost:4032/posts/2024/03/week12-from-metaverse-to-fediverse/</link>
-      <pubDate>Mon, 25 Mar 2024 20:40:47 +0900</pubDate>
-      
-      <guid>http://localhost:4032/posts/2024/03/week12-from-metaverse-to-fediverse/</guid>
-      <description>&lt;p&gt;2024/3/18~24。&lt;br&gt;
-なんでまた寒くなってるんだって言うか風が強い。母は本八幡のビル風で飛ばされて転んだらしい。&lt;/p&gt;
-
-    &lt;img src=&#34;http://localhost:4032/images/images/240324.webp&#34;  class=&#34;left&#34;  /&gt;</description>
-      <content:encoded>
-              <![CDATA[
-              <p>2024/3/18~24。<br>
-なんでまた寒くなってるんだって言うか風が強い。母は本八幡のビル風で飛ばされて転んだらしい。</p>
-
-    <img src="/images/images/240324.webp"  class="left"  />
-
-
-<h2 id="しごと">しごと</h2>
-<p>押せ押せになってるレギュラー仕事の素材が多くて結構ギリギリの進行だったのだけどなんとかまとまりそう。</p>
-<p>最近Xenselabsのペンタブレットを買って目立ったバグが無いのでこっちを使う場面が増えていたのが、線画とか着彩の仕上げをするのはなんだかんだで液晶タブレットの方が早くてやりよいなってことでWacomのCintiqでの作業が再びメインになって、そのままAfterEffectsの作業もしているわけなんですが、以前にも書いたクリックなりドラッグの度にペン先が離れた事を認識しなくなっていくらペンを浮かしてもカーソルが引っ付いてくるバグの鬱陶しさが半端なくて、Cintiqを窓から投げ捨てたくなってくる。<br>
-Xenselabsが16インチクラスの液晶タブレットだしたら迷わず買い替えると思う。</p>
-<h2 id="threadsがfediverseへの統合機能をベータ版として提供開始">Threadsがfediverseへの統合機能をベータ版として提供開始</h2>
-<p>やる分にはウェルカムだけど、現状だとFediverseにもアカウントを持っているような人がオプトインしているだけのような雰囲気で、今後FediverseだのActivityPubだの知らんわってThreadsユーザーにその存在とか意義をどう周知させていくのかが気になる。</p>
-<p>Threadsユーザー側からしてみたら、Fediverseにいる人でフォローしたい相手がいたとしても、Threadsにもアカウントあるんだったら、まあそっちフォローしとけばいいでしょ、何か知らないけどよく分かんなくて怖いし、って段階で止まりそうだし、投稿を削除した時に他のサーバーで表示が残る可能性がある、とか念押しされたら普通びびってわざわざオプトインしないのではっていう気もする。</p>
-<p>とは言えBlueskyもあっていよいよみんなバラバラになっていきそうだってところで、Threadsか他のFediverseにいればつながれるって状況が出来れば、Twitterはもう無理だけどどこに行けばいいのやらってひとが動きやすくなるのかも知れないし、上手く行くといいなとは思う。</p>
-<p>Mastodonでフォローしていなかったというかアカウントが無かったところで言うと、gihyo.jpが共有を有効にしていて、メディアの性格上Mastodonにアカウントあっても良さそうなところだけど、こういう個人ではないところが安易にあちこちにアカウントを作ってクロスポストするのではなく、（Fediverseでは）Threadsにのみアカウントを置いて、且つFediverseに共有させていることを明記する事でその意味を知らしめる効果とかが、もしかしたら多少はあったりするのか…? とうっすら思ったけどどうなんでしょうか。</p>
-<p>ちなみにFediverseとのシェアをオンにしているアカウントはプロフィールの横に [threads.net] と表示されるっぽい。</p>
-<p>たまにインターネットで知り合ったような人に会って、「今はMastodonに投稿しているんで」などと言うと、決まって二言目には「もう新しいサービスに登録する気力がない」みたいな言葉が返ってくるばっかりで嫌になるんだけど、そんなんでオワコンのTwitterの権威化にいつまでも与してるのは、前にも書いたけど田舎の年寄りがいつまでも自民党に投票し続けるのと大体同じようなものでクソ退屈でダサいし、いい加減有害なのではって事を強く言いたい。</p>
-<ul>
-<li><a href="https://gihyo.jp/article/2024/03/threads-fediverse">https://gihyo.jp/article/2024/03/threads-fediverse</a></li>
-<li><a href="https://help.instagram.com/760878905943039/">https://help.instagram.com/760878905943039/</a></li>
-</ul>
-<h2 id="今週のユニコーンオーバーロード">今週のユニコーンオーバーロード</h2>
-<p>ドラケンガルドを奪還しエルヘイムに乗り込んでるところで、マップ踏破率55%強みたいな状態。</p>
-<p>まだそこまで大きなどんでん返し的な展開もなく、ひたすら仲間が増えていく中、ユニットの構成どうしようということで時間を溶かす日々です。</p>
-<p>ただ敵のクラスも上がってきてレベルが足りてないような戦闘クエストに入るとと、ちょっと削り負けるケースも増えてきていたところで、個々の戦闘に入る度にユニットの並べ方を変えるだけで勝敗というかダメージの予測が結構変わる事に気が付いて、また細かく調整しながら進める楽しみが出来てしまった。</p>
-<p>そんな感じでユニコーンオーバーロードが楽しいのもあって、Steamのセールでは何も買わずじまい。</p>
-<h2 id="今週のmma">今週のMMA</h2>
-<ul>
-<li>RIZIN LANDMARK 9 in KOBE</li>
-<li>UFC Fight Night 89</li>
-<li>Deep Jewels 44</li>
-</ul>
-<p>RIZINの井上直樹vs.佐藤将光が楽しかった。しかし井上はハイスピードなスタンドの展開に相手が慣れてくるにつれ、自身の動きもいくらか落ちていってしまうのはなかなか避けられないので、もっと早めに自分から崩しに行くようなアプローチだったり、後半になっても主導権を自分に手繰り寄せるようなギアの変え方みたいなものが必要なんじゃないかなというのが顕わになってきてしまっているようにも思う。</p>
-<p>あとはサトシの打撃がどんどん普通な感じになっているのにおどろくなど。</p>
               ]]>
       </content:encoded>
     </item>

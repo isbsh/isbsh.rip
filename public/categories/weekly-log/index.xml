@@ -2,81 +2,81 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Weekly Log on isbsh</title>
-    <link>http://localhost:4032/categories/weekly-log/</link>
+    <link>http://localhost:1313/categories/weekly-log/</link>
     <description>Recent content in Weekly Log on isbsh</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 28 May 2024 13:15:17 +0900</lastBuildDate>
-    <atom:link href="http://localhost:4032/categories/weekly-log/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 02 Jun 2024 22:28:13 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/weekly-log/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Week22: The Zone of Interest</title>
+      <link>http://localhost:1313/posts/2024/06/week22-the-zone-of-interest/</link>
+      <pubDate>Sun, 02 Jun 2024 22:28:13 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2024/06/week22-the-zone-of-interest/</guid>
+      <description>&lt;p&gt;2024/5/27~6/2。&lt;br&gt;&#xA;仕事はデータの整理をしただけで、あちこち遊びに行ったというか人の話を聞きに行った週。会話に飢えているのかも知れない。そんなに話すこともないのに。&lt;/p&gt;&#xA;&#xD;&#xA;    &lt;img src=&#34;http://localhost:1313/images/images/240528.webp&#34;  class=&#34;left&#34;  /&gt;</description>
+    </item>
     <item>
       <title>Week21: Season to break down the unread pile</title>
-      <link>http://localhost:4032/posts/2024/05/week21-season-to-break-down-the-unread-pile/</link>
+      <link>http://localhost:1313/posts/2024/05/week21-season-to-break-down-the-unread-pile/</link>
       <pubDate>Tue, 28 May 2024 13:15:17 +0900</pubDate>
-      <guid>http://localhost:4032/posts/2024/05/week21-season-to-break-down-the-unread-pile/</guid>
-      <description>&lt;p&gt;2024/05/20~26。&lt;/p&gt;&#xA;&#xD;&#xA;    &lt;img src=&#34;http://localhost:4032/images/images/240522.webp&#34;  class=&#34;left&#34;  /&gt;&#xD;&#xA;&#xD;&#xA;&#xA;&lt;p&gt;描いたもの保管庫はここでいいかという事にしていたのだけど、あんまり閉じすぎるのもなんだしなみたいな気分になってきたので、以前Stable Diffusionの生成画像を投稿するように作ったFedisnapのアカウントにもアップすることにしました。&lt;br&gt;&#xA;&lt;a href=&#34;https://fedisnap.com/isbsh&#34;&gt;https://fedisnap.com/isbsh&lt;/a&gt;&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2024/05/week21-season-to-break-down-the-unread-pile/</guid>
+      <description>&lt;p&gt;2024/05/20~26。&lt;/p&gt;&#xA;&#xD;&#xA;    &lt;img src=&#34;http://localhost:1313/images/images/240522.webp&#34;  class=&#34;left&#34;  /&gt;&#xD;&#xA;&#xD;&#xA;&#xA;&lt;p&gt;描いたもの保管庫はここでいいかという事にしていたのだけど、あんまり閉じすぎるのもなんだしなみたいな気分になってきたので、以前Stable Diffusionの生成画像を投稿するように作ったFedisnapのアカウントを整理してそっちにもアップすることにしました。&lt;br&gt;&#xA;&lt;a href=&#34;https://fedisnap.com/isbsh&#34;&gt;https://fedisnap.com/isbsh&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Week20 : Voices from laymen don&#39;t reach the fanatics</title>
-      <link>http://localhost:4032/posts/2024/05/week20-voices-from-laymen-dont-reach-the-fanatics/</link>
+      <link>http://localhost:1313/posts/2024/05/week20-voices-from-laymen-dont-reach-the-fanatics/</link>
       <pubDate>Mon, 20 May 2024 22:36:17 +0900</pubDate>
-      <guid>http://localhost:4032/posts/2024/05/week20-voices-from-laymen-dont-reach-the-fanatics/</guid>
+      <guid>http://localhost:1313/posts/2024/05/week20-voices-from-laymen-dont-reach-the-fanatics/</guid>
       <description>&lt;p&gt;2024/5/13~19。&lt;/p&gt;&#xA;&lt;p&gt;仕事が複数あるんだけど、どれもスケジュールが緩めなせいで却って不安になる。&lt;/p&gt;&#xA;&lt;p&gt;&amp;ldquo;Voices from laymen don&amp;rsquo;t reach the fanatics.（ファンに「外野」の声は届かない）&amp;rdquo;&lt;br&gt;&#xA;は文フリで買った『あなたとわたしは分かり合えないけど 「ジャニーズ性加害問題」をどう捉えたか』からの引用。ジャニーズに限らずつくづくほんとそうだなっていう。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Week19 : Girls Never Die</title>
-      <link>http://localhost:4032/posts/2024/05/week19-girls-never-die/</link>
+      <link>http://localhost:1313/posts/2024/05/week19-girls-never-die/</link>
       <pubDate>Mon, 13 May 2024 21:23:10 +0900</pubDate>
-      <guid>http://localhost:4032/posts/2024/05/week19-girls-never-die/</guid>
+      <guid>http://localhost:1313/posts/2024/05/week19-girls-never-die/</guid>
       <description>&lt;p&gt;2024/5/6~12。&lt;br&gt;&#xA;今週は比較的まじめに仕事をしました。ニュー自転車はまだおあずけ。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Week18 : PA PA YA PA PA PA PIA</title>
-      <link>http://localhost:4032/posts/2024/05/week18-pa-pa-ya-pa-pa-pa-pia/</link>
+      <link>http://localhost:1313/posts/2024/05/week18-pa-pa-ya-pa-pa-pa-pia/</link>
       <pubDate>Mon, 06 May 2024 13:00:12 +0900</pubDate>
-      <guid>http://localhost:4032/posts/2024/05/week18-pa-pa-ya-pa-pa-pa-pia/</guid>
+      <guid>http://localhost:1313/posts/2024/05/week18-pa-pa-ya-pa-pa-pa-pia/</guid>
       <description>&lt;p&gt;2024/04/29~5/5。&lt;br&gt;&#xA;ゴールデンウィークは3日から休んで週末までの後半のみではあったけど、自分にしてはなんだかパーティー三昧で飲み過ぎた。PARTY TIME はじまるよ♪ なんて歳ではないし、これを書いている月曜の今も疲労が抜けていない。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Week17 : A Pig Colored Dress Remained by Elimination</title>
-      <link>http://localhost:4032/posts/2024/04/week17-a-pig-colored-dress-remained-by-elimination/</link>
+      <link>http://localhost:1313/posts/2024/04/week17-a-pig-colored-dress-remained-by-elimination/</link>
       <pubDate>Mon, 29 Apr 2024 22:25:58 +0900</pubDate>
-      <guid>http://localhost:4032/posts/2024/04/week17-a-pig-colored-dress-remained-by-elimination/</guid>
+      <guid>http://localhost:1313/posts/2024/04/week17-a-pig-colored-dress-remained-by-elimination/</guid>
       <description>&lt;p&gt;2024/4/22~28。&lt;/p&gt;&#xA;&lt;p&gt;自転車に乗る頻度の上昇に反比例して読書が滞りまくり。とくればAudibleチャンスな気もするが、Amazonに課金したくないので対抗サービスを探るも、物量的に比較にならなくてつらい。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Week16 : This moment, wonderful yet unreal, is all there is.</title>
-      <link>http://localhost:4032/posts/2024/04/week16-this-moment-wonderful-yet-unreal-is-all-there-is./</link>
+      <link>http://localhost:1313/posts/2024/04/week16-this-moment-wonderful-yet-unreal-is-all-there-is./</link>
       <pubDate>Mon, 22 Apr 2024 21:22:10 +0900</pubDate>
-      <guid>http://localhost:4032/posts/2024/04/week16-this-moment-wonderful-yet-unreal-is-all-there-is./</guid>
-      <description>&lt;p&gt;2024/4/15~21。&lt;/p&gt;&#xA;&lt;video width=100% controls autoplay loop&gt;&#xD;&#xA;    &lt;source src=&#34;http://localhost:4032/videos/2024/0417_AHH.mp4&#34; type=&#34;video/mp4&#34;&gt;&#xD;&#xA;    Your browser does not support the video tag.  &#xD;&#xA;&lt;/video&gt;&#xD;&#xA;&lt;p&gt;ほとばしるHomerへの熱い想いがアニメを久しぶりに描かせる。アウターのチェーンリングがでかい。右足の踏み込みが強い。足首が時々外旋する。 &lt;br&gt;&#xA;リアラックにバスケットつけるのが便利ではなかろうかとずっと思っていたけど、でかめで中身にアクセスしやすいサドルバッグにリュックとかサコッシュを突っ込むのが見た目的にもいい気がしてきた。&lt;/p&gt;&#xA;&lt;p&gt;5月は仕事なくてヒマそうだな～と思った矢先にCMの仕事がきたんだけど、「A案B案提案したら両方作ってみてくれって言われたから両方作ってくれ」っていう都市伝説のような条件を、打ち合わせの段階で明かされてちょっとびっくりしました。もし2パターンのアニメーション作画してっていうのだったら大変だったけど、そこまでの話ではなくてまだよかった。&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/2024/04/week16-this-moment-wonderful-yet-unreal-is-all-there-is./</guid>
+      <description>&lt;p&gt;2024/4/15~21。&lt;/p&gt;&#xA;&lt;video width=100% controls autoplay loop&gt;&#xD;&#xA;    &lt;source src=&#34;http://localhost:1313/videos/2024/0417_AHH.mp4&#34; type=&#34;video/mp4&#34;&gt;&#xD;&#xA;    Your browser does not support the video tag.  &#xD;&#xA;&lt;/video&gt;&#xD;&#xA;&lt;p&gt;ほとばしるHomerへの熱い想いがアニメを久しぶりに描かせる。アウターのチェーンリングがでかい。右足の踏み込みが強い。足首が時々外旋する。 &lt;br&gt;&#xA;リアラックにバスケットつけるのが便利ではなかろうかとずっと思っていたけど、でかめで中身にアクセスしやすいサドルバッグにリュックとかサコッシュを突っ込むのが見た目的にもいい気がしてきた。&lt;/p&gt;&#xA;&lt;p&gt;5月は仕事なくてヒマそうだな～と思った矢先にCMの仕事がきたんだけど、「A案B案提案したら両方作ってみてくれって言われたから両方作ってくれ」っていう都市伝説のような条件を、打ち合わせの段階で明かされてちょっとびっくりしました。もし2パターンのアニメーション作画してっていうのだったら大変だったけど、そこまでの話ではなくてまだよかった。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Week15 : Baddest Mother Fuckin’ Knockout Ever</title>
-      <link>http://localhost:4032/posts/2024/04/week15-baddest-mother-fuckin-knockout-ever/</link>
+      <link>http://localhost:1313/posts/2024/04/week15-baddest-mother-fuckin-knockout-ever/</link>
       <pubDate>Tue, 16 Apr 2024 00:34:53 +0900</pubDate>
-      <guid>http://localhost:4032/posts/2024/04/week15-baddest-mother-fuckin-knockout-ever/</guid>
-      <description>&lt;p&gt;2024/4/8~14。 &lt;br&gt;&#xA;自転車が待ち遠しいこの気持ちおわかりいただけますでしょうか。&lt;/p&gt;&#xA;&lt;video width=100% controls autoplay loop&gt;&#xD;&#xA;    &lt;source src=&#34;http://localhost:4032/videos/2024/0415_AHH.mp4&#34; type=&#34;video/mp4&#34;&gt;&#xD;&#xA;    Your browser does not support the video tag.  &#xD;&#xA;&lt;/video&gt;</description>
+      <guid>http://localhost:1313/posts/2024/04/week15-baddest-mother-fuckin-knockout-ever/</guid>
+      <description>&lt;p&gt;2024/4/8~14。 &lt;br&gt;&#xA;自転車が待ち遠しいこの気持ちおわかりいただけますでしょうか。&lt;/p&gt;&#xA;&lt;video width=100% controls autoplay loop&gt;&#xD;&#xA;    &lt;source src=&#34;http://localhost:1313/videos/2024/0415_AHH.mp4&#34; type=&#34;video/mp4&#34;&gt;&#xD;&#xA;    Your browser does not support the video tag.  &#xD;&#xA;&lt;/video&gt;</description>
     </item>
     <item>
       <title>Week14 : The true Chemex breaks out</title>
-      <link>http://localhost:4032/posts/2024/04/week14-the-true-chemex-breaks-out/</link>
+      <link>http://localhost:1313/posts/2024/04/week14-the-true-chemex-breaks-out/</link>
       <pubDate>Mon, 08 Apr 2024 23:13:14 +0900</pubDate>
-      <guid>http://localhost:4032/posts/2024/04/week14-the-true-chemex-breaks-out/</guid>
+      <guid>http://localhost:1313/posts/2024/04/week14-the-true-chemex-breaks-out/</guid>
       <description>&lt;p&gt;2024/4/1~7。&#xA;最近入眠がだるだるで寝不足みたいな日々。仕事にも身が入らず。絵とか描くモードにもならず。ただオーダーした自転車だけが楽しみみたいな状態。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Week13 : LUXURY under the Philippines</title>
-      <link>http://localhost:4032/posts/2024/04/week13-luxury-under-the-philippines/</link>
+      <link>http://localhost:1313/posts/2024/04/week13-luxury-under-the-philippines/</link>
       <pubDate>Mon, 01 Apr 2024 21:01:16 +0900</pubDate>
-      <guid>http://localhost:4032/posts/2024/04/week13-luxury-under-the-philippines/</guid>
+      <guid>http://localhost:1313/posts/2024/04/week13-luxury-under-the-philippines/</guid>
       <description>&lt;p&gt;2024/3/25～31。&lt;br&gt;&#xA;やっと暖かくなってきたと思ったら雨が多かったり風が強くて、ただ寒いだけよりむかついてくる。&lt;br&gt;&#xA;仕事も一旦落ち着いてゲームしまくりと思わせて、自転車のこと考えてる時間が長かった1週間。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Week12 : From Metaverse To Fediverse</title>
-      <link>http://localhost:4032/posts/2024/03/week12-from-metaverse-to-fediverse/</link>
-      <pubDate>Mon, 25 Mar 2024 20:40:47 +0900</pubDate>
-      <guid>http://localhost:4032/posts/2024/03/week12-from-metaverse-to-fediverse/</guid>
-      <description>&lt;p&gt;2024/3/18~24。&lt;br&gt;&#xA;なんでまた寒くなってるんだって言うか風が強い。母は本八幡のビル風で飛ばされて転んだらしい。&lt;/p&gt;&#xA;&#xD;&#xA;    &lt;img src=&#34;http://localhost:4032/images/images/240324.webp&#34;  class=&#34;left&#34;  /&gt;</description>
     </item>
   </channel>
 </rss>

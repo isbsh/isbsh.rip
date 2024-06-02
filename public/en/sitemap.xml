@@ -2,466 +2,469 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:4032/categories/</loc>
-    <lastmod>2024-05-28T13:15:17+09:00</lastmod>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2024-06-02T22:28:13+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:4032/fr/categories/"
+                href="http://localhost:1313/fr/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:4032/categories/"
+                href="http://localhost:1313/categories/"
                 />
   </url><url>
-    <loc>http://localhost:4032/</loc>
-    <lastmod>2024-05-28T13:15:17+09:00</lastmod>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2024-06-02T22:28:13+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:4032/fr/"
+                href="http://localhost:1313/fr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:4032/"
+                href="http://localhost:1313/"
                 />
   </url><url>
-    <loc>http://localhost:4032/posts/2024/05/week21-season-to-break-down-the-unread-pile/</loc>
-    <lastmod>2024-05-28T13:15:17+09:00</lastmod>
+    <loc>http://localhost:1313/posts/2024/06/week22-the-zone-of-interest/</loc>
+    <lastmod>2024-06-02T22:28:13+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/categories/weekly-log/</loc>
-    <lastmod>2024-05-28T13:15:17+09:00</lastmod>
+    <loc>http://localhost:1313/categories/weekly-log/</loc>
+    <lastmod>2024-06-02T22:28:13+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2024/05/week20-voices-from-laymen-dont-reach-the-fanatics/</loc>
+    <loc>http://localhost:1313/posts/2024/05/week21-season-to-break-down-the-unread-pile/</loc>
+    <lastmod>2024-05-28T13:32:32+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/2024/05/week20-voices-from-laymen-dont-reach-the-fanatics/</loc>
     <lastmod>2024-05-20T22:53:59+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2024/05/week19-girls-never-die/</loc>
+    <loc>http://localhost:1313/posts/2024/05/week19-girls-never-die/</loc>
     <lastmod>2024-05-13T21:34:20+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2024/05/week18-pa-pa-ya-pa-pa-pa-pia/</loc>
+    <loc>http://localhost:1313/posts/2024/05/week18-pa-pa-ya-pa-pa-pa-pia/</loc>
     <lastmod>2024-05-10T12:30:05+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2024/04/week17-a-pig-colored-dress-remained-by-elimination/</loc>
+    <loc>http://localhost:1313/posts/2024/04/week17-a-pig-colored-dress-remained-by-elimination/</loc>
     <lastmod>2024-04-29T22:39:11+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2024/04/week16-this-moment-wonderful-yet-unreal-is-all-there-is./</loc>
+    <loc>http://localhost:1313/posts/2024/04/week16-this-moment-wonderful-yet-unreal-is-all-there-is./</loc>
     <lastmod>2024-04-22T21:44:16+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2024/04/week15-baddest-mother-fuckin-knockout-ever/</loc>
+    <loc>http://localhost:1313/posts/2024/04/week15-baddest-mother-fuckin-knockout-ever/</loc>
     <lastmod>2024-04-16T12:10:07+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2024/04/week14-the-true-chemex-breaks-out/</loc>
+    <loc>http://localhost:1313/posts/2024/04/week14-the-true-chemex-breaks-out/</loc>
     <lastmod>2024-04-08T23:16:02+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2024/04/week13-luxury-under-the-philippines/</loc>
+    <loc>http://localhost:1313/posts/2024/04/week13-luxury-under-the-philippines/</loc>
     <lastmod>2024-04-02T13:26:06+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2024/03/week12-from-metaverse-to-fediverse/</loc>
+    <loc>http://localhost:1313/posts/2024/03/week12-from-metaverse-to-fediverse/</loc>
     <lastmod>2024-03-25T21:18:06+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2024/03/week11-beyond-the-mountains/</loc>
+    <loc>http://localhost:1313/posts/2024/03/week11-beyond-the-mountains/</loc>
     <lastmod>2024-03-23T12:56:27+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2024/03/week10-paperwork-is-everyones-language/</loc>
+    <loc>http://localhost:1313/posts/2024/03/week10-paperwork-is-everyones-language/</loc>
     <lastmod>2024-03-12T22:08:54+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2024/03/week09-sloppy-lover/</loc>
+    <loc>http://localhost:1313/posts/2024/03/week09-sloppy-lover/</loc>
     <lastmod>2024-03-04T01:55:16+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2024/02/week08-untying-unity/</loc>
+    <loc>http://localhost:1313/posts/2024/02/week08-untying-unity/</loc>
     <lastmod>2024-02-28T00:24:15+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2024/02/week07-chigiri-chigiro/</loc>
+    <loc>http://localhost:1313/posts/2024/02/week07-chigiri-chigiro/</loc>
     <lastmod>2024-02-20T14:00:59+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2024/02/week06-apology-competition-society/</loc>
+    <loc>http://localhost:1313/posts/2024/02/week06-apology-competition-society/</loc>
     <lastmod>2024-02-12T15:45:39+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2024/02/week05-empty-new-era/</loc>
+    <loc>http://localhost:1313/posts/2024/02/week05-empty-new-era/</loc>
     <lastmod>2024-02-06T02:29:31+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2024/01/week04-thatll-do-pig/</loc>
+    <loc>http://localhost:1313/posts/2024/01/week04-thatll-do-pig/</loc>
     <lastmod>2024-01-30T01:52:51+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2024/01/week03-genflcl/</loc>
+    <loc>http://localhost:1313/posts/2024/01/week03-genflcl/</loc>
     <lastmod>2024-01-24T20:49:08+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2024/01/week02-no-recollection/</loc>
+    <loc>http://localhost:1313/posts/2024/01/week02-no-recollection/</loc>
     <lastmod>2024-01-16T01:19:24+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2024/01/week01-beginning-with-bad-things/</loc>
+    <loc>http://localhost:1313/posts/2024/01/week01-beginning-with-bad-things/</loc>
     <lastmod>2024-01-08T01:18:51+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2023/12/week52-year-end-tequila/</loc>
+    <loc>http://localhost:1313/posts/2023/12/week52-year-end-tequila/</loc>
     <lastmod>2024-01-04T02:11:30+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/categories/annual-report/</loc>
+    <loc>http://localhost:1313/categories/annual-report/</loc>
     <lastmod>2024-01-04T00:48:19+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2023/12/rewind-2023/</loc>
+    <loc>http://localhost:1313/posts/2023/12/rewind-2023/</loc>
     <lastmod>2024-01-04T00:48:19+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2023/12/week51-im-really-pooping/</loc>
+    <loc>http://localhost:1313/posts/2023/12/week51-im-really-pooping/</loc>
     <lastmod>2023-12-26T01:40:30+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2023/12/week50-fireball-prime-minister/</loc>
+    <loc>http://localhost:1313/posts/2023/12/week50-fireball-prime-minister/</loc>
     <lastmod>2023-12-20T03:55:31+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2023/12/week49-unfair-games/</loc>
+    <loc>http://localhost:1313/posts/2023/12/week49-unfair-games/</loc>
     <lastmod>2023-12-11T21:50:24+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2023/12/week48-pressing-like-by-everybody-is-killing-him-slowly/</loc>
+    <loc>http://localhost:1313/posts/2023/12/week48-pressing-like-by-everybody-is-killing-him-slowly/</loc>
     <lastmod>2023-12-05T03:08:41+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2023/11/week47-i-wondered-why-they-were-frying-with-topless./</loc>
+    <loc>http://localhost:1313/posts/2023/11/week47-i-wondered-why-they-were-frying-with-topless./</loc>
     <lastmod>2023-11-27T22:16:53+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2023/11/week46-i-hate-these-aspects-of-the-world/</loc>
+    <loc>http://localhost:1313/posts/2023/11/week46-i-hate-these-aspects-of-the-world/</loc>
     <lastmod>2023-11-22T00:01:09+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2023/11/week45-spending-too-much-on-books/</loc>
+    <loc>http://localhost:1313/posts/2023/11/week45-spending-too-much-on-books/</loc>
     <lastmod>2023-11-16T03:04:31+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2023/11/week44-extended-exaustion/</loc>
+    <loc>http://localhost:1313/posts/2023/11/week44-extended-exaustion/</loc>
     <lastmod>2023-11-06T23:56:05+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2023/11/week43-over/</loc>
+    <loc>http://localhost:1313/posts/2023/11/week43-over/</loc>
     <lastmod>2023-11-04T22:16:46+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2023/10/week42-santos-construction-inc./</loc>
+    <loc>http://localhost:1313/posts/2023/10/week42-santos-construction-inc./</loc>
     <lastmod>2023-10-31T00:15:23+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2023/10/week41-antihealth/</loc>
+    <loc>http://localhost:1313/posts/2023/10/week41-antihealth/</loc>
     <lastmod>2023-10-17T02:01:06+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2023/10/week40-how-would-you-like-to-do/</loc>
+    <loc>http://localhost:1313/posts/2023/10/week40-how-would-you-like-to-do/</loc>
     <lastmod>2023-10-10T03:16:44+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2023/10/week39-nu-delusion/</loc>
+    <loc>http://localhost:1313/posts/2023/10/week39-nu-delusion/</loc>
     <lastmod>2023-10-04T00:24:20+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2023/09/week38-how-similar-they-are-to-you./</loc>
+    <loc>http://localhost:1313/posts/2023/09/week38-how-similar-they-are-to-you./</loc>
     <lastmod>2023-09-25T23:02:05+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2023/09/week37-jumbo-jumbo-jumbo/</loc>
+    <loc>http://localhost:1313/posts/2023/09/week37-jumbo-jumbo-jumbo/</loc>
     <lastmod>2023-09-20T22:48:20+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2023/09/week36-sugacci-500/</loc>
+    <loc>http://localhost:1313/posts/2023/09/week36-sugacci-500/</loc>
     <lastmod>2023-09-13T00:34:33+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2023/09/week35-becoming-fearnot/</loc>
+    <loc>http://localhost:1313/posts/2023/09/week35-becoming-fearnot/</loc>
     <lastmod>2023-09-06T23:20:33+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2023/08/week34-pending-of-rubicon/</loc>
+    <loc>http://localhost:1313/posts/2023/08/week34-pending-of-rubicon/</loc>
     <lastmod>2023-08-30T00:05:05+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2023/08/week33-mojo-dojo-casa-house/</loc>
+    <loc>http://localhost:1313/posts/2023/08/week33-mojo-dojo-casa-house/</loc>
     <lastmod>2023-08-22T19:26:44+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2023/08/week32-the-quick-putting-away-old-men/</loc>
+    <loc>http://localhost:1313/posts/2023/08/week32-the-quick-putting-away-old-men/</loc>
     <lastmod>2023-08-15T00:26:02+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2023/08/week31-x-factor/</loc>
+    <loc>http://localhost:1313/posts/2023/08/week31-x-factor/</loc>
     <lastmod>2023-08-07T23:20:22+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2023/07/week30-disenfranchised-grief/</loc>
+    <loc>http://localhost:1313/posts/2023/07/week30-disenfranchised-grief/</loc>
     <lastmod>2023-07-31T23:36:29+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2023/07/week29-im-gone.-im-dead./</loc>
+    <loc>http://localhost:1313/posts/2023/07/week29-im-gone.-im-dead./</loc>
     <lastmod>2023-07-25T23:29:53+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2023/07/week28-as-a-result-of-strict-fault-finding/</loc>
+    <loc>http://localhost:1313/posts/2023/07/week28-as-a-result-of-strict-fault-finding/</loc>
     <lastmod>2023-07-17T15:50:05+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2023/07/week27-goodbye-summer-days/</loc>
+    <loc>http://localhost:1313/posts/2023/07/week27-goodbye-summer-days/</loc>
     <lastmod>2023-07-11T16:26:35+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2023/07/week26-our-security-and-happiness-blanket/</loc>
+    <loc>http://localhost:1313/posts/2023/07/week26-our-security-and-happiness-blanket/</loc>
     <lastmod>2023-07-04T11:12:45+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2023/06/week25-absence-of-new-onions/</loc>
+    <loc>http://localhost:1313/posts/2023/06/week25-absence-of-new-onions/</loc>
     <lastmod>2023-06-26T23:28:55+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2023/06/week24-it-dont-mean-a-thing/</loc>
+    <loc>http://localhost:1313/posts/2023/06/week24-it-dont-mean-a-thing/</loc>
     <lastmod>2023-06-19T23:14:33+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2023/06/week23-filling-holes-and-geting-worse/</loc>
+    <loc>http://localhost:1313/posts/2023/06/week23-filling-holes-and-geting-worse/</loc>
     <lastmod>2023-06-14T00:08:24+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2023/06/week22-intermittent-calvin-klein/</loc>
+    <loc>http://localhost:1313/posts/2023/06/week22-intermittent-calvin-klein/</loc>
     <lastmod>2023-06-05T22:33:17+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2023/05/week21-nature-abhors-a-vacuum/</loc>
+    <loc>http://localhost:1313/posts/2023/05/week21-nature-abhors-a-vacuum/</loc>
     <lastmod>2023-05-31T16:29:03+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2023/05/week20-watching-from-afar/</loc>
+    <loc>http://localhost:1313/posts/2023/05/week20-watching-from-afar/</loc>
     <lastmod>2023-05-31T16:34:12+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2023/05/week19-bias-pressure/</loc>
+    <loc>http://localhost:1313/posts/2023/05/week19-bias-pressure/</loc>
     <lastmod>2023-05-16T13:33:34+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2023/04/week17-to-be-hurt-is-to-be-relieved/</loc>
+    <loc>http://localhost:1313/posts/2023/04/week17-to-be-hurt-is-to-be-relieved/</loc>
     <lastmod>2023-04-30T22:56:07+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2023/04/week18-abandoned-neutrality/</loc>
+    <loc>http://localhost:1313/posts/2023/04/week18-abandoned-neutrality/</loc>
     <lastmod>2023-05-10T23:44:10+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2023/04/week16-go-vote-and-fail-at-dining-out/</loc>
+    <loc>http://localhost:1313/posts/2023/04/week16-go-vote-and-fail-at-dining-out/</loc>
     <lastmod>2023-04-25T00:31:24+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2023/04/week15-authentic-countryside/</loc>
+    <loc>http://localhost:1313/posts/2023/04/week15-authentic-countryside/</loc>
     <lastmod>2023-04-16T21:44:39+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2023/04/week14-ars-longa-vita-brevis/</loc>
+    <loc>http://localhost:1313/posts/2023/04/week14-ars-longa-vita-brevis/</loc>
     <lastmod>2023-04-09T19:33:52+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2023/04/week13-do-i-dare-to-eat-a-peach/</loc>
+    <loc>http://localhost:1313/posts/2023/04/week13-do-i-dare-to-eat-a-peach/</loc>
     <lastmod>2023-04-02T21:45:22+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2023/03/week12-correctness-renders-complex-relationship/</loc>
+    <loc>http://localhost:1313/posts/2023/03/week12-correctness-renders-complex-relationship/</loc>
     <lastmod>2023-03-27T20:41:45+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2023/03/week11-the-phantom-public/</loc>
+    <loc>http://localhost:1313/posts/2023/03/week11-the-phantom-public/</loc>
     <lastmod>2023-03-19T21:30:51+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2023/03/week10-no-blood-ties-no-family-registry-no-love-affair/</loc>
+    <loc>http://localhost:1313/posts/2023/03/week10-no-blood-ties-no-family-registry-no-love-affair/</loc>
     <lastmod>2023-03-14T22:25:52+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2023/03/week09-every-rejection-every-disappointment-has-led-you-here/</loc>
+    <loc>http://localhost:1313/posts/2023/03/week09-every-rejection-every-disappointment-has-led-you-here/</loc>
     <lastmod>2023-03-05T23:27:40+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2023/02/week08-if-it-increases-that-will-increase/</loc>
+    <loc>http://localhost:1313/posts/2023/02/week08-if-it-increases-that-will-increase/</loc>
     <lastmod>2023-02-27T00:52:26+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2023/02/week07-sorry-but-i-love-my/</loc>
+    <loc>http://localhost:1313/posts/2023/02/week07-sorry-but-i-love-my/</loc>
     <lastmod>2023-02-19T21:55:57+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2023/02/week06-my-heart-is-like-a-mabo-nasu/</loc>
+    <loc>http://localhost:1313/posts/2023/02/week06-my-heart-is-like-a-mabo-nasu/</loc>
     <lastmod>2023-02-19T21:55:57+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2023/02/week05-the-power-to-hurt-is-a-kind-of-wealth/</loc>
+    <loc>http://localhost:1313/posts/2023/02/week05-the-power-to-hurt-is-a-kind-of-wealth/</loc>
     <lastmod>2023-02-06T03:28:01+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2023/01/week04-attracted-old-man-gag-or-groove/</loc>
+    <loc>http://localhost:1313/posts/2023/01/week04-attracted-old-man-gag-or-groove/</loc>
     <lastmod>2023-01-29T22:14:52+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2023/01/week03-end-of-an-era/</loc>
+    <loc>http://localhost:1313/posts/2023/01/week03-end-of-an-era/</loc>
     <lastmod>2023-01-22T23:04:45+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2023/01/week02-flashback-neurose/</loc>
+    <loc>http://localhost:1313/posts/2023/01/week02-flashback-neurose/</loc>
     <lastmod>2023-01-15T23:02:12+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2023/01/week01-digested-this-and-that/</loc>
+    <loc>http://localhost:1313/posts/2023/01/week01-digested-this-and-that/</loc>
     <lastmod>2023-01-09T00:33:40+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2022/12/2022/</loc>
+    <loc>http://localhost:1313/posts/2022/12/2022/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2022/12/week-52/</loc>
+    <loc>http://localhost:1313/posts/2022/12/week-52/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2022/12/week-51/</loc>
+    <loc>http://localhost:1313/posts/2022/12/week-51/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2022/12/2022%E5%B9%B4-%E8%AA%AD%E3%82%93%E3%81%A0%E6%9C%AC/</loc>
+    <loc>http://localhost:1313/posts/2022/12/2022%E5%B9%B4-%E8%AA%AD%E3%82%93%E3%81%A0%E6%9C%AC/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/tags/book/</loc>
+    <loc>http://localhost:1313/tags/book/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:4032/fr/tags/"
+                href="http://localhost:1313/fr/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:4032/tags/"
+                href="http://localhost:1313/tags/"
                 />
   </url><url>
-    <loc>http://localhost:4032/posts/2022/12/week-50/</loc>
+    <loc>http://localhost:1313/posts/2022/12/week-50/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2022/12/week-49/</loc>
+    <loc>http://localhost:1313/posts/2022/12/week-49/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2022/12/2022%E5%B9%B4-%E9%9F%93%E5%9B%BD%E3%81%AE%E3%81%A1%E3%82%87%E3%81%86%E3%81%A9%E3%82%88%E3%81%8B%E3%81%A3%E3%81%9F%E3%82%84%E3%81%A4/</loc>
+    <loc>http://localhost:1313/posts/2022/12/2022%E5%B9%B4-%E9%9F%93%E5%9B%BD%E3%81%AE%E3%81%A1%E3%82%87%E3%81%86%E3%81%A9%E3%82%88%E3%81%8B%E3%81%A3%E3%81%9F%E3%82%84%E3%81%A4/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/tags/music/</loc>
+    <loc>http://localhost:1313/tags/music/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2022/12/week-48/</loc>
+    <loc>http://localhost:1313/posts/2022/12/week-48/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2022/11/week-47/</loc>
+    <loc>http://localhost:1313/posts/2022/11/week-47/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2022/11/week-46/</loc>
+    <loc>http://localhost:1313/posts/2022/11/week-46/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2022/11/week-45/</loc>
+    <loc>http://localhost:1313/posts/2022/11/week-45/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2022/11/week-44/</loc>
+    <loc>http://localhost:1313/posts/2022/11/week-44/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2022/10/week-43/</loc>
+    <loc>http://localhost:1313/posts/2022/10/week-43/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2022/10/week-42/</loc>
+    <loc>http://localhost:1313/posts/2022/10/week-42/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2022/10/week-41/</loc>
+    <loc>http://localhost:1313/posts/2022/10/week-41/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2022/10/week-40/</loc>
+    <loc>http://localhost:1313/posts/2022/10/week-40/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2022/10/week-39/</loc>
+    <loc>http://localhost:1313/posts/2022/10/week-39/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2022/09/week-38/</loc>
+    <loc>http://localhost:1313/posts/2022/09/week-38/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2022/09/week-37/</loc>
+    <loc>http://localhost:1313/posts/2022/09/week-37/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2022/09/week-36/</loc>
+    <loc>http://localhost:1313/posts/2022/09/week-36/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2022/09/week-35/</loc>
+    <loc>http://localhost:1313/posts/2022/09/week-35/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2022/08/week-34/</loc>
+    <loc>http://localhost:1313/posts/2022/08/week-34/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2022/08/week-33/</loc>
+    <loc>http://localhost:1313/posts/2022/08/week-33/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2022/08/week-32/</loc>
+    <loc>http://localhost:1313/posts/2022/08/week-32/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2022/08/week-31/</loc>
+    <loc>http://localhost:1313/posts/2022/08/week-31/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2022/07/week-30/</loc>
+    <loc>http://localhost:1313/posts/2022/07/week-30/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2022/07/week-29/</loc>
+    <loc>http://localhost:1313/posts/2022/07/week-29/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2022/07/week-28/</loc>
+    <loc>http://localhost:1313/posts/2022/07/week-28/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2022/07/week-27/</loc>
+    <loc>http://localhost:1313/posts/2022/07/week-27/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2022/07/week-26/</loc>
+    <loc>http://localhost:1313/posts/2022/07/week-26/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2022/06/week-25/</loc>
+    <loc>http://localhost:1313/posts/2022/06/week-25/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2022/06/week-24/</loc>
+    <loc>http://localhost:1313/posts/2022/06/week-24/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2022/06/week-23/</loc>
+    <loc>http://localhost:1313/posts/2022/06/week-23/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2022/06/week-22/</loc>
+    <loc>http://localhost:1313/posts/2022/06/week-22/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2022/05/week-21/</loc>
+    <loc>http://localhost:1313/posts/2022/05/week-21/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2022/05/week-20/</loc>
+    <loc>http://localhost:1313/posts/2022/05/week-20/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2022/05/week-19/</loc>
+    <loc>http://localhost:1313/posts/2022/05/week-19/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2022/05/week-18/</loc>
+    <loc>http://localhost:1313/posts/2022/05/week-18/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2022/05/week-17/</loc>
+    <loc>http://localhost:1313/posts/2022/05/week-17/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2022/04/week-16/</loc>
+    <loc>http://localhost:1313/posts/2022/04/week-16/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2022/04/week-15/</loc>
+    <loc>http://localhost:1313/posts/2022/04/week-15/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2022/04/week-14/</loc>
+    <loc>http://localhost:1313/posts/2022/04/week-14/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2022/04/week-13/</loc>
+    <loc>http://localhost:1313/posts/2022/04/week-13/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2022/03/week-12/</loc>
+    <loc>http://localhost:1313/posts/2022/03/week-12/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2022/03/week-11/</loc>
+    <loc>http://localhost:1313/posts/2022/03/week-11/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2022/03/week-10/</loc>
+    <loc>http://localhost:1313/posts/2022/03/week-10/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2022/03/week-09/</loc>
+    <loc>http://localhost:1313/posts/2022/03/week-09/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2022/02/week-08/</loc>
+    <loc>http://localhost:1313/posts/2022/02/week-08/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2022/02/week-07/</loc>
+    <loc>http://localhost:1313/posts/2022/02/week-07/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2022/02/week-06/</loc>
+    <loc>http://localhost:1313/posts/2022/02/week-06/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2022/02/week-05/</loc>
+    <loc>http://localhost:1313/posts/2022/02/week-05/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2022/01/week-04/</loc>
+    <loc>http://localhost:1313/posts/2022/01/week-04/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2022/01/week-03/</loc>
+    <loc>http://localhost:1313/posts/2022/01/week-03/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2022/01/week-02/</loc>
+    <loc>http://localhost:1313/posts/2022/01/week-02/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2022/01/2022-week-01/</loc>
+    <loc>http://localhost:1313/posts/2022/01/2022-week-01/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/2022/01/hello-world/</loc>
+    <loc>http://localhost:1313/posts/2022/01/hello-world/</loc>
     <lastmod>2022-12-10T17:39:29+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/posts/</loc>
+    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2022-01-09T02:13:28+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
     <lastmod>2023-08-16T03:30:36+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/images/</loc>
+    <loc>http://localhost:1313/images/</loc>
     <lastmod>2023-01-16T00:09:44+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:4032/series/</loc>
+    <loc>http://localhost:1313/series/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:4032/fr/series/"
+                href="http://localhost:1313/fr/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:4032/series/"
+                href="http://localhost:1313/series/"
                 />
   </url>
 </urlset>
