@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2024-06-02T22:28:13+09:00</lastmod>
+    <lastmod>2024-06-10T17:49:04+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-06-02T22:28:13+09:00</lastmod>
+    <lastmod>2024-06-10T17:49:04+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -28,11 +28,14 @@
                 href="http://localhost:1313/"
                 />
   </url><url>
-    <loc>http://localhost:1313/posts/2024/06/week22-the-zone-of-interest/</loc>
-    <lastmod>2024-06-02T22:28:13+09:00</lastmod>
+    <loc>http://localhost:1313/posts/2024/06/week23-all-of-us-strangers/</loc>
+    <lastmod>2024-06-10T17:49:04+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/weekly-log/</loc>
-    <lastmod>2024-06-02T22:28:13+09:00</lastmod>
+    <lastmod>2024-06-10T17:49:04+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/2024/06/week22-the-zone-of-interest/</loc>
+    <lastmod>2024-06-02T22:44:39+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2024/05/week21-season-to-break-down-the-unread-pile/</loc>
     <lastmod>2024-05-28T13:32:32+09:00</lastmod>
