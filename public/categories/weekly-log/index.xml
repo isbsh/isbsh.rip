@@ -6,8 +6,15 @@
     <description>Recent content in Weekly Log on isbsh</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 10 Jun 2024 17:49:04 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 18 Jun 2024 00:00:11 +0900</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/weekly-log/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2024_w24</title>
+      <link>http://localhost:1313/posts/2024/06/2024_w24/</link>
+      <pubDate>Tue, 18 Jun 2024 00:00:11 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2024/06/2024_w24/</guid>
+      <description>2024/6/10~16。 「I never go to places I can always go to = いつだって行ける場所にはいつまでも行かない」とはトークショーに行くに当たってパラパラ読み返した安達茉莉子さんの『臆病者の自転車生活』のサブジェクトからの引用です。安住を越えるためのなにかが人によっては自転車だったり別の何かだったり</description>
+    </item>
     <item>
       <title>Week23 :  All of Us Strangers</title>
       <link>http://localhost:1313/posts/2024/06/week23-all-of-us-strangers/</link>
@@ -70,13 +77,6 @@
       <pubDate>Tue, 16 Apr 2024 00:34:53 +0900</pubDate>
       <guid>http://localhost:1313/posts/2024/04/week15-baddest-mother-fuckin-knockout-ever/</guid>
       <description>&lt;p&gt;2024/4/8~14。 &lt;br&gt;&#xA;自転車が待ち遠しいこの気持ちおわかりいただけますでしょうか。&lt;/p&gt;&#xA;&lt;video width=100% controls autoplay loop&gt;&#xD;&#xA;    &lt;source src=&#34;http://localhost:1313/videos/2024/0415_AHH.mp4&#34; type=&#34;video/mp4&#34;&gt;&#xD;&#xA;    Your browser does not support the video tag.  &#xD;&#xA;&lt;/video&gt;</description>
-    </item>
-    <item>
-      <title>Week14 : The true Chemex breaks out</title>
-      <link>http://localhost:1313/posts/2024/04/week14-the-true-chemex-breaks-out/</link>
-      <pubDate>Mon, 08 Apr 2024 23:13:14 +0900</pubDate>
-      <guid>http://localhost:1313/posts/2024/04/week14-the-true-chemex-breaks-out/</guid>
-      <description>&lt;p&gt;2024/4/1~7。&#xA;最近入眠がだるだるで寝不足みたいな日々。仕事にも身が入らず。絵とか描くモードにもならず。ただオーダーした自転車だけが楽しみみたいな状態。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
