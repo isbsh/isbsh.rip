@@ -8,12 +8,130 @@
     <language>en</language>
     <lastBuildDate>Tue, 13 Feb 2018 12:21:57 -0500</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Week25 : Change myself by deciding not to change</title>
+      <link>http://localhost:1313/posts/2024/06/week25-change-myself-by-deciding-not-to-change/</link>
+      <pubDate>Mon, 24 Jun 2024 22:15:31 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/2024/06/week25-change-myself-by-deciding-not-to-change/</guid>
+      <description>&lt;p&gt;2024/6/17~23。&lt;/p&gt;
+
+    &lt;img src=&#34;http://localhost:1313/images/images/240622.webp&#34;  class=&#34;left&#34;  /&gt;
+
+
+&lt;p&gt;雨なら雨で移動中に本が読めるし梅雨が来たっていいという気持ちと自転車乗りたいので晴れていい欲しい気持ち、両方がある。&lt;/p&gt;</description>
+      <content:encoded>
+              <![CDATA[
+              <p>2024/6/17~23。</p>
+
+    <img src="/images/images/240622.webp"  class="left"  />
+
+
+<p>雨なら雨で移動中に本が読めるし梅雨が来たっていいという気持ちと自転車乗りたいので晴れていい欲しい気持ち、両方がある。</p>
+<h2 id="都知事選告示">都知事選告示</h2>
+<p>かつてないほどノイズが多いっぽいけどいい加減あの手のアクションにいちいち触れるのもかったるいし、そもそも日本人社会の公共性に対する意識にもはや全く期待してないので、その中で多少突き抜けたクソが何してようがもうどうでもいい。</p>
+<p>ただ、そもそも物理的なポスターの掲示板が今の時代にそこまで重要なのか、もしあれがないと立候補者が周知されないとしたら、その仕組みとか有権者の意識の他人事感の方がしょうもない気はする。</p>
+<p>それはともかく一連のクソを無視した上で候補を眺めてみると、小池百合子と蓮舫の一騎打ち、と言うほど蓮舫にばかすか票が集まりそうな風が吹いている感じも残念ながらせず、勝てないにしても最終的にはどのくらいの得票数になるのだろうか…みたいな先の光景をつい考えてしまう。</p>
+<p>小池百合子の口からいまだにダイバーシティなんて単語がぬけぬけと出てくる厚顔無恥っぷりは許せないし、いろんな理由で自分が彼女へ票を投じることはないものの、政策としてシェルターの整備を訴えているような動きは評価もしていて、そこと自然災害時の避難所の話はつなげて包括的に整備しますよ的な話も出来たらもっとよいんじゃないのという気はしている。まあこの人の場合実際やるのかどうかわかんないし、そもそもの人権意識からして人命に関わる話を任せたくないので以下略という感じではあるんだけど。</p>
+<p>自分がシェルター云々という事に注目するのは、それがある事で市民の命が守られる＝攻撃してもあんまり意味無さそうというイメージが構築できるのであれば、攻撃力とは違う形でミサイルで攻撃しようとする側に対する抑止力の一つに十分になりうるだろうという話をどこかで読んでわりと納得したからです。なので、そういう防衛的な話で言ったら田母神俊雄もおそらく経済のことなんかよりは専門だろうし何かしら触れているのかも…?と思ってサイトを覗きに行ってみると、シェルターはおろか政策については何も書かれておらず「#さあ反撃だ!ニッポン!」というどこに対して何をするのかさっぱり不明なキャンペーンぽいなにかの文言だけが踊っており、馬鹿かよこいつとなった。</p>
+<p>その点、災害対策という観点では清水国明が意外と色々具体的にアイデアを挙げていて、ただタレント候補として一笑に付すのはもったいなさそうというか、少なくとも田母神よりは遥かにまとも。雲泥の差。</p>
+<p>反対に石丸伸二は徹頭徹尾雰囲気のクリーンさ（のようなもの）だけで立ち回っていて、会見を見ても自分が市民から託された市長職を1年で放り出してまで都政に携わって具体的に何をしたいのか、何を問題視しているのかが本当に本当に伝わってこず、彼に熱狂している人たちがどこを見てそうなっているのか本当によく分からなかった。毅然と「ルールは守ってください」とかいうところなのか? 負けた裁判についての反論を聞いても問題点をすり替えては、勝手にひとりでノーダメージと言い張るようなひろゆき風のムーブが多いし、安芸高田市の規模感だから立ち回れていただけで普通に駄目だと思う。</p>
+<p>安野貴博も政策のアイデアについて具体的にどうアプローチするのかとか、実現可能性について疑問に感じる部分も少なくないのだけど、それでも政治でどうしたいのかというビジョンについては遥かに具体的だと思うし、意思決定や議論の経過をオープンにしようという姿勢だけでも好感が持てると思っている。ただそれをやるにあたってGitHubのような、日本語にローカライズされてもいない技術者向けのサービスを使う事がエリート主義的だったり結果的に排他的になってしまっているという指摘も事実で、その辺が選挙期間中に改善する姿勢を見せてくれたらいいのになとは思う。</p>
+<p>それ以外の候補はまだ特に調べていませんが、もし自分の知り合いでひまそら某に入れるよという方がいた場合は縁を切りたいのでお知らせください。</p>
+<h2 id="今週観た映画">今週観た映画</h2>
+<ul>
+<li>フュリオサ</li>
+<li>マッドマックス 怒りのデス・ロード</li>
+<li>ガメラ2 レギオン襲来（副音声でムービートーク）</li>
+</ul>
+<p>フュリオサ、2回目を日比谷で。</p>
+<p>2回目ということもあり、ある程度どういう尺感のどういう内容のものかわかった上で観てみると、1回目よりもかえって素直に受け取れてただ普通にすごい映画じゃんとなった。</p>
+<p>普通に、というのはフューリーロードと同じものを期待していたわけではなかったつもりなんだけど、あの特異点的なテンションの映画に連なる作品だからということで、初見の時は結構構えて観てしまっていたんだなってのを改めて感じたので。</p>
+<p>初見の時にも思って書き忘れた事で言えば、ぶっちゃけただのボンクラなんだけど生命力としつこさだけが頭抜けためんどくさい不良に目をつけられたばっかりに延々追い回された挙句、自分の大事な存在がひどい目に遭わされてしまうっていうのはすごく1作目っぽい気がする。そんな似た境遇から如何に復讐を果たすのかというクライマックスで、気持ちよくぶっ飛ばしてカタルシスを簡単に感じさせるのは簡単だけど、そこでそれをせずにマックスにもディメンタスにもならないフュリオサのあり方を見せるのはやっぱり今っぽいキャラクター造形だなと感じる。</p>
+<p>で、その先のフューリーロードにおける疲れ切ったフュリオサの様々なアクションの一つ一つが意味合いを帯びてグッとくるように見えてくるのは本当にすごくて、フューリーロードのテンションを求めて今作を見るとちょっと肩透かしかも知れないけど、これを観るとフューリーロードがより面白く観れるのは間違いないと思う。</p>
+<h2 id="今週遊んだゲーム">今週遊んだゲーム</h2>
+<ul>
+<li>In Stars And Time</li>
+<li>九日 NINE SOLS</li>
+</ul>
+<p>『In Stars And Time』をクリアした。</p>
+<p>一見オーソドックスなファンタジー的JRPGの世界において、ラストダンジョンを控えた最後の2日間をループしながら、そのループから抜け出す手段を探すRPG。</p>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/Glec7uzohbg?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+
+<p>自分のクリアまでのプレイ時間は30時間強で、率直に言ってちょっと長かった。ループ自体はバトルで死んだりラスボスの王を倒した後で強制的にリセットされる以外に、自分の任意のタイミングでもできるものではあるのだけど、それでもループ回数にしても90回くらいループして基本的に同じダンジョンを進むのを繰り返すので、途中から結構本気で苦痛に感じるようになっていき、バトルを2,3回こなすだけで急激に眠くなって実際寝たりしてしまったほど。</p>
+<p>ただ、そのプレイしている自分自身の疲弊や苦痛は、ゲーム内で同様に同じマップを歩かされ、やることなすことどんどん作業的になっていくという主人公シフランのそれと密接にリンクしていて、どうせ同じ会話だからとすっ飛ばしたり、イベントをショートカットしようとした際に、少し諫めるようなツッコミが心の声だったり他のキャラとのやりとりの中で差し込まれてきて、その度にハッとさせられるようになっているのはよく出来ているなと思う。</p>
+<p>なのでループが前提であるならもっとざくざくショートカットして快適に回せるようにしてくれよっていう面と、このめんどくささを捨てたらこのゲームは成り立たないのではっていう面もあって、簡単にこうしたらもっとよくなるのにという事が言いにくい。</p>
+<p>こういうメタ的な仕組み自体は今時目新しいデザインでもないのだと思うけど、このゲームにおいてそれがとても有効に、指摘されていることについてリアルに感じられるのは、会話テキストのクオリティの高さとこなれた翻訳によるところがとても大きい。</p>
+<p>一緒にダンジョンを進むパーティーの仲間たちは年齢も幅広く、キャラによってはクィア性が強調されていたりして、それぞれ個性的でかわらしいのだけど、かれらの会話がとても生き生きしているのがこのゲームの本質的な良さなんではないか。</p>
+<p>特にゲームを進めていくうちに発生する、それぞれのキャラクターの背景が明らかになるサブイベントはどれもエモーショナルで、中でも個人的には、アセクシュアルで他人と性的な交わりを忌避しながら、物語上の職業的か宗教的な役割として受け入れなければならない成長するための変化の一つとしてそうした交わりもいなければいけないのではないかというアンビバレンツさの中で思い悩む某キャラのストーリーがとてもよかった。</p>
+<p>またグラフィックやデザインやサウンドもそれらの興を削がないクオリティだったのも嬉しい。</p>
+<p>長いし2回やって同じ体験ができるタイプの作品でもないので、2周目とかはやらないけどやってよかったゲーム。</p>
+<h2 id="今週読んでる本">今週読んでる本</h2>
+<ul>
+<li>ACE アセクシュアルから見たセックスと社会のこと</li>
+</ul>
+<p>まだ読んでる途中。めちゃくちゃざっくり言えば、アセクシュアルの人間との対話を通して、これまでなんだかんだいってセクシュアリティが軸に置かれてきた社会の見方を解きほぐすような内容で、思った以上に自分にとってクリティカルな内容なのかもと読みながら読み進めている。</p>
+<p>なんて言うと、自分が明確にアセクシュアルだから書かれてる体験談に共感しまくったみたいに受け取られそうではあるけどそういう話でもなく、どちらかというと、こうしたマイノリティな属性について分類しようとするほど言葉が増えていったり、本来細かく観れば違う属性のものが一絡げにある言葉や定義にまとめられてしまったり、また当事者がその誤解からとるべき振る舞いはこうでなければならないと思い込んだりしてしまっているような場面はないか、っていう言葉にまつわる問題提起がアセクシュアルという視点を導入する事によってなされていることに共感する感じ。</p>
+<p>特にセクシュアリティなどについて悩みとかない人も、世界の見え方が少し変わったりその補助になるテキストだと思うので、アセクシュアルとか関係なく色んな人が読んでもいい本だと思う。注釈の入れ方やボリュームもほどよくていろいろと勉強になる。</p>
+<blockquote>
+<p>緩い境界線はあえてのものだ。エースはこれらの用語を、それらから利益を得るかもしれないすべての人に提供する。誰でも望むならエースと自認することが出来るというのが一つの考え方だ。受け入れられることの条件として確固たる振る舞いをするよう奨励することが目的ではなく、複雑さを抱き入れ、人々に自身の望むように自認することを許し、人々のセクシュアリティが変わったり折り重なったりすることを認めるのが目的なのだ。エースの世界は義務ではない。誰も自認を必要としないし、誰も閉じ込められることはないし、誰も永遠に留まって忠誠を誓う必要などない。単語は贈り物だ。どの用語を調べるべきか知っていれば、何か教えてくれる人を見つける方法を知っていることになる。ルシッドが言ったように、それらは鍵なのだ。エースの世界と他の世界への知的な入口だ。言葉の賜物なのだ。役に立つ限りは。
+（『ACE アセクシュアルから見たセックスと社会のこと』, p67）</p>
+</blockquote>
+<h2 id="今週のmma">今週のMMA</h2>
+<ul>
+<li>UFCファイトナイト・サウジアラビア</li>
+<li>Bellator CS2024#03</li>
+</ul>
+<p>ウィテカーと太田忍の試合だけ。</p>
+<p>ウィテカーはまだまだ強いけどやっぱしチマエフとやってなんとか序盤の猛攻を凌いでボクシングで削ってくとこが見たかった。</p>
+<p>太田は相手がどういう選手かよく分からないうちに、蹴り足を掴んでテイクダウンが成功したらあっという間にノースサウスでフィニッシュしていて、国内でやっているより充実して見えた。そもそも相手がメダリストレスラー相手にキック出すのが不用意だった気がする、なんて言うのは流石に後出しっぽいけど、その辺の展開でもっと苦労する相手とやるところが見てみたい。</p>
+<h2 id="そのほか">そのほか</h2>
+<ul>
+<li>
+<p>【重要】SMARTalkサービス提供終了のお知らせ | IP-Phone SMART<br>
+<a href="https://ip-phone-smart.jp/index.php?cID=708">https://ip-phone-smart.jp/index.php?cID=708</a><br>
+留守電どうしよう</p>
+</li>
+<li>
+<p>神保町シアター 次回の特集企画 一度はスクリーンで観ておきたい―― 忘れられない90年代映画たち<br>
+<a href="https://www.shogakukan.co.jp/jinbocho-theater/program/90s.html">https://www.shogakukan.co.jp/jinbocho-theater/program/90s.html</a><br>
+とにかく『大失恋。』と『Lie lie Lie』を観たい</p>
+</li>
+<li>
+<p>GLORIEUX EDEN - Annecy Festival 2024<br>
+
+    
+        
+        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+          <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/kDGmaFEAzRw?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+          ></iframe>
+        </div>
+</p>
+</li>
+<li>
+<p>書店在庫情報プロジェクト<br>
+<a href="https://info.openbs.jp/">https://info.openbs.jp/</a><br>
+hontoが終わってまだ代替サービスが出来ていない今期待したいやつ。</p>
+</li>
+</ul>
+              ]]>
+      </content:encoded>
+    </item>
+    
+    <item>
       <title>Week24 : I never go to places I can always go to</title>
       <link>http://localhost:1313/posts/2024/06/week24-i-never-go-to-places-i-can-always-go-to/</link>
       <pubDate>Tue, 18 Jun 2024 00:00:11 +0900</pubDate>
       
       <guid>http://localhost:1313/posts/2024/06/week24-i-never-go-to-places-i-can-always-go-to/</guid>
-      <description>2024/6/10~16。 「I never go to places I can always go to = いつだって行ける場所にはいつまでも行かない」とはトークショーに行くに当たってパラパラ読み返した安達茉莉子さんの『臆病者の自転車生活』のサブジェクトからの引用です。 安住を越えるためのなにかが人によっては自転車だったり別の何かだったり</description>
+      <description>&lt;p&gt;2024/6/10~16。&lt;/p&gt;
+&lt;p&gt;「&lt;em&gt;I never go to places I can always go to = いつだって行ける場所にはいつまでも行かない&lt;/em&gt;」とはトークショーに行くに当たってパラパラ読み返した安達茉莉子さんの『臆病者の自転車生活』のサブジェクトからの引用です。&lt;br&gt;
+安住を越えるためのなにかが人によっては自転車だったり別の何かだったりするっていう話なんだけど、暇なわりに雨も降らないもんだから自転車乗りたいがためにあちこち移動している日々。&lt;/p&gt;</description>
       <content:encoded>
               <![CDATA[
               <p>2024/6/10~16。</p>
@@ -22,7 +140,7 @@
 <h2 id="homerの1ヶ月点検へ">Homerの1ヶ月点検へ</h2>
 <p>水曜日、BlueLug代々木公園店に連絡を入れたところ「今日だったらいつでもOK」とのことだったので、他の用事を済ませた後の昼過ぎに富ヶ谷まで行って自転車を預ける。</p>
 <p>向かう時に普段あまり走ることのない赤坂通り～表参道～井の頭通りのいわゆる赤坂杉並線を走ってみたのだけど、直線距離こそ家から最短と見せかけて、赤坂のあたりは道も狭く表参道のあたりは車が多い他、全体的にアップダウンもこまごまと多くてあまりいい事が無かった。やっぱり渋谷の方へ向かう時は芝公園の南を回って麻布通りと明治通りの方から攻めるのが走りやすいのだというのを改めて確認。でもちょっと飽きたんだよなー。</p>
-<p>それはともかく。点検自体は何事もなく終わり、そのまま帰るのもなんだなというマインドからクリントさんと軽く雑談というか、もうちょいスリックめなタイヤにするとしたら何がいいかとか、いずれはヘッドパー使えるのもいいのではみたいな話をしたり、最近店ごと譲り受けたというBikeFridayのことやキャンプアウト、鹿児島の話などを聞いて相手をしてもらう。</p>
+<p>それはともかく。点検自体は何事もなく終わり、そのまま帰るのもなんだなというマインドからクリントさんと軽く雑談というか、もうちょいスリックめなタイヤにするとしたら何がいいかとか、いずれはヘッドセット替えるのもいいのではみたいな話をしたり、最近店ごと譲り受けたというBikeFridayのことやキャンプアウト、鹿児島の話などを聞いて相手をしてもらう。</p>
 <p>点検はタダだったし相手もしてもらって手ぶらで帰るのもださい気がして、BlueLugとTeamDreamの手ぬぐいを買って帰った。</p>
 <p>にしても最近なんらかの店に行ってお店の人と会話する事にそこそこ楽しみを覚えている自分がおり、なんというかこれって中年ムーブだよな…などと加齢を感じている。単純にコミュニケーションに飢えているのかもしれないが。</p>
 <p>ちなみにこの日はそこそこ気温も高かったのだけど、行き帰り合わせてヘッドフォンしながら走ってる人が複数おり色んな意味で馬鹿なのではと思ってしまった。</p>
@@ -45,7 +163,7 @@
 <li>『違国日記』</li>
 </ul>
 <p>期待半分怖さ半分くらいの気持ちで観に行ったのだけど、原作で体験したような感覚を追体験するというほどのものでは正直なかった。</p>
-<p>良くも悪くもなるべく原作のイメージを崩さないようにしているのが伝わってしまう感じというか。特に大人の方の登場人物にそれは感じて、ずっと漫画に合わせてるとまでは言わないまでも、要所要所で漫画の決めゴマにハメに行ってるような雰囲気に違和感があり、漫画原作ものをやるというのもかつてないほど原作ファンの声の攻撃力はでかいし大変なんだろうなみたいなことが過ってしまう。なんと言うかビビり過ぎでは…っていう。</p>
+<p>良くも悪くもなるべく原作のイメージを崩さないようにしているのが伝わってしまう感じというか。特に大人の方の登場人物にそれは感じて、ずっと漫画に合わせてるとまでは言わないまでも、要所要所で漫画の決めゴマにハメに行ってるような雰囲気に違和感があり、漫画原作ものの映像化も、昔とは比べ物にならないほど原作ファンの声の攻撃力はでかいし大変なんだろうなみたいなことが過ってしまう。なんと言うかビビり過ぎでは…っていうか。</p>
 <p>そんな中、朝役の早瀬憩さんをはじめ、学生の人達は拙さもあってかそこまでそういった縛りのようなものは感じず、原作と程よく距離を取りながら現実の10代の不安定さのようなものが表現されていたんじゃないかという気はする。</p>
 <h2 id="今週読んだでる本">今週読んだ（でる）本</h2>
 <ul>
@@ -130,7 +248,6 @@
 <li><a href="https://www.whowhatwear.com/fashion/cover-features/alex-consani-interview">Meet Alex Consani, the People&rsquo;s Princess | Who What Wear UK</a></li>
 <li><a href="https://x.com/upholdreality/status/1800327418986520887">COMBATE |🇵🇷 on X: &ldquo;Zionist woman LOSES HER MIND after meeting Jews standing for Palestine 🇵🇸 You can see her brainwashed worldview crumble in real time https://t.co/LSzmL07WDZ&rdquo; / X</a></li>
 </ul>
-
               ]]>
       </content:encoded>
     </item>
@@ -1250,77 +1367,6 @@ YUKIの、この曲で言えば「笑ってぇーいる～♪」の「てぇー�
 <li><a href="https://www.youtube.com/watch?v=CfSJt0zC8mc">日比さんの花見・酒飲み話</a>がよかった</li>
 <li>穴の開いた羽毛布団に限界を感じて買い替え。昭和西川のSNフレッシュプロ合わせ掛け布団。</li>
 </ul>
-              ]]>
-      </content:encoded>
-    </item>
-    
-    <item>
-      <title>Week15 : Baddest Mother Fuckin’ Knockout Ever</title>
-      <link>http://localhost:1313/posts/2024/04/week15-baddest-mother-fuckin-knockout-ever/</link>
-      <pubDate>Tue, 16 Apr 2024 00:34:53 +0900</pubDate>
-      
-      <guid>http://localhost:1313/posts/2024/04/week15-baddest-mother-fuckin-knockout-ever/</guid>
-      <description>&lt;p&gt;2024/4/8~14。 &lt;br&gt;
-自転車が待ち遠しいこの気持ちおわかりいただけますでしょうか。&lt;/p&gt;
-&lt;video width=100% controls autoplay loop&gt;
-    &lt;source src=&#34;http://localhost:1313/videos/2024/0415_AHH.mp4&#34; type=&#34;video/mp4&#34;&gt;
-    Your browser does not support the video tag.  
-&lt;/video&gt;</description>
-      <content:encoded>
-              <![CDATA[
-              <p>2024/4/8~14。 <br>
-自転車が待ち遠しいこの気持ちおわかりいただけますでしょうか。</p>
-<video width=100% controls autoplay loop>
-    <source src="/videos/2024/0415_AHH.mp4" type="video/mp4">
-    Your browser does not support the video tag.  
-</video>
-<h2 id="かわせみ4">かわせみ4</h2>
-<p>仕事場のiMacでAfterEffectsでエクスプレッションを打ち込む時、入力を英数に切り替えるために英数キーを押すと DEL という文字列が入力されたりして非常に鬱陶しい挙動がいつから発生するようになっていたのを、解決方法がわからないので1～2年くらいそのまま放置していたのが直った。</p>
-<p>厳密に言うと、iMacに繋げて使っているのがSol3という分割キーボードで、そいつを自宅のWIndowsでも仕事場のMacでも同じマッピングでシームレスに使えるように、Windowsの無変換/変換キーとMacの英数/かなキーを同時押しするようにQMKで設定してあったので、きっとそのせいなんだろうとは思っていたのだけど、とはいえ自分で設定ファイル作ってその中に意図してない命令が送信されるもんですかね…? という疑問はあり、時々気になってなにか似たような事例とかないのかなと思って調べていたら、Karabiner周りでこんな記事とツイートを発見し、どうやらMacのデフォルト日本語IMEのせいらしい事実が発覚。</p>
-<ul>
-<li><a href="https://qiita.com/usagimaru/items/2002e85c2f874ec682fd">https://qiita.com/usagimaru/items/2002e85c2f874ec682fd</a></li>
-<li><a href="https://twitter.com/HiromitsuTakagi/status/579457962185396224">https://twitter.com/HiromitsuTakagi/status/579457962185396224</a></li>
-</ul>
-<p>数年前に脱Googleを図ってそれまで使っていたGoogle日本語入力から切り替えたのだけど、思い返せばこのバグが出るようになったのも確かにその頃だったような…と薄ら合点がいき、とりあえずMacで使いやすい日本語IMEを入れてみるぞって事で、ATOKと迷ってかわせみ4を購入しインストールしてみたら、無事にバグが発生しなくなりめっちゃよかった。</p>
-<p>ATOKじゃなくてかわせみにしたのは、使ったこと無かったのとサブスクリプションじゃなくて買い切りだったからなだけだけど、自分の使い方であれば使用感も今のところは特に問題なさそう。</p>
-<p>ていうかMacのデフォルト日本語IME、使いにくいけど慣れればこれはこれで早いのかも…と思ってだらだら我慢して使っていたけど、全然慣れないし、だいたい時々謎に重くなる事もあったしマジでクソだったな。タダだからって不便さを看過していたけどやっぱりあれはクソです。</p>
-<h2 id="ufc300">UFC300</h2>
-
-
-    
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/h9KBcib8pHc?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
-      ></iframe>
-    </div>
-
-<p>アーリープレリミから元チャンピオンみたいな選手が惜しみなく出てきてはほいほい盛り上がる試合をしていて、この日の興行通して300回の節目にふさわしく面白い大会だったのだけど、そんな中でこれ以上ないフィニッシュを決めたホロウェイがやばすぎた。</p>
-<p>最終の5R終了間際、ここまでフルラウンド通して優勢に進めていて、特別リスク犯さなくても良いはずのホロウェイが最後の盛り上げ的にケージ中央を指さして「ここで殴り合おうぜ」と煽り、それに乗っかってきたゲイジ―と打ち合いをするのだけど、 言ってもまあこれは魅せプ的なものですよね～ とか ハイレベルでいい試合だったな～ 最後まで盛り上げて偉いな～ などと思いながら、それなりの満腹感をもってブザーが鳴るのを構えていたその刹那、ホロウェイの右フックがゲイジーのテンプルにクリーンヒットし、残り2秒で劇的な失神KOっていう。</p>
-<p>思わず立って声が出てしまいました。あの場におけるプロの仕事としてすごすぎ。早くトプリアとやって欲しい。</p>
-<h2 id="今週のプレイリスト">今週のプレイリスト</h2>
-<p>
-
-    
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/YC0ErOoQcUA?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
-      ></iframe>
-    </div>
-<br>
-
-
-    
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/9z1eBDwlqQY?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
-      ></iframe>
-    </div>
-<br>
-
-
-    
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/KI15Er6WsZg?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
-      ></iframe>
-    </div>
-</p>
               ]]>
       </content:encoded>
     </item>
