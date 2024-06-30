@@ -1,5 +1,5 @@
 ---
-title: "2024 1st Half Fav Song"
+title: "2024 1st Half Fav Songs"
 date: 2024-07-01T01:46:39+09:00
 draft: false
 toc: false
