@@ -2,8 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/posts/2024/07/2024-1st-half-fav-song/</loc>
+    <lastmod>2024-07-01T01:46:39+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/annual-report/</loc>
+    <lastmod>2024-07-01T01:46:39+09:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2024-06-24T22:15:31+09:00</lastmod>
+    <lastmod>2024-07-01T01:46:39+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -16,7 +22,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-06-24T22:15:31+09:00</lastmod>
+    <lastmod>2024-07-01T01:46:39+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -28,11 +34,27 @@
                 href="http://localhost:1313/"
                 />
   </url><url>
+    <loc>http://localhost:1313/tags/music/</loc>
+    <lastmod>2024-07-01T01:46:39+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-07-01T01:46:39+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/tags/"
+                />
+  </url><url>
     <loc>http://localhost:1313/posts/2024/06/week25-change-myself-by-deciding-not-to-change/</loc>
-    <lastmod>2024-06-24T22:15:31+09:00</lastmod>
+    <lastmod>2024-06-24T22:49:34+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/weekly-log/</loc>
-    <lastmod>2024-06-24T22:15:31+09:00</lastmod>
+    <lastmod>2024-06-24T22:49:34+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2024/06/week24-i-never-go-to-places-i-can-always-go-to/</loc>
     <lastmod>2024-06-19T12:11:33+09:00</lastmod>
@@ -108,9 +130,6 @@
   </url><url>
     <loc>http://localhost:1313/posts/2023/12/week52-year-end-tequila/</loc>
     <lastmod>2024-01-04T02:11:30+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/annual-report/</loc>
-    <lastmod>2024-01-04T00:48:19+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2023/12/rewind-2023/</loc>
     <lastmod>2024-01-04T00:48:19+09:00</lastmod>
@@ -283,19 +302,6 @@
     <loc>http://localhost:1313/tags/book/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2023-01-01T13:53:22+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/fr/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/tags/"
-                />
-  </url><url>
     <loc>http://localhost:1313/posts/2022/12/week-50/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
   </url><url>
@@ -303,9 +309,6 @@
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2022/12/2022%E5%B9%B4-%E9%9F%93%E5%9B%BD%E3%81%AE%E3%81%A1%E3%82%87%E3%81%86%E3%81%A9%E3%82%88%E3%81%8B%E3%81%A3%E3%81%9F%E3%82%84%E3%81%A4/</loc>
-    <lastmod>2023-01-01T13:53:22+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/music/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2022/12/week-48/</loc>
