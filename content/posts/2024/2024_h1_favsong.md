@@ -13,7 +13,7 @@ tags:
 一部去年リリースのものもありつつ、だいたいリリース順、のはず。
 
 - PSYCHIC FEVER - Temperture
-- pinponpanpon - ビストロ♡魔法ギャル！
+- pinponpanpon - ビストロ♡魔法料理ギャル！
 - NMIXX - Passionfruit
 - BAD HOP - B2B (feat. Benjazzy & Bonbero)
 - DIAWINGS - Filter
