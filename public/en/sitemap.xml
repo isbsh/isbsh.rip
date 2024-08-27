@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2024-08-19T22:12:52+09:00</lastmod>
+    <lastmod>2024-08-28T02:10:11+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-08-19T22:12:52+09:00</lastmod>
+    <lastmod>2024-08-28T02:10:11+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -28,11 +28,14 @@
                 href="http://localhost:1313/"
                 />
   </url><url>
-    <loc>http://localhost:1313/posts/2024/08/week33-discontinued-emotions/</loc>
-    <lastmod>2024-08-19T22:12:52+09:00</lastmod>
+    <loc>http://localhost:1313/posts/2024/08/week34-knock-nogueira/</loc>
+    <lastmod>2024-08-28T02:10:11+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/weekly-log/</loc>
-    <lastmod>2024-08-19T22:12:52+09:00</lastmod>
+    <lastmod>2024-08-28T02:10:11+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/2024/08/week33-discontinued-emotions/</loc>
+    <lastmod>2024-08-19T22:16:51+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2024/08/week32-a-drunk-takes-a-glass-home-from-neptune/</loc>
     <lastmod>2024-08-14T01:46:11+09:00</lastmod>
