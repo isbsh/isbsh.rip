@@ -2,17 +2,93 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on isbsh</title>
-    <link>http://localhost:8282/posts/</link>
+    <link>http://localhost:4680/posts/</link>
     <description>Recent content in Posts on isbsh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 13 Feb 2018 12:21:57 -0500</lastBuildDate><atom:link href="http://localhost:8282/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 13 Feb 2018 12:21:57 -0500</lastBuildDate><atom:link href="http://localhost:4680/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Week38 : Paying Google to &#39;escape&#39; Google</title>
+      <link>http://localhost:4680/posts/2024/09/week38-paying-google-to-escape-google/</link>
+      <pubDate>Mon, 23 Sep 2024 23:09:53 +0900</pubDate>
+      
+      <guid>http://localhost:4680/posts/2024/09/week38-paying-google-to-escape-google/</guid>
+      <description>&lt;p&gt;2024/9/16~22。&lt;br&gt;
+年イチひくかひかないかの風邪を引いた週。仕事が無くて良かった。&lt;/p&gt;</description>
+      <content:encoded>
+              <![CDATA[
+              <p>2024/9/16~22。<br>
+年イチひくかひかないかの風邪を引いた週。仕事が無くて良かった。</p>
+<h2 id="のどが痛い">のどが痛い</h2>
+<p>火曜水曜あたりからなんかのどが軽くイガイガするなと思っていたら、木曜の朝に目が覚めるとめっきりひどく、唾などを飲み込もうとする度にめっちゃ痛いみたいな状態になってしまい、今も完治はしておらずまあまあつらい、というかだるい。</p>
+<p>経験上1週間も外を出歩かずに静かにしてれば治るかなと思ったものの、これを書いてる週末こそ涼しくはなったとは言え、まだまだ暑い日もあった発症したてのこの頃は、ただでさえちょっと寝苦しいのに加えて、唾を飲み込むのにもいちいち意識的にならざるをえないとなると、わりかし深刻な入眠障害になっていたので、少しでも楽になりたい気持ちでさっさと近所の病院へ行く事にした。</p>
+<p>コロナの線もあるのだろうかとは思っていたが、とりあえず発熱や倦怠感はないということでそっちの検査はせずに溶連菌の検査だけしてもらうと、そこではマイナスの判定。<br>
+となるとコロナの可能性もありそうだし、そっちの検査もしてくんないかなと薄く思ったのだけど、「熱が出たりひどくなったらまた来て頂戴」とのことで、抗生物質などを何種類か処方されて終わった。</p>
+<p>まあコロナと言われたところで、普通に風邪引いた時だって周りへうつさないように極力ひとと接触しないようなケアはするようになってしまっている昨今、それ以上のことを何か厳しくするわけでもないのだけどちょっとモヤモヤする。</p>
+<p>ちなみに今回は、普段何かあった時に訪れる近所の内科じゃなくて、なんとなく少しだけ離れたところにある耳鼻咽喉科に診てもらったのだけど、内科の方の待合室が大体年齢層高めなのに比べると、恐らく自分よりも若いであろう女性が子連れで何組も来ていたりとだいぶ様子が違っていて、2つの病院がそこまで離れている訳でもなければ、特別設備や内観に差があるわけでもないのにこんなに違うのかと思ったりもした。</p>
+<h2 id="pixel8a--grapheneos">Pixel8a + GrapheneOS</h2>
+<p>3年弱使ってきた Pixel4a もバッテリーの持ちがだいぶ怪しくなってきた、なんならうっすら膨張してる雰囲気もある他、インストールしていたカスタムROMの /e/OS もこのデバイス向けのアップデートはずいぶん前から来なくなっていたりもしていて、その辺もいい加減まずかろうし、ということで Pixel8a を購入した。</p>
+<p>自分は最早電話でやりたい事も全然なくて、通話とメールと Slack と Mastodon、あとは地図とブラウザが見れれば十分になってしまっていて、そんなものに定価で ¥70,000 強もするデバイスを買うのは嫌だし、なんなら Nothing の安いモデルとかの方がブツとして面白そうだなと思ったりもしたのだけど、自分は生活の中で可能な範囲でだけビッグテックの監視を逃れたいという生きる上でのルール（ゲーム）のようなものを課しているので、その為に一番手っ取り早くてサポートも確実なものとなると、Pixel シリーズしか選択肢がないのが現状。 Google が嫌で逃れるために Google に金を払って端末を買っているアホな状況ではあるのだけどこれはもう仕方がない。</p>
+<p>ROM は /e/OSは先に書いた通りサポートも滞ってる雰囲気なのでちょっともういいかなと思い、Calyx OS と迷って GrapheneOS をインストールした。</p>
+<p>この手のプライバシー重視系のカスタムROMだと基本完全に Google の関わるものを排除するか、microG って最低限の バックグラウンドで動くGoogleサービスだけインストールするのがよくあるのだけど（/e/OS とか Calyx もこれ）、Graphene はメインプロファイルとは別に Google 用のプロファイルを作って、Google サービスが必要な時だけそっちを使うみたいな感じの仕組み、のはず。らしい。あんまりよくわかってないけど。</p>
+<p>Android で root 取ってたりすると、銀行系のアプリなんかは動かないことが大半なのに、Graphene だとそれも動いたのでとりあえずまあいいかなと思っている。</p>
+<ul>
+<li><a href="https://grapheneos.org/">GrapheneOS: the private and secure mobile OS</a></li>
+<li><a href="https://fp.no-sheep.org/should-use-grapehene-or-calyx">GrapheneOSと他カスタムROMの違い（CalyxOSを例に） – スマフォの監視を拒否する</a></li>
+</ul>
+<h2 id="読みおわった本">読みおわった本</h2>
+<ul>
+<li>『がっこうはじごく』堀静香</li>
+<li>『税という社会の仕組み』諸富徹</li>
+</ul>
+<h2 id="観た映画">観た映画</h2>
+<ul>
+<li>『ビリーブ 未来への大逆転』</li>
+<li>『ザ・クラフト』</li>
+<li>『ザ・クラフト : レガシー』</li>
+<li>『グッドバイ、バッドマガジンズ』</li>
+</ul>
+<p>『ロムルス』でケイリー・スピーニーええやんという発作が来たので、彼女の出演作を後追いしてみているところ。オリジナルの『ザ・クラフト』はその予習的な。</p>
+<p>『ビリーブ』はルース・ベイダー・ギンズバーグの伝記映画でオーソドックスな良い話のきれいにまとまった映画だった。今作におけるスピーニーはルースの娘ジェーン役で、反抗期かと思ったら母親以上にリベラルな活動に前のめりになって心配されたり、母とやたらと険悪な雰囲気で言い合いをしていると思えば、『アラバマ物語』での弁護士の描かれ方についてのガチ討論だったり、普通のティーンではない面白い役どころで良かった。</p>
+<p>『～ : レガシー』はリブートと言いつつ続編でしたっていうあれだったのだけど、その前作からの繋がりの立て付けもめちゃくちゃ大雑把だったりなど、いろいろガバガバした映画で途中からあきれて笑いが漏れるような映画でずっこけた。</p>
+<p>映画を観ながら、今の時代にスクールカーストの下層にいる学生というキャラクターを作ろうとすると、やっぱりいろんな要素を入れなければいけないのだろうか…その上でシスターフッドも壊したくないとかあったのだろうか…などといろんな想像を想像してしまう。そうやってあれもこれも欲張った結果、最終的に主人公の継父を演じるデイヴィッド・ドゥカヴニーが魔女ハンターになって主人公たちの前に立ちはだかるという謎のストーリーが出来上がってしまったのを見てしまうと、オリジナルくらいシンプルで良かったのにね…と思うのも仕方ないというか。</p>
+<p>ちなみに今作におけるスピーニーは主人公の黒魔術にはまる女学生4人組の内のひとりで、映画の出来は置いといてベリーショートのヘアスタイルがめちゃかわいかった。</p>
+<p>今度早稲田松竹で最近の出演作であるソフィア・コッポラの『プリシラ』をやるらしく観に行くつおり。</p>
+<p>『グッドバイ、バッドマガジンズ』は杏花さん主演による、潰れ行くコンビニ向けエロ本雑誌編集部の話なのだけど、思っていたよりもずっと真面目に今の日本社会に文化を守る余力がないことを語っていて思いがけず面白かった。『I’s』組の中では比較的活動が緩やかめな杏花さんだけど、白石聖さんなんかと比べると、作品規模や役回りは小さいながらもちゃんと作品選んでいるのかも…という印象がある。</p>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/kUH_2yC7EEM?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+
+<h2 id="mma">MMA</h2>
+<p>DEEPのメイン2試合がとても面白かった。福田龍彌も野村駿太もいい選手。特に福田の試合は立ち技のステップとか角度の取り方とか、技術解説を聞きたくなる。</p>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/DCBPzpHodik?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+
+<h2 id="そのほか">そのほか</h2>
+<ul>
+<li>UCI世界選手権TT。前評判通りだった男子はさておき、女子のフォレリングがあわや優勝というくらい速かったのにテンションやや上がり。</li>
+<li>そういえば中指の関節も痛いので整形外科にも行ったけど、こちらは特になにも見当たらず湿布だけもらった。</li>
+<li>『Alien : Isolation』をちょっとずつプレイ中。こわい。</li>
+</ul>
+              ]]>
+      </content:encoded>
+    </item>
+    
     <item>
       <title>Week37 : The solution for a claustrophobic astronaut</title>
-      <link>http://localhost:8282/posts/2024/09/week37-the-solution-for-a-claustrophobic-astronaut/</link>
+      <link>http://localhost:4680/posts/2024/09/week37-the-solution-for-a-claustrophobic-astronaut/</link>
       <pubDate>Mon, 16 Sep 2024 21:55:10 +0900</pubDate>
       
-      <guid>http://localhost:8282/posts/2024/09/week37-the-solution-for-a-claustrophobic-astronaut/</guid>
+      <guid>http://localhost:4680/posts/2024/09/week37-the-solution-for-a-claustrophobic-astronaut/</guid>
       <description>&lt;p&gt;2024/9/9~15。&lt;br&gt;
 暇ができたので映画をいっぱい観た。&lt;/p&gt;</description>
       <content:encoded>
@@ -80,10 +156,10 @@
     
     <item>
       <title>Week36 : Words overtake me, I strive to follow them</title>
-      <link>http://localhost:8282/posts/2024/09/week36-words-overtake-me-i-strive-to-follow-them/</link>
+      <link>http://localhost:4680/posts/2024/09/week36-words-overtake-me-i-strive-to-follow-them/</link>
       <pubDate>Tue, 10 Sep 2024 20:06:21 +0900</pubDate>
       
-      <guid>http://localhost:8282/posts/2024/09/week36-words-overtake-me-i-strive-to-follow-them/</guid>
+      <guid>http://localhost:4680/posts/2024/09/week36-words-overtake-me-i-strive-to-follow-them/</guid>
       <description>&lt;p&gt;2024/9/2~8。&lt;br&gt;
 一瞬涼しくなったのにさあ。&lt;/p&gt;</description>
       <content:encoded>
@@ -158,10 +234,10 @@
     
     <item>
       <title>Week35 : Scratch chance, Words gone past</title>
-      <link>http://localhost:8282/posts/2024/09/week35-scratch-chance-words-gone-past/</link>
+      <link>http://localhost:4680/posts/2024/09/week35-scratch-chance-words-gone-past/</link>
       <pubDate>Tue, 03 Sep 2024 01:11:30 +0900</pubDate>
       
-      <guid>http://localhost:8282/posts/2024/09/week35-scratch-chance-words-gone-past/</guid>
+      <guid>http://localhost:4680/posts/2024/09/week35-scratch-chance-words-gone-past/</guid>
       <description>&lt;p&gt;2024/8/26~9/1。&lt;br&gt;
 相変わらずThe First Descendantばっかりやっています。&lt;/p&gt;</description>
       <content:encoded>
@@ -217,10 +293,10 @@
     
     <item>
       <title>Week34 : Knock &amp; Nogueira</title>
-      <link>http://localhost:8282/posts/2024/08/week34-knock-nogueira/</link>
+      <link>http://localhost:4680/posts/2024/08/week34-knock-nogueira/</link>
       <pubDate>Wed, 28 Aug 2024 02:10:11 +0900</pubDate>
       
-      <guid>http://localhost:8282/posts/2024/08/week34-knock-nogueira/</guid>
+      <guid>http://localhost:4680/posts/2024/08/week34-knock-nogueira/</guid>
       <description>&lt;p&gt;2024/8/19~25。&lt;/p&gt;
 &lt;p&gt;取り立てて書いてないけど、8月も1日雨とかじゃなかったらわりと自転車で恵比寿まで行っています。当然汗だく過ぎるので綿のTシャツは諦めて、すぐ乾きそうな素材のやつで移動して着替える。自分の場合だと、ドライメッシュのは運動してない時になんだか普段よりも暑く感じる気がして苦手なので、ユニクロのエアリズムとかモンベルのウイックロンとかいうのがよい。&lt;/p&gt;</description>
       <content:encoded>
@@ -304,10 +380,10 @@
     
     <item>
       <title>Week33 : Discontinued Emotions</title>
-      <link>http://localhost:8282/posts/2024/08/week33-discontinued-emotions/</link>
+      <link>http://localhost:4680/posts/2024/08/week33-discontinued-emotions/</link>
       <pubDate>Mon, 19 Aug 2024 22:12:52 +0900</pubDate>
       
-      <guid>http://localhost:8282/posts/2024/08/week33-discontinued-emotions/</guid>
+      <guid>http://localhost:4680/posts/2024/08/week33-discontinued-emotions/</guid>
       <description>&lt;p&gt;2024/8/12~18。&lt;/p&gt;
 &lt;p&gt;今週はThe First Descendantばっかりやってただけで特に何もなし。無。しかしこのゲーム、基本やる事は単調でレベルデザインも単純に敵の量が増えて硬くなるだけみたいな感じなので、打開策が見つからなければ飽きる気配も濃厚ではある。&lt;/p&gt;</description>
       <content:encoded>
@@ -361,10 +437,10 @@
     
     <item>
       <title>Week32 : A drunk takes a glass home from Neptune</title>
-      <link>http://localhost:8282/posts/2024/08/week32-a-drunk-takes-a-glass-home-from-neptune/</link>
+      <link>http://localhost:4680/posts/2024/08/week32-a-drunk-takes-a-glass-home-from-neptune/</link>
       <pubDate>Tue, 13 Aug 2024 22:11:59 +0900</pubDate>
       
-      <guid>http://localhost:8282/posts/2024/08/week32-a-drunk-takes-a-glass-home-from-neptune/</guid>
+      <guid>http://localhost:4680/posts/2024/08/week32-a-drunk-takes-a-glass-home-from-neptune/</guid>
       <description>&lt;p&gt;2024/8/5~11。&lt;/p&gt;
 &lt;p&gt;おもむろにやり始めた『The First Descendant』に時間をとられまくっている。オンラインマルチのルートシューターで、言ってもめちゃくちゃ面白い訳ではないのにだらだらやってしまう。対人ではなくCoopのマルチプレイだからいけちゃうガバガバアクション、好きです。&lt;/p&gt;</description>
       <content:encoded>
@@ -455,10 +531,10 @@ src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/18
     
     <item>
       <title>Week31 : Billie Eilish on A Bulldozer</title>
-      <link>http://localhost:8282/posts/2024/08/week31-billie-eilish-on-a-bulldozer/</link>
+      <link>http://localhost:4680/posts/2024/08/week31-billie-eilish-on-a-bulldozer/</link>
       <pubDate>Mon, 05 Aug 2024 23:18:13 +0900</pubDate>
       
-      <guid>http://localhost:8282/posts/2024/08/week31-billie-eilish-on-a-bulldozer/</guid>
+      <guid>http://localhost:4680/posts/2024/08/week31-billie-eilish-on-a-bulldozer/</guid>
       <description>&lt;p&gt;2024/7/29~8/4&lt;br&gt;
 なんか飲んだり飲んだり飲んだりで人と会話する時間の多い週。&lt;/p&gt;
 &lt;p&gt;仕事の方はだいぶ収束しつつあるというか勝ちが見えたので、もうどんな修正指示が降ってこようがメンタルは余裕です。&lt;/p&gt;
@@ -556,10 +632,10 @@ src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/18
     
     <item>
       <title>Week30 : Explode and Die While Ejaculating</title>
-      <link>http://localhost:8282/posts/2024/07/week30-explode-and-die-while-ejaculating/</link>
+      <link>http://localhost:4680/posts/2024/07/week30-explode-and-die-while-ejaculating/</link>
       <pubDate>Tue, 30 Jul 2024 00:09:51 +0900</pubDate>
       
-      <guid>http://localhost:8282/posts/2024/07/week30-explode-and-die-while-ejaculating/</guid>
+      <guid>http://localhost:4680/posts/2024/07/week30-explode-and-die-while-ejaculating/</guid>
       <description>&lt;p&gt;2024/7/22~28。&lt;br&gt;
 自分、暑いのわりと大丈夫なので。じんましんは出るけど。&lt;/p&gt;</description>
       <content:encoded>
@@ -667,10 +743,10 @@ src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/18
     
     <item>
       <title>Week29 : The Best Cycling Era Ever</title>
-      <link>http://localhost:8282/posts/2024/07/week29-the-best-cycling-era-ever/</link>
+      <link>http://localhost:4680/posts/2024/07/week29-the-best-cycling-era-ever/</link>
       <pubDate>Tue, 23 Jul 2024 01:42:18 +0900</pubDate>
       
-      <guid>http://localhost:8282/posts/2024/07/week29-the-best-cycling-era-ever/</guid>
+      <guid>http://localhost:4680/posts/2024/07/week29-the-best-cycling-era-ever/</guid>
       <description>&lt;p&gt;2024/7/15~21。&lt;br&gt;
 ずっとそわそわしてる。&lt;/p&gt;</description>
       <content:encoded>
@@ -743,129 +819,6 @@ src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/18
 <li>ゲリラ雷雨</li>
 <li>バイデン撤退</li>
 <li>神保町シアターで『Lie Lie Lie』観れず</li>
-</ul>
-              ]]>
-      </content:encoded>
-    </item>
-    
-    <item>
-      <title>Week28 : Amatonormativity</title>
-      <link>http://localhost:8282/posts/2024/07/week28-amatonormativity/</link>
-      <pubDate>Mon, 15 Jul 2024 23:13:08 +0900</pubDate>
-      
-      <guid>http://localhost:8282/posts/2024/07/week28-amatonormativity/</guid>
-      <description>&lt;p&gt;2024/7/8~14。&lt;/p&gt;
-&lt;p&gt;
-
-    
-    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/hzTSKpGVW1g?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
-      &gt;&lt;/iframe&gt;
-    &lt;/div&gt;
-&lt;br&gt;
-たまたまテレビで見た竹内涼真さんの出演するビューネのCMがだいぶ奇妙でやばかった。&lt;br&gt;
-ビューにゃん……&lt;/p&gt;</description>
-      <content:encoded>
-              <![CDATA[
-              <p>2024/7/8~14。</p>
-<p>
-
-    
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/hzTSKpGVW1g?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
-      ></iframe>
-    </div>
-<br>
-たまたまテレビで見た竹内涼真さんの出演するビューネのCMがだいぶ奇妙でやばかった。<br>
-ビューにゃん……</p>
-<h2 id="しごと">しごと</h2>
-<p>先週から引き続き過剰に不安を抱えている仕事。</p>
-<p>手を動かしていればまだ気が紛れそうなものだけど、今週の時点で進められるところもそれほどなく、手持無沙汰な感じが不安を加速させてくる。ただ懸案だった点が打ち合わせで解消されたので、それについては一安心。</p>
-<p>来週からいろいろ進み始めると思うのでつつがなく終わらせたい。</p>
-<p>しかしその手持無沙汰な時間を使って進める予定だった別件作業にゴーが出ず、来週並行して進めなきゃなんなくなりそうでまた憂鬱。こっちの気も知らないで進行滞らせてるやつを呪いたくなる。</p>
-<h2 id="今週の読書">今週の読書</h2>
-<ul>
-<li>『ACE アセクシュアルから見たセックスと社会のこと』</li>
-<li>『台湾漫遊鉄道のふたり』</li>
-<li>『カレー移民の謎 日本を制覇する「インネパ」』</li>
-</ul>
-<p>『ACE』は読み終わり。ところどころ原文のせいなのか訳文のせいなのか、読み取り切れなかった部分もあるのだけど、それでも勉強になったというか、言葉に対する向き合い方、ものの見え方が結構変わったり整理されるような体験があってよかった。</p>
-<p>人と人が密接且つ感情的に結びつく時、すべからく恋愛だったりセックスだったりっていう性的な結びつきの関係性であろうという話にされがちだけど、別に強い結びつきなんて性的なものを介さなくても成り立つものであろうし、社会において恋愛やセックスをする事こそが健全で素晴らしいものであると崇め立てる恋愛伴侶規範が内面化されすぎなのではないか、本当の性的な自由とか恋愛的な自由というのは、誰もが自分の意思で性的なものへ向かう事だけではなく、性的なものの圧から自由になるという事も含まれるものなのではないか、みたいな問いかけは有意義なものだと思う。</p>
-<p>『台湾漫遊鉄道のふたり』は読み初めこそ単純なシスターフッドで、だいぶわかりきったテーマのように感じられて「少し退屈かも」と思ったものの、読み進める内に統治してる国の人間とされている側の人間の思いが絡んで面白くなってきた。台湾のいろんな料理が出て来てそれらがどんな料理なのか説明する描写は楽しいのだけど、料理名が何べんも出てくるわりに読み方を記憶できずに「…なんだっけこれ」となりがちで、ハードSFを読んでいるような少しめんどくさい気分になったりもする。</p>
-<p>『カレー移民の謎』は日本におけるネパール人が営むインド料理屋というよく分からないけど標準化されたあれのルーツと仕組みって何なんだというのを追った本。よくよく考えてみればここ数十年の話なので不思議な事ではないんだけど、オリジンのような存在がはっきり存在というか今も生きていて、本人たちの口からどういう経緯でこうなったのかが語られているのが面白い。自分がよくいく恵比寿のボンベイも、あそこはオーナーが日本人だけど、気が付くとあたらしいネパール人スタッフが加入して働いていたりするし、スタッフそれぞれの仕事の向き合い方も様々だなと見ていて思っていたので、そこから彼らのビザとかこれからの事なんかも過ったりする。</p>
-<h2 id="リトルニモ35周年記念上映">リトル・ニモ35周年記念上映</h2>
-<p>不意にTwitterでドリパスの告知を見かけて申し込んでいたので行ってきた。</p>
-<p>『リトル・ニモ』、大学の授業でパイロット版と本編の導入部分だけ観たような記憶があって、本編を通してみるのは初めてだったのだけど、長編の一つの話としてみるとなかなか粗い感じもするけどすごかった。ただやっぱり白眉なのはすでに観ていた導入の部分の、日本とアメリカのアニメーションが融合したようなレイアウトと作画のクオリティが感じられるシーンだなと思う。</p>
-<p>
-
-    
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/NDGlmwHVf1A?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
-      ></iframe>
-    </div>
-<br>
-
-
-    
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/QIS2JhWli_A?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
-      ></iframe>
-    </div>
-</p>
-<p>上映後叶清二さんによる解説が30分ほどあり、この作品が完成に至るまでの紆余曲折や、制作当初に参加していながら離脱した宮﨑駿と高畑勲の後の作品にみられるこの作品の名残りについてなどの話を聞く。</p>
-<h2 id="今週観たドラマ">今週観たドラマ</h2>
-<ul>
-<li>『海のはじまり』</li>
-<li>『家族だから愛したんじゃなくて、愛したのが家族だった』</li>
-</ul>
-<p>なんかよさそうなのをピックアップした結果、重めのテーマのものを並べてしまっていて、もうちょっと軽いのも見た方がいい気がする。</p>
-<p>『海のはじまり』は完全に『silent』の座組のようで、演出的にも似通っているところが多いらしく、失敗したくない制作側のみみっちい思考が透けて見えるのがつらいとは知り合いの弁。</p>
-<p>演出の風間太樹さんはテレ東で放映していた『30歳まで童貞だと魔法使いになれるらしい』と『うきわ』がとても好きだったものの『silent』は見逃していて、幸か不幸かその辺のニュアンスはあまりよくわからないんだけど、それでもちょっとウェットすぎというか、基本的に正しい人しか出てこないあたりにむずむずするような気はしなくもない。別にギミック的な悪い人間を出してほしいなんてことは思わないんだけど、もうちょっと歪な人間がいないと漂白された世界のように感じられることとか、なんかその感じが良くも悪くも今っぽいのかも。</p>
-<p>とは言えおれたちの『I’s』いつき役でおなじみの杏花さんも出ているのでとりあえず最後まで観る。</p>
-<p>『家族だから～』はダウン症の弟と母親の下半身が不自由になってしまった母子家庭の長女が主人公の話で、演出がからっと面白おかしいから観ていられるけどハードな設定のドラマ。自分は母方の叔母がダウン症だったので、自分自身が100%他人事ではないというレベルで捉えられているわけではないが、母が子どもの頃とかどうだったのだろうか、とか、叔母の晩年には祖母も癌で入院する事が増え祖父も認知症が進むしで主に介護をしていた叔父の苦労ってもっと自分も負担すべきだったはずなのに……みたいな事を観ながらどうしても考えてしまい演出やコミカルな芝居にヘラヘラと観つつも苦しくなってしまう。</p>
-<h2 id="今週読んだ記事">今週読んだ記事</h2>
-<ul>
-<li><a href="https://news.yahoo.co.jp/expert/articles/6554c6db7390cadd8c6a43fabaeaac2f0931d674">[コラム] ‘三たび小池百合子’で失われる朝鮮人虐殺の記憶（徐台教） - エキスパート - Yahoo!ニュース</a></li>
-<li><a href="https://x.com/ryuryukyu/status/1810554803262746707">琉牛牛 on X: &ldquo;石丸から学ぶものは何もないよ。”民意”を盾に合意形成を無視した乱暴な”改革”を進めようとし、当然、合意形成なく物事は進まず、結果的に分断だけを残して去っていく。ただ、決められる政治という独断専行、合意形成無視を求める特定の層はそういう行為に喜ぶ。こんなもん今まで散々見てきたことじゃん&rdquo; / X</a></li>
-<li><a href="https://courrier.jp/news/archives/369641/">ロシアの戦時経済を支える「ルーブルの守護神」の中銀総裁とは何者か | クーリエ・ジャポン</a></li>
-<li><a href="https://digital.asahi.com/articles/ASS782RGWS78UTFK00GM.html?comment_id=26708&amp;iref=comment_lp_readmore#expertsComments">「自分たちはもう通用しないのか」　蓮舫氏惨敗余波、幹部の責任論も [東京都知事選2024] [立憲] [共産]：朝日新聞デジタル</a>
-<ul>
-<li>小熊英二さんのコメントプラス</li>
-</ul>
-</li>
-<li><a href="https://digital.asahi.com/articles/ASS7D2HZNS7DUTFK01QM.html">都知事選2位の石丸氏、なぜ「受け皿」に？　選対事務局長が語る理由 [東京都知事選2024]：朝日新聞デジタル</a></li>
-</ul>
-<h2 id="音楽">音楽</h2>
-<p>
-
-    
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/NHYKVZyDkSo?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
-      ></iframe>
-    </div>
-<br>
-
-
-    
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/mIpkFusCmis?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
-      ></iframe>
-    </div>
-<br>
-
-
-    
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/_jh4jYAwiZg?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
-      ></iframe>
-    </div>
-</p>
-<h2 id="そのほか">そのほか</h2>
-<ul>
-<li>Marks&amp;Webのアフターサンジェルを購入、めっちゃすーすーする</li>
-<li>BlueLugでAUSTERE MANUFACTURINGのストラップを購入</li>
-<li>電力会社をオクトパスエナジーに変更</li>
-<li>ツールドフランスは2週目、エモかった先週から一転ポガチャルとヴィンゲゴーの総合争いによって平坦ステージですらみんな消耗する異常事態に</li>
 </ul>
               ]]>
       </content:encoded>

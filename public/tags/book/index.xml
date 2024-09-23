@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Book on isbsh</title>
-    <link>http://localhost:8282/tags/book/</link>
+    <link>http://localhost:4680/tags/book/</link>
     <description>Recent content in Book on isbsh</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 01 Jan 2023 13:53:22 +0900</lastBuildDate>
-    <atom:link href="http://localhost:8282/tags/book/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:4680/tags/book/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2022年 読んだ本</title>
-      <link>http://localhost:8282/posts/2022/12/2022%E5%B9%B4-%E8%AA%AD%E3%82%93%E3%81%A0%E6%9C%AC/</link>
+      <link>http://localhost:4680/posts/2022/12/2022%E5%B9%B4-%E8%AA%AD%E3%82%93%E3%81%A0%E6%9C%AC/</link>
       <pubDate>Thu, 22 Dec 2022 01:49:02 +0900</pubDate>
-      <guid>http://localhost:8282/posts/2022/12/2022%E5%B9%B4-%E8%AA%AD%E3%82%93%E3%81%A0%E6%9C%AC/</guid>
+      <guid>http://localhost:4680/posts/2022/12/2022%E5%B9%B4-%E8%AA%AD%E3%82%93%E3%81%A0%E6%9C%AC/</guid>
       <description>&lt;p&gt;これを書いている12月21日の時点で今年は37冊本を読んだらしい。加えて今読書中のものが2冊あるので、それが無事年内読み終わればという見込みで39冊。よく読むひとからしたら大した冊数でもないと思うけど、本を読むのが遅い自分としてはまあまあそこそこ読んだ方なのではないか。&lt;/p&gt;&#xA;&lt;p&gt;なんて、その手の量的な話はあまり意味がないので多かろうが少なかろうがよいとして、それよりも問題なのは読んだそばから細かい内容がすっぽ抜けてく質的な部分の方だったりするわけだけど、そんな自分でも読んで良かったなという本があるにはあるので、そういうものまで忘れてしまわないように書き留めておく。&lt;/p&gt;</description>
     </item>
   </channel>
