@@ -2,81 +2,81 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>isbsh</title>
-    <link>http://localhost:4680/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on isbsh</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 23 Sep 2024 23:09:53 +0900</lastBuildDate>
-    <atom:link href="http://localhost:4680/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 30 Sep 2024 21:57:06 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Week39 : Unplanned Stupid Attack</title>
+      <link>http://localhost:1313/posts/2024/09/week39-unplanned-stupid-attack/</link>
+      <pubDate>Mon, 30 Sep 2024 21:57:06 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2024/09/week39-unplanned-stupid-attack/</guid>
+      <description>&lt;p&gt;2024/9/23~29。&lt;/p&gt;&#xA;&lt;p&gt;先週酷かったのどの痛みこそだいぶおさまったものの、うっすら風邪っぽい状態は引き摺ってどこかボーっとしてた週。&lt;/p&gt;&#xA;&lt;p&gt;またひとつ年も取ったりもしていて、風邪自体について回復スピードこそ昔と比べて遅くなったという訳でもないと思っているけど、手指や脚の関節とか日常無意識に酷使したりダメージを与えているようなところについては確実に傷みやすくなっているのは自覚しているので、あんまり不用意に調子を崩さないようにしていきたいところ。&lt;/p&gt;&#xA;&lt;p&gt;なんつって仕事を頑張り過ぎてるなんてことは全くなく、今現在仕事もほぼほぼ休みで、ちゃんと休まねばというよりは弛緩し切って不摂生に偏らないようにせんと…という感じ。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Week38 : Paying Google to &#39;escape&#39; Google</title>
-      <link>http://localhost:4680/posts/2024/09/week38-paying-google-to-escape-google/</link>
+      <link>http://localhost:1313/posts/2024/09/week38-paying-google-to-escape-google/</link>
       <pubDate>Mon, 23 Sep 2024 23:09:53 +0900</pubDate>
-      <guid>http://localhost:4680/posts/2024/09/week38-paying-google-to-escape-google/</guid>
+      <guid>http://localhost:1313/posts/2024/09/week38-paying-google-to-escape-google/</guid>
       <description>&lt;p&gt;2024/9/16~22。&lt;br&gt;&#xA;年イチひくかひかないかの風邪を引いた週。仕事が無くて良かった。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Week37 : The solution for a claustrophobic astronaut</title>
-      <link>http://localhost:4680/posts/2024/09/week37-the-solution-for-a-claustrophobic-astronaut/</link>
+      <link>http://localhost:1313/posts/2024/09/week37-the-solution-for-a-claustrophobic-astronaut/</link>
       <pubDate>Mon, 16 Sep 2024 21:55:10 +0900</pubDate>
-      <guid>http://localhost:4680/posts/2024/09/week37-the-solution-for-a-claustrophobic-astronaut/</guid>
+      <guid>http://localhost:1313/posts/2024/09/week37-the-solution-for-a-claustrophobic-astronaut/</guid>
       <description>&lt;p&gt;2024/9/9~15。&lt;br&gt;&#xA;暇ができたので映画をいっぱい観た。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Week36 : Words overtake me, I strive to follow them</title>
-      <link>http://localhost:4680/posts/2024/09/week36-words-overtake-me-i-strive-to-follow-them/</link>
+      <link>http://localhost:1313/posts/2024/09/week36-words-overtake-me-i-strive-to-follow-them/</link>
       <pubDate>Tue, 10 Sep 2024 20:06:21 +0900</pubDate>
-      <guid>http://localhost:4680/posts/2024/09/week36-words-overtake-me-i-strive-to-follow-them/</guid>
+      <guid>http://localhost:1313/posts/2024/09/week36-words-overtake-me-i-strive-to-follow-them/</guid>
       <description>&lt;p&gt;2024/9/2~8。&lt;br&gt;&#xA;一瞬涼しくなったのにさあ。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Week35 : Scratch chance, Words gone past</title>
-      <link>http://localhost:4680/posts/2024/09/week35-scratch-chance-words-gone-past/</link>
+      <link>http://localhost:1313/posts/2024/09/week35-scratch-chance-words-gone-past/</link>
       <pubDate>Tue, 03 Sep 2024 01:11:30 +0900</pubDate>
-      <guid>http://localhost:4680/posts/2024/09/week35-scratch-chance-words-gone-past/</guid>
+      <guid>http://localhost:1313/posts/2024/09/week35-scratch-chance-words-gone-past/</guid>
       <description>&lt;p&gt;2024/8/26~9/1。&lt;br&gt;&#xA;相変わらずThe First Descendantばっかりやっています。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Week34 : Knock &amp; Nogueira</title>
-      <link>http://localhost:4680/posts/2024/08/week34-knock-nogueira/</link>
+      <link>http://localhost:1313/posts/2024/08/week34-knock-nogueira/</link>
       <pubDate>Wed, 28 Aug 2024 02:10:11 +0900</pubDate>
-      <guid>http://localhost:4680/posts/2024/08/week34-knock-nogueira/</guid>
+      <guid>http://localhost:1313/posts/2024/08/week34-knock-nogueira/</guid>
       <description>&lt;p&gt;2024/8/19~25。&lt;/p&gt;&#xA;&lt;p&gt;取り立てて書いてないけど、8月も1日雨とかじゃなかったらわりと自転車で恵比寿まで行っています。当然汗だく過ぎるので綿のTシャツは諦めて、すぐ乾きそうな素材のやつで移動して着替える。自分の場合だと、ドライメッシュのは運動してない時になんだか普段よりも暑く感じる気がして苦手なので、ユニクロのエアリズムとかモンベルのウイックロンとかいうのがよい。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Week33 : Discontinued Emotions</title>
-      <link>http://localhost:4680/posts/2024/08/week33-discontinued-emotions/</link>
+      <link>http://localhost:1313/posts/2024/08/week33-discontinued-emotions/</link>
       <pubDate>Mon, 19 Aug 2024 22:12:52 +0900</pubDate>
-      <guid>http://localhost:4680/posts/2024/08/week33-discontinued-emotions/</guid>
+      <guid>http://localhost:1313/posts/2024/08/week33-discontinued-emotions/</guid>
       <description>&lt;p&gt;2024/8/12~18。&lt;/p&gt;&#xA;&lt;p&gt;今週はThe First Descendantばっかりやってただけで特に何もなし。無。しかしこのゲーム、基本やる事は単調でレベルデザインも単純に敵の量が増えて硬くなるだけみたいな感じなので、打開策が見つからなければ飽きる気配も濃厚ではある。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Week32 : A drunk takes a glass home from Neptune</title>
-      <link>http://localhost:4680/posts/2024/08/week32-a-drunk-takes-a-glass-home-from-neptune/</link>
+      <link>http://localhost:1313/posts/2024/08/week32-a-drunk-takes-a-glass-home-from-neptune/</link>
       <pubDate>Tue, 13 Aug 2024 22:11:59 +0900</pubDate>
-      <guid>http://localhost:4680/posts/2024/08/week32-a-drunk-takes-a-glass-home-from-neptune/</guid>
+      <guid>http://localhost:1313/posts/2024/08/week32-a-drunk-takes-a-glass-home-from-neptune/</guid>
       <description>&lt;p&gt;2024/8/5~11。&lt;/p&gt;&#xA;&lt;p&gt;おもむろにやり始めた『The First Descendant』に時間をとられまくっている。オンラインマルチのルートシューターで、言ってもめちゃくちゃ面白い訳ではないのにだらだらやってしまう。対人ではなくCoopのマルチプレイだからいけちゃうガバガバアクション、好きです。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Week31 : Billie Eilish on A Bulldozer</title>
-      <link>http://localhost:4680/posts/2024/08/week31-billie-eilish-on-a-bulldozer/</link>
+      <link>http://localhost:1313/posts/2024/08/week31-billie-eilish-on-a-bulldozer/</link>
       <pubDate>Mon, 05 Aug 2024 23:18:13 +0900</pubDate>
-      <guid>http://localhost:4680/posts/2024/08/week31-billie-eilish-on-a-bulldozer/</guid>
+      <guid>http://localhost:1313/posts/2024/08/week31-billie-eilish-on-a-bulldozer/</guid>
       <description>&lt;p&gt;2024/7/29~8/4&lt;br&gt;&#xA;なんか飲んだり飲んだり飲んだりで人と会話する時間の多い週。&lt;/p&gt;&#xA;&lt;p&gt;仕事の方はだいぶ収束しつつあるというか勝ちが見えたので、もうどんな修正指示が降ってこようがメンタルは余裕です。&lt;/p&gt;&#xA;&lt;p&gt;その一方で平出和也さんと中島健郎さんがK2で滑落、救助活動も打ち切りになってしまったのが悲しい。そんなに活動をつぶさに追っていたという訳でもないんだけど、同時代に現在進行形ですごい挑戦をしている登山家の1人としてメディアを通して姿を見てきたからなのか寂しい気持ちにもなる。合掌。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Week30 : Explode and Die While Ejaculating</title>
-      <link>http://localhost:4680/posts/2024/07/week30-explode-and-die-while-ejaculating/</link>
+      <link>http://localhost:1313/posts/2024/07/week30-explode-and-die-while-ejaculating/</link>
       <pubDate>Tue, 30 Jul 2024 00:09:51 +0900</pubDate>
-      <guid>http://localhost:4680/posts/2024/07/week30-explode-and-die-while-ejaculating/</guid>
+      <guid>http://localhost:1313/posts/2024/07/week30-explode-and-die-while-ejaculating/</guid>
       <description>&lt;p&gt;2024/7/22~28。&lt;br&gt;&#xA;自分、暑いのわりと大丈夫なので。じんましんは出るけど。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Week29 : The Best Cycling Era Ever</title>
-      <link>http://localhost:4680/posts/2024/07/week29-the-best-cycling-era-ever/</link>
-      <pubDate>Tue, 23 Jul 2024 01:42:18 +0900</pubDate>
-      <guid>http://localhost:4680/posts/2024/07/week29-the-best-cycling-era-ever/</guid>
-      <description>&lt;p&gt;2024/7/15~21。&lt;br&gt;&#xA;ずっとそわそわしてる。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
