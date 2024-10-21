@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2024-10-14T22:23:57+09:00</lastmod>
+    <lastmod>2024-10-21T21:14:54+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-10-14T22:23:57+09:00</lastmod>
+    <lastmod>2024-10-21T21:14:54+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -28,11 +28,14 @@
                 href="http://localhost:1313/"
                 />
   </url><url>
-    <loc>http://localhost:1313/posts/2024/10/week41-instant-classic/</loc>
-    <lastmod>2024-10-14T22:23:57+09:00</lastmod>
+    <loc>http://localhost:1313/posts/2024/10/week42-where-is-garden-city/</loc>
+    <lastmod>2024-10-21T21:14:54+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/weekly-log/</loc>
-    <lastmod>2024-10-14T22:23:57+09:00</lastmod>
+    <lastmod>2024-10-21T21:14:54+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/2024/10/week41-instant-classic/</loc>
+    <lastmod>2024-10-14T22:30:36+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2024/10/week40-tennis-is-a-relationship/</loc>
     <lastmod>2024-10-07T22:18:26+09:00</lastmod>
