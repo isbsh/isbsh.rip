@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2024-12-23T23:07:48+09:00</lastmod>
+    <lastmod>2024-12-29T22:47:48+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-12-23T23:07:48+09:00</lastmod>
+    <lastmod>2024-12-29T22:47:48+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -28,11 +28,14 @@
                 href="http://localhost:1313/"
                 />
   </url><url>
-    <loc>http://localhost:1313/posts/2024/12/week51-circle-blocker/</loc>
-    <lastmod>2024-12-23T23:07:48+09:00</lastmod>
+    <loc>http://localhost:1313/posts/2024/12/week52-a-person-more-important-to-goriki-than-friends/</loc>
+    <lastmod>2024-12-29T22:47:48+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/weekly-log/</loc>
-    <lastmod>2024-12-23T23:07:48+09:00</lastmod>
+    <lastmod>2024-12-29T22:47:48+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/2024/12/week51-circle-blocker/</loc>
+    <lastmod>2024-12-23T23:45:06+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2024/12/week50-tgagwcaga/</loc>
     <lastmod>2024-12-17T23:28:12+09:00</lastmod>
@@ -113,7 +116,7 @@
     <lastmod>2024-07-01T12:27:05+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/annual-report/</loc>
-    <lastmod>2024-07-01T12:27:05+09:00</lastmod>
+    <lastmod>2024-12-24T00:14:40+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/music/</loc>
     <lastmod>2024-07-01T12:27:05+09:00</lastmod>
@@ -210,7 +213,7 @@
     <lastmod>2024-01-04T02:11:30+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2023/12/rewind-2023/</loc>
-    <lastmod>2024-01-04T00:48:19+09:00</lastmod>
+    <lastmod>2024-12-24T00:14:40+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2023/12/week51-im-really-pooping/</loc>
     <lastmod>2023-12-26T01:40:30+09:00</lastmod>
