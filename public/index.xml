@@ -6,8 +6,15 @@
     <description>Recent content on isbsh</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 29 Dec 2024 22:47:48 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 31 Dec 2024 21:13:39 +0900</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rewind 2024</title>
+      <link>http://localhost:1313/posts/2024/12/rewind-2024/</link>
+      <pubDate>Tue, 31 Dec 2024 21:13:39 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2024/12/rewind-2024/</guid>
+      <description>&lt;p&gt;2024年1月1日から12月31日までのあれこれ。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Week52 : A person more important to Goriki than friends</title>
       <link>http://localhost:1313/posts/2024/12/week52-a-person-more-important-to-goriki-than-friends/</link>
@@ -70,13 +77,6 @@
       <pubDate>Tue, 05 Nov 2024 01:15:33 +0900</pubDate>
       <guid>http://localhost:1313/posts/2024/11/week44-anti-chapped-skin/</guid>
       <description>&lt;p&gt;2024/10/28~11/3。&lt;br&gt;&#xA;大したクオリティーのものを求められているわけではないんだけど、突貫的に間に合わせないとならない作業があり、わりかししっかり仕事をさせられていた週。&lt;/p&gt;&#xA;&#xD;&#xA;    &lt;img src=&#34;http://localhost:1313/images/images/241030.webp&#34;  class=&#34;left&#34;  /&gt;</description>
-    </item>
-    <item>
-      <title>Week43 : Getting Tired of Something</title>
-      <link>http://localhost:1313/posts/2024/10/week43-getting-tired-of-something/</link>
-      <pubDate>Tue, 29 Oct 2024 22:15:52 +0900</pubDate>
-      <guid>http://localhost:1313/posts/2024/10/week43-getting-tired-of-something/</guid>
-      <description>2024/10/21~27。 いつも選挙がある時には投票行きましょう的なノリで VOTE! みたいな絵を描いたりするんだけど、よく考えてみるとMastodonで自分をフォローしているような人はもれなく自分から行きそうだし別に意味ないじゃんみたいな気分になって描かなかった。ただなにか描くきっかけ</description>
     </item>
   </channel>
 </rss>

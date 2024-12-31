@@ -6,20 +6,20 @@
     <description>Recent content in Categories on isbsh</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 29 Dec 2024 22:47:48 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 31 Dec 2024 21:13:39 +0900</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Weekly Log</title>
-      <link>http://localhost:1313/categories/weekly-log/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/weekly-log/</guid>
-      <description></description>
-    </item>
     <item>
       <title>Annual Report</title>
       <link>http://localhost:1313/categories/annual-report/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/categories/annual-report/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Weekly Log</title>
+      <link>http://localhost:1313/categories/weekly-log/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/weekly-log/</guid>
       <description></description>
     </item>
   </channel>
