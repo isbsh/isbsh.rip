@@ -6,8 +6,15 @@
     <description>Recent content in Weekly Log on isbsh</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 29 Dec 2024 23:01:31 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 06 Jan 2025 21:56:55 +0900</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/weekly-log/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Week01 : 5 Damn Years Too Late</title>
+      <link>http://localhost:1313/posts/2025/01/week01-5-damn-years-too-late/</link>
+      <pubDate>Mon, 06 Jan 2025 21:56:55 +0900</pubDate>
+      <guid>http://localhost:1313/posts/2025/01/week01-5-damn-years-too-late/</guid>
+      <description>2024.12.30~2025.01.05。 あけましておめでとうございます。 宇内ラストダンス 30日、TBSラジオのアフター6ジャンクション2の年内最終放送。この日でアナウンサーの宇内さんが退社（正確には春まで有休消化）とのことで、他のパートナー陣も交えた放送でなんだか楽しいやら寂</description>
+    </item>
     <item>
       <title>Week52 : A person more important to Goriki than friends</title>
       <link>http://localhost:1313/posts/2024/12/week52-a-person-more-important-to-goriki-than-friends/</link>
@@ -70,13 +77,6 @@
       <pubDate>Tue, 05 Nov 2024 01:15:33 +0900</pubDate>
       <guid>http://localhost:1313/posts/2024/11/week44-anti-chapped-skin/</guid>
       <description>&lt;p&gt;2024/10/28~11/3。&lt;br&gt;&#xA;大したクオリティーのものを求められているわけではないんだけど、突貫的に間に合わせないとならない作業があり、わりかししっかり仕事をさせられていた週。&lt;/p&gt;&#xA;&#xD;&#xA;    &lt;img src=&#34;http://localhost:1313/images/images/241030.webp&#34;  class=&#34;left&#34;  /&gt;</description>
-    </item>
-    <item>
-      <title>Week43 : Getting Tired of Something</title>
-      <link>http://localhost:1313/posts/2024/10/week43-getting-tired-of-something/</link>
-      <pubDate>Tue, 29 Oct 2024 22:15:52 +0900</pubDate>
-      <guid>http://localhost:1313/posts/2024/10/week43-getting-tired-of-something/</guid>
-      <description>2024/10/21~27。 いつも選挙がある時には投票行きましょう的なノリで VOTE! みたいな絵を描いたりするんだけど、よく考えてみるとMastodonで自分をフォローしているような人はもれなく自分から行きそうだし別に意味ないじゃんみたいな気分になって描かなかった。ただなにか描くきっかけ</description>
     </item>
   </channel>
 </rss>

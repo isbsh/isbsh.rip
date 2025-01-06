@@ -2,11 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/categories/annual-report/</loc>
-    <lastmod>2024-12-31T21:13:39+09:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2024-12-31T21:13:39+09:00</lastmod>
+    <lastmod>2025-01-06T21:56:55+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -19,7 +16,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-12-31T21:13:39+09:00</lastmod>
+    <lastmod>2025-01-06T21:56:55+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -31,20 +28,26 @@
                 href="http://localhost:1313/"
                 />
   </url><url>
-    <loc>http://localhost:1313/posts/2024/12/rewind-2024/</loc>
-    <lastmod>2024-12-31T21:13:39+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/2024/12/week52-a-person-more-important-to-goriki-than-friends/</loc>
-    <lastmod>2024-12-29T23:01:31+09:00</lastmod>
+    <loc>http://localhost:1313/posts/2025/01/week01-5-damn-years-too-late/</loc>
+    <lastmod>2025-01-06T21:56:55+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/weekly-log/</loc>
+    <lastmod>2025-01-06T21:56:55+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/annual-report/</loc>
+    <lastmod>2024-12-31T21:42:22+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/2024/12/rewind-2024/</loc>
+    <lastmod>2024-12-31T21:42:22+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/2024/12/week52-a-person-more-important-to-goriki-than-friends/</loc>
     <lastmod>2024-12-29T23:01:31+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2024/12/week51-circle-blocker/</loc>
     <lastmod>2024-12-23T23:45:06+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2024/12/week50-tgagwcaga/</loc>
-    <lastmod>2024-12-17T23:28:12+09:00</lastmod>
+    <lastmod>2024-12-31T21:42:22+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2024/12/week49-we-cannot-become-ourselves-by-ourselves-alone/</loc>
     <lastmod>2024-12-10T00:45:39+09:00</lastmod>
