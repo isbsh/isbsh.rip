@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2025-01-29T00:18:22+09:00</lastmod>
+    <lastmod>2025-02-05T13:06:26+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-01-29T00:18:22+09:00</lastmod>
+    <lastmod>2025-02-05T13:06:26+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -28,11 +28,14 @@
                 href="http://localhost:1313/"
                 />
   </url><url>
-    <loc>http://localhost:1313/posts/2025/01/week04-hell-is-empty/</loc>
-    <lastmod>2025-01-29T00:18:22+09:00</lastmod>
+    <loc>http://localhost:1313/posts/2025/02/week05-understanding-and-accepting-exist-on-different-layers-too-far-apart./</loc>
+    <lastmod>2025-02-05T13:06:26+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/weekly-log/</loc>
-    <lastmod>2025-01-29T00:18:22+09:00</lastmod>
+    <lastmod>2025-02-05T13:06:26+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/2025/01/week04-hell-is-empty/</loc>
+    <lastmod>2025-01-29T00:36:46+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2025/01/week03-the-truth-of-oinariman/</loc>
     <lastmod>2025-01-20T23:06:52+09:00</lastmod>
