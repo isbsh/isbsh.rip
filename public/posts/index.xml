@@ -8,6 +8,111 @@
     <language>en</language>
     <lastBuildDate>Tue, 13 Feb 2018 12:21:57 -0500</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Week06 : It will be gone someday but not now</title>
+      <link>http://localhost:1313/posts/2025/02/week06-it-will-be-gone-someday-but-not-now/</link>
+      <pubDate>Tue, 11 Feb 2025 13:12:26 +0900</pubDate>
+      
+      <guid>http://localhost:1313/posts/2025/02/week06-it-will-be-gone-someday-but-not-now/</guid>
+      <description>&lt;p&gt;2025.02.3~9。&lt;br&gt;
+トランプのアメリカがガザを領有する発言とか、長引く八潮の道路陥没とかひどい話が今週もいっぱい。&lt;br&gt;
+退勤前の落書きは少しマンネリ化してきた、というか何を描くか考えるに時間かかってしまうことが多いので、途中から1週間出で立ちを固定して見るのはどうかみたいなたてつけを試してみた。&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/images/250207.webp&#34;&gt;
+&lt;/figure&gt;</description>
+      <content:encoded>
+              <![CDATA[
+              <p>2025.02.3~9。<br>
+トランプのアメリカがガザを領有する発言とか、長引く八潮の道路陥没とかひどい話が今週もいっぱい。<br>
+退勤前の落書きは少しマンネリ化してきた、というか何を描くか考えるに時間かかってしまうことが多いので、途中から1週間出で立ちを固定して見るのはどうかみたいなたてつけを試してみた。</p>
+<figure><img src="/images/images/250207.webp">
+</figure>
+
+<h2 id="pixel8aの故障と修理とrom入れ替え">Pixel8aの故障と修理とROM入れ替え</h2>
+<p>去年の9月にPixel 4aから買い替えたPixel 8aがぶっ壊れた。<br>
+土曜の朝に布団の中でPixel 8aをだらだらと弄りながら、心なしか徐々に反応が鈍くなる頻度が増えたな…なんて思っていたらしまいには全く反応しなくなり、初めはフリーズしたのかと思って放置してみるも一向に回復せず。それどころか、徐々に画面の下の方から液晶漏れ的な滲みが拡がり始めてるのに気が付いてようやく事態を把握。</p>
+<p>そこまで荒い使い方はしてないつもりではあったのだけど、よくよく振り返ってみれば床に何度かガツンと落としていたし、その上でスペックの防水性能に甘えてそのまま浴室に持ち込んだりしていたので、思い当たる節がないわけでもない。目視した限りでは目立ったヒビは確認できなかったので、そうした落下でフレームが歪み、スクリーンが浮いた隙間から浸水したりしたのかもな…とかいろいろ原因を推測してはみたものの、なんにせよ勝手に直るような状態ではなさそうなわけで、とにかく修理するなり買い替えるなりしないといけなくなってしまったのだった。</p>
+<p>となれば、買ってそれほど時間も経ってないけどこの機会にCMFのPhone1あたりに買い替えるのもアリなんでは…なんて無闇に散財するチャンスも探ってはみたものの、冷静に自転車も買ったばっかりの今は極力出費を控えたいし、LINEアカウントの引き継ぎだとか2FAの認証アプリなんかもバックアップ出来てないしで、結局銀座のLoft内に入っているiCrackedに持ち込んでその日の内に修理してもらった。</p>
+<p>はじめの見積もりでは、フレームが凹んでるせいで有機ELパネルがきちんとはめられず、パネルに加えてフレームの交換も必要になるかもとのこと。このことによって事前にウェブサイトで確認していた額を大きく超えて、CMF Phone1買うのと大差ないような修理金額を提示され、その場で軽く悩んでしまったのだが、結局先述したようなデータのこともあるしそれでも良いということでそのまま作業してもらった。ただ、作業しながらもしかしたら歪んでる部分を削ればなんとかパネルの交換だけでいけんくなさそう…!という事になり、結果的には元の想定していた金額に収めてもらえてだいぶ助かった。<br>
+ちなみに、修理の際に分解して確認してもらった限りでは内部への浸水の後もはなかったらしく、単純に有機ELの物理的な破損だった模様。外したパネルを見せてもらうと確かにパッキパキに細かい筋が見えて、表面のガラスが割れてなくてもダメージはあるのがわかる。</p>
+<p>そんなわけで突発的に安くない出費が発生して若干テンションは下がりつつも、Pixel 8aの操作が快適になったことは気分がいい。なんて思った勢いで、この際だからOSもなんだかんだ不便の多かったGraphene OSからCalyx OSに書き換えてみることにしてみたのが運の尽きというかなんというか、ここでもトラブルが発生。ROMを書き込む際のブートループから抜け出せなくなったまま原因究明に結構な長時間はまってしまい、最終的に朝の4時近くまでウンウンうなりながら作業する羽目になってしまったのだった。なんとか調べまくって原因が分かったからいいけど、これで文鎮化したままだったら本当にいろいろ悔やみきれないところを我ながらよく粘ったと思う。</p>
+<p>一応何が問題だったのかも書いておくと、AndroidのROMをPCから書き込む際に必要なデータがおさまっているplatform-toolsというファルダをダウンロードしたらそのフォルダのパスを環境変数に追加しておかなければいけないのだけど、以前同じような作業をした時に追加した古いパスが残ったままで今回追加した最新のデータが読み込めていないせいだったのでした。要は古いplatform-toolsフォルダのパスを環境変数から削除したら直ったという話。</p>
+<p>そんなわけで丸一日電話機に振り回されてついてなかったのだけど、いろいろ勉強になったということにしておきます。</p>
+<h2 id="トワイライトウォーリアーズ-決戦九龍城砦">トワイライト・ウォーリアーズ 決戦!九龍城砦</h2>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/FiPMRIrugLo?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+
+<p>観た人たちの間でめちゃめちゃ盛り上がっているのでおなじみの作品をようやく鑑賞。</p>
+<p>のっけから主人公の陳洛軍をシメる龍捲風のアクションのかっこよさとか、信一の速すぎてよく見えないナイフ捌きとパルクール、4人でひとりの人間の手足をもって布みたいに地面に打ち付けまくるっていうアホみたいな暴力がつるべ打ちで楽しい。また城塞の縦にも横にも迷路みたいな構造を利用したアクションもそれだけでドラマチックだったりもする。王九の「なんでこいつがそんなに強いの…?」感とか気功の無敵っぷりは勝ち筋の見えないクソボスみがあってちょっと萎えたけど、ああいう大味、もとい豪快な設定と展開が香港映画のマナーだったなと観ながら思い出して最終的にはゲラゲラ笑って楽しめた。</p>
+<p>その一方で、自分の感覚だとルイス・クーと言ったらかつては今作で言うテレンス・ラウみたいなポジションだった気がするのに今やサモハンと対峙するボスの役がしっくりくるようになっていることだったり、「このうさん臭い長髪オールバックどこかで見たことある気が…」と思ったらリッチー・レンだったり、そうかと思えばアーロン・クォックは全然変わってなかったりなど、自分がジョニートー作品をよく観ていた頃に見まくっていたスター達の今の姿を見てしみじみ。あの頃と比べても香港は酷いことになってしまったけどみんな輝いている。<br>
+また城塞をはじめとする劇中に溢れる失われてしまった香港そのものへのノスタルジーとは別に、かつて香港映画をよく観た今は亡きシネマート六本木やシネマスクエアとうきゅうのことなんかを考えたりして自分なりの香港映画の記憶と重ねてまたしみじみしてしまった。</p>
+<p>とかなんとかノスタルジーが基調ではあるものの、劇中きれいに旧世代の役者たちは下がっていき、最終的には若い人たち、若い役者の映画になるのがよかった。ノスタルジーだけだったら流石にきついと思うので。</p>
+<p>ただ、めちゃめちゃ楽しみながら、かつての香港映画と比べてフレッシュなインパクトがあるのかというとそこまでではない様に自分には思えて、この作品が2025年にファンアート描きまくる層とかにぶっ刺さってるのはちょっと謎というか、昨今のY2Kリバイバルなどにも感じるのと似たむず痒さもなくはなかったりもしている。…なんて新しくファンになって今盛り上がってる人たちに水差すような事を言ってはいけないし、作品そのものは面白かったからどこにも問題ない話ではある。</p>
+<h2 id="遊んだゲーム">遊んだゲーム</h2>
+<ul>
+<li>Monster Hunter Wilds Benchmark &amp; Beta Test</li>
+<li>アレンジャー・ロールパズリングの旅</li>
+</ul>
+<p>モンハン実際やるかはまだ迷い中なんだけど、とりあえずでベンチのチェックとベータをおさわり。ぶっちゃけ動かしててそんなに気持ちよくはなく、アクションもUIも操作が複雑で他のゲームと同じ感覚でプレイしようとすると混乱するので、よくこんなものがこれだけ国民的ゲームタイトルになってるなと思ってしまう。ただ知ってる人の配信を見てる分には楽しいので観るだけになるかも。</p>
+<p>アレンジャーはトータル9.5時間くらいでクリアした。先週間違えて「Cartoのアートワークやったひとが今作のアートも担当してるらしく云々」というような事を書いてしまったけど、正確にはBraidのアートワークをやったデビッド・ヘルマンと、Cartoのライターのニック・サットナーが関わった作品でした。それはともかく面白かった。</p>
+<h2 id="読んだ本と買った本">読んだ本と買った本</h2>
+<ul>
+<li>『暗号の子』宮内悠介</li>
+<li>『わからなくても近くにいてよ』堀静香</li>
+<li>『セックスロボットと人造肉 テクノロジーは性、食、性、死を&quot;征服&quot;できるか』ジェニー・クリーマン</li>
+<li>『ルポ年金官僚』和田泰明</li>
+</ul>
+<p>『暗号の子』を読み終わり。SFというか2024年の私たちの気分、つまりインターネットやテクノロジーに対する絶望感みたいなどんよりしたムードのテキストの作品が並んでいてそれはそれで面白いけどちょっとため息も出てしまう中、最後の収録作である『ペイル・ブルー・ドット』という短編が爽やかで良かった。</p>
+<p>下2冊は買った本。どちらもノンフィクション。</p>
+<h2 id="聴いた曲">聴いた曲</h2>
+<p>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/zFqiZxfH-xE?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+<br>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/Pm0OfrONZgo?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+<br>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/-6-AG-SXrFU?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+<br>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/jTYq4D99B8U?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+<br>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/YEyzvbCGXNc?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+</p>
+              ]]>
+      </content:encoded>
+    </item>
+    
+    <item>
       <title>Week05 : Understanding and Accepting exist on different layers, too far apart.</title>
       <link>http://localhost:1313/posts/2025/02/week05-understanding-and-accepting-exist-on-different-layers-too-far-apart./</link>
       <pubDate>Wed, 05 Feb 2025 13:06:26 +0900</pubDate>
@@ -860,80 +965,6 @@
       ></iframe>
     </div>
 </p>
-              ]]>
-      </content:encoded>
-    </item>
-    
-    <item>
-      <title>Week49 : We cannot become ourselves by ourselves alone</title>
-      <link>http://localhost:1313/posts/2024/12/week49-we-cannot-become-ourselves-by-ourselves-alone/</link>
-      <pubDate>Mon, 09 Dec 2024 23:07:07 +0900</pubDate>
-      
-      <guid>http://localhost:1313/posts/2024/12/week49-we-cannot-become-ourselves-by-ourselves-alone/</guid>
-      <description>&lt;p&gt;2024.12.2~8。世界情勢が激動過ぎ。&lt;/p&gt;
-
-    &lt;img src=&#34;http://localhost:1313/images/images/241205.webp&#34;  class=&#34;left&#34;  /&gt;</description>
-      <content:encoded>
-              <![CDATA[
-              <p>2024.12.2~8。世界情勢が激動過ぎ。</p>
-
-    <img src="/images/images/241205.webp"  class="left"  />
-
-
-<h2 id="今週の時事">今週の時事</h2>
-<ul>
-<li>韓国、ユンソギョル大統領突然深夜に非常戒厳宣布も、国会議員がマッハで解除を議決。勢い弾劾デモがめっちゃ盛り上がるもそっちは否決。</li>
-<li>シリア、反政府勢力の攻勢でアサド政権崩壊。</li>
-<li>中山美穂さんが逝去。</li>
-<li>二階堂瑠美さんがMリーグで四暗刻ツモ。</li>
-</ul>
-<p>韓国（や他の国）の市民運動というか社会参加に対するカジュアルさ（コミットしやすい空気）は羨ましいけど、日本人が「いいよね～」なんて軽々しく言ってはいけないような歴史的経緯もあるのは忘れてはいけないと思う。また瞬間々々の情動的な熱狂に身を任せることに対しては常に冷静でありたいということも改めて思う。</p>
-<p>とはいっても見習っていきたい。弾劾も一度否決されたとは言え、こういうものは生きてる限りというか自分の世代が死んだ後にも残っていくことなわけで粘り強くやらないといけないんだ、ということまで含めて。</p>
-<h2 id="4n忘年会">4N忘年会</h2>
-<p>今年も浜町のレコードコンビニで。しこたま飲んでしっかりイベント中に寝た。</p>
-<p>サカキバラさんが謎のプロフェッショナルのスガシカオの曲とか、ドキュメンタリー番組の曲でつなぎだしたと思ったら松崎ナオの川べりの家をかけたのにぶちあがった。</p>
-
-    <img src="/images/2024/1207_4nb.webp"  class="left"  />
-
-
-<p>BGM係は普段DJしないメンツにやらせるのが恒例になりつつあり、今年はトモゾウさん、るびさん、つださん、ai6さん、しろうさんら（と、もてさんとサカキバラさん）が担当。なお来年は自分に振られる気配が濃厚。なんか初期Boom Boom Satellitesをかける流れになったけど、たぶんかけません。</p>
-<h2 id="ufc310">UFC310</h2>
-<p>メインの朝倉海のデビュー即タイトルショットはまあなんというか普通に足りてない部分があったねという感じで、ヒリヒリするとこまで行く前にバックテイクされて極められてしまった。</p>
-<p>また実力とは違う部分で、どうしても腰の浮いたような雰囲気が伝わってきて（再三飛び膝を放っていたような期待される派手なKOを狙ってしまっていた様子とか）、場に慣らす機会は必要でしたよねと終わってみれば思ってしまう。まあでも自力でこういう機会をセッティングしてこぎ着けたのは、それこそUFCのチャンピオンクラスでもなかなかやれる人間はいないわけで、その事については素直に凄いとしか言えないんだけど、逆にこれからどうやってUFCで積み上げていくのか、わかんない感じではある。</p>
-<p>また今回朝倉海が出るにあたり、UFCの公式のSNSに過去のRIZINでの試合映像（のおいしいとこだけ）が惜しみなく使われまくっていて、中にはもちろんサッカーボールキックとかグラウンドでの膝とかUFCでは見れないラフな攻撃のものなんかもあったりするわけで、朝倉海個人と同じくらい北米MMAのファンに対するRIZINのプロモーションになっていたのが面白かった。</p>
-<p>ていうそんなRIZINへの置き土産も含めて朝倉海は立派だって話になってしまうんだけど、これで勝ってたらさぞかし伝説級の出来事だったんだろうなあ……</p>
-<p>それはそれとして、メインの試合自体はあっさりした内容だったので他の試合の方が内容としては面白かったのだった。特にエフロエフvs.スターリングのMMAグラップリングがっぷり四つの攻防と、ラクモノフvs.ギャリーでのUFCに来てからはあまり見れなかったギャリーの組みでの粘り腰が見られてよかった。なんなら中央アジア勢の圧に為す術なくちんちんにされてしまうのでは…位に低く見積もってしまっていたので全然やれるじゃんといううれしさがあった。</p>
-<h2 id="今週読んだ記事">今週読んだ記事</h2>
-<ul>
-<li><a href="https://mmaplanet.jp/18655">【Special】月刊、良太郎のこの一番：10月 トプリア×ホロウェイ「トプリアの構え、ホロウェイのミス」 | MMAPLANET</a></li>
-<li><a href="https://news.yahoo.co.jp/expert/articles/eb4ac57368e90261e03fedde2fb1a9b3a65f6562">「死ぬ覚悟で来た」…尹錫悦大統領の‘非常戒厳宣布’に抗った韓国市民、背景に民主主義の歴史（徐台教） - エキスパート - Yahoo!ニュース</a></li>
-<li><a href="https://kamosawa.hatenablog.com/entry/2024/11/09/000233">いつのまにか沈められていることに気付く - はてなの鴨澤</a></li>
-<li><a href="https://www.fnn.jp/articles/-/797918">「警察にいったらボコボコにするぞ」14歳の中学生が34歳男性を土下座させ暴行　現金270円奪う｜FNNプライムオンライン</a></li>
-<li><a href="https://x.com/drjpstudies/status/1865404939541069902">Dr. Japanese Studies(日本学) 【Goal=Writing Book】 on X: &ldquo;面白いデモ旗・文言をTwitterで繋げるスレ🧵 &quot; / X</a></li>
-<li><a href="https://x.com/SSJ__official/status/1865671999722561895">Stand with Syria Japan (SSJ) on X: &ldquo;【歴史的速報:ダマスカス解放】&quot;/X</a></li>
-<li><a href="https://wluck-park.com/special/21085/">大風呂敷を広げて考える、これからのお笑い界【ヤーレンズ出井隼之介「可否伝」7杯目】 | ワラパー | 芸人が集まるWEBメディア</a></li>
-</ul>
-<h2 id="今週読みおわった本">今週読みおわった本</h2>
-<ul>
-<li>『彼女の「正しい」名前とは何か 第三世界フェミニズムの思想』岡真理</li>
-</ul>
-<p>徹頭徹尾、先進国のフェミニストが途上国の性差別の状況を語るときに、フェミニズムを語る裏で文化的な差別意識がひそみがち…っていうシンプルな問題提起について語られていて、読み始める前の想像よりはずっと理解しやすかった。終章のまとめで結構食らう。</p>
-<blockquote>
-<p>私は私だけで私になれるわけではない。私、という「主体」が構成されるには、他者の存在が不可欠である。主体が言説的に構成されるとき、その言説のなかで同時に他者もまた構成される。私が、私とはこういう者だと私が勝手に想像するような私でありうるとすれば、それは私が他者をもまた、私が手前勝手に想像するような存在として一方的に規定しているから、ではないのだろうか。そして、もし、そのような一方的な関係性の規定が何の疑問も抱かれずに社会的に承認され流通しうるとすれば、そこには、それに対する他者からの異議申し立ての声が聴きとられないという非対称的な権力関係がある。それを植民地主義的な権力関係と呼ぶのは乱暴にすぎるだろうか。（p286）</p>
-</blockquote>
-<h2 id="今週遊んだゲーム">今週遊んだゲーム</h2>
-<ul>
-<li>Nobody Wants to Die</li>
-<li>イニフィニティニキ</li>
-<li>Cairn (デモ）</li>
-</ul>
-<p>サバイバルクライミングゲームの『Cairn』がまだデモがリリースされただけだけど、超最高。</p>
-
-    <img src="/images/2024/1208_cairn.webp"  class="left"  />
-
-
-<p>最近出た同じようなクライミングゲームで『Jusant』があるけど、あっちがほぼほぼ決められたルートをトレースしてくようなどっちかっつうとパズルゲームみたいな感じだったのに対して、ルート選択からしてだいぶ自由だし、リソース管理も感覚的（ゲージはあるけど、基本の手足のスタミナとかは手足の震えとかキャラクターの声で判断する）で超楽しい。</p>
-<p>操作は両手両足を順番にひとつずつ操作してグリップしたりひっかけるポイントをスティックで探してく感じで、決められたポイントは無くどこにでも置けるようになってる潔さ。なので何の凹凸の無い場所でも進められるけど、それやってるとマッハでスタミナ削られて終わるので、ちゃんと体重をかけられそうな場所を雰囲気で探してかないといけなくて、自由だからって適当にルート選んで適当にやってると落下してちゃんと死ぬ。グラフィックもよい。正式リリースが待ち遠しい。</p>
               ]]>
       </content:encoded>
     </item>

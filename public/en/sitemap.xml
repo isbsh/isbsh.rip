@@ -2,8 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/posts/2025/02/%23-week06-it-will-be-gone-someday-but-not-now/</loc>
+    <lastmod>2025-02-11T13:12:26+09:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2025-02-05T13:06:26+09:00</lastmod>
+    <lastmod>2025-02-11T13:12:26+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -16,7 +19,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-02-05T13:06:26+09:00</lastmod>
+    <lastmod>2025-02-11T13:12:26+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -28,11 +31,11 @@
                 href="http://localhost:1313/"
                 />
   </url><url>
-    <loc>http://localhost:1313/posts/2025/02/week05-understanding-and-accepting-exist-on-different-layers-too-far-apart./</loc>
-    <lastmod>2025-02-05T13:06:26+09:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/categories/weekly-log/</loc>
-    <lastmod>2025-02-05T13:06:26+09:00</lastmod>
+    <lastmod>2025-02-11T13:12:26+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/2025/02/week05-understanding-and-accepting-exist-on-different-layers-too-far-apart./</loc>
+    <lastmod>2025-02-05T13:15:55+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2025/01/week04-hell-is-empty/</loc>
     <lastmod>2025-01-29T00:36:46+09:00</lastmod>
@@ -553,9 +556,6 @@
   </url><url>
     <loc>http://localhost:1313/posts/2022/01/2022-week-01/</loc>
     <lastmod>2023-01-01T13:53:22+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/2022/01/hello-world/</loc>
-    <lastmod>2022-12-10T17:39:29+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
     <lastmod>2022-01-09T02:13:28+09:00</lastmod>
