@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2025-03-18T00:51:52+09:00</lastmod>
+    <lastmod>2025-03-25T00:15:40+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-03-18T00:51:52+09:00</lastmod>
+    <lastmod>2025-03-25T00:15:40+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -28,11 +28,14 @@
                 href="http://localhost:1313/"
                 />
   </url><url>
-    <loc>http://localhost:1313/posts/2025/03/week11-dedicated-to-fatima/</loc>
-    <lastmod>2025-03-18T00:51:52+09:00</lastmod>
+    <loc>http://localhost:1313/posts/2025/03/week12-please-read-it-slowly/</loc>
+    <lastmod>2025-03-25T00:15:40+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/weekly-log/</loc>
-    <lastmod>2025-03-18T00:51:52+09:00</lastmod>
+    <lastmod>2025-03-25T00:15:40+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/2025/03/week11-dedicated-to-fatima/</loc>
+    <lastmod>2025-03-18T00:55:32+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2025/03/week10-get-pissed-off-by-yourself/</loc>
     <lastmod>2025-03-11T13:01:33+09:00</lastmod>
