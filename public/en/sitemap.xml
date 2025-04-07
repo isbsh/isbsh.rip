@@ -2,8 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/posts/2025/04/2025_w14/</loc>
+    <lastmod>2025-04-07T23:47:43+09:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2025-03-31T23:30:57+09:00</lastmod>
+    <lastmod>2025-04-07T23:47:43+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -16,7 +19,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-03-31T23:30:57+09:00</lastmod>
+    <lastmod>2025-04-07T23:47:43+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -28,11 +31,11 @@
                 href="http://localhost:1313/"
                 />
   </url><url>
-    <loc>http://localhost:1313/posts/2025/03/week13-hope-is-not-strategy/</loc>
-    <lastmod>2025-03-31T23:30:57+09:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/categories/weekly-log/</loc>
-    <lastmod>2025-03-31T23:30:57+09:00</lastmod>
+    <lastmod>2025-04-07T23:47:43+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/2025/03/week13-hope-is-not-a-strategy/</loc>
+    <lastmod>2025-04-01T12:08:22+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2025/03/week12-please-read-it-slowly/</loc>
     <lastmod>2025-03-25T00:22:20+09:00</lastmod>
