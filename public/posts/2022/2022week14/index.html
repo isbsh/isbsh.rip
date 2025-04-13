@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+
+
+
+
+    
+
+
+
+
+<html lang="ja-jp" data-theme="">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+        
+<meta charset="utf-8">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<meta name="theme-name" content="Anubis2">
+
+<title>Week 14 - isbsh</title>
+
+<meta name="description" content="今週は結構暇で久しぶりに自宅で作業。
+起き抜けにメール見たらそのまま作業してしまうし、夜も延々やってしまってよくない。
+あと久しぶりに履いたスニーカーが2足、どちらもソールが擦り減りまくりで終わっていたのを思い出し、どちらも捨てて新しく1足買った。ニューバランス。なんかちょっとだけゴツいやつ。">
+
+
+
+
+
+<link rel="icon" type="image/x-icon" href="http://localhost:1313/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="http://localhost:1313/favicon.png">
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+<style>
+  body {
+    visibility: hidden;
+    opacity: 0;
+  }
+</style>
+
+<noscript>
+  <style>
+    body {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+</noscript>
+
+
+
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <link rel="stylesheet" href="/css/style.4c42aa0abeac804c4933c54677c449cea1f723caae778425d031e98565a0cdef.css" integrity="sha256-TEKqCr6sgExJM8VGd8RJzqH3I8qud4Ql0DHphWWgze8=">
+    
+
+
+
+
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <link rel="stylesheet" href="/css/style.9c1888ebff42c0224ce04dac10cb2c401f1b77f54f78e8d87d73c3bed781c263.css" integrity="sha256-nBiI6/9CwCJM4E2sEMssQB8bd/VPeOjYfXPDvteBwmM=">
+    
+
+
+
+
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <link rel="stylesheet" href="/css/style.acd606c0fce58853afe0248d37bb41acbbcdd8b1aca2412b6c0fa760da0137f3.css" integrity="sha256-rNYGwPzliFOv4CSNN7tBrLvN2LGsokErbA&#43;nYNoBN/M=">
+    
+
+
+
+
+
+
+
+
+
+  
+
+
+
+    
+    
+
+    
+    
+    
+      
+    
+
+    
+    
+      <link rel="stylesheet" href="/css/style.min.c0294e5e5b6573e431d950810eeba894b2a556ec92b45ec24f0356ab45d545bf.css" integrity="sha256-wClOXltlc&#43;Qx2VCBDuuolLKlVuyStF7CTwNWq0XVRb8=" crossorigin="anonymous">
+    
+    
+
+    
+    
+
+    
+    
+    
+      
+    
+
+    
+    
+      <link rel="stylesheet" href="/css/style.min.ed5c481a16e6cdd0703319cf989b1d3510951691d1672769cca50e146a711e9c.css" integrity="sha256-7VxIGhbmzdBwMxnPmJsdNRCVFpHRZydpzKUOFGpxHpw=" crossorigin="anonymous">
+    
+    
+
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous">
+      
+
+
+
+
+    
+    
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4" crossorigin="anonymous"></script>
+      
+
+
+
+
+
+
+  
+
+
+
+    
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <script src="/js/script.672e2309c296e07c18bcd08b28d797a56222ff941d65f308fba3158c44885b14.js" type="text/javascript" charset="utf-8" integrity="sha256-Zy4jCcKW4HwYvNCLKNeXpWIi/5QdZfMI&#43;6MVjESIWxQ="></script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</head>
+<body>
+    <a class="skip-main" href="#main"></a>
+    <div class="container">
+        <header class="common-header">
+            
+                <div class="header-top">
+    <div class="header-top-left">
+        <h1 class="site-title noselect">
+    <a href="/">isbsh</a>
+</h1>
+
+        
+
+  
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+        <div class="theme-switcher">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-sun-high"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14.828 14.828a4 4 0 1 0 -5.656 -5.656a4 4 0 0 0 5.656 5.656z" /><path d="M6.343 17.657l-1.414 1.414" /><path d="M6.343 6.343l-1.414 -1.414" /><path d="M17.657 6.343l1.414 -1.414" /><path d="M17.657 17.657l1.414 1.414" /><path d="M4 12h-2" /><path d="M12 4v-2" /><path d="M20 12h2" /><path d="M12 20v2" /></svg>
+
+
+</span>
+
+        </div>
+    
+
+    <script>
+        const STORAGE_KEY = 'user-color-scheme'
+        const defaultTheme = "auto"
+
+        let currentTheme
+        let switchButton
+        let autoDefinedScheme = window.matchMedia('(prefers-color-scheme: dark)')
+
+        function switchTheme(e) {
+            currentTheme = (currentTheme === 'dark') ? 'light' : 'dark';
+            if (localStorage) localStorage.setItem(STORAGE_KEY, currentTheme);
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            changeGiscusTheme(currentTheme);
+            document.body.dispatchEvent(new CustomEvent(currentTheme + "-theme-set"));
+        }
+
+        const autoChangeScheme = e => {
+            currentTheme = e.matches ? 'dark' : 'light'
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            changeGiscusTheme(currentTheme);
+            document.body.dispatchEvent(new CustomEvent(currentTheme + "-theme-set"));
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            switchButton = document.querySelector('.theme-switcher')
+            currentTheme = detectCurrentScheme()
+
+            if (currentTheme === 'auto') {
+                autoChangeScheme(autoDefinedScheme);
+                autoDefinedScheme.addListener(autoChangeScheme);
+            } else {
+                document.documentElement.setAttribute('data-theme', currentTheme)
+            }
+
+            if (switchButton) {
+                switchButton.addEventListener('click', switchTheme, false)
+            }
+
+            showContent();
+        })
+
+        function detectCurrentScheme() {
+            if (localStorage !== null && localStorage.getItem(STORAGE_KEY)) {
+                return localStorage.getItem(STORAGE_KEY)
+            }
+            if (defaultTheme) {
+                return defaultTheme
+            }
+            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+
+        function showContent() {
+            document.body.style.visibility = 'visible';
+            document.body.style.opacity = 1;
+        }
+
+        function changeGiscusTheme (theme) {
+            function sendMessage(message) {
+              const iframe = document.querySelector('iframe.giscus-frame');
+              if (!iframe) return;
+              iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+            }
+
+            sendMessage({
+              setConfig: {
+                theme: theme
+              }
+            });
+        }
+    </script>
+
+
+        <ul class="social-icons noselect">
+
+ 
+
+
+    
+
+
+
+
+
+    
+        <li>
+            <a href="https://nightly.fedibird.com/@isbsh" title="Mastodon" rel="me">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-mastodon"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18.648 15.254c-1.816 1.763 -6.648 1.626 -6.648 1.626a18.262 18.262 0 0 1 -3.288 -.256c1.127 1.985 4.12 2.81 8.982 2.475c-1.945 2.013 -13.598 5.257 -13.668 -7.636l-.026 -1.154c0 -3.036 .023 -4.115 1.352 -5.633c1.671 -1.91 6.648 -1.666 6.648 -1.666s4.977 -.243 6.648 1.667c1.329 1.518 1.352 2.597 1.352 5.633s-.456 4.074 -1.352 4.944z" /><path d="M12 11.204v-2.926c0 -1.258 -.895 -2.278 -2 -2.278s-2 1.02 -2 2.278v4.722m4 -4.722c0 -1.258 .895 -2.278 2 -2.278s2 1.02 2 2.278v4.722" /></svg>
+
+
+</span>
+
+            </a>
+        </li>
+    
+
+    
+        <li>
+            <a href="https://isbsh.bsky.social" title="Bluesky" rel="me">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-bluesky"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6.335 5.144c-1.654 -1.199 -4.335 -2.127 -4.335 .826c0 .59 .35 4.953 .556 5.661c.713 2.463 3.13 2.75 5.444 2.369c-4.045 .665 -4.889 3.208 -2.667 5.41c1.03 1.018 1.913 1.59 2.667 1.59c2 0 3.134 -2.769 3.5 -3.5c.333 -.667 .5 -1.167 .5 -1.5c0 .333 .167 .833 .5 1.5c.366 .731 1.5 3.5 3.5 3.5c.754 0 1.637 -.571 2.667 -1.59c2.222 -2.203 1.378 -4.746 -2.667 -5.41c2.314 .38 4.73 .094 5.444 -2.369c.206 -.708 .556 -5.072 .556 -5.661c0 -2.953 -2.68 -2.025 -4.335 -.826c-2.293 1.662 -4.76 5.048 -5.665 6.856c-.905 -1.808 -3.372 -5.194 -5.665 -6.856z" /></svg>
+
+</span>
+
+            </a>
+        </li>
+    
+
+
+
+
+
+
+    <li>
+            <a href="/index.xml" title="RSS" rel="me">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-rss"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M4 4a16 16 0 0 1 16 16" /><path d="M4 11a9 9 0 0 1 9 9" /></svg>
+
+
+</span>
+
+            </a>
+        </li>
+    
+
+</ul>
+
+    </div>
+    <div class="header-top-right">
+
+    </div>
+</div>
+
+
+    <nav class="noselect">
+        
+        
+        <a class="" href="http://localhost:1313/" title="">Home</a>
+        
+        <a class="" href="http://localhost:1313/about/" title="">About</a>
+        
+        <a class="" href="http://localhost:1313/categories/" title="">Categories</a>
+        
+        <a class="" href="http://localhost:1313/tags/" title="">Tags</a>
+        
+        <a class="" href="http://localhost:1313/posts/" title="">Archive</a>
+        
+    </nav>
+
+
+
+
+
+    
+
+
+
+
+    <script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$','$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  };
+
+  window.addEventListener('load', (event) => {
+      document.querySelectorAll("mjx-container").forEach(function(x){
+        x.parentElement.classList += 'has-jax'})
+    });
+
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+
+
+
+
+            
+        </header>
+        <main id="main" tabindex="-1">
+            
+    
+
+    <article class="post h-entry">
+        <div class="post-header">
+            <header>
+                
+                
+                
+                <h1 class="p-name post-title ">Week 14</h1>
+                
+
+            </header>
+            
+
+    
+
+
+
+<div class="post-info noselect">
+    
+        <div class="post-date dt-published">
+            <time datetime="2022-04-10">2022-04-10</time>
+            
+        </div>
+    
+
+    <a class="post-hidden-url u-url" href="/posts/2022/2022week14/">/posts/2022/2022week14/</a>
+    <a href="http://localhost:1313/" class="p-name p-author post-hidden-author h-card" rel="me">map[name:isbsh]</a>
+
+
+    <div class="post-taxonomies">
+        
+            <ul class="post-categories">
+                
+                    
+                    <li><a href="/categories/weekly-log">Weekly Log</a></li>
+                
+            </ul>
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+        
+
+  
+
+
+
+
+
+
+<script>
+  var toc = document.querySelector(".toc");
+  if (toc) {
+    toc.addEventListener("click", function () {
+      if (event.target.tagName !== "A") {
+        event.preventDefault();
+        if (this.open) {
+          this.open = false;
+          this.classList.remove("expanded");
+        } else {
+          this.open = true;
+          this.classList.add("expanded");
+        }
+      }
+    });
+  }
+</script>
+
+        <div class="content e-content">
+            <p>今週は結構暇で久しぶりに自宅で作業。<br>
+起き抜けにメール見たらそのまま作業してしまうし、夜も延々やってしまってよくない。
+あと久しぶりに履いたスニーカーが2足、どちらもソールが擦り減りまくりで終わっていたのを思い出し、どちらも捨てて新しく1足買った。ニューバランス。なんかちょっとだけゴツいやつ。</p>
+<hr>
+<h3 id="数学に魅せられて科学を見失う" >
+<div>
+    <a href="#%e6%95%b0%e5%ad%a6%e3%81%ab%e9%ad%85%e3%81%9b%e3%82%89%e3%82%8c%e3%81%a6%e7%a7%91%e5%ad%a6%e3%82%92%e8%a6%8b%e5%a4%b1%e3%81%86">
+        
+    </a>
+    数学に魅せられて科学を見失う
+</div>
+</h3>
+
+    <img src="/images/2022/04/20220410_lostinmath.jpg"  class="left"  />
+
+
+<p>読み終わった。</p>
+<p>量子力学、超対称性、弦理論…等々、いまの理論物理学の世界でほぼ常識化しているあれこれって、それが証明されれば凄くシンプルに色んな事の説明が通るようになるっていう美しさがあるのはわかるけれども、もう何年も CERN の実験では何も出てきてなかったり、果たして客観的な観測事実が得られる話なんだろうか…もしかして物理学者たちが信奉する自然さ、シンプルさ、数学的な美しさの先に答えは無いのでは…あるいは美しさと呼べるような構造があったとして、人類の理解できる美しさじゃなかったりするのでは…という事に疑問を持った著者が、いろんな研究者にそうした疑問をぶっちゃけながら探った本。</p>
+<p>発表した論文で提唱される理論が、現実的に実験結果を得るのには、どうしても長い年月がかかってしまう高エネルギー物理学の現状では、研究者が評価されるかどうかは、その人が研究分野に及ぼす影響度合いによるものになっていて、その度合いが何で測られるかと言えば、その人の発表した論文の件数と引用数に依存している、となると、どうしても同じような研究に人も金も集まるようになり、研究分野の多様性がどんどん失われていってしまう。その結果として残るのが数学的な美しさへの固執って、科学というよりほとんど信仰であって、それってだいぶヤバくないですか。みたいな。</p>
+<p>正直具体的な理論の話になるとちんぷんかんぷんだったのだけど、そこが理解できていなくても問題提起されてる部分は読めるし面白かった。と思う。</p>
+<p>また、目先の利益にとらわれて全体の舵取りが鈍くなって軌道修正ができなくなるというのは、なんとなく日本のシステム全体が抱える問題点と似てるような気がするけど、世界の科学の世界でそんな事があるのかよ…と読みながら思った。</p>
+<hr>
+<h3 id="mリーグ-セミファイナル終盤戦" >
+<div>
+    <a href="#m%e3%83%aa%e3%83%bc%e3%82%b0-%e3%82%bb%e3%83%9f%e3%83%95%e3%82%a1%e3%82%a4%e3%83%8a%e3%83%ab%e7%b5%82%e7%9b%a4%e6%88%a6">
+        
+    </a>
+    Mリーグ セミファイナル終盤戦
+</div>
+</h3>
+<p>セミファイナルに残った6チームの内、ファイナルに進む4チームを決めるセミファイナルシリーズが今週で終わり、結果から言えばレギュラーシーズン1位だった U-NEXTパイレーツ とレギュラー序盤に勝ちまくりであわやこのまま行っちゃうのではという独走をした EX風林火山 が敗退したわけなんですが、その2チームがそれでも望みをつなごうとしていた木曜と金曜の2日間の4試合が超面白かった。</p>
+<p>卓上で運に任せて自摸り続けてる選手の事を思えば、面白かったと言うにはだいぶ胃の痛くなってしまうような展開も多かったけど、セミファイナルって過去こんなに盛り上がってましたっけ？</p>
+<p>麻雀、自分ではやらないし細かい攻防も理解できてるとは言えないけども、運要素がでかいこうしたゲームにおいて、ああいう状況で出番を任されて結果が残せる小林剛や、勝俣健志、近藤誠一のような選手っていうのは、Mリーガーという括りの中でももう1段違う存在なんだなっていう印象を持たざるを得ない。</p>
+<hr>
+<h3 id="queendom-2-2" >
+<div>
+    <a href="#queendom-2-2">
+        
+    </a>
+    Queendom 2 #2
+</div>
+</h3>
+<p>予告でみた WJSN 号泣展開はパフォーマンスで使用する砂時計が途中ですっぽ抜けてぶっ壊れるっていう事故によるものだったんだけど、その瞬間もダンサー含め全員あまりに平然としてるのでそういう演出なのかと思ってしまった。まあしかしステージ後の号泣ぶりも含め演出でも驚かない感じではある。事故だったらすっぽ抜けたタイミングで持ってたダンサーの人のメンタルが心配。</p>
+<p>Kep1er はダンスブレイク的な間奏の最後の方のアレンジがハロプロの DQN 曲みたいでちょっと笑ってしまった。一瞬中野サンプラザに見えた。</p>
+<p>評価対象にはならないけど後日パフォーマンス披露させてもらえた LOONA は、東洋風のコンセプトかつPTTって自分が求めてる感じでは正直なくて残念だったけど、カメラワーク考えた見せ方は一番考えられていた感じは良かった。</p>
+<p>Brave Girls は Rollin’ だけじゃない事も見せたいとのことで、前半別の曲にしていてそこが良いタメになって Rollin&rsquo; のぶち上がりをブーストさせてたのが良かった。</p>
+<hr>
+<h3 id="ウンビさんとiveの新譜" >
+<div>
+    <a href="#%e3%82%a6%e3%83%b3%e3%83%93%e3%81%95%e3%82%93%e3%81%a8ive%e3%81%ae%e6%96%b0%e8%ad%9c">
+        
+    </a>
+    ウンビさんとIVEの新譜
+</div>
+</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=enSvdtEutuw">권은비 - &lsquo;Glitch&rsquo;</a></li>
+<li><a href="https://www.youtube.com/watch?v=pXbugSyo0tI">IVE - &lsquo;ROYAL&rsquo;</a></li>
+</ul>
+<p>ウンビさんは曲もビデオもよかったし、なによりこういうのがやりたかったんですね。というのが見えて嬉しかった。</p>
+<p>IVE はデビュー曲につづいて好みと違う活動曲だったけど、カップリング曲の方は好き。こういう BoomBap っていうのかほんのりオールドスクールめなラップ、アイドル楽曲て感じがする。</p>
+<p>制服っぽいステージ衣装も無双感ブーストしててよい。</p>
+<p>あとは LE SSERAFIM がとうとう見えてきたけど、ちょっと構えて観てしまい、まだちょっと興味を持って見れるか不安な感じ。</p>
+<hr>
+<h3 id="モバメ" >
+<div>
+    <a href="#%e3%83%a2%e3%83%90%e3%83%a1">
+        
+    </a>
+    モバメ
+</div>
+</h3>
+<p>乃木坂のモバメが1か月全く来てないのがなんでだろうと思ったら、登録していたクレジットカードの更新をしないまま放置していたことに金曜にようやく気がついた。正直このままもうやめてもいいかという気もしたのだけど、モバメをやめるとたぶん完全に切れる気がしたので継続。</p>
+<hr>
+<h3 id="ufc273" >
+<div>
+    <a href="#ufc273">
+        
+    </a>
+    UFC273
+</div>
+</h3>
+<p><img src="https://i.gyazo.com/f5985ac7aaa121a0517f9d2629630017.png" alt=""></p>
+<p>始まる前こそビッグマッチ連発のド派手な興行だと思ってふたを開けてみれば、アッパーなパーティー感があったのは バーンズ vs. チマエフ くらいのもので、あとは地味だったり煮え切らなさの残る渋いイベントだった気がする。</p>
+<p>ともあれ、チマエフを迎え撃ったバーンズの気持ちと健闘ぶりが感動的ですらあっていい試合だった。ってランクはだいぶバーンズの方が上な訳でそういう表現するのは本来間違っているのだけど、まあチマエフなんで。規格外なんでしょうがない。</p>
+<p>チマエフにしてみたら土をつけるまではいかないけどだいぶ本来の実力が顕わになって、これでもっとボクシングうまいコヴィントンなりウスマンとやっていけんのか、だいぶ怪しいぞっていうのが分かってしまったのは少し残念ではあるものの、本人が一番わかってるだろうしもっと強くなってまだまだ幻想高めて欲しい。</p>
+<p>コリアンゾンビことジョン・チャンソンの引退は仕方ないかなと思うけど、もうちょい競った相手とであれば、あんな風に心が折れたように引退を発表しなかったじゃないかと思うと少し悲しい。</p>
+<hr>
+<h3 id="訃報" >
+<div>
+    <a href="#%e8%a8%83%e5%a0%b1">
+        
+    </a>
+    訃報
+</div>
+</h3>
+<p>A先生と菊池信義さんが亡くなられた。</p>
+<p>どこかでまんが道とつつんでひらいてを改めてみたい。</p>
+        </div>
+
+    </article>
+
+    
+    
+        
+    
+
+    
+        
+        
+    
+
+    
+        
+    
+    
+    <div class="pagination post-pagination">
+        <div class="left pagination-item ">
+            
+                <a href="/posts/2022/2022week15/">Week 15</a>
+            
+        </div>
+        <div class="right pagination-item ">
+            
+                <a href="/posts/2022/2022week13/">Week 13</a>
+            
+        </div>
+    </div>
+
+
+
+
+
+    
+
+    
+        
+
+
+    
+
+    
+
+    
+    
+    
+
+        </main>
+        
+            <footer class="common-footer noselect">
+    
+    
+
+    <div class="common-footer-bottom">
+        
+
+        <div style="display: flex; align-items: center; gap:8px">
+            ©  isbsh,  2025
+            
+        </div>
+        <div style="display:flex; align-items: center; gap:4px">
+
+            
+            
+
+            
+            
+            
+            
+
+            
+            
+
+            
+        </div>
+        
+            <div>
+                 <a target="_blank" rel="noopener noreferrer" href="https://gohugo.io/">Hugo</a>,  <a target="_blank" rel="noopener noreferrer" href="https://github.com/hugo-theme-anubis2/hugo-theme-anubis2">Anubis2</a>.<br>
+            </div>
+        
+    </div>
+
+    <p class="h-card vcard">
+
+    <a href=http://localhost:1313/ class="p-name u-url url fn" rel="me">map[name:isbsh]</a>
+
+    
+
+    
+</p>
+
+</footer>
+
+        
+    </div>
+</body>
+</html>

@@ -2,25 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on isbsh</title>
-    <link>http://localhost:1313/categories/</link>
-    <description>Recent content in Categories on isbsh</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Sun, 13 Apr 2025 15:02:51 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Weekly Log</title>
-      <link>http://localhost:1313/categories/weekly-log/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/weekly-log/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Annual Report</title>
-      <link>http://localhost:1313/categories/annual-report/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/annual-report/</guid>
-      <description></description>
-    </item>
+    <link>/categories/</link>
+    <description>isbsh (Categories)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    
+      
+
+      
+    
+
+    
+    <lastBuildDate>Mon, 07 Apr 2025 23:47:43 +0900</lastBuildDate>
+    
+    <atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
   </channel>
 </rss>

@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+
+
+
+
+    
+
+
+
+
+<html lang="ja-jp" data-theme="">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+        
+<meta charset="utf-8">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<meta name="theme-name" content="Anubis2">
+
+<title>Week 41 - isbsh</title>
+
+<meta name="description" content="
+    
+
+
+完全に年内流し運転な状態になりつつあります。">
+
+
+
+
+
+<link rel="icon" type="image/x-icon" href="http://localhost:1313/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="http://localhost:1313/favicon.png">
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+<style>
+  body {
+    visibility: hidden;
+    opacity: 0;
+  }
+</style>
+
+<noscript>
+  <style>
+    body {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+</noscript>
+
+
+
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <link rel="stylesheet" href="/css/style.4c42aa0abeac804c4933c54677c449cea1f723caae778425d031e98565a0cdef.css" integrity="sha256-TEKqCr6sgExJM8VGd8RJzqH3I8qud4Ql0DHphWWgze8=">
+    
+
+
+
+
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <link rel="stylesheet" href="/css/style.9c1888ebff42c0224ce04dac10cb2c401f1b77f54f78e8d87d73c3bed781c263.css" integrity="sha256-nBiI6/9CwCJM4E2sEMssQB8bd/VPeOjYfXPDvteBwmM=">
+    
+
+
+
+
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <link rel="stylesheet" href="/css/style.acd606c0fce58853afe0248d37bb41acbbcdd8b1aca2412b6c0fa760da0137f3.css" integrity="sha256-rNYGwPzliFOv4CSNN7tBrLvN2LGsokErbA&#43;nYNoBN/M=">
+    
+
+
+
+
+
+
+
+
+
+  
+
+
+
+    
+    
+
+    
+    
+    
+      
+    
+
+    
+    
+      <link rel="stylesheet" href="/css/style.min.c0294e5e5b6573e431d950810eeba894b2a556ec92b45ec24f0356ab45d545bf.css" integrity="sha256-wClOXltlc&#43;Qx2VCBDuuolLKlVuyStF7CTwNWq0XVRb8=" crossorigin="anonymous">
+    
+    
+
+    
+    
+
+    
+    
+    
+      
+    
+
+    
+    
+      <link rel="stylesheet" href="/css/style.min.ed5c481a16e6cdd0703319cf989b1d3510951691d1672769cca50e146a711e9c.css" integrity="sha256-7VxIGhbmzdBwMxnPmJsdNRCVFpHRZydpzKUOFGpxHpw=" crossorigin="anonymous">
+    
+    
+
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous">
+      
+
+
+
+
+    
+    
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4" crossorigin="anonymous"></script>
+      
+
+
+
+
+
+
+  
+
+
+
+    
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <script src="/js/script.672e2309c296e07c18bcd08b28d797a56222ff941d65f308fba3158c44885b14.js" type="text/javascript" charset="utf-8" integrity="sha256-Zy4jCcKW4HwYvNCLKNeXpWIi/5QdZfMI&#43;6MVjESIWxQ="></script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</head>
+<body>
+    <a class="skip-main" href="#main"></a>
+    <div class="container">
+        <header class="common-header">
+            
+                <div class="header-top">
+    <div class="header-top-left">
+        <h1 class="site-title noselect">
+    <a href="/">isbsh</a>
+</h1>
+
+        
+
+  
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+        <div class="theme-switcher">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-sun-high"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14.828 14.828a4 4 0 1 0 -5.656 -5.656a4 4 0 0 0 5.656 5.656z" /><path d="M6.343 17.657l-1.414 1.414" /><path d="M6.343 6.343l-1.414 -1.414" /><path d="M17.657 6.343l1.414 -1.414" /><path d="M17.657 17.657l1.414 1.414" /><path d="M4 12h-2" /><path d="M12 4v-2" /><path d="M20 12h2" /><path d="M12 20v2" /></svg>
+
+
+</span>
+
+        </div>
+    
+
+    <script>
+        const STORAGE_KEY = 'user-color-scheme'
+        const defaultTheme = "auto"
+
+        let currentTheme
+        let switchButton
+        let autoDefinedScheme = window.matchMedia('(prefers-color-scheme: dark)')
+
+        function switchTheme(e) {
+            currentTheme = (currentTheme === 'dark') ? 'light' : 'dark';
+            if (localStorage) localStorage.setItem(STORAGE_KEY, currentTheme);
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            changeGiscusTheme(currentTheme);
+            document.body.dispatchEvent(new CustomEvent(currentTheme + "-theme-set"));
+        }
+
+        const autoChangeScheme = e => {
+            currentTheme = e.matches ? 'dark' : 'light'
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            changeGiscusTheme(currentTheme);
+            document.body.dispatchEvent(new CustomEvent(currentTheme + "-theme-set"));
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            switchButton = document.querySelector('.theme-switcher')
+            currentTheme = detectCurrentScheme()
+
+            if (currentTheme === 'auto') {
+                autoChangeScheme(autoDefinedScheme);
+                autoDefinedScheme.addListener(autoChangeScheme);
+            } else {
+                document.documentElement.setAttribute('data-theme', currentTheme)
+            }
+
+            if (switchButton) {
+                switchButton.addEventListener('click', switchTheme, false)
+            }
+
+            showContent();
+        })
+
+        function detectCurrentScheme() {
+            if (localStorage !== null && localStorage.getItem(STORAGE_KEY)) {
+                return localStorage.getItem(STORAGE_KEY)
+            }
+            if (defaultTheme) {
+                return defaultTheme
+            }
+            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+
+        function showContent() {
+            document.body.style.visibility = 'visible';
+            document.body.style.opacity = 1;
+        }
+
+        function changeGiscusTheme (theme) {
+            function sendMessage(message) {
+              const iframe = document.querySelector('iframe.giscus-frame');
+              if (!iframe) return;
+              iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+            }
+
+            sendMessage({
+              setConfig: {
+                theme: theme
+              }
+            });
+        }
+    </script>
+
+
+        <ul class="social-icons noselect">
+
+ 
+
+
+    
+
+
+
+
+
+    
+        <li>
+            <a href="https://nightly.fedibird.com/@isbsh" title="Mastodon" rel="me">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-mastodon"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18.648 15.254c-1.816 1.763 -6.648 1.626 -6.648 1.626a18.262 18.262 0 0 1 -3.288 -.256c1.127 1.985 4.12 2.81 8.982 2.475c-1.945 2.013 -13.598 5.257 -13.668 -7.636l-.026 -1.154c0 -3.036 .023 -4.115 1.352 -5.633c1.671 -1.91 6.648 -1.666 6.648 -1.666s4.977 -.243 6.648 1.667c1.329 1.518 1.352 2.597 1.352 5.633s-.456 4.074 -1.352 4.944z" /><path d="M12 11.204v-2.926c0 -1.258 -.895 -2.278 -2 -2.278s-2 1.02 -2 2.278v4.722m4 -4.722c0 -1.258 .895 -2.278 2 -2.278s2 1.02 2 2.278v4.722" /></svg>
+
+
+</span>
+
+            </a>
+        </li>
+    
+
+    
+        <li>
+            <a href="https://isbsh.bsky.social" title="Bluesky" rel="me">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-bluesky"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6.335 5.144c-1.654 -1.199 -4.335 -2.127 -4.335 .826c0 .59 .35 4.953 .556 5.661c.713 2.463 3.13 2.75 5.444 2.369c-4.045 .665 -4.889 3.208 -2.667 5.41c1.03 1.018 1.913 1.59 2.667 1.59c2 0 3.134 -2.769 3.5 -3.5c.333 -.667 .5 -1.167 .5 -1.5c0 .333 .167 .833 .5 1.5c.366 .731 1.5 3.5 3.5 3.5c.754 0 1.637 -.571 2.667 -1.59c2.222 -2.203 1.378 -4.746 -2.667 -5.41c2.314 .38 4.73 .094 5.444 -2.369c.206 -.708 .556 -5.072 .556 -5.661c0 -2.953 -2.68 -2.025 -4.335 -.826c-2.293 1.662 -4.76 5.048 -5.665 6.856c-.905 -1.808 -3.372 -5.194 -5.665 -6.856z" /></svg>
+
+</span>
+
+            </a>
+        </li>
+    
+
+
+
+
+
+
+    <li>
+            <a href="/index.xml" title="RSS" rel="me">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-rss"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M4 4a16 16 0 0 1 16 16" /><path d="M4 11a9 9 0 0 1 9 9" /></svg>
+
+
+</span>
+
+            </a>
+        </li>
+    
+
+</ul>
+
+    </div>
+    <div class="header-top-right">
+
+    </div>
+</div>
+
+
+    <nav class="noselect">
+        
+        
+        <a class="" href="http://localhost:1313/" title="">Home</a>
+        
+        <a class="" href="http://localhost:1313/about/" title="">About</a>
+        
+        <a class="" href="http://localhost:1313/categories/" title="">Categories</a>
+        
+        <a class="" href="http://localhost:1313/tags/" title="">Tags</a>
+        
+        <a class="" href="http://localhost:1313/posts/" title="">Archive</a>
+        
+    </nav>
+
+
+
+
+
+    
+
+
+
+
+    <script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$','$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  };
+
+  window.addEventListener('load', (event) => {
+      document.querySelectorAll("mjx-container").forEach(function(x){
+        x.parentElement.classList += 'has-jax'})
+    });
+
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+
+
+
+
+            
+        </header>
+        <main id="main" tabindex="-1">
+            
+    
+
+    <article class="post h-entry">
+        <div class="post-header">
+            <header>
+                
+                
+                
+                <h1 class="p-name post-title ">Week 41</h1>
+                
+
+            </header>
+            
+
+    
+
+
+
+<div class="post-info noselect">
+    
+        <div class="post-date dt-published">
+            <time datetime="2022-10-17">2022-10-17</time>
+            
+        </div>
+    
+
+    <a class="post-hidden-url u-url" href="/posts/2022/2022week41/">/posts/2022/2022week41/</a>
+    <a href="http://localhost:1313/" class="p-name p-author post-hidden-author h-card" rel="me">map[name:isbsh]</a>
+
+
+    <div class="post-taxonomies">
+        
+            <ul class="post-categories">
+                
+                    
+                    <li><a href="/categories/weekly-log">Weekly Log</a></li>
+                
+            </ul>
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+        
+
+  
+
+
+
+
+
+
+<script>
+  var toc = document.querySelector(".toc");
+  if (toc) {
+    toc.addEventListener("click", function () {
+      if (event.target.tagName !== "A") {
+        event.preventDefault();
+        if (this.open) {
+          this.open = false;
+          this.classList.remove("expanded");
+        } else {
+          this.open = true;
+          this.classList.add("expanded");
+        }
+      }
+    });
+  }
+</script>
+
+        <div class="content e-content">
+            <p>
+    <img src="/images/images/221012_color.jpg"  alt="221012"  class="center"  style="border-radius: 15px;"  />
+
+<br>
+完全に年内流し運転な状態になりつつあります。</p>
+<h3 id="gameball" >
+<div>
+    <a href="#gameball">
+        
+    </a>
+    GameBall
+</div>
+</h3>
+<p>9月頑張ったし良いよねって事で自宅用にお値段ゴツめのトラックボールを買うた。</p>
+<p>ゲーミング仕様、というと単にLEDビカビカ光ってるだけなのかと思わせて、ちゃんとセンサーの感度も高く操球感もヌルヌルキビキビしていて流石によい。</p>
+<p>Explert Mouse のデカくて重い球を指で弾く様に回して遠心力でキュッキュと動かすような気持ち良さまでは行かないが、それに近いキビキビさとOrbit みたいな負担の少ない手首の姿勢で使えるのが良い。あとタッチスクロールが思った以上にちゃんとしていて、これだけでも Expert Mouse のホイールのカチャカチャしたちゃちさには戻れないクオリティだと思う。</p>
+<p>ボタンのアサインを自分で設定できないのがだるいけど、そんなに他ボタン駆使するタイプでもないので、まあいずれカスタマイズ出来るようになったらいいなという程度。</p>
+<p>あと買う前は有線なのもどうかなと思っていたけども、トラックボールみたいなそれ自体を動かさないデバイスだったらそんなに気にすることでもないのだった。とは言えここに来てキーボードもポインティングデバイスも有線の環境に戻るとは思ってなかった。</p>
+<hr>
+<h3 id="abemaプレミアム解約" >
+<div>
+    <a href="#abema%e3%83%97%e3%83%ac%e3%83%9f%e3%82%a2%e3%83%a0%e8%a7%a3%e7%b4%84">
+        
+    </a>
+    Abemaプレミアム解約
+</div>
+</h3>
+<p>さすがに。っていうかそもそも課金してたの…っていう類のメディアなのは重々承知していますが、Mリーグのオフショットとか見たかったのでしてました。</p>
+<p>真面目な話、たとえばプロ野球みたいなレベルで広く市民権が得られてはいないような文化だと、特定のメディアが規模は大なり小なりあれ何かしらコンテンツを定期的に作る事で、国内において文化の下地を作ったり保存する役割を担うケースは多いと思っているので、自分が興味のあるジャンルであれば尚更それが続くよう応援したいというか、課金しないと見れないようなものがあった時には積極的にしたいと思っている。</p>
+<p>Abemaについても、今の地上波放送が避けがちな下世話なコンテンツづくりに走りがちなメディアだという認識はあれけども、MリーグだったりMMAだったり、赤字出しながら自分の興味がある分野を積極的に扱ってくれているのでそういう気持ちだったんだけど、ここ最近の沖縄でのひろゆきの有様とそれを助長しているような姿勢を見せられては、黙って金払ってんのもよくないという事で。</p>
+<hr>
+<h3 id="zoomで恥かいた話" >
+<div>
+    <a href="#zoom%e3%81%a7%e6%81%a5%e3%81%8b%e3%81%84%e3%81%9f%e8%a9%b1">
+        
+    </a>
+    Zoomで恥かいた話
+</div>
+</h3>
+<p>ベタなやつだけど、打ち合わせ中に家族がドア開けて話しかけてくるやつが発生して参った。</p>
+<p>ここで話しかけて来るのが、自分の子供やペットであればただ微笑ましい一幕で和むだけの場面なんだろうけども、自分のようなおっさんが親と同居してる環境でそれをやらかしたという点でまあまあ辛い。</p>
+<p>そのタイミングではあたふたミュートにして親に伝えるだけで頭真っ白だったんだけど、終了後他の参加者が多少なりともあれこれ自分の生活環境について想像したと思うとそれなりに恥ずかしみが込み上げてくるし、こういう場面で咄嗟に適切な反応が出来なかったり、慌てずマイルドに着地させられない自分のヘボさも自覚させられて、まあまあクる。</p>
+<p>それ以前に、もうちょっと時間に余裕があればメモでもして伝えていたのに、時間いっぱいまでコーヒー淹れてる場合ではなかった。</p>
+<p>まあさっさと忘れていつまでも親元でスネかじってるコストだと思って受け入れる他なし。</p>
+<hr>
+<h3 id="cyberpunk2077-2周目" >
+<div>
+    <a href="#cyberpunk2077-2%e5%91%a8%e7%9b%ae">
+        
+    </a>
+    Cyberpunk2077 2周目
+</div>
+</h3>
+<p>2周目っていうか、2回目。難易度ベリーハードで、ノーマッド、クイックハックは使わずにサンデヴィスタンでハンドガン主体のビルドで思うままに今の気分で会話を進めて、最後は体をジョニーに明け渡す選択をし、エンディングは「節制」で終えた。自分が動かしていたVは実質消滅してしまう終わり方はバッドエンドな選択のようで、今回のプレイを噛みしめるようなしみじみした良い終わり方で、自分としては前回のプレイで到達した、ナイトシティのレジェンドとして成功はするのだが…という「太陽」エンドよりもずっとしっくり来た。</p>
+<p>ちなみに、今のバージョンから、服（防具）の見た目とステータスを別に管理できるようになった事で、防御力とかを盛る為にトンチキなコーディネートで我慢しなくても良くなったのが地味に大きいというか、好きな格好してナイトシティを歩き回れるようになった事でロールプレイにずっと意識的になり、車も運転席目線を多用して運転自体もすごく丁寧にするようになったりしたのは、ゲームの本質と関係ないようで凄くあったのというのが、自分で遊んでいてすごく面白い現象だった。</p>
+<hr>
+<h3 id="トライアングルストラテジー" >
+<div>
+    <a href="#%e3%83%88%e3%83%a9%e3%82%a4%e3%82%a2%e3%83%b3%e3%82%b0%e3%83%ab%e3%82%b9%e3%83%88%e3%83%a9%e3%83%86%e3%82%b8%e3%83%bc">
+        
+    </a>
+    トライアングルストラテジー
+</div>
+</h3>
+<p>SteamでPC版がリリースされたのでこのタイミングでやり始めた。</p>
+<p>ストーリーも戦闘も歯ごたえがあって面白いんだけど、UXの部分で詰めて欲しかった点が結構ある印象。</p>
+<p>具体的には、ボタンの設定が個人的になんとなくしっくり来ておらず、せっかちに進めようとすると戦闘パートで操作を間違えてキャラの行動を何も選択しないまま終えてしまうという事が頻発していて、しかもそれが簡単に死につながってしまうのが結構ストレスに感じる。</p>
+<p>あと、カットシーンがすごく多い割にカットシーン間でオートセーブしてくれるわけでもなければ、カットシーンの進行中はメニューが開けないので、ちょっと引き返してやり直したいという時に、連続するカットシーンを何回もいちいち手動でスキップしないといけないのも結構だるい。</p>
+<hr>
+<h3 id="今週のmma" >
+<div>
+    <a href="#%e4%bb%8a%e9%80%b1%e3%81%aemma">
+        
+    </a>
+    今週のMMA
+</div>
+</h3>
+<ul>
+<li>LFA144 をチラ見。堀内が1,2Rと毎度同じように倒されてはバックコントロールされるという展開をこすり続けていて、これでは流石に厳しいんじゃ…と思ったら、3Rになって相手が疲れたのかスタンドで主導権を握れるようになると、ケージ際で押し込まれるもなんとか倒されずにニンジャチョークの仕掛けからRNCでフィニッシュ出来たので良かった。が、このクラスでこんな激闘しててどうすんだよっていう気もしてしまう。</li>
+<li>UFCもまた朝が早かったので、平良の試合までは頑張って起きて見た。平良とヴェルガラは差が結構あって安心して見られる内容で、POTNも貰えたし、流石に次は結構いい相手ぶつけられても良さそう。</li>
+<li>フィニッシュ前の展開で、身長差のある背の低い相手をバックコントロールしながらRNCを狙う、というあんまり極めきれる印象のない仕掛けを続けていたので「極められる可能性低いんだから、こんだけ圧倒してる状況で明確にフィニッシュ狙うんであれば、首で粘んのとっととやめて他のルート探してもいいのでは」というような事をTwitterに書いたら「バックコントロールは安定してポイントに繋がるんだからそこで時間使うのはいいでしょ」とか「腕に切り替えるのはそれなりにリスクデカいんだから、残り1分切るまでは無理しないのが鉄板じゃないん？」みたいなツッコミをもらい、ハイ確かにその通りですとなった。</li>
+<li>Quest2での観戦はまだしてない。</li>
+</ul>
+<hr>
+<h3 id="そのほか" >
+<div>
+    <a href="#%e3%81%9d%e3%81%ae%e3%81%bb%e3%81%8b">
+        
+    </a>
+    そのほか
+</div>
+</h3>
+<ul>
+<li>ウンビさんの新譜EP収録曲 &lsquo;Croquis’ &lsquo;Fresh’ がよかった。リリースしたら何かしら好みの曲入れてくれる信頼感ある。</li>
+<li>髪切った。</li>
+</ul>
+        </div>
+
+    </article>
+
+    
+    
+        
+    
+
+    
+        
+        
+    
+
+    
+        
+    
+    
+    <div class="pagination post-pagination">
+        <div class="left pagination-item ">
+            
+                <a href="/posts/2022/2022week42/">Week 42</a>
+            
+        </div>
+        <div class="right pagination-item ">
+            
+                <a href="/posts/2022/2022week40/">Week 40</a>
+            
+        </div>
+    </div>
+
+
+
+
+
+    
+
+    
+        
+
+
+    
+
+    
+
+    
+    
+    
+
+        </main>
+        
+            <footer class="common-footer noselect">
+    
+    
+
+    <div class="common-footer-bottom">
+        
+
+        <div style="display: flex; align-items: center; gap:8px">
+            ©  isbsh,  2025
+            
+        </div>
+        <div style="display:flex; align-items: center; gap:4px">
+
+            
+            
+
+            
+            
+            
+            
+
+            
+            
+
+            
+        </div>
+        
+            <div>
+                 <a target="_blank" rel="noopener noreferrer" href="https://gohugo.io/">Hugo</a>,  <a target="_blank" rel="noopener noreferrer" href="https://github.com/hugo-theme-anubis2/hugo-theme-anubis2">Anubis2</a>.<br>
+            </div>
+        
+    </div>
+
+    <p class="h-card vcard">
+
+    <a href=http://localhost:1313/ class="p-name u-url url fn" rel="me">map[name:isbsh]</a>
+
+    
+
+    
+</p>
+
+</footer>
+
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+
+
+
+
+    
+
+
+
+
+<html lang="ja-jp" data-theme="">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+        
+<meta charset="utf-8">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<meta name="theme-name" content="Anubis2">
+
+<title>2022 Week 01 - isbsh</title>
+
+<meta name="description" content="あけましておめでとうございます。
+正月、家だったり親戚の家だったりで何かにつけて肉が出てきてアルコールと共にがんがんやっていたら胃が荒れたらしく、幸先よく早々に真っ黒い便が出てきました。
+Hugo &#43; Cloudflare Pages これまで Tumblr で投稿してたんだけど、いい加減投稿や編集画面での markdown エディターが日本語だと使いづらいまま永遠に改善されなさそうなのと、インターネットで多少の手間をかけて何かしたい欲もあり、Hugo と Cloudflare Pages を使ってテキストや落書きしたものを置いておくサイトを作ってみた。というのがこのサイトです。
+その手の解説ページを検索して調べてみる限り、「爆速!」とか「超簡単!!」みたいな枕詞が並んでいるので、まあどうにかなるっしょと思ってやってみたところ、実際ローカルで Hugo を使って構築してありもののテーマ（デザイン）を導入して整えるところまでは特段苦労もなかったのだけど、それを git を使って リモートレポジトリに push する時に認証を通すことが出来なくて数時間難儀した。
+どうもセキュリティ強化のために去年からパスワードでの認証が廃止されたらしく、都度自分で発行するアクセストークンを使う方式になったとかなんとかで、言われた通りにアクセストークンで何度も認証を試みるも「「パスワードでの認証は終わったんで」的なエラーメッセージが返されるばかりでお手上げ状態だったのだが、Twitter で似たような事例がないか検索したら、解決策が転がっていて助かった。
+git push 実行時
+remote: ・・・ on August 13, 2021. Please use a personal access token instead.
+上記エラー出力時
+・https://t.co/vCTJwoiaaiでトークン生成
+・git remote remove origin
+・git remote add origin https://TOKEN@github.com/USER/REPO.git#駆け出しエンジニアと繋がりたい
+&mdash; komikomi (@komikomi650) October 14, 2021 駆け出しエンジニアと繋がり…たくはないけど助かった。
+とりあえずのテーマは hello-friend-ng を使って、画像置き場用に hugo-shortcode-gallery というコンポーネントを使っています。
+感応グラン=ギニョル 創元社のSFアンソロジーなどに載っていた作品が面白かった空木春宵の短編をまとめた単行本を読み始めた。読み終わっているのは書き下ろしの表題作だけだけど、日々あらゆるメディアを通して痛ましい事件や他人の辛さや痛みを見る時に発生してしまう受け取る側のグロテスクさについて考えさせられる。
+偶然の聖地 去年の秋頃にTBSラジオのアフター6ジャンクションで連日やっていた推薦図書のコーナーで岸本佐知子が推薦していて面白そうだったので、親戚の家に行く道中から読み始め、実際面白い。
+https://www.tbsradio.jp/articles/46814/">
+
+
+
+
+
+<link rel="icon" type="image/x-icon" href="http://localhost:1313/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="http://localhost:1313/favicon.png">
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+<style>
+  body {
+    visibility: hidden;
+    opacity: 0;
+  }
+</style>
+
+<noscript>
+  <style>
+    body {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+</noscript>
+
+
+
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <link rel="stylesheet" href="/css/style.4c42aa0abeac804c4933c54677c449cea1f723caae778425d031e98565a0cdef.css" integrity="sha256-TEKqCr6sgExJM8VGd8RJzqH3I8qud4Ql0DHphWWgze8=">
+    
+
+
+
+
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <link rel="stylesheet" href="/css/style.9c1888ebff42c0224ce04dac10cb2c401f1b77f54f78e8d87d73c3bed781c263.css" integrity="sha256-nBiI6/9CwCJM4E2sEMssQB8bd/VPeOjYfXPDvteBwmM=">
+    
+
+
+
+
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <link rel="stylesheet" href="/css/style.acd606c0fce58853afe0248d37bb41acbbcdd8b1aca2412b6c0fa760da0137f3.css" integrity="sha256-rNYGwPzliFOv4CSNN7tBrLvN2LGsokErbA&#43;nYNoBN/M=">
+    
+
+
+
+
+
+
+
+
+
+  
+
+
+
+    
+    
+
+    
+    
+    
+      
+    
+
+    
+    
+      <link rel="stylesheet" href="/css/style.min.c0294e5e5b6573e431d950810eeba894b2a556ec92b45ec24f0356ab45d545bf.css" integrity="sha256-wClOXltlc&#43;Qx2VCBDuuolLKlVuyStF7CTwNWq0XVRb8=" crossorigin="anonymous">
+    
+    
+
+    
+    
+
+    
+    
+    
+      
+    
+
+    
+    
+      <link rel="stylesheet" href="/css/style.min.ed5c481a16e6cdd0703319cf989b1d3510951691d1672769cca50e146a711e9c.css" integrity="sha256-7VxIGhbmzdBwMxnPmJsdNRCVFpHRZydpzKUOFGpxHpw=" crossorigin="anonymous">
+    
+    
+
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous">
+      
+
+
+
+
+    
+    
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4" crossorigin="anonymous"></script>
+      
+
+
+
+
+
+
+  
+
+
+
+    
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <script src="/js/script.672e2309c296e07c18bcd08b28d797a56222ff941d65f308fba3158c44885b14.js" type="text/javascript" charset="utf-8" integrity="sha256-Zy4jCcKW4HwYvNCLKNeXpWIi/5QdZfMI&#43;6MVjESIWxQ="></script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</head>
+<body>
+    <a class="skip-main" href="#main"></a>
+    <div class="container">
+        <header class="common-header">
+            
+                <div class="header-top">
+    <div class="header-top-left">
+        <h1 class="site-title noselect">
+    <a href="/">isbsh</a>
+</h1>
+
+        
+
+  
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+        <div class="theme-switcher">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-sun-high"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14.828 14.828a4 4 0 1 0 -5.656 -5.656a4 4 0 0 0 5.656 5.656z" /><path d="M6.343 17.657l-1.414 1.414" /><path d="M6.343 6.343l-1.414 -1.414" /><path d="M17.657 6.343l1.414 -1.414" /><path d="M17.657 17.657l1.414 1.414" /><path d="M4 12h-2" /><path d="M12 4v-2" /><path d="M20 12h2" /><path d="M12 20v2" /></svg>
+
+
+</span>
+
+        </div>
+    
+
+    <script>
+        const STORAGE_KEY = 'user-color-scheme'
+        const defaultTheme = "auto"
+
+        let currentTheme
+        let switchButton
+        let autoDefinedScheme = window.matchMedia('(prefers-color-scheme: dark)')
+
+        function switchTheme(e) {
+            currentTheme = (currentTheme === 'dark') ? 'light' : 'dark';
+            if (localStorage) localStorage.setItem(STORAGE_KEY, currentTheme);
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            changeGiscusTheme(currentTheme);
+            document.body.dispatchEvent(new CustomEvent(currentTheme + "-theme-set"));
+        }
+
+        const autoChangeScheme = e => {
+            currentTheme = e.matches ? 'dark' : 'light'
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            changeGiscusTheme(currentTheme);
+            document.body.dispatchEvent(new CustomEvent(currentTheme + "-theme-set"));
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            switchButton = document.querySelector('.theme-switcher')
+            currentTheme = detectCurrentScheme()
+
+            if (currentTheme === 'auto') {
+                autoChangeScheme(autoDefinedScheme);
+                autoDefinedScheme.addListener(autoChangeScheme);
+            } else {
+                document.documentElement.setAttribute('data-theme', currentTheme)
+            }
+
+            if (switchButton) {
+                switchButton.addEventListener('click', switchTheme, false)
+            }
+
+            showContent();
+        })
+
+        function detectCurrentScheme() {
+            if (localStorage !== null && localStorage.getItem(STORAGE_KEY)) {
+                return localStorage.getItem(STORAGE_KEY)
+            }
+            if (defaultTheme) {
+                return defaultTheme
+            }
+            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+
+        function showContent() {
+            document.body.style.visibility = 'visible';
+            document.body.style.opacity = 1;
+        }
+
+        function changeGiscusTheme (theme) {
+            function sendMessage(message) {
+              const iframe = document.querySelector('iframe.giscus-frame');
+              if (!iframe) return;
+              iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+            }
+
+            sendMessage({
+              setConfig: {
+                theme: theme
+              }
+            });
+        }
+    </script>
+
+
+        <ul class="social-icons noselect">
+
+ 
+
+
+    
+
+
+
+
+
+    
+        <li>
+            <a href="https://nightly.fedibird.com/@isbsh" title="Mastodon" rel="me">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-mastodon"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18.648 15.254c-1.816 1.763 -6.648 1.626 -6.648 1.626a18.262 18.262 0 0 1 -3.288 -.256c1.127 1.985 4.12 2.81 8.982 2.475c-1.945 2.013 -13.598 5.257 -13.668 -7.636l-.026 -1.154c0 -3.036 .023 -4.115 1.352 -5.633c1.671 -1.91 6.648 -1.666 6.648 -1.666s4.977 -.243 6.648 1.667c1.329 1.518 1.352 2.597 1.352 5.633s-.456 4.074 -1.352 4.944z" /><path d="M12 11.204v-2.926c0 -1.258 -.895 -2.278 -2 -2.278s-2 1.02 -2 2.278v4.722m4 -4.722c0 -1.258 .895 -2.278 2 -2.278s2 1.02 2 2.278v4.722" /></svg>
+
+
+</span>
+
+            </a>
+        </li>
+    
+
+    
+        <li>
+            <a href="https://isbsh.bsky.social" title="Bluesky" rel="me">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-bluesky"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6.335 5.144c-1.654 -1.199 -4.335 -2.127 -4.335 .826c0 .59 .35 4.953 .556 5.661c.713 2.463 3.13 2.75 5.444 2.369c-4.045 .665 -4.889 3.208 -2.667 5.41c1.03 1.018 1.913 1.59 2.667 1.59c2 0 3.134 -2.769 3.5 -3.5c.333 -.667 .5 -1.167 .5 -1.5c0 .333 .167 .833 .5 1.5c.366 .731 1.5 3.5 3.5 3.5c.754 0 1.637 -.571 2.667 -1.59c2.222 -2.203 1.378 -4.746 -2.667 -5.41c2.314 .38 4.73 .094 5.444 -2.369c.206 -.708 .556 -5.072 .556 -5.661c0 -2.953 -2.68 -2.025 -4.335 -.826c-2.293 1.662 -4.76 5.048 -5.665 6.856c-.905 -1.808 -3.372 -5.194 -5.665 -6.856z" /></svg>
+
+</span>
+
+            </a>
+        </li>
+    
+
+
+
+
+
+
+    <li>
+            <a href="/index.xml" title="RSS" rel="me">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-rss"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M4 4a16 16 0 0 1 16 16" /><path d="M4 11a9 9 0 0 1 9 9" /></svg>
+
+
+</span>
+
+            </a>
+        </li>
+    
+
+</ul>
+
+    </div>
+    <div class="header-top-right">
+
+    </div>
+</div>
+
+
+    <nav class="noselect">
+        
+        
+        <a class="" href="http://localhost:1313/" title="">Home</a>
+        
+        <a class="" href="http://localhost:1313/about/" title="">About</a>
+        
+        <a class="" href="http://localhost:1313/categories/" title="">Categories</a>
+        
+        <a class="" href="http://localhost:1313/tags/" title="">Tags</a>
+        
+        <a class="" href="http://localhost:1313/posts/" title="">Archive</a>
+        
+    </nav>
+
+
+
+
+
+    
+
+
+
+
+    <script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$','$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  };
+
+  window.addEventListener('load', (event) => {
+      document.querySelectorAll("mjx-container").forEach(function(x){
+        x.parentElement.classList += 'has-jax'})
+    });
+
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+
+
+
+
+            
+        </header>
+        <main id="main" tabindex="-1">
+            
+    
+
+    <article class="post h-entry">
+        <div class="post-header">
+            <header>
+                
+                
+                
+                <h1 class="p-name post-title ">2022 Week 01</h1>
+                
+
+            </header>
+            
+
+    
+
+
+
+<div class="post-info noselect">
+    
+        <div class="post-date dt-published">
+            <time datetime="2022-01-09">2022-01-09</time>
+            
+        </div>
+    
+
+    <a class="post-hidden-url u-url" href="/posts/2022/2022week01/">/posts/2022/2022week01/</a>
+    <a href="http://localhost:1313/" class="p-name p-author post-hidden-author h-card" rel="me">map[name:isbsh]</a>
+
+
+    <div class="post-taxonomies">
+        
+            <ul class="post-categories">
+                
+                    
+                    <li><a href="/categories/weekly-log">Weekly Log</a></li>
+                
+            </ul>
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+        
+
+  
+
+
+
+
+
+
+<script>
+  var toc = document.querySelector(".toc");
+  if (toc) {
+    toc.addEventListener("click", function () {
+      if (event.target.tagName !== "A") {
+        event.preventDefault();
+        if (this.open) {
+          this.open = false;
+          this.classList.remove("expanded");
+        } else {
+          this.open = true;
+          this.classList.add("expanded");
+        }
+      }
+    });
+  }
+</script>
+
+        <div class="content e-content">
+            
+    <img src="/images/images/220105-3.jpg"  alt="Hello Friend"  class="center"  style="border-radius: 15px;"  />
+
+
+<p>あけましておめでとうございます。</p>
+<p>正月、家だったり親戚の家だったりで何かにつけて肉が出てきてアルコールと共にがんがんやっていたら胃が荒れたらしく、幸先よく早々に真っ黒い便が出てきました。</p>
+<hr>
+<h3 id="hugo--cloudflare-pages" >
+<div>
+    <a href="#hugo--cloudflare-pages">
+        
+    </a>
+    Hugo + Cloudflare Pages
+</div>
+</h3>
+<p>これまで Tumblr で投稿してたんだけど、いい加減投稿や編集画面での markdown エディターが日本語だと使いづらいまま永遠に改善されなさそうなのと、インターネットで多少の手間をかけて何かしたい欲もあり、Hugo と Cloudflare Pages を使ってテキストや落書きしたものを置いておくサイトを作ってみた。というのがこのサイトです。</p>
+<p>その手の解説ページを検索して調べてみる限り、「爆速!」とか「超簡単!!」みたいな枕詞が並んでいるので、まあどうにかなるっしょと思ってやってみたところ、実際ローカルで Hugo を使って構築してありもののテーマ（デザイン）を導入して整えるところまでは特段苦労もなかったのだけど、それを git を使って リモートレポジトリに push する時に認証を通すことが出来なくて数時間難儀した。</p>
+<p>どうもセキュリティ強化のために去年からパスワードでの認証が廃止されたらしく、都度自分で発行するアクセストークンを使う方式になったとかなんとかで、言われた通りにアクセストークンで何度も認証を試みるも「「パスワードでの認証は終わったんで」的なエラーメッセージが返されるばかりでお手上げ状態だったのだが、Twitter で似たような事例がないか検索したら、解決策が転がっていて助かった。</p>
+<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">git push 実行時<br>remote: ・・・ on August 13, 2021. Please use a personal access token instead.<br><br>上記エラー出力時<br>・<a href="https://t.co/vCTJwoiaai">https://t.co/vCTJwoiaai</a>でトークン生成<br>・git remote remove origin<br>・git remote add origin https://TOKEN@github.com/USER/REPO.git<a href="https://twitter.com/hashtag/%E9%A7%86%E3%81%91%E5%87%BA%E3%81%97%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%81%A8%E7%B9%8B%E3%81%8C%E3%82%8A%E3%81%9F%E3%81%84?src=hash&amp;ref_src=twsrc%5Etfw">#駆け出しエンジニアと繋がりたい</a></p>&mdash; komikomi (@komikomi650) <a href="https://twitter.com/komikomi650/status/1448574767062077448?ref_src=twsrc%5Etfw">October 14, 2021</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+駆け出しエンジニアと繋がり…たくはないけど助かった。</p>
+<p>とりあえずのテーマは <a href="%5Bhttps://themes.gohugo.io/themes/hugo-theme-hello-friend-ng/%5D(https://themes.gohugo.io/themes/hugo-theme-hello-friend-ng/)">hello-friend-ng</a> を使って、画像置き場用に <a href="https://github.com/mfg92/hugo-shortcode-gallery">hugo-shortcode-gallery</a> というコンポーネントを使っています。</p>
+<hr>
+<h3 id="感応グランギニョル" >
+<div>
+    <a href="#%e6%84%9f%e5%bf%9c%e3%82%b0%e3%83%a9%e3%83%b3%e3%82%ae%e3%83%8b%e3%83%a7%e3%83%ab">
+        
+    </a>
+    感応グラン=ギニョル
+</div>
+</h3>
+<p>創元社のSFアンソロジーなどに載っていた作品が面白かった空木春宵の短編をまとめた単行本を読み始めた。読み終わっているのは<del>書き下ろし</del>の表題作だけだけど、日々あらゆるメディアを通して痛ましい事件や他人の辛さや痛みを見る時に発生してしまう受け取る側のグロテスクさについて考えさせられる。</p>
+<hr>
+<h3 id="偶然の聖地" >
+<div>
+    <a href="#%e5%81%b6%e7%84%b6%e3%81%ae%e8%81%96%e5%9c%b0">
+        
+    </a>
+    偶然の聖地
+</div>
+</h3>
+<p>去年の秋頃にTBSラジオのアフター6ジャンクションで連日やっていた推薦図書のコーナーで岸本佐知子が推薦していて面白そうだったので、親戚の家に行く道中から読み始め、実際面白い。</p>
+<p><a href="https://www.tbsradio.jp/articles/46814/">https://www.tbsradio.jp/articles/46814/</a></p>
+<hr>
+<h3 id="kep1er---mvsk" >
+<div>
+    <a href="#kep1er---mvsk">
+        
+    </a>
+    Kep1er - ‘MVSK’
+</div>
+</h3>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/3koOE2MN1gw?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+
+<p>Girls Planet 999 の Kep1er が無事デビューという事で。正直活動曲の方はなんだか構成が単調で長く感じてしまったが、こっちの方がいい曲だった。ただ IZ*ONE ぽさが濃い曲なので、運営がいろいろ考えてこっちを前面に出すのはやめといたっていうのは割とありそうな推測ではあると思う。それにしても、どちらの曲も映像で見るとキムダヨンさんの身体操作のドヤみがすごい。</p>
+<p>あと fancam の回転数だとか、音源と音盤の売り上げのバランスだとかを聞くに、むちゃくちゃいびつで、その辺りの数字を見る度不安な気持ちにさせられる。</p>
+<hr>
+<h3 id="choose-life-projectのあり方に対する抗議へのご説明" >
+<div>
+    <a href="#choose-life-project%e3%81%ae%e3%81%82%e3%82%8a%e6%96%b9%e3%81%ab%e5%af%be%e3%81%99%e3%82%8b%e6%8a%97%e8%ad%b0%e3%81%b8%e3%81%ae%e3%81%94%e8%aa%ac%e6%98%8e">
+        
+    </a>
+    「Choose Life Projectのあり方に対する抗議」へのご説明
+</div>
+</h3>
+<p><a href="https://cl-p.jp/whatsnew/clparikata/">https://cl-p.jp/whatsnew/clparikata/</a></p>
+<p>大阪と読売の包括的提携なんたらかんたらみたいな話で「おいおいおい」となっているそばから、こんな話を知らされてしまうと困ってしまう。別にあるメディアのスタンスが偏ったりしているのは普通の事だと思うのだけど、政党から金貰ってるんでしょっていう疑いや煽りが向け続けられるのは、今後のあらゆる決定や過程をオープンにでもして見せるような事でもしないと厳しいのではないか。</p>
+<p>しかし「マスメディアであれば抵触するであろう各種法令は適応外であろうという認識でいました」っていうのは、言ってもテレビにいた人だったのだなあという感じがする。</p>
+<p>自分はそんなに熱心にビデオを見まくっているわけではないものの、頑張ってくださいという気持ちからサポーター制度を通して毎月少額を支援していたので、これをどうしたもんか考えないとならないのだけど、ここで多くの支援が引き上げられて運営が立ち行かなくなってしまうのもどうなんだという気がして保留しているところ。代表の交代以外でも透明性に関して何かしら改善を見せてもらえれたら普通に継続出来るんだけど。</p>
+<hr>
+<h3 id="boardrun-復活" >
+<div>
+    <a href="#boardrun-%e5%be%a9%e6%b4%bb">
+        
+    </a>
+    Boardrun 復活!!!!!!!!!!!
+</div>
+</h3>
+<p><a href="https://mkultra.click/boardrun-classic/">https://mkultra.click/boardrun-classic/</a></p>
+<p>キーボードです。</p>
+<p>一昨年に Reddit で Interest Check を見かけて絶対買うぞと心に決め、MKUltra Corporation のDiscordに張り付き、そのまま Discord 内で Group Buy が開始されるも、設計のミスが～とか従業員がいなくなった～とかそんな感じの理由で長い事ペンディングになっていた Boardrun が新年早々に突然復活。</p>
+<p>しかもアクリルのサンドウィッチケースから、ポリカーボネートかアルミの一体成型のケースにバージョンアップして。</p>
+<p>ペンディングといっても公式に何か連絡とかがある訳でも全く無く、正直ぶっちぎられたのかなという予感も漂い、そろそろ返金のお願いでも問い合わせようかという頃合いだったので、よかったよかったという安堵に身を委ね、前の GB で支払った金額分をストアクレジットにしてもらい、差額の $100 ちょいをすぐさま入金した。</p>
+
+        </div>
+
+    </article>
+
+    
+    
+        
+    
+
+    
+        
+        
+    
+
+    
+        
+    
+    
+    <div class="pagination post-pagination">
+        <div class="left pagination-item ">
+            
+                <a href="/posts/2022/2022week02/">Week 02</a>
+            
+        </div>
+        <div class="right pagination-item ">
+            
+                <a href="/posts/hello-world/">Hello World</a>
+            
+        </div>
+    </div>
+
+
+
+
+
+    
+
+    
+        
+
+
+    
+
+    
+
+    
+    
+    
+
+        </main>
+        
+            <footer class="common-footer noselect">
+    
+    
+
+    <div class="common-footer-bottom">
+        
+
+        <div style="display: flex; align-items: center; gap:8px">
+            ©  isbsh,  2025
+            
+        </div>
+        <div style="display:flex; align-items: center; gap:4px">
+
+            
+            
+
+            
+            
+            
+            
+
+            
+            
+
+            
+        </div>
+        
+            <div>
+                 <a target="_blank" rel="noopener noreferrer" href="https://gohugo.io/">Hugo</a>,  <a target="_blank" rel="noopener noreferrer" href="https://github.com/hugo-theme-anubis2/hugo-theme-anubis2">Anubis2</a>.<br>
+            </div>
+        
+    </div>
+
+    <p class="h-card vcard">
+
+    <a href=http://localhost:1313/ class="p-name u-url url fn" rel="me">map[name:isbsh]</a>
+
+    
+
+    
+</p>
+
+</footer>
+
+        
+    </div>
+</body>
+</html>

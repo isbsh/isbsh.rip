@@ -1,35 +1,35 @@
 {{ define "main" }}
-    {{ $paginator := .Paginate .Data.Pages }}
-    
-    <main class="posts">
-        <h1>{{ .Title }}</h1>
+    <div class="index-content">
+        {{ .Content }}
+    </div>
 
-        {{ if .Content }}
-            <div class="content">{{ .Content }}</div>
-        {{ end }}
+    <div class="articles h-feed">
+        <h1 class="post-title">{{ i18n .Title | markdownify }}</h1>
+        {{ $showFullContent := in .Site.Params.sectionsWithFullContentOnListPage .Section }}
+        {{ $pages := where .Pages "Params.hidden" "!=" true}}
 
-        {{ range $paginator.Pages.GroupByDate "2006" }}
-            <div class="posts-group">
-                <div class="post-year">{{ .Key }}</div>
+        {{ $pagesRange := $pages}}
+        {{ if $showFullContent }}
+            {{ $pagesRange = (.Paginate $pages).Pages }}
+        {{ end}}
 
-                <ul class="posts-list">
-                    {{ range .Pages }}
-                        <li class="post-item">
-                            <a href="{{.Permalink}}">
-                                <span class="post-title">{{.Title}}</span>
-                                <span class="post-day">
-                                    {{ if .Site.Params.dateformShort }}
-                                        {{ .Date.Format .Site.Params.dateformShort }}
-                                    {{ else }}
-                                        {{ .Date.Format "Jan 2"}}
-                                    {{ end }}
-                                </span>
-                            </a>
-                        </li>
-                    {{ end }}
-                </ul>
+        {{ range $pagesRange }}
+            <div class="post-short-list h-entry">
+                <div class="post-header">
+                    <header>
+                        <h2 class="p-name post-title{{ if .Params.favorite }} favorite{{end}}{{ if .Params.draft }} draft{{end}}"><a class="u-url" href="{{ .RelPermalink }}">{{ trim .Title " " | markdownify }}</a></h2>
+                        {{ partial "post-language-switcher.html" . }}
+                    </header>
+                </div>
+                {{ if $showFullContent }}
+                    {{ .Content }}
+                {{ end }}
+                {{ partial "post-info.html" . }}
             </div>
         {{ end }}
-    {{ partial "pagination-list.html" . }}
-    </main>
+        {{ if $showFullContent }}
+            {{ partial "pagination.html" . }}
+        {{ end}}
+    </div>
+
 {{ end }}

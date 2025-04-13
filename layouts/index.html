@@ -1,24 +1,31 @@
-{{ define "body" }}
-    <body class="{{ if .Site.Params.backgroundImage }} background-image" style="background-image: url('{{ .Site.Params.backgroundImage }}');" {{ else }}"{{ end }}>
-{{ end }}
-
 {{ define "main" }}
-    <main aria-role="main">
-        <div>
-            {{ if .Site.Params.Portrait.Path }}
-               <img src="{{ .Site.Params.Portrait.Path }}" class="circle" alt="{{ .Site.Params.Portrait.Alt }}" style="max-width:{{ .Site.Params.Portrait.MaxWidth }}" />
-            {{ end }}
+    <div class="homepage-content">
+        {{ .Content }}
+    </div>
 
-            <h1>{{ .Site.Title }}</h1>
-            {{- with .Site.Params.homeSubtitle }}
-                <p>{{.}}</p>
-            {{- end }}
+    <div class="articles h-feed">
+        {{ $pages := where (where site.RegularPages "Type" "in" site.Params.mainSections) "Params.hidden" "!=" true }}
+        {{ range (.Paginate $pages).Pages }}
+            {{ partial "post-summary.html" . }}
+        {{ end }}
+        
+        {{ partial "pagination.html" . }}
+    </div>
 
-            {{- with .Site.Params.social }}
-                <div>
-                    {{ partial "social-icons.html" . }}
-                </div>
-            {{- end }}
-        </div>
-    </main>
+    
+    <!-- Check if all params.anubis2 parameters are valid -->
+    {{ $avaliableParams := slice "enablemathglobally" "enablecopycodebutton" "enablereadmorebutton" "colortheme" "enablecolorthemeswitcher" "police" "icp" "social" "customcss" "customjs" "services" "hidefooterattribution"}}
+    {{ range $param, $value := site.Params.Anubis2 }}
+        {{ if not (in $avaliableParams $param) }}
+            {{ warnf "Anubis2: params.anubis2.%v is not a valid parameter" $param }}
+        {{ end }}
+    {{ end }}
+
+    <!-- Check if all params.anubis2.services parameters are valid -->
+    {{ $avaliableServices := slice "discus" "giscus" "utterances" "googleanalytics" "umami" }}
+    {{ range $param, $value := site.Params.Anubis2.services }}
+        {{ if not (in $avaliableServices $param) }}
+            {{ warnf "Anubis2: params.anubis2.services.%v is not a valid parameter" $param }}
+        {{ end }}
+    {{ end }}
 {{ end }}

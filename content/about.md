@@ -1,5 +1,6 @@
 ---
 title: "About"
+toc: false
 ---
 
 ### social
@@ -11,13 +12,16 @@ title: "About"
 - [isbshexpired.tumblr.com](http://isbshexpired.tumblr.com)
 - [discordapp.com/users/389626431195578380](http://discordapp.com/users/389626431195578380")
 
+
 ### log
 - [scrapbox.io/isbsh](http://scrapbox.io/isbsh)
 - [github.com/isbsh/archives](http://github.com/isbsh/archives)
 - [dump-isbsh.tumblr.com](http://dump-isbsh.tumblr.com)
 
+
 ### bookmark
 - [pinboard.in/u:isbsh](http://pinboard.in/u:isbsh)
+
 
 ### game, music, etc
 - [steamcommunity.com/id/isbsh](http:///steamcommunity.com/id/isbsh)
