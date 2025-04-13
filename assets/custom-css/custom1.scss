@@ -22,3 +22,12 @@ article ul {
     list-style: decimal;
     padding-left: 1.5em;
   }
+
+  article h1,
+article h2,
+article h3,
+article h4,
+article h5,
+article h6 {
+  margin-top: 3rem !important;
+}
