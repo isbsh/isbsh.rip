@@ -11,7 +11,7 @@ pagerSize = 5
 name = "isbsh"
 
 [params]
-description = "Anubis2 is another simple minimalist theme for Hugo blog engine."
+description = "isbsh log"
 dateFormat = "2006-01-02"
 paginationSinglePost = true
 
