@@ -18,7 +18,7 @@
 <meta name="referrer" content="no-referrer-when-downgrade">
 <meta name="theme-name" content="Anubis2">
 
-<title>Categories - isbsh</title>
+<title>Weekly Log - isbsh</title>
 
 <meta name="description" content="isbsh log">
 
@@ -26,7 +26,7 @@
 
 
 
-<link rel="alternate" type="application/rss+xml" href="/categories/index.xml" title="isbsh" />
+<link rel="alternate" type="application/rss+xml" href="/categories/weekly-log/index.xml" title="isbsh" />
 <link rel="icon" type="image/x-icon" href="http://localhost:1313/favicon.ico">
 <link rel="apple-touch-icon-precomposed" href="http://localhost:1313/favicon.png">
 
@@ -483,30 +483,106 @@
         </header>
         <main id="main" tabindex="-1">
             
-    <div class="index-content">
+    <h1>: Weekly Log</h1>
+    <div class="post-info">
+        <a href="/categories/"></a>
+    </div>
+    
+    
+        <article class="post-list h-feed post-card">
+    <div class="post-header">
+        <header>
+            
+            
+            
+            <h1 class="p-name post-title ">
+                <a class="u-url" href="/posts/2022/2022week01/">2022 Week 01</a>
+            </h1>
+        </header>
         
+
     </div>
 
-    <h1></h1>
-    <ul class="terms">
+    
+        <div class="content post-summary p-summary">
+            あけましておめでとうございます。
+正月、家だったり親戚の家だったりで何かにつけて肉が出てきてアルコールと共にがんがんやっていたら胃が荒れたらしく、幸先よく早々に真っ黒い便が出てきました。
+Hugo + Cloudflare Pages これまで Tumblr で投稿してたんだけど、いい加減投稿や編集画面での markdown エディターが日本語だと使いづらいまま永遠に改善されなさそうなのと、インターネットで多少の手間をかけて何かしたい欲もあり、Hugo と Cloudflare Pages を使ってテキストや落書きしたものを置いておくサイトを作ってみた。というのがこのサイトです。
+その手の解説ページを検索して調べてみる限り、「爆速!」とか「超簡単!!」みたいな枕詞が並んでいるので、まあどうにかなるっしょと思ってやってみたところ、実際ローカルで Hugo を使って構築してありもののテーマ（デザイン）を導入して整えるところまでは特段苦労もなかったのだけど、それを git を使って リモートレポジトリに push する時に認証を通すことが出来なくて数時間難儀した。
+どうもセキュリティ強化のために去年からパスワードでの認証が廃止されたらしく、都度自分で発行するアクセストークンを使う方式になったとかなんとかで、言われた通りにアクセストークンで何度も認証を試みるも「「パスワードでの認証は終わったんで」的なエラーメッセージが返されるばかりでお手上げ状態だったのだが、Twitter で似たような事例がないか検索したら、解決策が転がっていて助かった。
+git push 実行時
+remote: ・・・ on August 13, 2021. Please use a personal access token instead.
+上記エラー出力時
+・https://t.co/vCTJwoiaaiでトークン生成
+・git remote remove origin
+・git remote add origin https://TOKEN@github.com/USER/REPO.git#駆け出しエンジニアと繋がりたい
+&mdash; komikomi (@komikomi650) October 14, 2021 駆け出しエンジニアと繋がり…たくはないけど助かった。
+とりあえずのテーマは hello-friend-ng を使って、画像置き場用に hugo-shortcode-gallery というコンポーネントを使っています。
+感応グラン=ギニョル 創元社のSFアンソロジーなどに載っていた作品が面白かった空木春宵の短編をまとめた単行本を読み始めた。読み終わっているのは書き下ろしの表題作だけだけど、日々あらゆるメディアを通して痛ましい事件や他人の辛さや痛みを見る時に発生してしまう受け取る側のグロテスクさについて考えさせられる。
+偶然の聖地 去年の秋頃にTBSラジオのアフター6ジャンクションで連日やっていた推薦図書のコーナーで岸本佐知子が推薦していて面白そうだったので、親戚の家に行く道中から読み始め、実際面白い。
+https://www.tbsradio.jp/articles/46814/
+        </div>
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+
+    
+
+
+
+<div class="post-info noselect">
+    
+        <div class="post-date dt-published">
+            <time datetime="2022-01-09">2022-01-09</time>
+            
+        </div>
+    
+
+    <a class="post-hidden-url u-url" href="/posts/2022/2022week01/">/posts/2022/2022week01/</a>
+    <a href="http://localhost:1313/" class="p-name p-author post-hidden-author h-card" rel="me">map[name:isbsh]</a>
+
+
+    <div class="post-taxonomies">
         
-            
-            
-                <li>
-                    <a href="/categories/annual-report/">Annual Report</a>
-                    (6)
-                </li>
-            
+            <ul class="post-categories">
+                
+                    
+                    <li><a href="/categories/weekly-log">Weekly Log</a></li>
+                
+            </ul>
         
-            
-            
-                <li>
-                    <a href="/categories/weekly-log/">Weekly Log</a>
-                    (171)
-                </li>
-            
         
-    </ul>
+        
+    </div>
+</div>
+
+</article>
+
+    
+    
+    
+    
+    <div class="pagination noselect">
+        <div class="left pagination-item ">
+            
+                <a href="/categories/weekly-log/page/17/"></a>
+            
+        </div>
+        <div class="right pagination-item disabled">
+            
+        </div>
+    </div>
+
+
 
 
         </main>

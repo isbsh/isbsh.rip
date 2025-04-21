@@ -12,7 +12,6 @@ Renders an embedded YouTube video.
 @param {bool} [mute=false] Whether to mute the video. Always true when autoplay is true.
 @param {int} [start] The time, measured in seconds from the start of the video, when the player should start playing the video.
 @param {string} [title] The title attribute of the iframe element. Defaults to "YouTube video".
-@param {string} [aspectRatio=16:9] The aspect ratio of the video. Format: "width:height" (e.g., "16:9", "4:3", "1:1").
 
 @returns {template.HTML}
 
@@ -20,7 +19,6 @@ Renders an embedded YouTube video.
 
 @example {{< youtube 0RKpf3rK57I >}}
 @example {{< youtube id=0RKpf3rK57I loading=lazy start=30 >}}
-@example {{< youtube 0RKpf3rK57I aspectRatio="4:3" >}}
 */}}
 
 {{- $pc := .Page.Site.Config.Privacy.YouTube }}
@@ -39,7 +37,6 @@ Renders an embedded YouTube video.
     {{- $mute := 0 }}
     {{- $start := 0 }}
     {{- $title := "YouTube video" }}
-    {{- $aspectRatio := "16:9" }}
 
     {{- /* Get arguments. */}}
     {{- if in (slice "false" false 0) ($.Get "allowFullScreen") }}
@@ -72,28 +69,12 @@ Renders an embedded YouTube video.
     {{- $loading := or ($.Get "loading") $loading }}
     {{- $start := or ($.Get "start") $start }}
     {{- $title := or ($.Get "title") $title }}
-    {{- $aspectRatio := or ($.Get "aspectRatio") $aspectRatio }}
-
-    {{- /* Calculate padding based on aspect ratio */}}
-    {{- $paddingBottom := "56.25%" }}
-    {{- $ratioValues := split $aspectRatio ":" }}
-    {{- if and (eq (len $ratioValues) 2) (ne (index $ratioValues 0) "0") }}
-      {{- $width := index $ratioValues 0 }}
-      {{- $height := index $ratioValues 1 }}
-      {{- if and (ne $width "") (ne $height "") }}
-        {{- $widthNum := float $width }}
-        {{- $heightNum := float $height }}
-        {{- if and (gt $widthNum 0) (gt $heightNum 0) }}
-          {{- $paddingBottom = printf "%.2f%%" (mul (div $heightNum $widthNum) 100) }}
-        {{- end }}
-      {{- end }}
-    {{- end }}
 
     {{- /* Determine host. */}}
     {{- $host := cond $pc.PrivacyEnhanced "www.youtube-nocookie.com" "www.youtube.com" }}
 
     {{- /* Set styles. */}}
-    {{- $divStyle := printf "position: relative; padding-bottom: %s; height: 0; overflow: hidden;" $paddingBottom }}
+    {{- $divStyle := "position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;" }}
     {{- $iframeStyle := "position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" }}
     {{- if $class }}
       {{- $iframeStyle = "" }}
