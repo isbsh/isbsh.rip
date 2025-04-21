@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+
+
+
+
+    
+
+
+
+
+<html lang="ja-jp" data-theme="">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+        
+<meta charset="utf-8">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<meta name="theme-name" content="Anubis2">
+
+<title>Week49 : Unfair Games - isbsh</title>
+
+<meta name="description" content="2023/12/4~10。
+Unfair Gamesというのは、今読んでる『トゥモロー・アンド・トゥモロー・アンド・トゥモロー』で主人公ふたりが設立するゲーム会社の名前なんだけど、小説の中で語られるこの言葉にいろいろ引き寄せてリンクさせてしまう現実の事象が多すぎて、皮肉の効いたかっこいいネーミングだと思いつつ複雑な気持ち。">
+
+
+
+
+
+<link rel="icon" type="image/x-icon" href="http://localhost:1313/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="http://localhost:1313/favicon.png">
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+<style>
+  body {
+    visibility: hidden;
+    opacity: 0;
+  }
+</style>
+
+<noscript>
+  <style>
+    body {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+</noscript>
+
+
+
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <link rel="stylesheet" href="/css/style.4c42aa0abeac804c4933c54677c449cea1f723caae778425d031e98565a0cdef.css" integrity="sha256-TEKqCr6sgExJM8VGd8RJzqH3I8qud4Ql0DHphWWgze8=">
+    
+
+
+
+
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <link rel="stylesheet" href="/css/style.9c1888ebff42c0224ce04dac10cb2c401f1b77f54f78e8d87d73c3bed781c263.css" integrity="sha256-nBiI6/9CwCJM4E2sEMssQB8bd/VPeOjYfXPDvteBwmM=">
+    
+
+
+
+
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <link rel="stylesheet" href="/css/style.acd606c0fce58853afe0248d37bb41acbbcdd8b1aca2412b6c0fa760da0137f3.css" integrity="sha256-rNYGwPzliFOv4CSNN7tBrLvN2LGsokErbA&#43;nYNoBN/M=">
+    
+
+
+
+
+
+
+
+
+
+  
+
+
+
+    
+    
+
+    
+    
+    
+      
+    
+
+    
+    
+      <link rel="stylesheet" href="/css/style.min.341da4a25e07c147305f19e8c14d98b17901b35944589384f4f05b81095e9f38.css" integrity="sha256-NB2kol4HwUcwXxnowU2YsXkBs1lEWJOE9PBbgQlenzg=" crossorigin="anonymous">
+    
+    
+
+    
+    
+
+    
+    
+    
+      
+    
+
+    
+    
+      <link rel="stylesheet" href="/css/style.min.ed5c481a16e6cdd0703319cf989b1d3510951691d1672769cca50e146a711e9c.css" integrity="sha256-7VxIGhbmzdBwMxnPmJsdNRCVFpHRZydpzKUOFGpxHpw=" crossorigin="anonymous">
+    
+    
+
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous">
+      
+
+
+
+
+    
+    
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4" crossorigin="anonymous"></script>
+      
+
+
+
+
+
+
+  
+
+
+
+    
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <script src="/js/script.672e2309c296e07c18bcd08b28d797a56222ff941d65f308fba3158c44885b14.js" type="text/javascript" charset="utf-8" integrity="sha256-Zy4jCcKW4HwYvNCLKNeXpWIi/5QdZfMI&#43;6MVjESIWxQ="></script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</head>
+<body>
+    <a class="skip-main" href="#main"></a>
+    <div class="container">
+        <header class="common-header">
+            
+                <div class="header-top">
+    <div class="header-top-left">
+        <h1 class="site-title noselect">
+    <a href="/">isbsh</a>
+</h1>
+
+        
+
+  
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+        <div class="theme-switcher">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-sun-high"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14.828 14.828a4 4 0 1 0 -5.656 -5.656a4 4 0 0 0 5.656 5.656z" /><path d="M6.343 17.657l-1.414 1.414" /><path d="M6.343 6.343l-1.414 -1.414" /><path d="M17.657 6.343l1.414 -1.414" /><path d="M17.657 17.657l1.414 1.414" /><path d="M4 12h-2" /><path d="M12 4v-2" /><path d="M20 12h2" /><path d="M12 20v2" /></svg>
+
+
+</span>
+
+        </div>
+    
+
+    <script>
+        const STORAGE_KEY = 'user-color-scheme'
+        const defaultTheme = "auto"
+
+        let currentTheme
+        let switchButton
+        let autoDefinedScheme = window.matchMedia('(prefers-color-scheme: dark)')
+
+        function switchTheme(e) {
+            currentTheme = (currentTheme === 'dark') ? 'light' : 'dark';
+            if (localStorage) localStorage.setItem(STORAGE_KEY, currentTheme);
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            changeGiscusTheme(currentTheme);
+            document.body.dispatchEvent(new CustomEvent(currentTheme + "-theme-set"));
+        }
+
+        const autoChangeScheme = e => {
+            currentTheme = e.matches ? 'dark' : 'light'
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            changeGiscusTheme(currentTheme);
+            document.body.dispatchEvent(new CustomEvent(currentTheme + "-theme-set"));
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            switchButton = document.querySelector('.theme-switcher')
+            currentTheme = detectCurrentScheme()
+
+            if (currentTheme === 'auto') {
+                autoChangeScheme(autoDefinedScheme);
+                autoDefinedScheme.addListener(autoChangeScheme);
+            } else {
+                document.documentElement.setAttribute('data-theme', currentTheme)
+            }
+
+            if (switchButton) {
+                switchButton.addEventListener('click', switchTheme, false)
+            }
+
+            showContent();
+        })
+
+        function detectCurrentScheme() {
+            if (localStorage !== null && localStorage.getItem(STORAGE_KEY)) {
+                return localStorage.getItem(STORAGE_KEY)
+            }
+            if (defaultTheme) {
+                return defaultTheme
+            }
+            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+
+        function showContent() {
+            document.body.style.visibility = 'visible';
+            document.body.style.opacity = 1;
+        }
+
+        function changeGiscusTheme (theme) {
+            function sendMessage(message) {
+              const iframe = document.querySelector('iframe.giscus-frame');
+              if (!iframe) return;
+              iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+            }
+
+            sendMessage({
+              setConfig: {
+                theme: theme
+              }
+            });
+        }
+    </script>
+
+
+        <ul class="social-icons noselect">
+
+ 
+
+
+    
+
+
+
+
+
+    
+        <li>
+            <a href="https://nightly.fedibird.com/@isbsh" title="Mastodon" rel="me">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-mastodon"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18.648 15.254c-1.816 1.763 -6.648 1.626 -6.648 1.626a18.262 18.262 0 0 1 -3.288 -.256c1.127 1.985 4.12 2.81 8.982 2.475c-1.945 2.013 -13.598 5.257 -13.668 -7.636l-.026 -1.154c0 -3.036 .023 -4.115 1.352 -5.633c1.671 -1.91 6.648 -1.666 6.648 -1.666s4.977 -.243 6.648 1.667c1.329 1.518 1.352 2.597 1.352 5.633s-.456 4.074 -1.352 4.944z" /><path d="M12 11.204v-2.926c0 -1.258 -.895 -2.278 -2 -2.278s-2 1.02 -2 2.278v4.722m4 -4.722c0 -1.258 .895 -2.278 2 -2.278s2 1.02 2 2.278v4.722" /></svg>
+
+
+</span>
+
+            </a>
+        </li>
+    
+
+    
+        <li>
+            <a href="https://isbsh.bsky.social" title="Bluesky" rel="me">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-bluesky"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6.335 5.144c-1.654 -1.199 -4.335 -2.127 -4.335 .826c0 .59 .35 4.953 .556 5.661c.713 2.463 3.13 2.75 5.444 2.369c-4.045 .665 -4.889 3.208 -2.667 5.41c1.03 1.018 1.913 1.59 2.667 1.59c2 0 3.134 -2.769 3.5 -3.5c.333 -.667 .5 -1.167 .5 -1.5c0 .333 .167 .833 .5 1.5c.366 .731 1.5 3.5 3.5 3.5c.754 0 1.637 -.571 2.667 -1.59c2.222 -2.203 1.378 -4.746 -2.667 -5.41c2.314 .38 4.73 .094 5.444 -2.369c.206 -.708 .556 -5.072 .556 -5.661c0 -2.953 -2.68 -2.025 -4.335 -.826c-2.293 1.662 -4.76 5.048 -5.665 6.856c-.905 -1.808 -3.372 -5.194 -5.665 -6.856z" /></svg>
+
+</span>
+
+            </a>
+        </li>
+    
+
+
+
+
+
+
+    <li>
+            <a href="/index.xml" title="RSS" rel="me">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-rss"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M4 4a16 16 0 0 1 16 16" /><path d="M4 11a9 9 0 0 1 9 9" /></svg>
+
+
+</span>
+
+            </a>
+        </li>
+    
+
+</ul>
+
+    </div>
+    <div class="header-top-right">
+
+    </div>
+</div>
+
+
+    <nav class="noselect">
+        
+        
+        <a class="" href="http://localhost:1313/" title="">Home</a>
+        
+        <a class="" href="http://localhost:1313/about/" title="">About</a>
+        
+        <a class="" href="http://localhost:1313/categories/" title="">Categories</a>
+        
+        <a class="" href="http://localhost:1313/tags/" title="">Tags</a>
+        
+        <a class="" href="http://localhost:1313/posts/" title="">Archive</a>
+        
+    </nav>
+
+
+
+
+
+    
+
+
+
+
+    <script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$','$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  };
+
+  window.addEventListener('load', (event) => {
+      document.querySelectorAll("mjx-container").forEach(function(x){
+        x.parentElement.classList += 'has-jax'})
+    });
+
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+
+
+
+
+            
+        </header>
+        <main id="main" tabindex="-1">
+            
+    
+
+    <article class="post h-entry">
+        <div class="post-header">
+            <header>
+                
+                
+                
+                <h1 class="p-name post-title ">Week49 : Unfair Games</h1>
+                
+
+            </header>
+            
+
+    
+
+
+
+<div class="post-info noselect">
+    
+        <div class="post-date dt-published">
+            <time datetime="2023-12-11">2023-12-11</time>
+            
+        </div>
+    
+
+    <a class="post-hidden-url u-url" href="/2023/week49-unfair-games/">/2023/week49-unfair-games/</a>
+    <a href="http://localhost:1313/" class="p-name p-author post-hidden-author h-card" rel="me">map[name:isbsh]</a>
+
+
+    <div class="post-taxonomies">
+        
+            <ul class="post-categories">
+                
+                    
+                    <li><a href="/categories/weekly-log">Weekly log</a></li>
+                
+            </ul>
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+        
+
+  
+
+
+
+
+  
+  
+  
+  <details class="toc noselect">
+    <summary>Table of Contents</summary>
+    <div class="inner"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#チバユウスケ死去">チバユウスケ死去</a></li>
+    <li><a href="#窓ぎわのトットちゃん">窓ぎわのトットちゃん</a></li>
+    <li><a href="#ぺろぺろきゃんでー---トットちゃん">ぺろぺろきゃんでー - トットちゃん</a></li>
+    <li><a href="#トゥモローアンドトゥモローアンドトゥモロー">トゥモロー・アンド・トゥモロー・アンド・トゥモロー</a></li>
+    <li><a href="#citizen-sleeper-日本語化アナウンス発表">Citizen Sleeper 日本語化アナウンス発表</a></li>
+    <li><a href="#自民党のパー券">自民党のパー券</a></li>
+    <li><a href="#今週のmma">今週のMMA</a></li>
+    <li><a href="#その他">その他</a></li>
+  </ul>
+</nav></div>
+  </details>
+  
+
+
+
+<script>
+  var toc = document.querySelector(".toc");
+  if (toc) {
+    toc.addEventListener("click", function () {
+      if (event.target.tagName !== "A") {
+        event.preventDefault();
+        if (this.open) {
+          this.open = false;
+          this.classList.remove("expanded");
+        } else {
+          this.open = true;
+          this.classList.add("expanded");
+        }
+      }
+    });
+  }
+</script>
+
+        <div class="content e-content">
+            <p>2023/12/4~10。<br>
+Unfair Gamesというのは、今読んでる『トゥモロー・アンド・トゥモロー・アンド・トゥモロー』で主人公ふたりが設立するゲーム会社の名前なんだけど、小説の中で語られるこの言葉にいろいろ引き寄せてリンクさせてしまう現実の事象が多すぎて、皮肉の効いたかっこいいネーミングだと思いつつ複雑な気持ち。</p>
+<h2 id="チバユウスケ死去" >
+<div>
+    <a href="#%e3%83%81%e3%83%90%e3%83%a6%e3%82%a6%e3%82%b9%e3%82%b1%e6%ad%bb%e5%8e%bb">
+        
+    </a>
+    チバユウスケ死去
+</div>
+</h2>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/ay3geLv2Vgs?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+<p>10代の頃、ただ普通に聴いたりSnoozerのインタビューとか読んで育ちましたという以外に語れるものもないのだけど、あまりに突然で未だに現実感がないアベフトシの時とはまた違って、ただただ悲しい。</p>
+<p>合掌。</p>
+<h2 id="窓ぎわのトットちゃん" >
+<div>
+    <a href="#%e7%aa%93%e3%81%8e%e3%82%8f%e3%81%ae%e3%83%88%e3%83%83%e3%83%88%e3%81%a1%e3%82%83%e3%82%93">
+        
+    </a>
+    窓ぎわのトットちゃん
+</div>
+</h2>
+<p>映画『窓ぎわのトットちゃん』が金曜（12月8日）から公開中。<br>
+前にも一度書いたけど、作中いくつか登場する空想シーンの一つを加藤久仁生さんが担当されていて、そのパートの着彩とコンポジットをしています。</p>
+<p>誰の存在も否定しないことだとか、のびのびした子供の動きや言葉の美しさだとか、いつの間にか生活を侵食してきてそういったものを塗りつぶそうとする戦争の空気であるとか、演出とそれを支える作画や美術のどれもがとても丁寧で本当に素敵な作品だと思います。</p>
+<p>Twitterで検索する感じ、観に行った人の評判もとても良いらしくそれも嬉しい。原作のイメージが強固な人もいるだろうし、そういう人にはどう受け取られるのかなということは気になっていたんだけど、そこまでの拒絶もなさそうで安心。</p>
+<p>正直に言えば、試写を見せてもらうまではこれがどういう志で企画され本編が制作されていたのかまではよくわかっておらず、ひたすら眼の前の仕事をぶつくさ言いながらやるだけでしかなかったのだけど、実際に作品を自分で観て、ひとの感想に触れた今、関われて良かったなと思う。映画ってフォーマットが持ってる影響力の飛距離の長さをしみじみ感じる。</p>
+<p>ぱっと見、名のあるクラシックをただ消費するだけの企画と判断される人もいるかもしれないし、「泣ける」的な売り文句に安易に落とし込めそうな話ではあるのでそういった感想や宣伝に引いてしまう人もいるかもしれないけど、決してそんな短絡的なものではないと思うから、是非広く長く観られてほしい。</p>
+<h2 id="ぺろぺろきゃんでー---トットちゃん" >
+<div>
+    <a href="#%e3%81%ba%e3%82%8d%e3%81%ba%e3%82%8d%e3%81%8d%e3%82%83%e3%82%93%e3%81%a7%e3%83%bc---%e3%83%88%e3%83%83%e3%83%88%e3%81%a1%e3%82%83%e3%82%93">
+        
+    </a>
+    ぺろぺろきゃんでー - トットちゃん
+</div>
+</h2>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/z6pgVMrwfs8?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+<h2 id="トゥモローアンドトゥモローアンドトゥモロー" >
+<div>
+    <a href="#%e3%83%88%e3%82%a5%e3%83%a2%e3%83%ad%e3%83%bc%e3%82%a2%e3%83%b3%e3%83%89%e3%83%88%e3%82%a5%e3%83%a2%e3%83%ad%e3%83%bc%e3%82%a2%e3%83%b3%e3%83%89%e3%83%88%e3%82%a5%e3%83%a2%e3%83%ad%e3%83%bc">
+        
+    </a>
+    トゥモロー・アンド・トゥモロー・アンド・トゥモロー
+</div>
+</h2>
+<p>ガブリエル・ゼヴィン著、池田真紀訳の『トゥモロー・アンド・トゥモロー・アンド・トゥモロー』を読み始めたところ、めちゃくちゃ面白くてまだ序盤にしてすでに「いい本読んでるな自分…」みたいな気持ちになっている最中。</p>
+<p>ふたりの若い男女が幼少期に出会い、些細なことで別れ、成長して再開し一緒にゲームを一緒に作る青春の話（今んところ）なんだけど、導入のふたりが再開する場面とそこに続く出会いの場面の甘酸っぱさの濃度が高くてとてもよい。更にその関係性はお互い好意こそあれ（今のところは）恋人にはならず制作上のパートナーとしての信頼関係にとどまっているのだけど、いろいろな齟齬があったりなかったりしながら、この2人はすぐにバラバラになってしまうんじゃないか、でも…的な緊張感の演出も上手いと思う。</p>
+<p>読みながらデヴィッド・フィンチャーの『ソーシャル・ネットワーク』を思い出す。主人公の一人の所属（出身）がハーバードだからってわけじゃないけど。</p>
+<p>登場人物の視点を通して実在のゲーム（『メタルギアソリッド』とか）に対する批評が語られたり、ゲーム作りのプロセスについてリアリティをもって描写されているのも、読んでいて楽しい。</p>
+<h2 id="citizen-sleeper-日本語化アナウンス発表" >
+<div>
+    <a href="#citizen-sleeper-%e6%97%a5%e6%9c%ac%e8%aa%9e%e5%8c%96%e3%82%a2%e3%83%8a%e3%82%a6%e3%83%b3%e3%82%b9%e7%99%ba%e8%a1%a8">
+        
+    </a>
+    Citizen Sleeper 日本語化アナウンス発表
+</div>
+</h2>
+<ul>
+<li><a href="https://doope.jp/2023/12141889.html">辺境の宇宙ステーションで暮らす脱走者達を描く傑作CRPG「Citizen Sleeper」の日本語対応がアナウンス、リリースは2024年前半 | doope!</a></li>
+</ul>
+<p>待ちに待った「In Other Waters」の開発によるDisco Elysiumライクな（たぶん）CRPGの日本語化。<br>
+正直The Game Awardsのどの新作発表よりもうれしいかもしれない。</p>
+<h2 id="自民党のパー券" >
+<div>
+    <a href="#%e8%87%aa%e6%b0%91%e5%85%9a%e3%81%ae%e3%83%91%e3%83%bc%e5%88%b8">
+        
+    </a>
+    自民党のパー券
+</div>
+</h2>
+<p>インボイス導入ってタイミングでの胸糞案件。なんでこんなグレーでいい加減な建付けの政治資金パーティーとか政治資金規正法がそのままで、こっちの公正さだけ求められるのか。</p>
+<p>あとこれについての国会質疑が本当に酷くて、というか何かしらの捜査が入ったときはいつもそうなんだけど、「捜査に影響が出る恐れがあるので答弁は差し控える」とか言ってゼロ回答でゴリ押しして質疑時間浪費すんのがまじでクソ過ぎて、安倍政権以降こういう振る舞いをしてオッケーな空気になってしまっているのが本当に許せない。答弁内容が事実でやましいことが何もないんだったら、捜査にどう影響出ても問題ないだろうがっていう。</p>
+<p>などと憤っていたら土曜の朝起きたら松野博一が官房長官を更迭されるっぽいニュースが。当たり前だろと思う反面、こんな支持率低い内閣で今から誰が引き継ぐんだろうか。</p>
+<ul>
+<li><a href="https://www.tbsradio.jp/articles/77985/">特集「国会集中審議スペシャル～政治資金、旧統一教会、大阪万博とIR」| TBSラジオ 荻上チキ・Session</a></li>
+<li><a href="https://www.youtube.com/watch?v=SlaID3Psle4">郷原信郎×神保哲生：パーティ券問題の本質は抜け穴だらけの政治資金規正法とこれを正そうとしない立法府の姿勢にある | videonews.com</a></li>
+</ul>
+<h2 id="今週のmma" >
+<div>
+    <a href="#%e4%bb%8a%e9%80%b1%e3%81%aemma">
+        
+    </a>
+    今週のMMA
+</div>
+</h2>
+<ul>
+<li>平良達郎UFC5連勝。勝敗のレコード以上に試合展開の安定感すごすぎ。</li>
+<li>RIZIN 大晦日の輩イベ感が一層極まってきてアーチュレッタとかすまんみたいな気持ちに。</li>
+<li>平本はせっかくキックの狭い枠飛び出したのに結局みんな集まってきて元の木阿弥みたいな感じになってしまった。</li>
+<li>Gradiatorちゃんと追ったほうがいい気がする。</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=-GC5NTriAJg">https://www.youtube.com/watch?v=-GC5NTriAJg</a></p>
+<h2 id="その他" >
+<div>
+    <a href="#%e3%81%9d%e3%81%ae%e4%bb%96">
+        
+    </a>
+    その他
+</div>
+</h2>
+<ul>
+<li>引き続きだらだら引っ越し中。いよいよパソコンとかも運んだ。</li>
+<li>キム・チョヨブ『この世界からは出ていくけれど』読み終わり。</li>
+<li>The Game Awards の GOTY発表。</li>
+<li>『Cyberpunk2077 Phantom Liberty』 をプレイ中。</li>
+</ul>
+        </div>
+
+    </article>
+
+    
+    
+        
+    
+
+    
+        
+        
+    
+
+    
+        
+    
+    
+    <div class="pagination post-pagination">
+        <div class="left pagination-item ">
+            
+                <a href="/2023/week50-fireball-prime-minister/">Week50 : Fireball Prime Minister</a>
+            
+        </div>
+        <div class="right pagination-item ">
+            
+                <a href="/2023/week48-pressing-like-by-everybody-is-killing-him-slowly/">Week48 : Pressing Like by everybody is killing him slowly</a>
+            
+        </div>
+    </div>
+
+
+
+
+
+    
+
+    
+        
+
+
+    
+
+    
+
+    
+    
+    
+
+        </main>
+        
+            <footer class="common-footer noselect">
+    
+    
+
+    <div class="common-footer-bottom">
+        
+
+        <div style="display: flex; align-items: center; gap:8px">
+            ©  isbsh,  2025
+            
+        </div>
+        <div style="display:flex; align-items: center; gap:4px">
+
+            
+            
+
+            
+            
+            
+            
+
+            
+            
+
+            
+        </div>
+        
+            <div>
+                 <a target="_blank" rel="noopener noreferrer" href="https://gohugo.io/">Hugo</a>,  <a target="_blank" rel="noopener noreferrer" href="https://github.com/hugo-theme-anubis2/hugo-theme-anubis2">Anubis2</a>.<br>
+            </div>
+        
+    </div>
+
+    <p class="h-card vcard">
+
+    <a href=http://localhost:1313/ class="p-name u-url url fn" rel="me">map[name:isbsh]</a>
+
+    
+
+    
+</p>
+
+</footer>
+
+        
+    </div>
+</body>
+</html>

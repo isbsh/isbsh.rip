@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+
+
+
+
+    
+
+
+
+
+<html lang="ja-jp" data-theme="">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+        
+<meta charset="utf-8">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<meta name="theme-name" content="Anubis2">
+
+<title>Week16 : Go vote and fail at dining out - isbsh</title>
+
+<meta name="description" content="
+
+
+選挙の日ではないが、久しぶりに家族で外食をしにいったところ、目当ての中華料理屋がどこも閉まっていたのでフラフラ足を延ばしてGINZA INZの中に入っている新しめの小綺麗な中華料理の店に警戒せず入ってみたら、2時間制でテーブルチャージ10%取られる上に酒は高いわ料理は量も温度も味も軒並み生ぬるい…という有様で、久しぶりにしょぼい外食というものに対峙させられ、なんなんだこれはという気持ちと、あーこういうこともあるよなという気持ちを味わった。こんなことなら自分の意見をゴリ押しして同じ施設のバンゲラズキッチンに行くのだったと後悔。
+そんな具合だったので、2時間制と言われたものの適当に何皿か食ったら30分程度でとっとと退散し、近くの十一房でコーヒーを飲み記憶を消した。初めて飲んだホンジュラスのアナエロビック（精製前に発酵させてるやつ）は、想像よりマイルドな風味。もうちょい浅煎りで飲んでみたかった。">
+
+
+
+
+
+<link rel="icon" type="image/x-icon" href="http://localhost:1313/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="http://localhost:1313/favicon.png">
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+<style>
+  body {
+    visibility: hidden;
+    opacity: 0;
+  }
+</style>
+
+<noscript>
+  <style>
+    body {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+</noscript>
+
+
+
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <link rel="stylesheet" href="/css/style.4c42aa0abeac804c4933c54677c449cea1f723caae778425d031e98565a0cdef.css" integrity="sha256-TEKqCr6sgExJM8VGd8RJzqH3I8qud4Ql0DHphWWgze8=">
+    
+
+
+
+
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <link rel="stylesheet" href="/css/style.9c1888ebff42c0224ce04dac10cb2c401f1b77f54f78e8d87d73c3bed781c263.css" integrity="sha256-nBiI6/9CwCJM4E2sEMssQB8bd/VPeOjYfXPDvteBwmM=">
+    
+
+
+
+
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <link rel="stylesheet" href="/css/style.acd606c0fce58853afe0248d37bb41acbbcdd8b1aca2412b6c0fa760da0137f3.css" integrity="sha256-rNYGwPzliFOv4CSNN7tBrLvN2LGsokErbA&#43;nYNoBN/M=">
+    
+
+
+
+
+
+
+
+
+
+  
+
+
+
+    
+    
+
+    
+    
+    
+      
+    
+
+    
+    
+      <link rel="stylesheet" href="/css/style.min.341da4a25e07c147305f19e8c14d98b17901b35944589384f4f05b81095e9f38.css" integrity="sha256-NB2kol4HwUcwXxnowU2YsXkBs1lEWJOE9PBbgQlenzg=" crossorigin="anonymous">
+    
+    
+
+    
+    
+
+    
+    
+    
+      
+    
+
+    
+    
+      <link rel="stylesheet" href="/css/style.min.ed5c481a16e6cdd0703319cf989b1d3510951691d1672769cca50e146a711e9c.css" integrity="sha256-7VxIGhbmzdBwMxnPmJsdNRCVFpHRZydpzKUOFGpxHpw=" crossorigin="anonymous">
+    
+    
+
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous">
+      
+
+
+
+
+    
+    
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4" crossorigin="anonymous"></script>
+      
+
+
+
+
+
+
+  
+
+
+
+    
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <script src="/js/script.672e2309c296e07c18bcd08b28d797a56222ff941d65f308fba3158c44885b14.js" type="text/javascript" charset="utf-8" integrity="sha256-Zy4jCcKW4HwYvNCLKNeXpWIi/5QdZfMI&#43;6MVjESIWxQ="></script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</head>
+<body>
+    <a class="skip-main" href="#main"></a>
+    <div class="container">
+        <header class="common-header">
+            
+                <div class="header-top">
+    <div class="header-top-left">
+        <h1 class="site-title noselect">
+    <a href="/">isbsh</a>
+</h1>
+
+        
+
+  
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+        <div class="theme-switcher">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-sun-high"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14.828 14.828a4 4 0 1 0 -5.656 -5.656a4 4 0 0 0 5.656 5.656z" /><path d="M6.343 17.657l-1.414 1.414" /><path d="M6.343 6.343l-1.414 -1.414" /><path d="M17.657 6.343l1.414 -1.414" /><path d="M17.657 17.657l1.414 1.414" /><path d="M4 12h-2" /><path d="M12 4v-2" /><path d="M20 12h2" /><path d="M12 20v2" /></svg>
+
+
+</span>
+
+        </div>
+    
+
+    <script>
+        const STORAGE_KEY = 'user-color-scheme'
+        const defaultTheme = "auto"
+
+        let currentTheme
+        let switchButton
+        let autoDefinedScheme = window.matchMedia('(prefers-color-scheme: dark)')
+
+        function switchTheme(e) {
+            currentTheme = (currentTheme === 'dark') ? 'light' : 'dark';
+            if (localStorage) localStorage.setItem(STORAGE_KEY, currentTheme);
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            changeGiscusTheme(currentTheme);
+            document.body.dispatchEvent(new CustomEvent(currentTheme + "-theme-set"));
+        }
+
+        const autoChangeScheme = e => {
+            currentTheme = e.matches ? 'dark' : 'light'
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            changeGiscusTheme(currentTheme);
+            document.body.dispatchEvent(new CustomEvent(currentTheme + "-theme-set"));
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            switchButton = document.querySelector('.theme-switcher')
+            currentTheme = detectCurrentScheme()
+
+            if (currentTheme === 'auto') {
+                autoChangeScheme(autoDefinedScheme);
+                autoDefinedScheme.addListener(autoChangeScheme);
+            } else {
+                document.documentElement.setAttribute('data-theme', currentTheme)
+            }
+
+            if (switchButton) {
+                switchButton.addEventListener('click', switchTheme, false)
+            }
+
+            showContent();
+        })
+
+        function detectCurrentScheme() {
+            if (localStorage !== null && localStorage.getItem(STORAGE_KEY)) {
+                return localStorage.getItem(STORAGE_KEY)
+            }
+            if (defaultTheme) {
+                return defaultTheme
+            }
+            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+
+        function showContent() {
+            document.body.style.visibility = 'visible';
+            document.body.style.opacity = 1;
+        }
+
+        function changeGiscusTheme (theme) {
+            function sendMessage(message) {
+              const iframe = document.querySelector('iframe.giscus-frame');
+              if (!iframe) return;
+              iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+            }
+
+            sendMessage({
+              setConfig: {
+                theme: theme
+              }
+            });
+        }
+    </script>
+
+
+        <ul class="social-icons noselect">
+
+ 
+
+
+    
+
+
+
+
+
+    
+        <li>
+            <a href="https://nightly.fedibird.com/@isbsh" title="Mastodon" rel="me">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-mastodon"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18.648 15.254c-1.816 1.763 -6.648 1.626 -6.648 1.626a18.262 18.262 0 0 1 -3.288 -.256c1.127 1.985 4.12 2.81 8.982 2.475c-1.945 2.013 -13.598 5.257 -13.668 -7.636l-.026 -1.154c0 -3.036 .023 -4.115 1.352 -5.633c1.671 -1.91 6.648 -1.666 6.648 -1.666s4.977 -.243 6.648 1.667c1.329 1.518 1.352 2.597 1.352 5.633s-.456 4.074 -1.352 4.944z" /><path d="M12 11.204v-2.926c0 -1.258 -.895 -2.278 -2 -2.278s-2 1.02 -2 2.278v4.722m4 -4.722c0 -1.258 .895 -2.278 2 -2.278s2 1.02 2 2.278v4.722" /></svg>
+
+
+</span>
+
+            </a>
+        </li>
+    
+
+    
+        <li>
+            <a href="https://isbsh.bsky.social" title="Bluesky" rel="me">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-bluesky"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6.335 5.144c-1.654 -1.199 -4.335 -2.127 -4.335 .826c0 .59 .35 4.953 .556 5.661c.713 2.463 3.13 2.75 5.444 2.369c-4.045 .665 -4.889 3.208 -2.667 5.41c1.03 1.018 1.913 1.59 2.667 1.59c2 0 3.134 -2.769 3.5 -3.5c.333 -.667 .5 -1.167 .5 -1.5c0 .333 .167 .833 .5 1.5c.366 .731 1.5 3.5 3.5 3.5c.754 0 1.637 -.571 2.667 -1.59c2.222 -2.203 1.378 -4.746 -2.667 -5.41c2.314 .38 4.73 .094 5.444 -2.369c.206 -.708 .556 -5.072 .556 -5.661c0 -2.953 -2.68 -2.025 -4.335 -.826c-2.293 1.662 -4.76 5.048 -5.665 6.856c-.905 -1.808 -3.372 -5.194 -5.665 -6.856z" /></svg>
+
+</span>
+
+            </a>
+        </li>
+    
+
+
+
+
+
+
+    <li>
+            <a href="/index.xml" title="RSS" rel="me">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-rss"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M4 4a16 16 0 0 1 16 16" /><path d="M4 11a9 9 0 0 1 9 9" /></svg>
+
+
+</span>
+
+            </a>
+        </li>
+    
+
+</ul>
+
+    </div>
+    <div class="header-top-right">
+
+    </div>
+</div>
+
+
+    <nav class="noselect">
+        
+        
+        <a class="" href="http://localhost:1313/" title="">Home</a>
+        
+        <a class="" href="http://localhost:1313/about/" title="">About</a>
+        
+        <a class="" href="http://localhost:1313/categories/" title="">Categories</a>
+        
+        <a class="" href="http://localhost:1313/tags/" title="">Tags</a>
+        
+        <a class="" href="http://localhost:1313/posts/" title="">Archive</a>
+        
+    </nav>
+
+
+
+
+
+    
+
+
+
+
+    <script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$','$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  };
+
+  window.addEventListener('load', (event) => {
+      document.querySelectorAll("mjx-container").forEach(function(x){
+        x.parentElement.classList += 'has-jax'})
+    });
+
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+
+
+
+
+            
+        </header>
+        <main id="main" tabindex="-1">
+            
+    
+
+    <article class="post h-entry">
+        <div class="post-header">
+            <header>
+                
+                
+                
+                <h1 class="p-name post-title ">Week16 : Go vote and fail at dining out</h1>
+                
+
+            </header>
+            
+
+    
+
+
+
+<div class="post-info noselect">
+    
+        <div class="post-date dt-published">
+            <time datetime="2023-04-24">2023-04-24</time>
+            
+        </div>
+    
+
+    <a class="post-hidden-url u-url" href="/2023/04/week16-go-vote-and-fail-at-dining-out/">/2023/04/week16-go-vote-and-fail-at-dining-out/</a>
+    <a href="http://localhost:1313/" class="p-name p-author post-hidden-author h-card" rel="me">map[name:isbsh]</a>
+
+
+    <div class="post-taxonomies">
+        
+            <ul class="post-categories">
+                
+                    
+                    <li><a href="/categories/weekly-log">Weekly log</a></li>
+                
+            </ul>
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+        
+
+  
+
+
+
+
+  
+  
+  
+  <details class="toc noselect">
+    <summary>Table of Contents</summary>
+    <div class="inner"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#区議会議員選挙">区議会議員選挙</a></li>
+    <li><a href="#選挙に絶対行きたくない-家のソファーで寝ていたい">選挙に絶対行きたくない 家のソファーで寝ていたい</a></li>
+    <li><a href="#フェンス">フェンス</a></li>
+    <li><a href="#アフター6ジャンクション--特集脚本家渡辺あや">アフター6ジャンクション | 特集「脚本家・渡辺あや」</a></li>
+    <li><a href="#ジャイアントロボ-the-animation">ジャイアントロボ THE ANIMATION</a></li>
+    <li><a href="#unrecord">Unrecord</a></li>
+    <li><a href="#今週の仁王2">今週の仁王2</a></li>
+    <li><a href="#bellator295">Bellator295</a></li>
+  </ul>
+</nav></div>
+  </details>
+  
+
+
+
+<script>
+  var toc = document.querySelector(".toc");
+  if (toc) {
+    toc.addEventListener("click", function () {
+      if (event.target.tagName !== "A") {
+        event.preventDefault();
+        if (this.open) {
+          this.open = false;
+          this.classList.remove("expanded");
+        } else {
+          this.open = true;
+          this.classList.add("expanded");
+        }
+      }
+    });
+  }
+</script>
+
+        <div class="content e-content">
+            <img src="/images/images/230421.webp"  class="left"  />
+
+
+<p>選挙の日ではないが、久しぶりに家族で外食をしにいったところ、目当ての中華料理屋がどこも閉まっていたのでフラフラ足を延ばしてGINZA INZの中に入っている新しめの小綺麗な中華料理の店に警戒せず入ってみたら、2時間制でテーブルチャージ10%取られる上に酒は高いわ料理は量も温度も味も軒並み生ぬるい…という有様で、久しぶりにしょぼい外食というものに対峙させられ、なんなんだこれはという気持ちと、あーこういうこともあるよなという気持ちを味わった。こんなことなら自分の意見をゴリ押しして同じ施設のバンゲラズキッチンに行くのだったと後悔。</p>
+<p>そんな具合だったので、2時間制と言われたものの適当に何皿か食ったら30分程度でとっとと退散し、近くの十一房でコーヒーを飲み記憶を消した。初めて飲んだホンジュラスのアナエロビック（精製前に発酵させてるやつ）は、想像よりマイルドな風味。もうちょい浅煎りで飲んでみたかった。</p>
+<h2 id="区議会議員選挙" >
+<div>
+    <a href="#%e5%8c%ba%e8%ad%b0%e4%bc%9a%e8%ad%b0%e5%93%a1%e9%81%b8%e6%8c%99">
+        
+    </a>
+    区議会議員選挙
+</div>
+</h2>
+<p>選挙期間中、よく家の外から聞こえてきた維新の新人候補の発声が完全にはねるのトびらのコント『恋の虜～グローバルTPS物語』におけるロバート秋山のそれで困惑したのだけど、選挙結果の蓋を開けてみたらその候補が見事1位当選しており「なるほど…」となりました。</p>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/xUUSwkIOk1I?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+<p>区議会議員選にしてはマジで選挙に取り組んでる感はあったので、結局選挙は選挙力の強いやつが勝つのだな～という感想。まあ自分の住んでる自治体のひととかああいうキャリアのがつがつした人間を「仕事できそう」的に評価しそうではある。グローバルTPS関係なしに自分は維新の候補を信用しませんが。</p>
+<p>自分の投票はというと、今回は無所属のNPO職員の候補に入れた。話を聞きに行ったりもせずウェブで大雑把に検索して手に入る範囲の情報だけでの判断だけど、いろいろやろうとしている事や、それに向けて今取り組んでいる事、どういう関わり方をしていくのかがとても具体的かつ反対するものでもなかったので。</p>
+<p>立憲の自分と歳の近い女性の新人もどうなんだろうと一瞬思ったものの、ポスターなどでまず飛び込んでくる文言が「○○業界で〇年」みたいなものだし、ホームページを見てもとても漠然としているしで投票には至らず。こんな漠然とした感じで入れる人いるのかなと思ったら当選していた。どの候補も言ってることよくわかんないしリベラルで若い女性というだけでまあ入れてもいっか、となるのかもしれない。</p>
+<p>また、図書館の司書の問題にTwitterで発言していた現職の議員も入れようか迷ったのだけど、まあ現職はだいたい通るだろと思って今回はこちらも入れなかった。この人もやはり普通に当選していた模様。</p>
+<p>全体の党勢の話はまだよくわかりません。</p>
+<h2 id="選挙に絶対行きたくない-家のソファーで寝ていたい" >
+<div>
+    <a href="#%e9%81%b8%e6%8c%99%e3%81%ab%e7%b5%b6%e5%af%be%e8%a1%8c%e3%81%8d%e3%81%9f%e3%81%8f%e3%81%aa%e3%81%84-%e5%ae%b6%e3%81%ae%e3%82%bd%e3%83%95%e3%82%a1%e3%83%bc%e3%81%a7%e5%af%9d%e3%81%a6%e3%81%84%e3%81%9f%e3%81%84">
+        
+    </a>
+    選挙に絶対行きたくない 家のソファーで寝ていたい
+</div>
+</h2>
+<p>『それでも女をやっていく』を読んで百合を少し読んでみようと思って購入した、河出文庫の『百合小説コレクションwiz』に収録されている斜線堂有紀さんの短編。</p>
+<p>政治的意識の高い女性と同棲していて、彼女の事が好きだから一緒にはいるものの、極力そういうものに関わらないでいたいと思っている女性の話で、図らずも選挙のタイミングに読んでしまった。</p>
+<p>ざっくり言ってしまえば、「もっと雑に生きたいだけなのに、マイノリティはPC的な話に意識的になって真面目に生きていかなければダラダラした恋人との時間も守れず、マジョリティの側だけが何もしないままで自分たちの普通を普通として享受できるなんて不公平でズルいのでは」みたいな理論武装で、主人公がデモや選挙に積極的なパートナーを横目になぜそれらに参加しないのかが語られていて、その切り口や視点は面白いしわかるんだけど、そこから考えや関係性の変化に至るような展開にまで至らなかったのが少し物足りなく感じられる。</p>
+<p>あと選挙とか政治って別にセクシャリティ以外の生活にだって関わる話で本来誰しも当事者になるものなんじゃないの、とか主人公に言いたくなってしまうような釈然としなさも残った。</p>
+<p>この作品に限った話でなく、別に肩肘張らずにソファーでだらだら鼻くそほじるテンションで雑に政治の話もすりゃいいじゃんていうか。</p>
+<p>とは言えクィアの話で当事者でありながら意識が低くて正しくなれない登場人物を描いていることや、モラル的に正しく思慮深い同性のふたりの人間がくっついてなんか無条件に尊い…みたいなファンタジーから距離をおいているのはとても良いと思う。</p>
+<h2 id="フェンス" >
+<div>
+    <a href="#%e3%83%95%e3%82%a7%e3%83%b3%e3%82%b9">
+        
+    </a>
+    フェンス
+</div>
+</h2>
+
+    <img src="/images/2023/0424_fence.webp"  class="left"  />
+
+
+<p>先週の日曜に終わった、WOWOWでやっていた野木亜紀子さん脚本による全5話の沖縄を舞台にしたドラマ。</p>
+<p>沖縄の、といってもNHKの朝ドラでよく作られていそうな（偏見）、美ら海でのんびり～みたいなものではなく、日米地位協定や基地問題をはじめとする現実の問題に正面から向きあった内容で、とても意義深くて良いドラマだった。アメリカ以上に本土の人間が見てるようで何も見ていない、考えてるようで何も考えてこなかったこと自体の加害性について自覚させられて、全5話と短いシリーズなのに、それを感じさせない高密度でヘビーな鑑賞体験だった。</p>
+<p>自分も含めて、実は多くの人にとってぼんやりした認識しかしてない現実の問題を取り扱っているので、まずそこに気づかせるためにも説明的な会話や描写が多くなってはいるのだけど、主人公がライターという設定という事もあってそこまで不自然に引っ掛かるものにはなっておらず、ヘビーとは言っても、説明と娯楽性とのバランスは取れていたように感じる。</p>
+<p>まあ多少説明の比重が偏って見えたとしても、こういう問題を扱う以上は、今以上に問題を知らしめることが制作の課題の大きなウェイトを占めているのだと思うので、そこは致し方ないというか、批判されるべきはこういう演出をせざるを得なくしてしまっている、日本社会の認識の低さの方だという事なんじゃなかろうか。また、それは沖縄にとどまらず、家父長制であったり、女性差別の話についても言える話だろう。</p>
+<p>ただ問題を広く知らしめると言った時に、放送はWOWOWなので限定的なものになってしまうのは少し残念だし、こういう取り組みをNHKなり民放なりが出来ないのをみると、やはり公共ってなにかね…みたいな事も思ってしまう。WOWOWの姿勢は称えられるべきだとして。</p>
+<p>ちなみに、Twitterのハッシュタグで他の人の感想を眺めたりして見ると、JO1の與那城さんに対する言及が多くて、はじめは少しノイジーに感じたのだけど、活動真っ盛りなアイドルの人がこういう社会的なテーマに取り組んだ映像作品に出ることで、彼ら彼女らのファンに少しでも問題意識が伝わることの意義ってバカにならないし、いろいろなルーツの人間がアイドルというかショービジネスの世界で活躍する事の意味についても考えさせられた。</p>
+<p>あとレイプ被害に遭った登場人物をケアする医者として新垣結衣さんが特別出演しており、彼女と松岡茉優さんが対峙して同じフレームの中に収まっているのは素朴に豪華で良かった。その際の松岡さんが自分と自分の親の過去について告白する場面とその後母親に電話する際の芝居がとても重たくて良いので観て下さい。</p>
+<h2 id="アフター6ジャンクション--特集脚本家渡辺あや" >
+<div>
+    <a href="#%e3%82%a2%e3%83%95%e3%82%bf%e3%83%bc6%e3%82%b8%e3%83%a3%e3%83%b3%e3%82%af%e3%82%b7%e3%83%a7%e3%83%b3--%e7%89%b9%e9%9b%86%e8%84%9a%e6%9c%ac%e5%ae%b6%e6%b8%a1%e8%be%ba%e3%81%82%e3%82%84">
+        
+    </a>
+    アフター6ジャンクション | 特集「脚本家・渡辺あや」
+</div>
+</h2>
+<p><a href="https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy8xOGQ5NDRjNC9wb2RjYXN0L3Jzcw/episode/YjgyZDRmMTYtZGVhZi0xMWVkLTg1MDQtOTdjYjJkNDhiYWQ2">TBSラジオ「アフター6ジャンクション」 - 特集：「脚本家・渡辺あや特集」by岡室美奈子さん</a></p>
+<p>ポッドキャストのURLをここにはる時、極力配信元と思われるサービスのものを使おうと思っていたのだけど、Anchorのページが完全にSpotifyのドメインのページになってなんかムカつくというか、そんな感情を抜きにしても、以前から重かったのが一層重くなって見づらく付き合いきれないのでGoogle PodcastのURLを使う事にした。Fuck Spotify。</p>
+<p>ラジオは『エルピス』『カーネーション』『その街のこども』などについて。</p>
+<p>冒頭で上に書いた『フェンス』も、最近の注目作として紹介されていた。</p>
+<h2 id="ジャイアントロボ-the-animation" >
+<div>
+    <a href="#%e3%82%b8%e3%83%a3%e3%82%a4%e3%82%a2%e3%83%b3%e3%83%88%e3%83%ad%e3%83%9c-the-animation">
+        
+    </a>
+    ジャイアントロボ THE ANIMATION
+</div>
+</h2>
+<p>『おもひでぽろぽろ』を観直そうと思ってBDを買った時、ついでに買った『ジャイアントロボ』のOVAのBDの方をつい観てしまっている。好きなので。</p>
+<p>ただ10代の頃の記憶は美化されているもので、観直してみると思っていたより普通のクオリティに感じてしまったりもして少し微妙な気持ちに。</p>
+<h2 id="unrecord" >
+<div>
+    <a href="#unrecord">
+        
+    </a>
+    Unrecord
+</div>
+</h2>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/5qvVNzsJyB0?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+<p>ほとんど実写みたいな質感のFPSのゲーム映像。ここまで来るとトリガー引くのにもためらいが生じそう。これと自然言語のAIとかが融合して来たらどうなっちゃうんだろう。</p>
+<h2 id="今週の仁王2" >
+<div>
+    <a href="#%e4%bb%8a%e9%80%b1%e3%81%ae%e4%bb%81%e7%8e%8b2">
+        
+    </a>
+    今週の仁王2
+</div>
+</h2>
+<p>DLC2『平安京討魔伝』のメインミッションを2つまで終えて、気分転換的に2周目のあやかしの夢路で最初の方のマップをやり直してみているところ、1周目のDLCよりもだいぶ簡単で、無双感が転じて作業感になっちゃうなと感じる。</p>
+<h2 id="bellator295" >
+<div>
+    <a href="#bellator295">
+        
+    </a>
+    Bellator295
+</div>
+</h2>
+<p>バンタム級GPの決勝、ストッツvs.ミックスの試合。組みが主体の試合になるかと思わせて、ミックスの膝が綺麗にストッツの顎を砕いて1R2分足らずで終わってしまった。劇的ではあるけど、やっぱりもうちょっと攻防が見たかった。</p>
+<p>この手のGP、やる相手が勝手に決まるというのは先が見えて楽しいと思う反面、スパンが長いと普通のランクマッチで良くないかという気がしないでもない。かといってRIZINみたいに1日2試合とかはもうやるべきでないのだけど。</p>
+        </div>
+
+    </article>
+
+    
+    
+        
+    
+
+    
+        
+        
+    
+
+    
+        
+    
+    
+    <div class="pagination post-pagination">
+        <div class="left pagination-item ">
+            
+                <a href="/2023/04/week18-abandoned-neutrality/">Week18 : Abandoned Neutrality</a>
+            
+        </div>
+        <div class="right pagination-item ">
+            
+                <a href="/2023/04/week15-authentic-countryside/">Week15 : Authentic Countryside</a>
+            
+        </div>
+    </div>
+
+
+
+
+
+    
+
+    
+        
+
+
+    
+
+    
+
+    
+    
+    
+
+        </main>
+        
+            <footer class="common-footer noselect">
+    
+    
+
+    <div class="common-footer-bottom">
+        
+
+        <div style="display: flex; align-items: center; gap:8px">
+            ©  isbsh,  2025
+            
+        </div>
+        <div style="display:flex; align-items: center; gap:4px">
+
+            
+            
+
+            
+            
+            
+            
+
+            
+            
+
+            
+        </div>
+        
+            <div>
+                 <a target="_blank" rel="noopener noreferrer" href="https://gohugo.io/">Hugo</a>,  <a target="_blank" rel="noopener noreferrer" href="https://github.com/hugo-theme-anubis2/hugo-theme-anubis2">Anubis2</a>.<br>
+            </div>
+        
+    </div>
+
+    <p class="h-card vcard">
+
+    <a href=http://localhost:1313/ class="p-name u-url url fn" rel="me">map[name:isbsh]</a>
+
+    
+
+    
+</p>
+
+</footer>
+
+        
+    </div>
+</body>
+</html>

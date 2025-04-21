@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+
+
+
+
+    
+
+
+
+
+<html lang="ja-jp" data-theme="">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+        
+<meta charset="utf-8">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<meta name="theme-name" content="Anubis2">
+
+<title>Week 27 - isbsh</title>
+
+<meta name="description" content="">
+
+
+
+
+
+<link rel="icon" type="image/x-icon" href="http://localhost:1313/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="http://localhost:1313/favicon.png">
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+<style>
+  body {
+    visibility: hidden;
+    opacity: 0;
+  }
+</style>
+
+<noscript>
+  <style>
+    body {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+</noscript>
+
+
+
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <link rel="stylesheet" href="/css/style.4c42aa0abeac804c4933c54677c449cea1f723caae778425d031e98565a0cdef.css" integrity="sha256-TEKqCr6sgExJM8VGd8RJzqH3I8qud4Ql0DHphWWgze8=">
+    
+
+
+
+
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <link rel="stylesheet" href="/css/style.9c1888ebff42c0224ce04dac10cb2c401f1b77f54f78e8d87d73c3bed781c263.css" integrity="sha256-nBiI6/9CwCJM4E2sEMssQB8bd/VPeOjYfXPDvteBwmM=">
+    
+
+
+
+
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <link rel="stylesheet" href="/css/style.acd606c0fce58853afe0248d37bb41acbbcdd8b1aca2412b6c0fa760da0137f3.css" integrity="sha256-rNYGwPzliFOv4CSNN7tBrLvN2LGsokErbA&#43;nYNoBN/M=">
+    
+
+
+
+
+
+
+
+
+
+  
+
+
+
+    
+    
+
+    
+    
+    
+      
+    
+
+    
+    
+      <link rel="stylesheet" href="/css/style.min.341da4a25e07c147305f19e8c14d98b17901b35944589384f4f05b81095e9f38.css" integrity="sha256-NB2kol4HwUcwXxnowU2YsXkBs1lEWJOE9PBbgQlenzg=" crossorigin="anonymous">
+    
+    
+
+    
+    
+
+    
+    
+    
+      
+    
+
+    
+    
+      <link rel="stylesheet" href="/css/style.min.ed5c481a16e6cdd0703319cf989b1d3510951691d1672769cca50e146a711e9c.css" integrity="sha256-7VxIGhbmzdBwMxnPmJsdNRCVFpHRZydpzKUOFGpxHpw=" crossorigin="anonymous">
+    
+    
+
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous">
+      
+
+
+
+
+    
+    
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4" crossorigin="anonymous"></script>
+      
+
+
+
+
+
+
+  
+
+
+
+    
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <script src="/js/script.672e2309c296e07c18bcd08b28d797a56222ff941d65f308fba3158c44885b14.js" type="text/javascript" charset="utf-8" integrity="sha256-Zy4jCcKW4HwYvNCLKNeXpWIi/5QdZfMI&#43;6MVjESIWxQ="></script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</head>
+<body>
+    <a class="skip-main" href="#main"></a>
+    <div class="container">
+        <header class="common-header">
+            
+                <div class="header-top">
+    <div class="header-top-left">
+        <h1 class="site-title noselect">
+    <a href="/">isbsh</a>
+</h1>
+
+        
+
+  
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+        <div class="theme-switcher">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-sun-high"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14.828 14.828a4 4 0 1 0 -5.656 -5.656a4 4 0 0 0 5.656 5.656z" /><path d="M6.343 17.657l-1.414 1.414" /><path d="M6.343 6.343l-1.414 -1.414" /><path d="M17.657 6.343l1.414 -1.414" /><path d="M17.657 17.657l1.414 1.414" /><path d="M4 12h-2" /><path d="M12 4v-2" /><path d="M20 12h2" /><path d="M12 20v2" /></svg>
+
+
+</span>
+
+        </div>
+    
+
+    <script>
+        const STORAGE_KEY = 'user-color-scheme'
+        const defaultTheme = "auto"
+
+        let currentTheme
+        let switchButton
+        let autoDefinedScheme = window.matchMedia('(prefers-color-scheme: dark)')
+
+        function switchTheme(e) {
+            currentTheme = (currentTheme === 'dark') ? 'light' : 'dark';
+            if (localStorage) localStorage.setItem(STORAGE_KEY, currentTheme);
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            changeGiscusTheme(currentTheme);
+            document.body.dispatchEvent(new CustomEvent(currentTheme + "-theme-set"));
+        }
+
+        const autoChangeScheme = e => {
+            currentTheme = e.matches ? 'dark' : 'light'
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            changeGiscusTheme(currentTheme);
+            document.body.dispatchEvent(new CustomEvent(currentTheme + "-theme-set"));
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            switchButton = document.querySelector('.theme-switcher')
+            currentTheme = detectCurrentScheme()
+
+            if (currentTheme === 'auto') {
+                autoChangeScheme(autoDefinedScheme);
+                autoDefinedScheme.addListener(autoChangeScheme);
+            } else {
+                document.documentElement.setAttribute('data-theme', currentTheme)
+            }
+
+            if (switchButton) {
+                switchButton.addEventListener('click', switchTheme, false)
+            }
+
+            showContent();
+        })
+
+        function detectCurrentScheme() {
+            if (localStorage !== null && localStorage.getItem(STORAGE_KEY)) {
+                return localStorage.getItem(STORAGE_KEY)
+            }
+            if (defaultTheme) {
+                return defaultTheme
+            }
+            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+
+        function showContent() {
+            document.body.style.visibility = 'visible';
+            document.body.style.opacity = 1;
+        }
+
+        function changeGiscusTheme (theme) {
+            function sendMessage(message) {
+              const iframe = document.querySelector('iframe.giscus-frame');
+              if (!iframe) return;
+              iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+            }
+
+            sendMessage({
+              setConfig: {
+                theme: theme
+              }
+            });
+        }
+    </script>
+
+
+        <ul class="social-icons noselect">
+
+ 
+
+
+    
+
+
+
+
+
+    
+        <li>
+            <a href="https://nightly.fedibird.com/@isbsh" title="Mastodon" rel="me">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-mastodon"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18.648 15.254c-1.816 1.763 -6.648 1.626 -6.648 1.626a18.262 18.262 0 0 1 -3.288 -.256c1.127 1.985 4.12 2.81 8.982 2.475c-1.945 2.013 -13.598 5.257 -13.668 -7.636l-.026 -1.154c0 -3.036 .023 -4.115 1.352 -5.633c1.671 -1.91 6.648 -1.666 6.648 -1.666s4.977 -.243 6.648 1.667c1.329 1.518 1.352 2.597 1.352 5.633s-.456 4.074 -1.352 4.944z" /><path d="M12 11.204v-2.926c0 -1.258 -.895 -2.278 -2 -2.278s-2 1.02 -2 2.278v4.722m4 -4.722c0 -1.258 .895 -2.278 2 -2.278s2 1.02 2 2.278v4.722" /></svg>
+
+
+</span>
+
+            </a>
+        </li>
+    
+
+    
+        <li>
+            <a href="https://isbsh.bsky.social" title="Bluesky" rel="me">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-bluesky"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6.335 5.144c-1.654 -1.199 -4.335 -2.127 -4.335 .826c0 .59 .35 4.953 .556 5.661c.713 2.463 3.13 2.75 5.444 2.369c-4.045 .665 -4.889 3.208 -2.667 5.41c1.03 1.018 1.913 1.59 2.667 1.59c2 0 3.134 -2.769 3.5 -3.5c.333 -.667 .5 -1.167 .5 -1.5c0 .333 .167 .833 .5 1.5c.366 .731 1.5 3.5 3.5 3.5c.754 0 1.637 -.571 2.667 -1.59c2.222 -2.203 1.378 -4.746 -2.667 -5.41c2.314 .38 4.73 .094 5.444 -2.369c.206 -.708 .556 -5.072 .556 -5.661c0 -2.953 -2.68 -2.025 -4.335 -.826c-2.293 1.662 -4.76 5.048 -5.665 6.856c-.905 -1.808 -3.372 -5.194 -5.665 -6.856z" /></svg>
+
+</span>
+
+            </a>
+        </li>
+    
+
+
+
+
+
+
+    <li>
+            <a href="/index.xml" title="RSS" rel="me">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-rss"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M4 4a16 16 0 0 1 16 16" /><path d="M4 11a9 9 0 0 1 9 9" /></svg>
+
+
+</span>
+
+            </a>
+        </li>
+    
+
+</ul>
+
+    </div>
+    <div class="header-top-right">
+
+    </div>
+</div>
+
+
+    <nav class="noselect">
+        
+        
+        <a class="" href="http://localhost:1313/" title="">Home</a>
+        
+        <a class="" href="http://localhost:1313/about/" title="">About</a>
+        
+        <a class="" href="http://localhost:1313/categories/" title="">Categories</a>
+        
+        <a class="" href="http://localhost:1313/tags/" title="">Tags</a>
+        
+        <a class="" href="http://localhost:1313/posts/" title="">Archive</a>
+        
+    </nav>
+
+
+
+
+
+    
+
+
+
+
+    <script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$','$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  };
+
+  window.addEventListener('load', (event) => {
+      document.querySelectorAll("mjx-container").forEach(function(x){
+        x.parentElement.classList += 'has-jax'})
+    });
+
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+
+
+
+
+            
+        </header>
+        <main id="main" tabindex="-1">
+            
+    
+
+    <article class="post h-entry">
+        <div class="post-header">
+            <header>
+                
+                
+                
+                <h1 class="p-name post-title ">Week 27</h1>
+                
+
+            </header>
+            
+
+    
+
+
+
+<div class="post-info noselect">
+    
+        <div class="post-date dt-published">
+            <time datetime="2022-07-11">2022-07-11</time>
+            
+        </div>
+    
+
+    <a class="post-hidden-url u-url" href="/2022/07/week-27/">/2022/07/week-27/</a>
+    <a href="http://localhost:1313/" class="p-name p-author post-hidden-author h-card" rel="me">map[name:isbsh]</a>
+
+
+    <div class="post-taxonomies">
+        
+            <ul class="post-categories">
+                
+                    
+                    <li><a href="/categories/weekly-log">Weekly Log</a></li>
+                
+            </ul>
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+        
+
+  
+
+
+
+
+
+
+<script>
+  var toc = document.querySelector(".toc");
+  if (toc) {
+    toc.addEventListener("click", function () {
+      if (event.target.tagName !== "A") {
+        event.preventDefault();
+        if (this.open) {
+          this.open = false;
+          this.classList.remove("expanded");
+        } else {
+          this.open = true;
+          this.classList.add("expanded");
+        }
+      }
+    });
+  }
+</script>
+
+        <div class="content e-content">
+            <img src="/images/images/220707.jpg"  class="center"  style="border-radius: 8px;"  />
+
+
+<hr>
+<h3 id="参院選2022" >
+<div>
+    <a href="#%e5%8f%82%e9%99%a2%e9%81%b82022">
+        
+    </a>
+    参院選2022
+</div>
+</h3>
+<p>選挙区で山添拓、比例で辻本清美に入れた。  結果的にはどちらも開票後ほどなく当確が出るくらい人気ではあったので、他の選挙では死に票になりがちな自分の投票傾向からすると珍しい投票になったと思う。</p>
+<p>選挙区については、山添拓本人に対する期待と維新の海老澤由紀あたりと競る予想もあったのでさほど悩まなかったのに、比例で個人名を書こうと思ったら投票日の夕方まで悩んでしまった。</p>
+<p>本当なら無名でも政策的に納得できる30～40代の女性候補がいればそこに入れたくて、共産党だとか社民党の候補の政策も確認したものの決め手に欠けて、結局ここ最近の自分の中の論点というか興味に立ち返り、消費税減税のような目標を声高に言っているところには入れられないなと思い辻本清美に落ち着いた。消費税云々という話で言えば選挙区で投票した山添拓もアレなんだけど、先に書いた通り維新候補とのせめぎ合いも予想されたので今回そこは目をつむる事に。</p>
+<p>また今回なぜか論点から外されがちだった公文書管理と情報公開の問題についても、辻本清美の政策ページでは忘れずに述べられていたのも地味に大きい。今回思いもよらない事件によって安倍晋三にフォーカスがいくらか戻されたわけだが、安倍晋三政権以降の政府を評価する時に、公文書管理や情報公開に対する姿勢の著しい劣化は、他の様々な話に関わってくる政治に対する信用の根本的な話だと思うので、そこについてはしつこく言い続けてもらわないと困る。</p>
+<p>全体の結果自体はそもそも与党が減らすほどの要因はなく野党側が伸びる理由もない以上はこうなりますよねという感じでどうでも良いというか、今更それをガン見してあーとかうーとか言ったところでしんどいので、粛々と日々の生活の中での政治的な判断しながら生きていくしかないけども、いつまでも地盤沈下に気づかないまま日本はすごい国だと思い込み、ぼんやり自民党に任せとけば良くならないまでもなんだかんだで現状は維持されていくと漠然と信じている人たちが、より悪くなっていく状況を直視せざるを得ないようなインパクトを持った何かがない限り、大きな変化は難しいのかなと思ってしまう。参政党みたいなカルトに票が集まるのはやめてほしいが、もっと適当に色んな可能性にベットしてもいいんじゃないのか。</p>
+<p>余談だけど、TBSラジオの開票速報ライブは荻上チキをはじめとして、放送中に繋いだ各党代表への斬りこみ方がいつもビンビンで、池上彰などの比ではないので見ると面白いと思う。今回一緒に司会をしていた日比さんの仕事っぷりもよかった。</p>
+<ul>
+<li><a href="https://www.videonews.com/marugeki-talk/1109">安倍元首相銃撃事件を乗り越えて来るべき選挙と向き合う(角谷浩一政治ジャーナリスト) -マル激</a></li>
+<li><a href="https://www.youtube.com/watch?v=jK8NNTk8Aaw">JRN・TBSラジオ 報道特別番組「開票ライブ！参院選2022」～多様な声を政治に直接届ける選挙特番 - YouTube</a></li>
+</ul>
+<hr>
+<h3 id="安倍晋三暗殺" >
+<div>
+    <a href="#%e5%ae%89%e5%80%8d%e6%99%8b%e4%b8%89%e6%9a%97%e6%ae%ba">
+        
+    </a>
+    安倍晋三暗殺
+</div>
+</h3>
+<p>こんな事が起きちゃうのか…っていう衝撃に驚きつつ、犯人の属性を勝手に邪推し、その後起こりうる動きを思い浮かべてめちゃくちゃ暗澹たる気持ちになったのだが、蓋を開けてみれば安倍晋三がズブズブだった統一教会絡みの逆恨みというか無差別テロというか半分事故みたいな話で、よく分からない気持ちになってしまった。</p>
+<p>更にそういう情報がリアルタイムで出ながらも、参院選の候補者は与野党問わず「言論を暴力で封殺しようとする民主主義への挑戦だ」みたいな事を言い続けるので「え？」みたいなますますよく分からない気持ちに。</p>
+<p>でもこういう、ついつい選挙なり政局の道具になんでも収斂しようとしてしまう雑さが政治家への不信感とか投票率の低みに繋がっている気がしてしまう。何かしらのステートメントを発する必要があるのはわかるけど。</p>
+<hr>
+<h3 id="教育と愛国" >
+<div>
+    <a href="#%e6%95%99%e8%82%b2%e3%81%a8%e6%84%9b%e5%9b%bd">
+        
+    </a>
+    教育と愛国
+</div>
+</h3>
+<p>教科書が政治圧力で書き換えられていく様を追った大阪のMBS制作のドキュメンタリー。</p>
+<p>小学校の道徳の教科書で町のパン屋が伝統にそぐわないとか言うイチャモンで和菓子屋に修正させられたとか言うアレとか、従軍慰安婦や強制連行といったワードの検閲とか。</p>
+<p>歴史研究の蓄積よりも一部政治家の歴史観とその周辺の通説が重要視される異常さとか、直接修正内容を提示しない事で出版社の自主的な修正であるとして「圧力」はかけていないと言い張る文科省のやり方とか、こうした教育の目的を問われた育鵬社の教科書を監修する伊藤隆と映画のディレクターとのやりとり（「（こうした教育は）正しい日本人を育てるため」「…正しい日本人とは?」「左翼ではない人間」）とか、いろいろグロくて観終わってからぐったりしてしまった。</p>
+<p>アリ・アスターの映画とか好きな人も見るといいのでは。</p>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/44jHw7AbjFg?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+<hr>
+<h3 id="朝日新聞政治部" >
+<div>
+    <a href="#%e6%9c%9d%e6%97%a5%e6%96%b0%e8%81%9e%e6%94%bf%e6%b2%bb%e9%83%a8">
+        
+    </a>
+    朝日新聞政治部
+</div>
+</h3>
+<p>政治部の内部にいた人による芯食った政治部批判を期待して読んだのだけど、政治部内ないしは新聞社内の権力闘争だったり、その中で配置を色々回されながらもそれぞれで頑張ってきた筆者の武勇伝とか立ち回りについての話が多く、退社を決意するまでの終盤に至っては、吉田調書絡みで干されるまで触れてこなかったネットの言論空間のスピード感とかに無邪気に感動してしまっていてなんだかなという印象。</p>
+<p>政治部の記者が政治家に食い込むことで得られる、情報以上の何かみたいな話はわからんでもないけど、それでダメになってる部分についてもっとページ数を割いて批判して欲しかった。</p>
+<p>筆者の事自体はTwitterとかで目に触れる機会があるにはあったのだけど、信頼できないという言葉で切って捨てるのは大げさであはあるものの、都度それに近い感覚があって、この本を読んでみてなんとなくその理由が分かった気がする。今回の参院選にあたってはだいぶれいわ新選組にべったりな様子にも見え、なるほど感がさらに強まった。</p>
+<hr>
+<h3 id="榊原澄人-srz-手回し式パラパラ漫画展" >
+<div>
+    <a href="#%e6%a6%8a%e5%8e%9f%e6%be%84%e4%ba%ba-srz-%e6%89%8b%e5%9b%9e%e3%81%97%e5%bc%8f%e3%83%91%e3%83%a9%e3%83%91%e3%83%a9%e6%bc%ab%e7%94%bb%e5%b1%95">
+        
+    </a>
+    榊原澄人 S.R.Z 手回し式パラパラ漫画展
+</div>
+</h3>
+
+    <img src="/images/2022/07/20220708_sakakibara.jpg"  class="center"  style="border-radius: 8px;"  />
+
+
+<p>もうずいぶん前になるけど仕事を手伝った事のある榊原澄人さんの展示があったのでふらっと見てきた。</p>
+<p>パラパラ漫画と言っても手で紙の束をバーっとやるあれではなく、榊原さんが作ったボックスにつけられたハンドルを回すとハンドルに繋げられたギアによってカードが回る仕組みになっていて面白かった。</p>
+<p>またパラパラ漫画とは別に榊原さんがいつも制作している横長の巻物状のスクリーンでいろんな場面のループが絡み合いながらスクロールしていく作品も展示してあって、そっちも相変わらず素敵だった。獅子舞の動きがとてもよい。</p>
+<p>榊原さんは自分が直接接してきた人間の中で3人くらいいる「ああこの人は天才だな」と思うしかない人の1人なんだけど、絵の上手さはもとより何か表現を形にする能力とその際の力みのなさが作品に表れていると思う。単純にファン。</p>
+<hr>
+<h3 id="ツールドフランス-2022-一週目" >
+<div>
+    <a href="#%e3%83%84%e3%83%bc%e3%83%ab%e3%83%89%e3%83%95%e3%83%a9%e3%83%b3%e3%82%b9-2022-%e4%b8%80%e9%80%b1%e7%9b%ae">
+        
+    </a>
+    ツール・ド・フランス 2022 一週目
+</div>
+</h3>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/FObBJNlviMU?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+<p>ワウト・ファンアールトとタデイ・ポガチャルが序盤から勝ちまくっていて、グランツールってこういう感じでしたっけみたいな状態。</p>
+<p>今のところ全ステージ面白いんだけど、第4ステージ ダンケルク～カレー の残り10kmでマイヨジョーヌを着ながらアタックを仕掛けてそのまま勝ってしまったファンアールトの走りぶりと、第7ステージ シュペール・プランシェ・デ・ベルフィーユ 最後の登攀、ケムナの逃げ切りと思わせてすぐ近くまで迫っていたメイン集団から一番きついところでヴィンゲゴーがアタックするも最後の最後でポガチャルが差し切ったところが本当にすごかった。</p>
+<p>ポガチャルにヴィンゲゴーがタイム差をつけて勝つには勾配がきつめの長い登攀が必要そうだけど、ガリビエからラルプデュエズまで超級山岳3連荘を走る事になる12ステージまでにどういうタイム差になってるか、ログリッチがどこまで戻すか、勝つ選手が固定化しつつある今回のツールであるけども、見どころはありすぎるほどある。</p>
+<hr>
+<p>
+    <img src="/images/images/220710.jpg"  class="center"  style="border-radius: 8px;"  />
+
+
+はーやだやだ。</p>
+        </div>
+
+    </article>
+
+    
+    
+        
+    
+
+    
+        
+        
+    
+
+    
+        
+    
+    
+    <div class="pagination post-pagination">
+        <div class="left pagination-item ">
+            
+                <a href="/2022/07/week-28/">Week 28</a>
+            
+        </div>
+        <div class="right pagination-item ">
+            
+                <a href="/2022/07/week-26/">Week 26</a>
+            
+        </div>
+    </div>
+
+
+
+
+
+    
+
+    
+        
+
+
+    
+
+    
+
+    
+    
+    
+
+        </main>
+        
+            <footer class="common-footer noselect">
+    
+    
+
+    <div class="common-footer-bottom">
+        
+
+        <div style="display: flex; align-items: center; gap:8px">
+            ©  isbsh,  2025
+            
+        </div>
+        <div style="display:flex; align-items: center; gap:4px">
+
+            
+            
+
+            
+            
+            
+            
+
+            
+            
+
+            
+        </div>
+        
+            <div>
+                 <a target="_blank" rel="noopener noreferrer" href="https://gohugo.io/">Hugo</a>,  <a target="_blank" rel="noopener noreferrer" href="https://github.com/hugo-theme-anubis2/hugo-theme-anubis2">Anubis2</a>.<br>
+            </div>
+        
+    </div>
+
+    <p class="h-card vcard">
+
+    <a href=http://localhost:1313/ class="p-name u-url url fn" rel="me">map[name:isbsh]</a>
+
+    
+
+    
+</p>
+
+</footer>
+
+        
+    </div>
+</body>
+</html>

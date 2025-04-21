@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+
+
+
+
+    
+
+
+
+
+<html lang="ja-jp" data-theme="">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+        
+<meta charset="utf-8">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<meta name="theme-name" content="Anubis2">
+
+<title>Week14  : Ars longa, vita brevis - isbsh</title>
+
+<meta name="description" content="
+
+
+「芸術は長く、人生は短い」
+Arsを芸術って訳した時に、技術やその習得についての側面が薄まってしまいそうになるが、そうならないように捉えたい。
+それはそれとして納品が近いようで遠く、相変わらずレンダリングばかりさせられているけどストレスは無く元気です。
+あと先週から試しているPatrick Rolfのレシピがやっぱりまじで美味い（コーヒー）です。
+というわけで2023年4月3日から9日までの記録です。">
+
+
+
+
+
+<link rel="icon" type="image/x-icon" href="http://localhost:1313/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="http://localhost:1313/favicon.png">
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+<style>
+  body {
+    visibility: hidden;
+    opacity: 0;
+  }
+</style>
+
+<noscript>
+  <style>
+    body {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+</noscript>
+
+
+
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <link rel="stylesheet" href="/css/style.4c42aa0abeac804c4933c54677c449cea1f723caae778425d031e98565a0cdef.css" integrity="sha256-TEKqCr6sgExJM8VGd8RJzqH3I8qud4Ql0DHphWWgze8=">
+    
+
+
+
+
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <link rel="stylesheet" href="/css/style.9c1888ebff42c0224ce04dac10cb2c401f1b77f54f78e8d87d73c3bed781c263.css" integrity="sha256-nBiI6/9CwCJM4E2sEMssQB8bd/VPeOjYfXPDvteBwmM=">
+    
+
+
+
+
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <link rel="stylesheet" href="/css/style.acd606c0fce58853afe0248d37bb41acbbcdd8b1aca2412b6c0fa760da0137f3.css" integrity="sha256-rNYGwPzliFOv4CSNN7tBrLvN2LGsokErbA&#43;nYNoBN/M=">
+    
+
+
+
+
+
+
+
+
+
+  
+
+
+
+    
+    
+
+    
+    
+    
+      
+    
+
+    
+    
+      <link rel="stylesheet" href="/css/style.min.341da4a25e07c147305f19e8c14d98b17901b35944589384f4f05b81095e9f38.css" integrity="sha256-NB2kol4HwUcwXxnowU2YsXkBs1lEWJOE9PBbgQlenzg=" crossorigin="anonymous">
+    
+    
+
+    
+    
+
+    
+    
+    
+      
+    
+
+    
+    
+      <link rel="stylesheet" href="/css/style.min.ed5c481a16e6cdd0703319cf989b1d3510951691d1672769cca50e146a711e9c.css" integrity="sha256-7VxIGhbmzdBwMxnPmJsdNRCVFpHRZydpzKUOFGpxHpw=" crossorigin="anonymous">
+    
+    
+
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous">
+      
+
+
+
+
+    
+    
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4" crossorigin="anonymous"></script>
+      
+
+
+
+
+
+
+  
+
+
+
+    
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <script src="/js/script.672e2309c296e07c18bcd08b28d797a56222ff941d65f308fba3158c44885b14.js" type="text/javascript" charset="utf-8" integrity="sha256-Zy4jCcKW4HwYvNCLKNeXpWIi/5QdZfMI&#43;6MVjESIWxQ="></script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</head>
+<body>
+    <a class="skip-main" href="#main"></a>
+    <div class="container">
+        <header class="common-header">
+            
+                <div class="header-top">
+    <div class="header-top-left">
+        <h1 class="site-title noselect">
+    <a href="/">isbsh</a>
+</h1>
+
+        
+
+  
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+        <div class="theme-switcher">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-sun-high"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14.828 14.828a4 4 0 1 0 -5.656 -5.656a4 4 0 0 0 5.656 5.656z" /><path d="M6.343 17.657l-1.414 1.414" /><path d="M6.343 6.343l-1.414 -1.414" /><path d="M17.657 6.343l1.414 -1.414" /><path d="M17.657 17.657l1.414 1.414" /><path d="M4 12h-2" /><path d="M12 4v-2" /><path d="M20 12h2" /><path d="M12 20v2" /></svg>
+
+
+</span>
+
+        </div>
+    
+
+    <script>
+        const STORAGE_KEY = 'user-color-scheme'
+        const defaultTheme = "auto"
+
+        let currentTheme
+        let switchButton
+        let autoDefinedScheme = window.matchMedia('(prefers-color-scheme: dark)')
+
+        function switchTheme(e) {
+            currentTheme = (currentTheme === 'dark') ? 'light' : 'dark';
+            if (localStorage) localStorage.setItem(STORAGE_KEY, currentTheme);
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            changeGiscusTheme(currentTheme);
+            document.body.dispatchEvent(new CustomEvent(currentTheme + "-theme-set"));
+        }
+
+        const autoChangeScheme = e => {
+            currentTheme = e.matches ? 'dark' : 'light'
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            changeGiscusTheme(currentTheme);
+            document.body.dispatchEvent(new CustomEvent(currentTheme + "-theme-set"));
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            switchButton = document.querySelector('.theme-switcher')
+            currentTheme = detectCurrentScheme()
+
+            if (currentTheme === 'auto') {
+                autoChangeScheme(autoDefinedScheme);
+                autoDefinedScheme.addListener(autoChangeScheme);
+            } else {
+                document.documentElement.setAttribute('data-theme', currentTheme)
+            }
+
+            if (switchButton) {
+                switchButton.addEventListener('click', switchTheme, false)
+            }
+
+            showContent();
+        })
+
+        function detectCurrentScheme() {
+            if (localStorage !== null && localStorage.getItem(STORAGE_KEY)) {
+                return localStorage.getItem(STORAGE_KEY)
+            }
+            if (defaultTheme) {
+                return defaultTheme
+            }
+            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+
+        function showContent() {
+            document.body.style.visibility = 'visible';
+            document.body.style.opacity = 1;
+        }
+
+        function changeGiscusTheme (theme) {
+            function sendMessage(message) {
+              const iframe = document.querySelector('iframe.giscus-frame');
+              if (!iframe) return;
+              iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+            }
+
+            sendMessage({
+              setConfig: {
+                theme: theme
+              }
+            });
+        }
+    </script>
+
+
+        <ul class="social-icons noselect">
+
+ 
+
+
+    
+
+
+
+
+
+    
+        <li>
+            <a href="https://nightly.fedibird.com/@isbsh" title="Mastodon" rel="me">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-mastodon"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18.648 15.254c-1.816 1.763 -6.648 1.626 -6.648 1.626a18.262 18.262 0 0 1 -3.288 -.256c1.127 1.985 4.12 2.81 8.982 2.475c-1.945 2.013 -13.598 5.257 -13.668 -7.636l-.026 -1.154c0 -3.036 .023 -4.115 1.352 -5.633c1.671 -1.91 6.648 -1.666 6.648 -1.666s4.977 -.243 6.648 1.667c1.329 1.518 1.352 2.597 1.352 5.633s-.456 4.074 -1.352 4.944z" /><path d="M12 11.204v-2.926c0 -1.258 -.895 -2.278 -2 -2.278s-2 1.02 -2 2.278v4.722m4 -4.722c0 -1.258 .895 -2.278 2 -2.278s2 1.02 2 2.278v4.722" /></svg>
+
+
+</span>
+
+            </a>
+        </li>
+    
+
+    
+        <li>
+            <a href="https://isbsh.bsky.social" title="Bluesky" rel="me">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-bluesky"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6.335 5.144c-1.654 -1.199 -4.335 -2.127 -4.335 .826c0 .59 .35 4.953 .556 5.661c.713 2.463 3.13 2.75 5.444 2.369c-4.045 .665 -4.889 3.208 -2.667 5.41c1.03 1.018 1.913 1.59 2.667 1.59c2 0 3.134 -2.769 3.5 -3.5c.333 -.667 .5 -1.167 .5 -1.5c0 .333 .167 .833 .5 1.5c.366 .731 1.5 3.5 3.5 3.5c.754 0 1.637 -.571 2.667 -1.59c2.222 -2.203 1.378 -4.746 -2.667 -5.41c2.314 .38 4.73 .094 5.444 -2.369c.206 -.708 .556 -5.072 .556 -5.661c0 -2.953 -2.68 -2.025 -4.335 -.826c-2.293 1.662 -4.76 5.048 -5.665 6.856c-.905 -1.808 -3.372 -5.194 -5.665 -6.856z" /></svg>
+
+</span>
+
+            </a>
+        </li>
+    
+
+
+
+
+
+
+    <li>
+            <a href="/index.xml" title="RSS" rel="me">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-rss"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M4 4a16 16 0 0 1 16 16" /><path d="M4 11a9 9 0 0 1 9 9" /></svg>
+
+
+</span>
+
+            </a>
+        </li>
+    
+
+</ul>
+
+    </div>
+    <div class="header-top-right">
+
+    </div>
+</div>
+
+
+    <nav class="noselect">
+        
+        
+        <a class="" href="http://localhost:1313/" title="">Home</a>
+        
+        <a class="" href="http://localhost:1313/about/" title="">About</a>
+        
+        <a class="" href="http://localhost:1313/categories/" title="">Categories</a>
+        
+        <a class="" href="http://localhost:1313/tags/" title="">Tags</a>
+        
+        <a class="" href="http://localhost:1313/posts/" title="">Archive</a>
+        
+    </nav>
+
+
+
+
+
+    
+
+
+
+
+    <script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$','$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  };
+
+  window.addEventListener('load', (event) => {
+      document.querySelectorAll("mjx-container").forEach(function(x){
+        x.parentElement.classList += 'has-jax'})
+    });
+
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+
+
+
+
+            
+        </header>
+        <main id="main" tabindex="-1">
+            
+    
+
+    <article class="post h-entry">
+        <div class="post-header">
+            <header>
+                
+                
+                
+                <h1 class="p-name post-title ">Week14  : Ars longa, vita brevis</h1>
+                
+
+            </header>
+            
+
+    
+
+
+
+<div class="post-info noselect">
+    
+        <div class="post-date dt-published">
+            <time datetime="2023-04-09">2023-04-09</time>
+            
+        </div>
+    
+
+    <a class="post-hidden-url u-url" href="/2023/week14-ars-longa-vita-brevis/">/2023/week14-ars-longa-vita-brevis/</a>
+    <a href="http://localhost:1313/" class="p-name p-author post-hidden-author h-card" rel="me">map[name:isbsh]</a>
+
+
+    <div class="post-taxonomies">
+        
+            <ul class="post-categories">
+                
+                    
+                    <li><a href="/categories/weekly-log">Weekly log</a></li>
+                
+            </ul>
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+        
+
+  
+
+
+
+
+  
+  
+  
+  <details class="toc noselect">
+    <summary>Table of Contents</summary>
+    <div class="inner"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#坂本龍一死去">坂本龍一死去</a></li>
+    <li><a href="#ロンドファンフラーンデレン">ロンド・ファン・フラーンデレン</a></li>
+    <li><a href="#それでも女をやっていく-つづき">それでも女をやっていく つづき</a></li>
+    <li><a href="#夢の国から目覚めても">夢の国から目覚めても</a></li>
+    <li><a href="#入管">入管</a></li>
+    <li><a href="#仁王2-本編クリア">仁王2 本編クリア</a></li>
+    <li><a href="#new-jeans---zero">New Jeans - Zero</a></li>
+  </ul>
+</nav></div>
+  </details>
+  
+
+
+
+<script>
+  var toc = document.querySelector(".toc");
+  if (toc) {
+    toc.addEventListener("click", function () {
+      if (event.target.tagName !== "A") {
+        event.preventDefault();
+        if (this.open) {
+          this.open = false;
+          this.classList.remove("expanded");
+        } else {
+          this.open = true;
+          this.classList.add("expanded");
+        }
+      }
+    });
+  }
+</script>
+
+        <div class="content e-content">
+            <img src="/images/images/230407.webp"  class="center"  />
+
+
+<p>「芸術は長く、人生は短い」</p>
+<p>Arsを芸術って訳した時に、技術やその習得についての側面が薄まってしまいそうになるが、そうならないように捉えたい。</p>
+<p>それはそれとして納品が近いようで遠く、相変わらずレンダリングばかりさせられているけどストレスは無く元気です。</p>
+<p>あと先週から試しているPatrick Rolfのレシピがやっぱりまじで美味い（コーヒー）です。</p>
+<p>というわけで2023年4月3日から9日までの記録です。</p>
+<h2 id="坂本龍一死去" >
+<div>
+    <a href="#%e5%9d%82%e6%9c%ac%e9%be%8d%e4%b8%80%e6%ad%bb%e5%8e%bb">
+        
+    </a>
+    坂本龍一死去
+</div>
+</h2>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/5RWd1-S5wWo?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+<p>合掌。</p>
+<h2 id="ロンドファンフラーンデレン" >
+<div>
+    <a href="#%e3%83%ad%e3%83%b3%e3%83%89%e3%83%95%e3%82%a1%e3%83%b3%e3%83%95%e3%83%a9%e3%83%bc%e3%83%b3%e3%83%87%e3%83%ac%e3%83%b3">
+        
+    </a>
+    ロンド・ファン・フラーンデレン
+</div>
+</h2>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/gS5lSF1oluA?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+<p>先週の日曜でこれを書いてる4月9日の夜にはもうパリ～ルーベってまたでかいワンデーレースがあるので、もはや遠い過去のイベントのような気もするけど、ポガチャル、ファンアールト、ファンデルプールって3強揃ったロンドはめちゃ面白かった。</p>
+<p>下馬評通り3強の勝負。石畳の登攀でファンアールトが度々遅れてしまうものの、脚を温存して離され過ぎないようにしつつ、ファンデルプールとのスプリント勝負に持ち込んじゃおう的な流れかなと思ったら、スプリントで完全に不利なポガチャルが絶対にその展開にはさせまいとファンデルプールすら石畳でぶっちぎって独走し、そのまま勝ってしまった。</p>
+<p>完全にメルクスの領域に踏み入れていて、リアルタイムでこんな選手のキャリアを追える幸せを感じてる。</p>
+<p>なお、パリ～ルーベにはまだ体が軽くて勝てないよって感じで出ない模様。でもいつか絶対取ると思う。</p>
+<h2 id="それでも女をやっていく-つづき" >
+<div>
+    <a href="#%e3%81%9d%e3%82%8c%e3%81%a7%e3%82%82%e5%a5%b3%e3%82%92%e3%82%84%e3%81%a3%e3%81%a6%e3%81%84%e3%81%8f-%e3%81%a4%e3%81%a5%e3%81%8d">
+        
+    </a>
+    それでも女をやっていく つづき
+</div>
+</h2>
+<p>読み終わった。</p>
+<p>男そのものの潜在的加害者性とそれに対する贖罪意識は、この本を読んでいても否応なしに抱え込んでしまったりするのだけど、それを意識して女を被害者としてケアしようとするあまり、個人を無視してやいまいか? という問いもなされていて、追い討ち的にハッとさせられる。</p>
+<blockquote>
+<p>つまり、彼のようなタイプの人――男性ジェンダーの加害者性に対して責任を強く感じフェミニズムにたどり着いた人が、その反面、目の前の全ての非男性に対して‶かよわい被害者”という眼差しを向け、相手個人を、ひどく無視してしまう事もあるのではないかということだ。<br>
+　よく考えたら、飲み会でフェミニズムに関わる話をしている間も、彼の言葉は、自分の罪悪感の吐露が中心だった。本当はわたしは、しゃべっている間は楽しくあろうと努めていただけで、うっすら居心地が悪かったのではないか? 私は自分で自分を守りたいし、自分の意志で何かを選びとることのできる存在として、わたしを見てくれない人と話したくはない。<br>
+（中略）<br>
+　一方でわたしもきっと、総体としての男性の加害者性に厭気を抱きすぎて、男性個人に「潜在的加害者」のレッテルを貼ってしまったことが、ないとはいえない。フェミニズムの勉強をしていると、自分の加害者性に気づかされることも多い。誰も彼もが、貼られたレッテルに苦しんだり、何がしかで傷ついたりしている。社会にとって正しいと思ってやっていることが、同時に、自分の傷つきを解消するための代替行為でもありえる。じゃあどうしたらいいんだって言われると、わたしの中でまだ答えは出ていない。すごく難しくて頭がこんがらがる。<br>
+（p199~200）</p>
+</blockquote>
+<p>まさに、そんな事言われたらじゃあどうすりゃええのよ…なんてついつい思ってしまいそうになるが、一般論的にざっくりこうすべきという振る舞いとか思考なんてものがあると決めつけて、いろいろな事柄を安直にそこに投げ込んでいけばよいものではないというのを忘れずに、日々人と接したり発言していくしかないんだろう。</p>
+<p>その他、著者の活動の事とか、思春期に触れてきた漫画の事とか、親密だった相手とのエピソードなどもあけすけに描かれていて、いろんな角度からこの辺りの問題について考えるきっかけになるし、安易にバランスをとるという事でなく、一方的なメッセージをぶつけるだけにならない誠実な問題との向き合い方も学べるとても良い本だと思います。</p>
+<h2 id="夢の国から目覚めても" >
+<div>
+    <a href="#%e5%a4%a2%e3%81%ae%e5%9b%bd%e3%81%8b%e3%82%89%e7%9b%ae%e8%a6%9a%e3%82%81%e3%81%a6%e3%82%82">
+        
+    </a>
+    夢の国から目覚めても
+</div>
+</h2>
+
+    <img src="/images/2023/0409_yumenokuni.webp"  class="left"  />
+
+
+<p>『それでも女をやっていく』で紹介と引用がなされていたのが興味深かったので、熱が冷めぬうちにと思って読んだ。</p>
+<blockquote>
+<p>レズビアンとヘテロセクシュアルの女同士が、百合創作を通じてお互いに好意を抱き、交際する過程を描く宮田眞砂の小説『夢の国から目覚めても』は、レズビアン当事者ではない人々が百合を描き読むことの意味に正面から立ち向かう。レズビアンの有希の語りで百合というジャンルの危うさを鋭く問う前編も面白いが、作品の誠実さがいかんなく発揮されているのは、ヘテロセクシュアルの由香の語りで進む後編だと思う。当初「百合とレズは違う」などの無責任な言葉を発していた由香。彼女が自分の態度を改め有希との愛情を深めながらも、それでも「自分はヘテロである」という自覚は捨てられずに葛藤する胸のうちが素直に綴られる。<br>
+（『それでも女をやっていく』p133~134）</p>
+</blockquote>
+<p>という、ざっくり言ってしまえばメタな百合で、ジェンダーだとかコミュニケーションについてめちゃくちゃ考えさせられてしまった。</p>
+<p>当然、男が百合を創作したり消費する事にもしっかり問いを突きつけてくるので、そういう描写に触れると、男の立ち入るスペースなんて本来ないのでは…と思う他ないのだけど、男の同人仲間として出てくるヒロさんというキャラクターが分別ある人間として有希や由香と接してくれる事ででいくらか救われるような気はする。</p>
+<p>ともすると二次創作自体に、創作上とは言え既に存在しているキャラクターを書き換えて弄ぶような行為って乱暴といえば乱暴なんじゃないのか…とか感じるところはあったので、そういう点でも作る人の中には葛藤があったりするのだなというのも窺い知れて良かった。</p>
+<p>ちなみに、この本をよく行く大きめの本屋で買おうと思ったら全然在庫がない中、広尾の駅前にある文教堂にだけあるのを見つけて、ちょっと不思議に思いつつ仕事の帰りに買いにいってみたら、百合特集的な棚が設けられていて、この本も含めてピックアップされてる本の並びなどから察するに、真面目に向き合ってる人が企画してる棚なんだなと思え、それもまた良かった。<br>
+それにこういう棚がある事でリアルに救われるような思いになる人もいるんだろうな、みたいな事も思う。</p>
+<h2 id="入管" >
+<div>
+    <a href="#%e5%85%a5%e7%ae%a1">
+        
+    </a>
+    入管
+</div>
+</h2>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/F3Uu-b4ndGs?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+<p>そもそも国が遺族にさえ頑なにオリジナルのソースを見せないで切り抜いたやつしか渡してないのに、その更に断片だけが公開されたら「それは恣意的な編集されたものだから云々」とか、どの口で言ってんのかと。</p>
+<p>そう言うならとっとと全尺公開しろやと言う流れになると思うのだけど、そういう返しが想像できていないのか、想像できてもまあやり過ごせるでしょって舐められてるのか。どっちにしても権力持ってる立場の人間としてはほんとに無能というかクソで、そんなクソの印象操作にまんまとのせられてあんな仕打ちが正しい処置だと思い込めるひとたちにも辟易とする。</p>
+<h2 id="仁王2-本編クリア" >
+<div>
+    <a href="#%e4%bb%81%e7%8e%8b2-%e6%9c%ac%e7%b7%a8%e3%82%af%e3%83%aa%e3%82%a2">
+        
+    </a>
+    仁王2 本編クリア
+</div>
+</h2>
+<p>ウダウダやってたら自分や装備品のレベルが適正よりも上がってしまって藤吉郎2回目、果心居士、そしてラスボスの大嶽丸となんとなく雰囲気でやっつけられてしまい、この調子でDLCももりもり終わらしていくぞと思ったのだが、DLC1の牛若戦記のラスボス、源義経相手にやればやるほどどうしていいかわからなくなって詰まされている所です。ゼルダまでにせめて1周目は全部終わらせたい…</p>
+<h2 id="new-jeans---zero" >
+<div>
+    <a href="#new-jeans---zero">
+        
+    </a>
+    New Jeans - Zero
+</div>
+</h2>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/XIOoqJyx8E4?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+<p>サビの開き直り方ってタイアップ仕事に対するに皮肉にしか見えなくて面白いような気もするけど、それを大人が子供にやらすのってやっぱ今時どうなのっていうツッコミは不可避な気がする。</p>
+<p>とか言って真面目にやってるんだったらすいません。</p>
+<hr>
+<p>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/k_JvPXKsXhg?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+　<br>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/EeqTuqJjisg?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div></p>
+<p>図らずもというかなんというか、今週4月8日は岡田有希子の命日だったらしい。<br>
+ムツゴロウさんも死んでしまった。</p>
+        </div>
+
+    </article>
+
+    
+    
+        
+    
+
+    
+        
+        
+    
+
+    
+        
+    
+    
+    <div class="pagination post-pagination">
+        <div class="left pagination-item ">
+            
+                <a href="/2023/week15-authentic-countryside/">Week15 : Authentic Countryside</a>
+            
+        </div>
+        <div class="right pagination-item ">
+            
+                <a href="/2023/week13-do-i-dare-to-eat-a-peach/">Week13 : Do I Dare to Eat a Peach?</a>
+            
+        </div>
+    </div>
+
+
+
+
+
+    
+
+    
+        
+
+
+    
+
+    
+
+    
+    
+    
+
+        </main>
+        
+            <footer class="common-footer noselect">
+    
+    
+
+    <div class="common-footer-bottom">
+        
+
+        <div style="display: flex; align-items: center; gap:8px">
+            ©  isbsh,  2025
+            
+        </div>
+        <div style="display:flex; align-items: center; gap:4px">
+
+            
+            
+
+            
+            
+            
+            
+
+            
+            
+
+            
+        </div>
+        
+            <div>
+                 <a target="_blank" rel="noopener noreferrer" href="https://gohugo.io/">Hugo</a>,  <a target="_blank" rel="noopener noreferrer" href="https://github.com/hugo-theme-anubis2/hugo-theme-anubis2">Anubis2</a>.<br>
+            </div>
+        
+    </div>
+
+    <p class="h-card vcard">
+
+    <a href=http://localhost:1313/ class="p-name u-url url fn" rel="me">map[name:isbsh]</a>
+
+    
+
+    
+</p>
+
+</footer>
+
+        
+    </div>
+</body>
+</html>

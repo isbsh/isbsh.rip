@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+
+
+
+
+    
+
+
+
+
+<html lang="ja-jp" data-theme="">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+        
+<meta charset="utf-8">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<meta name="theme-name" content="Anubis2">
+
+<title>Week 47 - isbsh</title>
+
+<meta name="description" content="今週は先々週くらいまでやってた作業の納品用データを書き出したくらいで引き続き暇な1週間だったにも関わらず、何の落書きさえしないまま時間が過ぎてしまった。
+仕事については今年はこれで終わりか～それもいいな～とか思っていたのだけど、秋口に引き受けた2つセットの案件のうち1つをサスペンドされたまま忘れてかけていたものが、もう1本追加された状態で生き返ってきたのを思い出して、若干テンションが下がる。
+と言っても、それもそんなに大変じゃないはずなので別にいいんだけど。">
+
+
+
+
+
+<link rel="icon" type="image/x-icon" href="http://localhost:1313/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="http://localhost:1313/favicon.png">
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+<style>
+  body {
+    visibility: hidden;
+    opacity: 0;
+  }
+</style>
+
+<noscript>
+  <style>
+    body {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+</noscript>
+
+
+
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <link rel="stylesheet" href="/css/style.4c42aa0abeac804c4933c54677c449cea1f723caae778425d031e98565a0cdef.css" integrity="sha256-TEKqCr6sgExJM8VGd8RJzqH3I8qud4Ql0DHphWWgze8=">
+    
+
+
+
+
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <link rel="stylesheet" href="/css/style.9c1888ebff42c0224ce04dac10cb2c401f1b77f54f78e8d87d73c3bed781c263.css" integrity="sha256-nBiI6/9CwCJM4E2sEMssQB8bd/VPeOjYfXPDvteBwmM=">
+    
+
+
+
+
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <link rel="stylesheet" href="/css/style.acd606c0fce58853afe0248d37bb41acbbcdd8b1aca2412b6c0fa760da0137f3.css" integrity="sha256-rNYGwPzliFOv4CSNN7tBrLvN2LGsokErbA&#43;nYNoBN/M=">
+    
+
+
+
+
+
+
+
+
+
+  
+
+
+
+    
+    
+
+    
+    
+    
+      
+    
+
+    
+    
+      <link rel="stylesheet" href="/css/style.min.341da4a25e07c147305f19e8c14d98b17901b35944589384f4f05b81095e9f38.css" integrity="sha256-NB2kol4HwUcwXxnowU2YsXkBs1lEWJOE9PBbgQlenzg=" crossorigin="anonymous">
+    
+    
+
+    
+    
+
+    
+    
+    
+      
+    
+
+    
+    
+      <link rel="stylesheet" href="/css/style.min.ed5c481a16e6cdd0703319cf989b1d3510951691d1672769cca50e146a711e9c.css" integrity="sha256-7VxIGhbmzdBwMxnPmJsdNRCVFpHRZydpzKUOFGpxHpw=" crossorigin="anonymous">
+    
+    
+
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous">
+      
+
+
+
+
+    
+    
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4" crossorigin="anonymous"></script>
+      
+
+
+
+
+
+
+  
+
+
+
+    
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <script src="/js/script.672e2309c296e07c18bcd08b28d797a56222ff941d65f308fba3158c44885b14.js" type="text/javascript" charset="utf-8" integrity="sha256-Zy4jCcKW4HwYvNCLKNeXpWIi/5QdZfMI&#43;6MVjESIWxQ="></script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</head>
+<body>
+    <a class="skip-main" href="#main"></a>
+    <div class="container">
+        <header class="common-header">
+            
+                <div class="header-top">
+    <div class="header-top-left">
+        <h1 class="site-title noselect">
+    <a href="/">isbsh</a>
+</h1>
+
+        
+
+  
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+        <div class="theme-switcher">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-sun-high"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14.828 14.828a4 4 0 1 0 -5.656 -5.656a4 4 0 0 0 5.656 5.656z" /><path d="M6.343 17.657l-1.414 1.414" /><path d="M6.343 6.343l-1.414 -1.414" /><path d="M17.657 6.343l1.414 -1.414" /><path d="M17.657 17.657l1.414 1.414" /><path d="M4 12h-2" /><path d="M12 4v-2" /><path d="M20 12h2" /><path d="M12 20v2" /></svg>
+
+
+</span>
+
+        </div>
+    
+
+    <script>
+        const STORAGE_KEY = 'user-color-scheme'
+        const defaultTheme = "auto"
+
+        let currentTheme
+        let switchButton
+        let autoDefinedScheme = window.matchMedia('(prefers-color-scheme: dark)')
+
+        function switchTheme(e) {
+            currentTheme = (currentTheme === 'dark') ? 'light' : 'dark';
+            if (localStorage) localStorage.setItem(STORAGE_KEY, currentTheme);
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            changeGiscusTheme(currentTheme);
+            document.body.dispatchEvent(new CustomEvent(currentTheme + "-theme-set"));
+        }
+
+        const autoChangeScheme = e => {
+            currentTheme = e.matches ? 'dark' : 'light'
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            changeGiscusTheme(currentTheme);
+            document.body.dispatchEvent(new CustomEvent(currentTheme + "-theme-set"));
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            switchButton = document.querySelector('.theme-switcher')
+            currentTheme = detectCurrentScheme()
+
+            if (currentTheme === 'auto') {
+                autoChangeScheme(autoDefinedScheme);
+                autoDefinedScheme.addListener(autoChangeScheme);
+            } else {
+                document.documentElement.setAttribute('data-theme', currentTheme)
+            }
+
+            if (switchButton) {
+                switchButton.addEventListener('click', switchTheme, false)
+            }
+
+            showContent();
+        })
+
+        function detectCurrentScheme() {
+            if (localStorage !== null && localStorage.getItem(STORAGE_KEY)) {
+                return localStorage.getItem(STORAGE_KEY)
+            }
+            if (defaultTheme) {
+                return defaultTheme
+            }
+            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+
+        function showContent() {
+            document.body.style.visibility = 'visible';
+            document.body.style.opacity = 1;
+        }
+
+        function changeGiscusTheme (theme) {
+            function sendMessage(message) {
+              const iframe = document.querySelector('iframe.giscus-frame');
+              if (!iframe) return;
+              iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+            }
+
+            sendMessage({
+              setConfig: {
+                theme: theme
+              }
+            });
+        }
+    </script>
+
+
+        <ul class="social-icons noselect">
+
+ 
+
+
+    
+
+
+
+
+
+    
+        <li>
+            <a href="https://nightly.fedibird.com/@isbsh" title="Mastodon" rel="me">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-mastodon"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18.648 15.254c-1.816 1.763 -6.648 1.626 -6.648 1.626a18.262 18.262 0 0 1 -3.288 -.256c1.127 1.985 4.12 2.81 8.982 2.475c-1.945 2.013 -13.598 5.257 -13.668 -7.636l-.026 -1.154c0 -3.036 .023 -4.115 1.352 -5.633c1.671 -1.91 6.648 -1.666 6.648 -1.666s4.977 -.243 6.648 1.667c1.329 1.518 1.352 2.597 1.352 5.633s-.456 4.074 -1.352 4.944z" /><path d="M12 11.204v-2.926c0 -1.258 -.895 -2.278 -2 -2.278s-2 1.02 -2 2.278v4.722m4 -4.722c0 -1.258 .895 -2.278 2 -2.278s2 1.02 2 2.278v4.722" /></svg>
+
+
+</span>
+
+            </a>
+        </li>
+    
+
+    
+        <li>
+            <a href="https://isbsh.bsky.social" title="Bluesky" rel="me">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-bluesky"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6.335 5.144c-1.654 -1.199 -4.335 -2.127 -4.335 .826c0 .59 .35 4.953 .556 5.661c.713 2.463 3.13 2.75 5.444 2.369c-4.045 .665 -4.889 3.208 -2.667 5.41c1.03 1.018 1.913 1.59 2.667 1.59c2 0 3.134 -2.769 3.5 -3.5c.333 -.667 .5 -1.167 .5 -1.5c0 .333 .167 .833 .5 1.5c.366 .731 1.5 3.5 3.5 3.5c.754 0 1.637 -.571 2.667 -1.59c2.222 -2.203 1.378 -4.746 -2.667 -5.41c2.314 .38 4.73 .094 5.444 -2.369c.206 -.708 .556 -5.072 .556 -5.661c0 -2.953 -2.68 -2.025 -4.335 -.826c-2.293 1.662 -4.76 5.048 -5.665 6.856c-.905 -1.808 -3.372 -5.194 -5.665 -6.856z" /></svg>
+
+</span>
+
+            </a>
+        </li>
+    
+
+
+
+
+
+
+    <li>
+            <a href="/index.xml" title="RSS" rel="me">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-rss"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M4 4a16 16 0 0 1 16 16" /><path d="M4 11a9 9 0 0 1 9 9" /></svg>
+
+
+</span>
+
+            </a>
+        </li>
+    
+
+</ul>
+
+    </div>
+    <div class="header-top-right">
+
+    </div>
+</div>
+
+
+    <nav class="noselect">
+        
+        
+        <a class="" href="http://localhost:1313/" title="">Home</a>
+        
+        <a class="" href="http://localhost:1313/about/" title="">About</a>
+        
+        <a class="" href="http://localhost:1313/categories/" title="">Categories</a>
+        
+        <a class="" href="http://localhost:1313/tags/" title="">Tags</a>
+        
+        <a class="" href="http://localhost:1313/posts/" title="">Archive</a>
+        
+    </nav>
+
+
+
+
+
+    
+
+
+
+
+    <script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$','$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  };
+
+  window.addEventListener('load', (event) => {
+      document.querySelectorAll("mjx-container").forEach(function(x){
+        x.parentElement.classList += 'has-jax'})
+    });
+
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+
+
+
+
+            
+        </header>
+        <main id="main" tabindex="-1">
+            
+    
+
+    <article class="post h-entry">
+        <div class="post-header">
+            <header>
+                
+                
+                
+                <h1 class="p-name post-title ">Week 47</h1>
+                
+
+            </header>
+            
+
+    
+
+
+
+<div class="post-info noselect">
+    
+        <div class="post-date dt-published">
+            <time datetime="2022-11-27">2022-11-27</time>
+            
+        </div>
+    
+
+    <a class="post-hidden-url u-url" href="/2022/11/week-47/">/2022/11/week-47/</a>
+    <a href="http://localhost:1313/" class="p-name p-author post-hidden-author h-card" rel="me">map[name:isbsh]</a>
+
+
+    <div class="post-taxonomies">
+        
+            <ul class="post-categories">
+                
+                    
+                    <li><a href="/categories/weekly-log">Weekly Log</a></li>
+                
+            </ul>
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+        
+
+  
+
+
+
+
+
+
+<script>
+  var toc = document.querySelector(".toc");
+  if (toc) {
+    toc.addEventListener("click", function () {
+      if (event.target.tagName !== "A") {
+        event.preventDefault();
+        if (this.open) {
+          this.open = false;
+          this.classList.remove("expanded");
+        } else {
+          this.open = true;
+          this.classList.add("expanded");
+        }
+      }
+    });
+  }
+</script>
+
+        <div class="content e-content">
+            <p>今週は先々週くらいまでやってた作業の納品用データを書き出したくらいで引き続き暇な1週間だったにも関わらず、何の落書きさえしないまま時間が過ぎてしまった。</p>
+<p>仕事については今年はこれで終わりか～それもいいな～とか思っていたのだけど、秋口に引き受けた2つセットの案件のうち1つをサスペンドされたまま忘れてかけていたものが、もう1本追加された状態で生き返ってきたのを思い出して、若干テンションが下がる。</p>
+<p>と言っても、それもそんなに大変じゃないはずなので別にいいんだけど。</p>
+<hr>
+<h3 id="tumblrがactivitypubへ対応予定" >
+<div>
+    <a href="#tumblr%e3%81%8cactivitypub%e3%81%b8%e5%af%be%e5%bf%9c%e4%ba%88%e5%ae%9a">
+        
+    </a>
+    TumblrがActivityPubへ対応予定
+</div>
+</h3>
+<p><a href="https://techcrunch.com/2022/11/21/tumblr-to-add-support-for-activitypub-the-social-protocol-powering-mastodon-and-other-apps/">https://techcrunch.com/2022/11/21/tumblr-to-add-support-for-activitypub-the-social-protocol-powering-mastodon-and-other-apps/</a></p>
+<p>とのこと。どうなんだろう。</p>
+<p>Tumblrは今のまま変わらない閉じた孤島として細々と続いても、たまーに思い出したように小さく盛り上がるようなことはあっても長期的にはジリ貧だろうし良いのでは。</p>
+<p>しかし今のインターネットに残された最後の何かが失われるような気もするし、その先のActivityPubにおけるTimeline、あるいはDashboardがどういうものになるのかちょっと読みづらくて不安な気もする。</p>
+<p>なんにせよTwitterの行く末よりも真面目な気持ちで見守りたいような気持ち。</p>
+<hr>
+<h3 id="アフター6ジャンクション--特集スーパー戦隊ロボットクロニクル-と-井上敏樹特集" >
+<div>
+    <a href="#%e3%82%a2%e3%83%95%e3%82%bf%e3%83%bc6%e3%82%b8%e3%83%a3%e3%83%b3%e3%82%af%e3%82%b7%e3%83%a7%e3%83%b3--%e7%89%b9%e9%9b%86%e3%82%b9%e3%83%bc%e3%83%91%e3%83%bc%e6%88%a6%e9%9a%8a%e3%83%ad%e3%83%9c%e3%83%83%e3%83%88%e3%82%af%e3%83%ad%e3%83%8b%e3%82%af%e3%83%ab-%e3%81%a8-%e4%ba%95%e4%b8%8a%e6%95%8f%e6%a8%b9%e7%89%b9%e9%9b%86">
+        
+    </a>
+    アフター6ジャンクション | 特集：スーパー戦隊ロボットクロニクル と 井上敏樹特集
+</div>
+</h3>
+<ul>
+<li><a href="https://anchor.fm/after6junction/episodes/ep-e1r8cdk/a-a8u38ov">https://anchor.fm/after6junction/episodes/ep-e1r8cdk/a-a8u38ov</a></li>
+<li><a href="https://anchor.fm/after6junction/episodes/ep-e1q2n04/a-a8pl9rm">https://anchor.fm/after6junction/episodes/ep-e1q2n04/a-a8pl9rm</a></li>
+</ul>
+<p>ドロッセルマイヤーズの渡辺範明さんによる、スーパー戦隊もののロボットに絞った話が面白かった。</p>
+<p>スーパー戦隊シリーズはライブマン～オーレンジャー辺りを小さい頃に観ていて、子供心にライブマンでグリーンとブラックの途中参戦とか熱い展開じゃんと盛り上がった記憶がある程度。大人になってから観ることもなかったけど、これと少し前に放送していた井上敏樹特集を合わせて聞いてみたらちょっと興味が出てきて、YouTubeに上げられている各シリーズの次回予告だけをまとめたビデオを見まくってしまった。</p>
+<p>だいたい各エピソードのサプライズ要素まで全部予告でテンポよくぶちまけてるのがいい。</p>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/ycs2Ea-2F4I?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+<hr>
+<h3 id="crimson-heart-with-le-sserafim--blue-flame" >
+<div>
+    <a href="#crimson-heart-with-le-sserafim--blue-flame">
+        
+    </a>
+    Crimson Heart with LE SSERAFIM | &lsquo;Blue Flame&rsquo;
+</div>
+</h3>
+<p>Crimson Heartのこと完全に忘れていました。確かホタルがどうたらこうたらみたいな…でしたっけ?</p>
+<p>この辺のメタバース的な何か、いろんなグループがやろうとしているのは目につくが、ピンと来てる人がどれだけいるのか謎。なんて思っているのは中年だけで、若い人たちの間で刺さりまくっていたりするのか? でもこのビデオも言うてそんなに再生回数行ってないし。やっぱ謎。</p>
+<p>概要欄にはってあったリンクにはLINEマンガのページもあったりするので、コミックとかアニメのコンテンツも含めてKPOPのグループを軸に回して行きたいみたいな事なんだろうか。</p>
+<p>これ用の予算はそれなりにあるので、とりあえずそれっぽいモチーフとワードを散りばめといて、現実との世界観のすり合わせはあとで頑張るみたいな性急さというか場当たり的なものを感じる。今のところは。</p>
+<p>それはそれとしてこの曲オムジョンファの9集みたいな音だよなって思ったことを思い出した。</p>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/l6beYiBzy6w?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+<hr>
+<h3 id="ワンダーウーマン-ワンダーウーマン1984" >
+<div>
+    <a href="#%e3%83%af%e3%83%b3%e3%83%80%e3%83%bc%e3%82%a6%e3%83%bc%e3%83%9e%e3%83%b3-%e3%83%af%e3%83%b3%e3%83%80%e3%83%bc%e3%82%a6%e3%83%bc%e3%83%9e%e3%83%b31984">
+        
+    </a>
+    ワンダーウーマン, ワンダーウーマン1984
+</div>
+</h3>
+<p>観た。<br>
+ただし、『～1984』の方を先に、しかもムービープラスでやっていた副音声つきのものを最初に観たあとで1作目を観るという、人によっては怒鳴られそうな見方で。</p>
+<p>ものすごく今更なことを言っていると思われるのだろうが、女性も例外なく徴兵されるイスラエルで兵役経験があってしかもそこで格闘技のトレーナーをしていたとかいう情報もあってなおさらガル・ガドットが強いキャラを演じるのはすごく説得力があっていいし、まずかっこいい。また細かいセリフの伏線が後々のやり取りにも活きてくるようなさり気ない演出がちゃんとされているのもよかった。</p>
+<p>ただ第1次大戦期を舞台にした第1作の方はなんだかんだで戦争がアレスという神の責任によるものに見えかねないようなストーリーが結構見ていてモヤモヤしないでもない。一応、戦争に向かうのは結局人間そのものの本性で、アレスからすればそんな人間を見限ってちょっと背中を押してるだけに過ぎないのよ、みたいな筋にはなってはいるんだけど、結局最後にアレスを倒したら即平和が来たみたいな感じになってしまっているし、印象としてはどうなのよという感じは残ってしまうと思う。</p>
+<p>これは副音声でも話にあがっていた話だけど、途中でドロップアウトした身としては数年先までスケジュールが組まれているマーベル作品群を今から観ようって気には到底なれないのだけど、DCだったら観てもいいかなという気になれるのがいいですね。</p>
+<hr>
+<h3 id="今週読んだ本" >
+<div>
+    <a href="#%e4%bb%8a%e9%80%b1%e8%aa%ad%e3%82%93%e3%81%a0%e6%9c%ac">
+        
+    </a>
+    今週読んだ本
+</div>
+</h3>
+<ul>
+<li>『言葉だけの地図』宮崎智之×山本ぽてと</li>
+<li>『オフショア 第一号』</li>
+</ul>
+<p>先週末に文学フリマで買った本を2冊読んだ。</p>
+<p>『言葉だけの地図』は著者のふたりがそれぞれ同じ本屋に行くまでの最寄駅からの道程を書くというのがテーマというかお題の本で、ちょっとした旅行記のように読めるのが楽しかった。</p>
+<p>場所によっては駅から目的地までの距離が何か書くには短すぎるような店もあったりして、途中にある赤と緑だと思っていたオブジェが後々確認したらグレーだったみたいな事実とは違う思い違いってあるよねみたいな事とか、土地によっては思い入れのある場所で何を見ても何かを思い出すような事とか、嵩増しと言ってしまうと身も蓋も無いけど、肉付けをするために書き手が過去のいろんな記憶や経験を引っ張り出して街と結びつける感じを想像しながら読むのも面白い。</p>
+<p>文フリではこの本みたいにA6判の小さい本が良く売られていて単純に可愛いなと思う。</p>
+<p>『オフショア』はアジアをテーマにした文芸誌という事で、日本のスナックに勤めていた時に知り合って今は中国に帰っている女性を訪ねた時のエッセイとか、筆者と同じ工場に勤めていて上司として働いている台湾人女性へのインタビューだったり、台湾の地下メディアと民主化の関係性についてのちょっと学術的な論考、創作とか詩などをいろいろ読めて良かった。どれもそういうテキストを通して自分たちの母国である日本について考えさせられる。</p>
+<p>一番最初の得能洋平さんによる「西成、福清、小白兎」というエッセイが良かった。</p>
+<p>2冊読み終わった後で多和田葉子の本を読むのがいいような気がして、今はこないだ出た多和田葉子の『太陽諸島』を読んでいる。</p>
+<hr>
+<h3 id="タクティクスオウガ-リボーン" >
+<div>
+    <a href="#%e3%82%bf%e3%82%af%e3%83%86%e3%82%a3%e3%82%af%e3%82%b9%e3%82%aa%e3%82%a6%e3%82%ac-%e3%83%aa%e3%83%9c%e3%83%bc%e3%83%b3">
+        
+    </a>
+    タクティクスオウガ リボーン
+</div>
+</h3>
+<p>やってる。オリジナルもサターン版もPSP版もやってないのでこれが初めてのプレイ。程よい難易度、SRPGならではの程よく難しくて厚みのあるストーリー、マスターピースとされるだけある完成度を噛みしめている。</p>
+<p>SRPGというとちょっと前にやった『トライアングル・ストラテジー』も面白かったけど、今作のストーリーに触れた後だと、あちらのは国家間の争いについてやや分かりやすく単純化したゲーム用のシナリオだなという気さえしてくる。</p>
+<p>過去のバージョンでは弓が強すぎるが故に、アーチャー配備しまくって高所でガン待ちみたいな作戦が通りまくってしまうようなゲームバランスの悪さも言われていたのだけど、そういう事もなく、レベル上げまくってゴリ押しみたいな事も出来ないので、毎回ある程度考えながら準備して臨む必要を強いられるのがいい歯ごたえで楽しい。</p>
+<p>いまはおそらく3章の終盤あたりまで進んでいるところ。</p>
+        </div>
+
+    </article>
+
+    
+    
+        
+    
+
+    
+        
+        
+    
+
+    
+        
+    
+    
+    <div class="pagination post-pagination">
+        <div class="left pagination-item ">
+            
+                <a href="/2022/12/week-48/">Week 48</a>
+            
+        </div>
+        <div class="right pagination-item ">
+            
+                <a href="/2022/11/week-46/">Week 46</a>
+            
+        </div>
+    </div>
+
+
+
+
+
+    
+
+    
+        
+
+
+    
+
+    
+
+    
+    
+    
+
+        </main>
+        
+            <footer class="common-footer noselect">
+    
+    
+
+    <div class="common-footer-bottom">
+        
+
+        <div style="display: flex; align-items: center; gap:8px">
+            ©  isbsh,  2025
+            
+        </div>
+        <div style="display:flex; align-items: center; gap:4px">
+
+            
+            
+
+            
+            
+            
+            
+
+            
+            
+
+            
+        </div>
+        
+            <div>
+                 <a target="_blank" rel="noopener noreferrer" href="https://gohugo.io/">Hugo</a>,  <a target="_blank" rel="noopener noreferrer" href="https://github.com/hugo-theme-anubis2/hugo-theme-anubis2">Anubis2</a>.<br>
+            </div>
+        
+    </div>
+
+    <p class="h-card vcard">
+
+    <a href=http://localhost:1313/ class="p-name u-url url fn" rel="me">map[name:isbsh]</a>
+
+    
+
+    
+</p>
+
+</footer>
+
+        
+    </div>
+</body>
+</html>

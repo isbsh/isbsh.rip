@@ -91,3 +91,6 @@ codeFences         = true # tested with true and false. Both work.
 noClasses          = true # If you run with markup.highlight.noClasses=false in your site configuration, you need a style sheet.
 style              = 'catppuccin-frappe' # Find more style at here: https://swapoff.org/chroma/playground/
 tabWidth           = 4
+
+[permalinks]
+  posts = "/:year/:slug/"

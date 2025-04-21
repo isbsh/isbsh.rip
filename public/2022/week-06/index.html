@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+
+
+
+
+    
+
+
+
+
+<html lang="ja-jp" data-theme="">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+        
+<meta charset="utf-8">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<meta name="theme-name" content="Anubis2">
+
+<title>Week 06 - isbsh</title>
+
+<meta name="description" content="確定申告、自分の分は申告まで終わって、めんどい家の分をちまちま進めている。
+例年通りPCでカードリーダーで認証させようと思ったらアプリもインストールできないし、ブラウザの拡張機能もインストールできないしで、お手上げ状態のままあきらめて Android のアプリでやってみたら行けた。
+マイナンバー絡みとかインボイス絡みとか、毎年の様に微妙に認証のための仕様が変わっていて混乱する。
+矢島舞美さん 30歳 光陰矢の如し。あの辺の人達が30歳ってまあまあ来るものがある。
+というのはさておき、おめでとうございます。
+XG YGとavexの合同プロジェクトらしいとかなんとか。
+ソロのダンスのビデオはあんまりピンと来なかったけど、こっちのパフォーマンスは曲のセレクトが良かったので、期待値が微増。
+朝日新聞ポッドキャスト 中村哲さん殺害を追う https://omny.fm/shows/asahi/42cac6f1-d180-4d07-84b3-ae1c009f9f3e
+https://omny.fm/shows/asahi/3fcb7df4-e1e0-4c6e-bf75-ae2200a18e38
+朝日新聞のポッドキャストはメインパーソナリティーの喋りのノリが苦手なのに加えて、新聞読まない層に向けてカジュアルさや分かりやすさを前面に出そうとしてる感じがしんどくてしばらく聞いていなかったのだが、この回の乗京真知記者の話はなんかすごかった。調査報道っていうかほぼ捜査。
+TBSラジオ 荻上チキ・Session 特集「インターネット・メディアと報道のあり方」 https://anchor.fm/tbsradio-ss954/episodes/ep-e1e3n01/a-a7c9ui0
+神保哲生とビデオニュースの特集。
+男はつらいよ 寅次郎夕焼け小焼け 先週の土曜にBSテレ東でやっていたのをチラ見していたらいい話だったので、ちゃんと観直した。
+上の池ノ内青観の後ろ姿に至る場面とそこに繋がるクライマックスは、美術や表現を仕事にすることについて考えさせられる気がする。
+国立映画アーカイブ 1990年代日本映画――躍動する個の時代 機動警察パトレイバー 2 the Movie PERFECT BLUE まだフィルムセンターって言いそうになる京橋の国立映画アーカイブの2月,4月の特集上映が90年代の日本映画という事で、金曜の休みに並びで上映してたアニメーションの2本を観てきた。
+パトレイバー2はこれまで基礎教養的に観たような気になっていたけど、最後の地下通路でイクストルと戦闘する場面だけ何となく記憶にあった以外はほぼ覚えておらず。ロボットアクション的なものを期待して見たはいいが、政治的な策謀の話がメインだから10代の頃は全然頭に入らなかったのかも知れない。というかなんなら観てすらいなかったのでは…という気さえする。今見てみるとものすごくその辺りのバランスが良く感じるのだけど。
+ストーリーは今の感覚からすれば、ああいったテロをする犯人の中に下卑たナショナリズム的なものについてほとんど描かれないのが、クールすぎるというか無邪気に見える気もしてしまう。
+とりあえず言うまでもなく作画やべー。クライマックスで南雲が柘植に手錠をかける手のやりとりのとことか。
+PERFECT BLUE はまだ14歳くらいだった公開当時、R-15指定の今作を渋谷のパルコへ観に行くのに一般料金で入った記憶も含めてちゃんと憶えていた。当時は大友克洋的なものというよりも、聴いていた主演の岩男潤子のラジオで告知していたから、というのが大きな理由で行ったような気もするのだけど、そんな無邪気さで言ったにしては劇中のレイプ演技のシーンとかのインパクトはそんなに残っていなくて、今観る方がその他の描写についてもいろいろきつく感じてしまう。
+オタクは世代が変われど成長しないという気付きもあった。
+あと作画がやべー。
+今週遊んだゲーム Unpacking Desperados III Unpacking は荷ほどきして部屋に荷物を並べていくパズルゲームなんだけど、微妙にストーリーが存在していて、ステージが変わり部屋が変わるに伴い数年の時間が経っていて、その時打ち込んでいるものだったり、一緒に住み始めた人の荷物だったりが部屋の中にあって、プレイヤーが荷ほどきする荷物の持ち主の人生について想像を巡らせるという体験をする事になってるのが良く出来ていて良いです。
+Desperados III は Shadow Tactics みたいな RTS であっという間に時間が溶けていく。楽しい。">
+
+
+
+
+
+<link rel="icon" type="image/x-icon" href="http://localhost:1313/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="http://localhost:1313/favicon.png">
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+<style>
+  body {
+    visibility: hidden;
+    opacity: 0;
+  }
+</style>
+
+<noscript>
+  <style>
+    body {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+</noscript>
+
+
+
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <link rel="stylesheet" href="/css/style.4c42aa0abeac804c4933c54677c449cea1f723caae778425d031e98565a0cdef.css" integrity="sha256-TEKqCr6sgExJM8VGd8RJzqH3I8qud4Ql0DHphWWgze8=">
+    
+
+
+
+
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <link rel="stylesheet" href="/css/style.9c1888ebff42c0224ce04dac10cb2c401f1b77f54f78e8d87d73c3bed781c263.css" integrity="sha256-nBiI6/9CwCJM4E2sEMssQB8bd/VPeOjYfXPDvteBwmM=">
+    
+
+
+
+
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <link rel="stylesheet" href="/css/style.acd606c0fce58853afe0248d37bb41acbbcdd8b1aca2412b6c0fa760da0137f3.css" integrity="sha256-rNYGwPzliFOv4CSNN7tBrLvN2LGsokErbA&#43;nYNoBN/M=">
+    
+
+
+
+
+
+
+
+
+
+  
+
+
+
+    
+    
+
+    
+    
+    
+      
+    
+
+    
+    
+      <link rel="stylesheet" href="/css/style.min.341da4a25e07c147305f19e8c14d98b17901b35944589384f4f05b81095e9f38.css" integrity="sha256-NB2kol4HwUcwXxnowU2YsXkBs1lEWJOE9PBbgQlenzg=" crossorigin="anonymous">
+    
+    
+
+    
+    
+
+    
+    
+    
+      
+    
+
+    
+    
+      <link rel="stylesheet" href="/css/style.min.ed5c481a16e6cdd0703319cf989b1d3510951691d1672769cca50e146a711e9c.css" integrity="sha256-7VxIGhbmzdBwMxnPmJsdNRCVFpHRZydpzKUOFGpxHpw=" crossorigin="anonymous">
+    
+    
+
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous">
+      
+
+
+
+
+    
+    
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4" crossorigin="anonymous"></script>
+      
+
+
+
+
+
+
+  
+
+
+
+    
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <script src="/js/script.672e2309c296e07c18bcd08b28d797a56222ff941d65f308fba3158c44885b14.js" type="text/javascript" charset="utf-8" integrity="sha256-Zy4jCcKW4HwYvNCLKNeXpWIi/5QdZfMI&#43;6MVjESIWxQ="></script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</head>
+<body>
+    <a class="skip-main" href="#main"></a>
+    <div class="container">
+        <header class="common-header">
+            
+                <div class="header-top">
+    <div class="header-top-left">
+        <h1 class="site-title noselect">
+    <a href="/">isbsh</a>
+</h1>
+
+        
+
+  
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+        <div class="theme-switcher">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-sun-high"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14.828 14.828a4 4 0 1 0 -5.656 -5.656a4 4 0 0 0 5.656 5.656z" /><path d="M6.343 17.657l-1.414 1.414" /><path d="M6.343 6.343l-1.414 -1.414" /><path d="M17.657 6.343l1.414 -1.414" /><path d="M17.657 17.657l1.414 1.414" /><path d="M4 12h-2" /><path d="M12 4v-2" /><path d="M20 12h2" /><path d="M12 20v2" /></svg>
+
+
+</span>
+
+        </div>
+    
+
+    <script>
+        const STORAGE_KEY = 'user-color-scheme'
+        const defaultTheme = "auto"
+
+        let currentTheme
+        let switchButton
+        let autoDefinedScheme = window.matchMedia('(prefers-color-scheme: dark)')
+
+        function switchTheme(e) {
+            currentTheme = (currentTheme === 'dark') ? 'light' : 'dark';
+            if (localStorage) localStorage.setItem(STORAGE_KEY, currentTheme);
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            changeGiscusTheme(currentTheme);
+            document.body.dispatchEvent(new CustomEvent(currentTheme + "-theme-set"));
+        }
+
+        const autoChangeScheme = e => {
+            currentTheme = e.matches ? 'dark' : 'light'
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            changeGiscusTheme(currentTheme);
+            document.body.dispatchEvent(new CustomEvent(currentTheme + "-theme-set"));
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            switchButton = document.querySelector('.theme-switcher')
+            currentTheme = detectCurrentScheme()
+
+            if (currentTheme === 'auto') {
+                autoChangeScheme(autoDefinedScheme);
+                autoDefinedScheme.addListener(autoChangeScheme);
+            } else {
+                document.documentElement.setAttribute('data-theme', currentTheme)
+            }
+
+            if (switchButton) {
+                switchButton.addEventListener('click', switchTheme, false)
+            }
+
+            showContent();
+        })
+
+        function detectCurrentScheme() {
+            if (localStorage !== null && localStorage.getItem(STORAGE_KEY)) {
+                return localStorage.getItem(STORAGE_KEY)
+            }
+            if (defaultTheme) {
+                return defaultTheme
+            }
+            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+
+        function showContent() {
+            document.body.style.visibility = 'visible';
+            document.body.style.opacity = 1;
+        }
+
+        function changeGiscusTheme (theme) {
+            function sendMessage(message) {
+              const iframe = document.querySelector('iframe.giscus-frame');
+              if (!iframe) return;
+              iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+            }
+
+            sendMessage({
+              setConfig: {
+                theme: theme
+              }
+            });
+        }
+    </script>
+
+
+        <ul class="social-icons noselect">
+
+ 
+
+
+    
+
+
+
+
+
+    
+        <li>
+            <a href="https://nightly.fedibird.com/@isbsh" title="Mastodon" rel="me">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-mastodon"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18.648 15.254c-1.816 1.763 -6.648 1.626 -6.648 1.626a18.262 18.262 0 0 1 -3.288 -.256c1.127 1.985 4.12 2.81 8.982 2.475c-1.945 2.013 -13.598 5.257 -13.668 -7.636l-.026 -1.154c0 -3.036 .023 -4.115 1.352 -5.633c1.671 -1.91 6.648 -1.666 6.648 -1.666s4.977 -.243 6.648 1.667c1.329 1.518 1.352 2.597 1.352 5.633s-.456 4.074 -1.352 4.944z" /><path d="M12 11.204v-2.926c0 -1.258 -.895 -2.278 -2 -2.278s-2 1.02 -2 2.278v4.722m4 -4.722c0 -1.258 .895 -2.278 2 -2.278s2 1.02 2 2.278v4.722" /></svg>
+
+
+</span>
+
+            </a>
+        </li>
+    
+
+    
+        <li>
+            <a href="https://isbsh.bsky.social" title="Bluesky" rel="me">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-bluesky"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6.335 5.144c-1.654 -1.199 -4.335 -2.127 -4.335 .826c0 .59 .35 4.953 .556 5.661c.713 2.463 3.13 2.75 5.444 2.369c-4.045 .665 -4.889 3.208 -2.667 5.41c1.03 1.018 1.913 1.59 2.667 1.59c2 0 3.134 -2.769 3.5 -3.5c.333 -.667 .5 -1.167 .5 -1.5c0 .333 .167 .833 .5 1.5c.366 .731 1.5 3.5 3.5 3.5c.754 0 1.637 -.571 2.667 -1.59c2.222 -2.203 1.378 -4.746 -2.667 -5.41c2.314 .38 4.73 .094 5.444 -2.369c.206 -.708 .556 -5.072 .556 -5.661c0 -2.953 -2.68 -2.025 -4.335 -.826c-2.293 1.662 -4.76 5.048 -5.665 6.856c-.905 -1.808 -3.372 -5.194 -5.665 -6.856z" /></svg>
+
+</span>
+
+            </a>
+        </li>
+    
+
+
+
+
+
+
+    <li>
+            <a href="/index.xml" title="RSS" rel="me">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-rss"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M4 4a16 16 0 0 1 16 16" /><path d="M4 11a9 9 0 0 1 9 9" /></svg>
+
+
+</span>
+
+            </a>
+        </li>
+    
+
+</ul>
+
+    </div>
+    <div class="header-top-right">
+
+    </div>
+</div>
+
+
+    <nav class="noselect">
+        
+        
+        <a class="" href="http://localhost:1313/" title="">Home</a>
+        
+        <a class="" href="http://localhost:1313/about/" title="">About</a>
+        
+        <a class="" href="http://localhost:1313/categories/" title="">Categories</a>
+        
+        <a class="" href="http://localhost:1313/tags/" title="">Tags</a>
+        
+        <a class="" href="http://localhost:1313/posts/" title="">Archive</a>
+        
+    </nav>
+
+
+
+
+
+    
+
+
+
+
+    <script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$','$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  };
+
+  window.addEventListener('load', (event) => {
+      document.querySelectorAll("mjx-container").forEach(function(x){
+        x.parentElement.classList += 'has-jax'})
+    });
+
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+
+
+
+
+            
+        </header>
+        <main id="main" tabindex="-1">
+            
+    
+
+    <article class="post h-entry">
+        <div class="post-header">
+            <header>
+                
+                
+                
+                <h1 class="p-name post-title ">Week 06</h1>
+                
+
+            </header>
+            
+
+    
+
+
+
+<div class="post-info noselect">
+    
+        <div class="post-date dt-published">
+            <time datetime="2022-02-13">2022-02-13</time>
+            
+        </div>
+    
+
+    <a class="post-hidden-url u-url" href="/2022/week-06/">/2022/week-06/</a>
+    <a href="http://localhost:1313/" class="p-name p-author post-hidden-author h-card" rel="me">map[name:isbsh]</a>
+
+
+    <div class="post-taxonomies">
+        
+            <ul class="post-categories">
+                
+                    
+                    <li><a href="/categories/weekly-log">Weekly Log</a></li>
+                
+            </ul>
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+        
+
+  
+
+
+
+
+
+
+<script>
+  var toc = document.querySelector(".toc");
+  if (toc) {
+    toc.addEventListener("click", function () {
+      if (event.target.tagName !== "A") {
+        event.preventDefault();
+        if (this.open) {
+          this.open = false;
+          this.classList.remove("expanded");
+        } else {
+          this.open = true;
+          this.classList.add("expanded");
+        }
+      }
+    });
+  }
+</script>
+
+        <div class="content e-content">
+            
+    <img src="/images/images/220208.jpg"  class="center"  style="border-radius: 15px;"  />
+
+
+<p>確定申告、自分の分は申告まで終わって、めんどい家の分をちまちま進めている。</p>
+<p>例年通りPCでカードリーダーで認証させようと思ったらアプリもインストールできないし、ブラウザの拡張機能もインストールできないしで、お手上げ状態のままあきらめて Android のアプリでやってみたら行けた。<br>
+マイナンバー絡みとかインボイス絡みとか、毎年の様に微妙に認証のための仕様が変わっていて混乱する。</p>
+<hr>
+<h3 id="矢島舞美さん-30歳" >
+<div>
+    <a href="#%e7%9f%a2%e5%b3%b6%e8%88%9e%e7%be%8e%e3%81%95%e3%82%93-30%e6%ad%b3">
+        
+    </a>
+    矢島舞美さん 30歳
+</div>
+</h3>
+<p>光陰矢の如し。あの辺の人達が30歳ってまあまあ来るものがある。<br>
+というのはさておき、おめでとうございます。</p>
+<hr>
+<h3 id="xg" >
+<div>
+    <a href="#xg">
+        
+    </a>
+    XG
+</div>
+</h3>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/z9ZvpH6hmmQ?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/icybpxo4Cb0?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+<p>YGとavexの合同プロジェクトらしいとかなんとか。</p>
+<p>ソロのダンスのビデオはあんまりピンと来なかったけど、こっちのパフォーマンスは曲のセレクトが良かったので、期待値が微増。</p>
+<hr>
+<h3 id="朝日新聞ポッドキャスト-中村哲さん殺害を追う" >
+<div>
+    <a href="#%e6%9c%9d%e6%97%a5%e6%96%b0%e8%81%9e%e3%83%9d%e3%83%83%e3%83%89%e3%82%ad%e3%83%a3%e3%82%b9%e3%83%88-%e4%b8%ad%e6%9d%91%e5%93%b2%e3%81%95%e3%82%93%e6%ae%ba%e5%ae%b3%e3%82%92%e8%bf%bd%e3%81%86">
+        
+    </a>
+    朝日新聞ポッドキャスト 中村哲さん殺害を追う
+</div>
+</h3>
+<p><a href="https://omny.fm/shows/asahi/42cac6f1-d180-4d07-84b3-ae1c009f9f3e">https://omny.fm/shows/asahi/42cac6f1-d180-4d07-84b3-ae1c009f9f3e</a></p>
+<p><a href="https://omny.fm/shows/asahi/3fcb7df4-e1e0-4c6e-bf75-ae2200a18e38">https://omny.fm/shows/asahi/3fcb7df4-e1e0-4c6e-bf75-ae2200a18e38</a></p>
+<p>朝日新聞のポッドキャストはメインパーソナリティーの喋りのノリが苦手なのに加えて、新聞読まない層に向けてカジュアルさや分かりやすさを前面に出そうとしてる感じがしんどくてしばらく聞いていなかったのだが、この回の乗京真知記者の話はなんかすごかった。調査報道っていうかほぼ捜査。</p>
+<hr>
+<h3 id="tbsラジオ-荻上チキsession-特集インターネットメディアと報道のあり方" >
+<div>
+    <a href="#tbs%e3%83%a9%e3%82%b8%e3%82%aa-%e8%8d%bb%e4%b8%8a%e3%83%81%e3%82%adsession-%e7%89%b9%e9%9b%86%e3%82%a4%e3%83%b3%e3%82%bf%e3%83%bc%e3%83%8d%e3%83%83%e3%83%88%e3%83%a1%e3%83%87%e3%82%a3%e3%82%a2%e3%81%a8%e5%a0%b1%e9%81%93%e3%81%ae%e3%81%82%e3%82%8a%e6%96%b9">
+        
+    </a>
+    TBSラジオ 荻上チキ・Session 特集「インターネット・メディアと報道のあり方」
+</div>
+</h3>
+<p><a href="https://anchor.fm/tbsradio-ss954/episodes/ep-e1e3n01/a-a7c9ui0">https://anchor.fm/tbsradio-ss954/episodes/ep-e1e3n01/a-a7c9ui0</a></p>
+<p>神保哲生とビデオニュースの特集。</p>
+<hr>
+<h3 id="男はつらいよ-寅次郎夕焼け小焼け" >
+<div>
+    <a href="#%e7%94%b7%e3%81%af%e3%81%a4%e3%82%89%e3%81%84%e3%82%88-%e5%af%85%e6%ac%a1%e9%83%8e%e5%a4%95%e7%84%bc%e3%81%91%e5%b0%8f%e7%84%bc%e3%81%91">
+        
+    </a>
+    男はつらいよ 寅次郎夕焼け小焼け
+</div>
+</h3>
+<p><img src="https://i.gyazo.com/dc244c95cf9314f589845e7093fc09ef.png" alt="https://i.gyazo.com/dc244c95cf9314f589845e7093fc09ef.png"></p>
+<p>先週の土曜にBSテレ東でやっていたのをチラ見していたらいい話だったので、ちゃんと観直した。</p>
+<p>上の池ノ内青観の後ろ姿に至る場面とそこに繋がるクライマックスは、美術や表現を仕事にすることについて考えさせられる気がする。</p>
+<hr>
+<h3 id="国立映画アーカイブ-1990年代日本映画躍動する個の時代" >
+<div>
+    <a href="#%e5%9b%bd%e7%ab%8b%e6%98%a0%e7%94%bb%e3%82%a2%e3%83%bc%e3%82%ab%e3%82%a4%e3%83%96-1990%e5%b9%b4%e4%bb%a3%e6%97%a5%e6%9c%ac%e6%98%a0%e7%94%bb%e8%ba%8d%e5%8b%95%e3%81%99%e3%82%8b%e5%80%8b%e3%81%ae%e6%99%82%e4%bb%a3">
+        
+    </a>
+    国立映画アーカイブ 1990年代日本映画――躍動する個の時代
+</div>
+</h3>
+<p><img src="https://i.gyazo.com/d00536164776a8778392f83d07fbc3bb.jpg" alt="https://i.gyazo.com/d00536164776a8778392f83d07fbc3bb.jpg"></p>
+<ul>
+<li>機動警察パトレイバー 2 the Movie</li>
+<li>PERFECT BLUE</li>
+</ul>
+<p>まだフィルムセンターって言いそうになる京橋の国立映画アーカイブの2月,4月の特集上映が90年代の日本映画という事で、金曜の休みに並びで上映してたアニメーションの2本を観てきた。</p>
+<p>パトレイバー2はこれまで基礎教養的に観たような気になっていたけど、最後の地下通路でイクストルと戦闘する場面だけ何となく記憶にあった以外はほぼ覚えておらず。ロボットアクション的なものを期待して見たはいいが、政治的な策謀の話がメインだから10代の頃は全然頭に入らなかったのかも知れない。というかなんなら観てすらいなかったのでは…という気さえする。今見てみるとものすごくその辺りのバランスが良く感じるのだけど。</p>
+<p>ストーリーは今の感覚からすれば、ああいったテロをする犯人の中に下卑たナショナリズム的なものについてほとんど描かれないのが、クールすぎるというか無邪気に見える気もしてしまう。</p>
+<p>とりあえず言うまでもなく作画やべー。クライマックスで南雲が柘植に手錠をかける手のやりとりのとことか。</p>
+<p>PERFECT BLUE はまだ14歳くらいだった公開当時、R-15指定の今作を渋谷のパルコへ観に行くのに一般料金で入った記憶も含めてちゃんと憶えていた。当時は大友克洋的なものというよりも、聴いていた主演の岩男潤子のラジオで告知していたから、というのが大きな理由で行ったような気もするのだけど、そんな無邪気さで言ったにしては劇中のレイプ演技のシーンとかのインパクトはそんなに残っていなくて、今観る方がその他の描写についてもいろいろきつく感じてしまう。<br>
+オタクは世代が変われど成長しないという気付きもあった。</p>
+<p>あと作画がやべー。</p>
+<hr>
+<h3 id="今週遊んだゲーム" >
+<div>
+    <a href="#%e4%bb%8a%e9%80%b1%e9%81%8a%e3%82%93%e3%81%a0%e3%82%b2%e3%83%bc%e3%83%a0">
+        
+    </a>
+    今週遊んだゲーム
+</div>
+</h3>
+<p><img src="https://i.gyazo.com/d3d82590b199c06421464b2393ca732b.jpg" alt="https://i.gyazo.com/d3d82590b199c06421464b2393ca732b.jpg"></p>
+<ul>
+<li>Unpacking</li>
+<li>Desperados III</li>
+</ul>
+<p>Unpacking は荷ほどきして部屋に荷物を並べていくパズルゲームなんだけど、微妙にストーリーが存在していて、ステージが変わり部屋が変わるに伴い数年の時間が経っていて、その時打ち込んでいるものだったり、一緒に住み始めた人の荷物だったりが部屋の中にあって、プレイヤーが荷ほどきする荷物の持ち主の人生について想像を巡らせるという体験をする事になってるのが良く出来ていて良いです。</p>
+<p>Desperados III は Shadow Tactics みたいな RTS であっという間に時間が溶けていく。楽しい。</p>
+
+        </div>
+
+    </article>
+
+    
+    
+        
+    
+
+    
+        
+        
+    
+
+    
+        
+    
+    
+    <div class="pagination post-pagination">
+        <div class="left pagination-item ">
+            
+                <a href="/2022/week-07/">Week 07</a>
+            
+        </div>
+        <div class="right pagination-item ">
+            
+                <a href="/2022/week-05/">Week 05</a>
+            
+        </div>
+    </div>
+
+
+
+
+
+    
+
+    
+        
+
+
+    
+
+    
+
+    
+    
+    
+
+        </main>
+        
+            <footer class="common-footer noselect">
+    
+    
+
+    <div class="common-footer-bottom">
+        
+
+        <div style="display: flex; align-items: center; gap:8px">
+            ©  isbsh,  2025
+            
+        </div>
+        <div style="display:flex; align-items: center; gap:4px">
+
+            
+            
+
+            
+            
+            
+            
+
+            
+            
+
+            
+        </div>
+        
+            <div>
+                 <a target="_blank" rel="noopener noreferrer" href="https://gohugo.io/">Hugo</a>,  <a target="_blank" rel="noopener noreferrer" href="https://github.com/hugo-theme-anubis2/hugo-theme-anubis2">Anubis2</a>.<br>
+            </div>
+        
+    </div>
+
+    <p class="h-card vcard">
+
+    <a href=http://localhost:1313/ class="p-name u-url url fn" rel="me">map[name:isbsh]</a>
+
+    
+
+    
+</p>
+
+</footer>
+
+        
+    </div>
+</body>
+</html>

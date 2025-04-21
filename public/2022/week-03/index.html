@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+
+
+
+
+    
+
+
+
+
+<html lang="ja-jp" data-theme="">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+        
+<meta charset="utf-8">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<meta name="theme-name" content="Anubis2">
+
+<title>Week 03 - isbsh</title>
+
+<meta name="description" content="
+
+
+こちらがカムザット・チマエフというチェチェン出身のスウェーデン人MMA選手になります。
+それはそうと、FitBoxing で左の振り方がおかしいのか、最近肩や鎖骨に違和感を覚えやすいので、FitBoxingは一旦少し止めてみて、下半身だけの運動にとどめた方がいいのかもしれない。">
+
+
+
+
+
+<link rel="icon" type="image/x-icon" href="http://localhost:1313/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="http://localhost:1313/favicon.png">
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+<style>
+  body {
+    visibility: hidden;
+    opacity: 0;
+  }
+</style>
+
+<noscript>
+  <style>
+    body {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+</noscript>
+
+
+
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <link rel="stylesheet" href="/css/style.4c42aa0abeac804c4933c54677c449cea1f723caae778425d031e98565a0cdef.css" integrity="sha256-TEKqCr6sgExJM8VGd8RJzqH3I8qud4Ql0DHphWWgze8=">
+    
+
+
+
+
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <link rel="stylesheet" href="/css/style.9c1888ebff42c0224ce04dac10cb2c401f1b77f54f78e8d87d73c3bed781c263.css" integrity="sha256-nBiI6/9CwCJM4E2sEMssQB8bd/VPeOjYfXPDvteBwmM=">
+    
+
+
+
+
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <link rel="stylesheet" href="/css/style.acd606c0fce58853afe0248d37bb41acbbcdd8b1aca2412b6c0fa760da0137f3.css" integrity="sha256-rNYGwPzliFOv4CSNN7tBrLvN2LGsokErbA&#43;nYNoBN/M=">
+    
+
+
+
+
+
+
+
+
+
+  
+
+
+
+    
+    
+
+    
+    
+    
+      
+    
+
+    
+    
+      <link rel="stylesheet" href="/css/style.min.341da4a25e07c147305f19e8c14d98b17901b35944589384f4f05b81095e9f38.css" integrity="sha256-NB2kol4HwUcwXxnowU2YsXkBs1lEWJOE9PBbgQlenzg=" crossorigin="anonymous">
+    
+    
+
+    
+    
+
+    
+    
+    
+      
+    
+
+    
+    
+      <link rel="stylesheet" href="/css/style.min.ed5c481a16e6cdd0703319cf989b1d3510951691d1672769cca50e146a711e9c.css" integrity="sha256-7VxIGhbmzdBwMxnPmJsdNRCVFpHRZydpzKUOFGpxHpw=" crossorigin="anonymous">
+    
+    
+
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous">
+      
+
+
+
+
+    
+    
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4" crossorigin="anonymous"></script>
+      
+
+
+
+
+
+
+  
+
+
+
+    
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <script src="/js/script.672e2309c296e07c18bcd08b28d797a56222ff941d65f308fba3158c44885b14.js" type="text/javascript" charset="utf-8" integrity="sha256-Zy4jCcKW4HwYvNCLKNeXpWIi/5QdZfMI&#43;6MVjESIWxQ="></script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</head>
+<body>
+    <a class="skip-main" href="#main"></a>
+    <div class="container">
+        <header class="common-header">
+            
+                <div class="header-top">
+    <div class="header-top-left">
+        <h1 class="site-title noselect">
+    <a href="/">isbsh</a>
+</h1>
+
+        
+
+  
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+        <div class="theme-switcher">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-sun-high"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14.828 14.828a4 4 0 1 0 -5.656 -5.656a4 4 0 0 0 5.656 5.656z" /><path d="M6.343 17.657l-1.414 1.414" /><path d="M6.343 6.343l-1.414 -1.414" /><path d="M17.657 6.343l1.414 -1.414" /><path d="M17.657 17.657l1.414 1.414" /><path d="M4 12h-2" /><path d="M12 4v-2" /><path d="M20 12h2" /><path d="M12 20v2" /></svg>
+
+
+</span>
+
+        </div>
+    
+
+    <script>
+        const STORAGE_KEY = 'user-color-scheme'
+        const defaultTheme = "auto"
+
+        let currentTheme
+        let switchButton
+        let autoDefinedScheme = window.matchMedia('(prefers-color-scheme: dark)')
+
+        function switchTheme(e) {
+            currentTheme = (currentTheme === 'dark') ? 'light' : 'dark';
+            if (localStorage) localStorage.setItem(STORAGE_KEY, currentTheme);
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            changeGiscusTheme(currentTheme);
+            document.body.dispatchEvent(new CustomEvent(currentTheme + "-theme-set"));
+        }
+
+        const autoChangeScheme = e => {
+            currentTheme = e.matches ? 'dark' : 'light'
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            changeGiscusTheme(currentTheme);
+            document.body.dispatchEvent(new CustomEvent(currentTheme + "-theme-set"));
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            switchButton = document.querySelector('.theme-switcher')
+            currentTheme = detectCurrentScheme()
+
+            if (currentTheme === 'auto') {
+                autoChangeScheme(autoDefinedScheme);
+                autoDefinedScheme.addListener(autoChangeScheme);
+            } else {
+                document.documentElement.setAttribute('data-theme', currentTheme)
+            }
+
+            if (switchButton) {
+                switchButton.addEventListener('click', switchTheme, false)
+            }
+
+            showContent();
+        })
+
+        function detectCurrentScheme() {
+            if (localStorage !== null && localStorage.getItem(STORAGE_KEY)) {
+                return localStorage.getItem(STORAGE_KEY)
+            }
+            if (defaultTheme) {
+                return defaultTheme
+            }
+            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+
+        function showContent() {
+            document.body.style.visibility = 'visible';
+            document.body.style.opacity = 1;
+        }
+
+        function changeGiscusTheme (theme) {
+            function sendMessage(message) {
+              const iframe = document.querySelector('iframe.giscus-frame');
+              if (!iframe) return;
+              iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+            }
+
+            sendMessage({
+              setConfig: {
+                theme: theme
+              }
+            });
+        }
+    </script>
+
+
+        <ul class="social-icons noselect">
+
+ 
+
+
+    
+
+
+
+
+
+    
+        <li>
+            <a href="https://nightly.fedibird.com/@isbsh" title="Mastodon" rel="me">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-mastodon"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18.648 15.254c-1.816 1.763 -6.648 1.626 -6.648 1.626a18.262 18.262 0 0 1 -3.288 -.256c1.127 1.985 4.12 2.81 8.982 2.475c-1.945 2.013 -13.598 5.257 -13.668 -7.636l-.026 -1.154c0 -3.036 .023 -4.115 1.352 -5.633c1.671 -1.91 6.648 -1.666 6.648 -1.666s4.977 -.243 6.648 1.667c1.329 1.518 1.352 2.597 1.352 5.633s-.456 4.074 -1.352 4.944z" /><path d="M12 11.204v-2.926c0 -1.258 -.895 -2.278 -2 -2.278s-2 1.02 -2 2.278v4.722m4 -4.722c0 -1.258 .895 -2.278 2 -2.278s2 1.02 2 2.278v4.722" /></svg>
+
+
+</span>
+
+            </a>
+        </li>
+    
+
+    
+        <li>
+            <a href="https://isbsh.bsky.social" title="Bluesky" rel="me">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-bluesky"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6.335 5.144c-1.654 -1.199 -4.335 -2.127 -4.335 .826c0 .59 .35 4.953 .556 5.661c.713 2.463 3.13 2.75 5.444 2.369c-4.045 .665 -4.889 3.208 -2.667 5.41c1.03 1.018 1.913 1.59 2.667 1.59c2 0 3.134 -2.769 3.5 -3.5c.333 -.667 .5 -1.167 .5 -1.5c0 .333 .167 .833 .5 1.5c.366 .731 1.5 3.5 3.5 3.5c.754 0 1.637 -.571 2.667 -1.59c2.222 -2.203 1.378 -4.746 -2.667 -5.41c2.314 .38 4.73 .094 5.444 -2.369c.206 -.708 .556 -5.072 .556 -5.661c0 -2.953 -2.68 -2.025 -4.335 -.826c-2.293 1.662 -4.76 5.048 -5.665 6.856c-.905 -1.808 -3.372 -5.194 -5.665 -6.856z" /></svg>
+
+</span>
+
+            </a>
+        </li>
+    
+
+
+
+
+
+
+    <li>
+            <a href="/index.xml" title="RSS" rel="me">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-rss"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M4 4a16 16 0 0 1 16 16" /><path d="M4 11a9 9 0 0 1 9 9" /></svg>
+
+
+</span>
+
+            </a>
+        </li>
+    
+
+</ul>
+
+    </div>
+    <div class="header-top-right">
+
+    </div>
+</div>
+
+
+    <nav class="noselect">
+        
+        
+        <a class="" href="http://localhost:1313/" title="">Home</a>
+        
+        <a class="" href="http://localhost:1313/about/" title="">About</a>
+        
+        <a class="" href="http://localhost:1313/categories/" title="">Categories</a>
+        
+        <a class="" href="http://localhost:1313/tags/" title="">Tags</a>
+        
+        <a class="" href="http://localhost:1313/posts/" title="">Archive</a>
+        
+    </nav>
+
+
+
+
+
+    
+
+
+
+
+    <script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$','$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  };
+
+  window.addEventListener('load', (event) => {
+      document.querySelectorAll("mjx-container").forEach(function(x){
+        x.parentElement.classList += 'has-jax'})
+    });
+
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+
+
+
+
+            
+        </header>
+        <main id="main" tabindex="-1">
+            
+    
+
+    <article class="post h-entry">
+        <div class="post-header">
+            <header>
+                
+                
+                
+                <h1 class="p-name post-title ">Week 03</h1>
+                
+
+            </header>
+            
+
+    
+
+
+
+<div class="post-info noselect">
+    
+        <div class="post-date dt-published">
+            <time datetime="2022-01-23">2022-01-23</time>
+            
+        </div>
+    
+
+    <a class="post-hidden-url u-url" href="/2022/week-03/">/2022/week-03/</a>
+    <a href="http://localhost:1313/" class="p-name p-author post-hidden-author h-card" rel="me">map[name:isbsh]</a>
+
+
+    <div class="post-taxonomies">
+        
+            <ul class="post-categories">
+                
+                    
+                    <li><a href="/categories/weekly-log">Weekly Log</a></li>
+                
+            </ul>
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+        
+
+  
+
+
+
+
+  
+  
+  
+  <details class="toc noselect">
+    <summary>Table of Contents</summary>
+    <div class="inner"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#i-told-you-響く-beats-k-to-da-m">&ldquo;I told you 響く beats K to da M”</a></li>
+    <li><a href="#グンナーネルソン-ufcと再契約">グンナー・ネルソン UFCと再契約</a></li>
+    <li><a href="#空木春宵感応グランギニョル">空木春宵『感応グラン=ギニョル』</a></li>
+    <li><a href="#宮内悠介の本数冊ブランチライン3巻小栗さんの写真集">宮内悠介の本数冊、『ブランチライン』3巻、小栗さんの写真集</a></li>
+    <li><a href="#fromis_9---hush-hush">fromis_9 - &lsquo;Hush Hush&rsquo;</a></li>
+    <li><a href="#宇多田ヒカル---somewhere-near-marselles">宇多田ヒカル - &lsquo;Somewhere Near Marselles&rsquo;</a></li>
+    <li><a href="#観始めたドラマシリーズ">観始めたドラマシリーズ</a></li>
+    <li><a href="#観終わったドラマシリーズ">観終わったドラマシリーズ</a></li>
+    <li><a href="#needy-girl-overdose">NEEDY GIRL OVERDOSE</a></li>
+    <li><a href="#ufc-270">UFC 270</a></li>
+  </ul>
+</nav></div>
+  </details>
+  
+
+
+
+<script>
+  var toc = document.querySelector(".toc");
+  if (toc) {
+    toc.addEventListener("click", function () {
+      if (event.target.tagName !== "A") {
+        event.preventDefault();
+        if (this.open) {
+          this.open = false;
+          this.classList.remove("expanded");
+        } else {
+          this.open = true;
+          this.classList.add("expanded");
+        }
+      }
+    });
+  }
+</script>
+
+        <div class="content e-content">
+            <img src="/images/images/220118.jpg"  alt="Hello Friend"  class="center"  style="border-radius: 15px;"  />
+
+
+<p>こちらがカムザット・チマエフというチェチェン出身のスウェーデン人MMA選手になります。</p>
+<p>それはそうと、FitBoxing で左の振り方がおかしいのか、最近肩や鎖骨に違和感を覚えやすいので、FitBoxingは一旦少し止めてみて、下半身だけの運動にとどめた方がいいのかもしれない。</p>
+<h2 id="i-told-you-響く-beats-k-to-da-m" >
+<div>
+    <a href="#i-told-you-%e9%9f%bf%e3%81%8f-beats-k-to-da-m">
+        
+    </a>
+    &ldquo;I told you 響く beats K to da M”
+</div>
+</h2>
+<p>KMのタグ、何言ってるのか最近ようやく知りました。<br>
+<a href="https://youtu.be/4oeiBiZAubU?t=195">https://youtu.be/4oeiBiZAubU?t=195</a></p>
+<h2 id="グンナーネルソン-ufcと再契約" >
+<div>
+    <a href="#%e3%82%b0%e3%83%b3%e3%83%8a%e3%83%bc%e3%83%8d%e3%83%ab%e3%82%bd%e3%83%b3-ufc%e3%81%a8%e5%86%8d%e5%a5%91%e7%b4%84">
+        
+    </a>
+    グンナー・ネルソン UFCと再契約
+</div>
+</h2>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">New multi-fight contract signed with the <a href="https://twitter.com/ufc?ref_src=twsrc%5Etfw">@ufc</a>. Hopefully a fight announcement coming soon <a href="https://twitter.com/UFCEurope?ref_src=twsrc%5Etfw">@UFCEurope</a> <a href="https://twitter.com/MjolnirMMA?ref_src=twsrc%5Etfw">@MjolnirMMA</a> <a href="https://t.co/yshkp2RoL5">pic.twitter.com/yshkp2RoL5</a></p>&mdash; Gunnar Nelson (@GunniNelson) <a href="https://twitter.com/GunniNelson/status/1483073745971552256?ref_src=twsrc%5Etfw">January 17, 2022</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<p>Covid-19の影響で渡航など難しかったのか2年くらい試合をしておらず<br>
+もう辞めちゃうのかも…とうっすら悲観していたんだけど、複数試合の再契約したとのこと。<br>
+マイフェイバリットファイターのひとりなので嬉しい。</p>
+<p>とは言えなかなか長いブランク明けだし心配でもある。</p>
+<h2 id="空木春宵感応グランギニョル" >
+<div>
+    <a href="#%e7%a9%ba%e6%9c%a8%e6%98%a5%e5%ae%b5%e6%84%9f%e5%bf%9c%e3%82%b0%e3%83%a9%e3%83%b3%e3%82%ae%e3%83%8b%e3%83%a7%e3%83%ab">
+        
+    </a>
+    空木春宵『感応グラン=ギニョル』
+</div>
+</h2>
+<p>「地獄を縫いとる」「メタモルフォシスの龍」を読んだ。</p>
+<p>この2つは既に読んだことがあって、どっちも好きな2作品。読んでいて作者の社会に対する怒りが無茶苦茶刺さってくる。</p>
+<p>特に「地獄を縫いとる」は、最初に読んだ時よりもメタバースメタバース煩くなってきた今では、現実から考えうるSFとしてのリアリティラインがより絶妙に感じられる気がする。</p>
+<h2 id="宮内悠介の本数冊ブランチライン3巻小栗さんの写真集" >
+<div>
+    <a href="#%e5%ae%ae%e5%86%85%e6%82%a0%e4%bb%8b%e3%81%ae%e6%9c%ac%e6%95%b0%e5%86%8a%e3%83%96%e3%83%a9%e3%83%b3%e3%83%81%e3%83%a9%e3%82%a4%e3%83%b33%e5%b7%bb%e5%b0%8f%e6%a0%97%e3%81%95%e3%82%93%e3%81%ae%e5%86%99%e7%9c%9f%e9%9b%86">
+        
+    </a>
+    宮内悠介の本数冊、『ブランチライン』3巻、小栗さんの写真集
+</div>
+</h2>
+<p>宮内悠介はおすすめされた『盤上の夜』『ヨハネスブルグの天使たち』と『超動く家にて』を買った。読むのはいつ頃になるのか謎。</p>
+<p>『ブランチライン』のよさって自分でははっきり言語化しにくくて「ここが最高!」みたいなことも言いづらいんだけど、それが良さだと思うというか、Twitter などで話として流れてくるような、既に言葉が与えられているような問題じゃないものを読みながら手繰り寄せるような感覚があって、それこそが良いなと思う。</p>
+<p>初めの頃の違国日記にもそういうデリケートさに感動していたけど、最近のプロットになってくると少しフェーズが変わって、提示される問題が結構具体的になっているように感じられて、少し退屈だったりする。</p>
+<p>小栗さんの写真集は 13,4歳くらいから見てる人だし、ちょっと向き合い方が難しそうだぞと思ったのだけど、とりあえず買っとくという気持ちで買った。写真は良いのだけど、あんまり素を感じないというか、素の感じを自分で演出できる人でも無いのが分かってしまい、テレビや雑誌のグラビアで見る小栗さんの印象とそんなに変わらないのが物足りない気もしてしまう。</p>
+<h2 id="fromis_9---hush-hush" >
+<div>
+    <a href="#fromis_9---hush-hush">
+        
+    </a>
+    fromis_9 - &lsquo;Hush Hush&rsquo;
+</div>
+</h2>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/0TfGtiD2HXc?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+<h2 id="宇多田ヒカル---somewhere-near-marselles" >
+<div>
+    <a href="#%e5%ae%87%e5%a4%9a%e7%94%b0%e3%83%92%e3%82%ab%e3%83%ab---somewhere-near-marselles">
+        
+    </a>
+    宇多田ヒカル - &lsquo;Somewhere Near Marselles&rsquo;
+</div>
+</h2>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/ERNDIxHkIOQ?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+<p>今回のアルバムにこんなに Floating Points が参加してる曲があるのが驚きっていうか、そもそも宇多田ヒカルと Floating Points が共作って、て感じではあるんだけど。いかにも Floating Points なこの曲が一番好き。 長いし。</p>
+<h2 id="観始めたドラマシリーズ" >
+<div>
+    <a href="#%e8%a6%b3%e5%a7%8b%e3%82%81%e3%81%9f%e3%83%89%e3%83%a9%e3%83%9e%e3%82%b7%e3%83%aa%e3%83%bc%e3%82%ba">
+        
+    </a>
+    観始めたドラマシリーズ
+</div>
+</h2>
+<p><img src="https://i.gyazo.com/039e482e0e1147889b9a0947e65a91d6.jpg" alt=""></p>
+<ul>
+<li>『神木隆之介の撮休』</li>
+<li>『恋せぬふたり』</li>
+</ul>
+<p>『恋せぬふたり』は登場人物のセクシャリティ的なものがテーマとして大きく、1話ではそれらの説明に忙しく展開に少々無理やりさを感じるありがちな感じでどうかと思ったのだけど、その辺の段取りを経ての2話では無理やりさも薄くなっており、早々にそういうマイノリティの要素を持つ主人公達にガンガン投げつけられる「ふつう」ってワードの残酷さが見ていて気まずさがビンビンで面白かった。</p>
+<p>子どもを作る事が出来なかったり、恋愛関係ですらない人間にとっても家族や共同体を作ろうとする意味はあるでしょっていう主張と、それをなかなか理解したくない身近なマジョリティの価値観との衝突やすり合わせみたいな観点で、観る前はまったく紐づけて考えていなかったけど『ハッシュ!』とかとも繋がる話な気がする。</p>
+<p>『ハッシュ!』の場合、マジョリティである「ふつう」側にも当時の社会に強制された関係なんすよ…みたいな要素がある事で、より強い衝突と緊張が生まれるやばさがあったけど、そういう所まで話が及ぶのか、それとは違う所に展開していくのか気になる。</p>
+<p>セクシャリティ的な部分でこの辺の話が自分に当てはまるかどうかはさておき、恋愛や結婚ベースでないミニマムな共同体みたいなのは作って維持できるんならいいよねと思うけど、どうなんだろう。</p>
+<h2 id="観終わったドラマシリーズ" >
+<div>
+    <a href="#%e8%a6%b3%e7%b5%82%e3%82%8f%e3%81%a3%e3%81%9f%e3%83%89%e3%83%a9%e3%83%9e%e3%82%b7%e3%83%aa%e3%83%bc%e3%82%ba">
+        
+    </a>
+    観終わったドラマシリーズ
+</div>
+</h2>
+<p><img src="https://i.gyazo.com/8d06aa173ff024498233f098b9beb29c.jpg" alt=""></p>
+<ul>
+<li>『名建築で昼食を』</li>
+</ul>
+<p>本放送時に面白そうだと思いつつ、乗り遅れ気味に観た旧白洲邸の回がなんだか微妙だったので、別に良いかという気分になりそれっきりにしてしまっていたのを、年末の一挙放送を録画して観た。</p>
+<p>ドラマの作りとしては『孤独のグルメ』というか『サ道』的で、劇中にその建築を紹介する人は実際のその施設の人がやってるんだけど（おそらく）、旧白洲邸の回ではその紹介するおっさんの、芝居でない調子で結構喋ってきてフィクションに食い込んでくる感じ、がドラマを見るモードにおいてはだいぶうるさかったから微妙に感じたので、他の回もそうだったらちょっと嫌だなと思っていたら、他の施設ではそんなに押しの強い人は出てこなかったのでよかった。</p>
+<p>最終回に、池田エライザが演じる藤の抱えている悩みと、現実にならなかった建築物としての建築模型の話が紐づけられるのも、上手い感じにまとまっていて印象がいい。</p>
+<h2 id="needy-girl-overdose" >
+<div>
+    <a href="#needy-girl-overdose">
+        
+    </a>
+    NEEDY GIRL OVERDOSE
+</div>
+</h2>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/itJZUTWsEw4?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+<p>どっかのメディアのリリース情報を見てなんかやばそうなゲームだなと思い、前もって Steam のウィッシュリストに入れて待っていたゲームが無事発売されたのでやってる。</p>
+<p>あめちゃんという女性のストリーマーを育成するゲームで、現実にそういう配信をしてる人たちに見え隠れする闇が生々しく、おもしろいって言っちゃっていいんだろかっていう罪悪感もあるんだけど、おもしろい。他にも細々とした SNS や チャットのテキストがいちいちリアルなのも強度が高いというか。</p>
+<p>ゲーム中にフォロワーから送られてくるファンアートが実際に Twitter で募集されていたものだったりもする。</p>
+<p>ゲームとしては、コミュニケーションや配信を通してのストレスとか好感度のステータスを管理しながら、ゲーム内での30日間を走り切った時どういう状態かでエンディングが変わるもので、1周1～3時間くらいだと思う。</p>
+<p>最初のプレイでは普通に計算抜きであめちゃんに向き合ったロールプレイをしたところ、ストレスも闇も少なくフォロワー数は程々のままで終わり、その後彼女は配信から足を洗って、自分も振られてしまうという「Labor is evil」エンドになり、「健康に生きることが彼女の幸福に見えましたか?」というダイアログを突きつけられてしまった。</p>
+<p><img src="https://i.gyazo.com/00169160ae97a0c43e5fd4c658a323bb.jpg" alt=""></p>
+<p>2周目以降は他のエンディングを探る感じでいろいろ試しながらやってるんだけど、どんどんあめちゃんにエゴサさせたり薬を過剰に処方したりと、感情なく痛みを与えていく感じになっていくのが怖いし、真面目にいろいろ考えさせられるゲームだと思います。</p>
+<p>あの辺の配信的なネット界隈のノリがどうしても無理でなければおすすめ。</p>
+<h2 id="ufc-270" >
+<div>
+    <a href="#ufc-270">
+        
+    </a>
+    UFC 270
+</div>
+</h2>
+<p>10時開始のプレリミから観戦。日本でも試合をしていて、自分はQuintetでも生で見ていたビクター・ヘンリーが予想を覆して勝っていて熱い。正直今日の感じで上のランカーとやって太刀打ちできるのかは分かんないけど頑張ってほしい。</p>
+<p>あとコンテンダーシリーズ上がりのジャック・デラ・マダレナがいい選手っぽいのを知る。直線系のボクシングが上手い。</p>
+<p>結構楽しみだったメインの2カードはどちらも拮抗していて渋めな展開だった。面白かったけど、もっとはっきりした決着が見たかったなっていうか。</p>
+<p>ちなみにフランク・トリッグがレフェリーでいたり、フィゲイレドのセコンドにイズマイウがいたり、ヘンリーのセコンドにジョシュがいたりと懐かしい顔ぶれもいっぱい見れた。</p>
+<hr>
+<p>今週は以上になります。</p>
+        </div>
+
+    </article>
+
+    
+    
+        
+    
+
+    
+        
+        
+    
+
+    
+        
+    
+    
+    <div class="pagination post-pagination">
+        <div class="left pagination-item ">
+            
+                <a href="/2022/week-04/">Week 04</a>
+            
+        </div>
+        <div class="right pagination-item ">
+            
+                <a href="/2022/week-02/">Week 02</a>
+            
+        </div>
+    </div>
+
+
+
+
+
+    
+
+    
+        
+
+
+    
+
+    
+
+    
+    
+    
+
+        </main>
+        
+            <footer class="common-footer noselect">
+    
+    
+
+    <div class="common-footer-bottom">
+        
+
+        <div style="display: flex; align-items: center; gap:8px">
+            ©  isbsh,  2025
+            
+        </div>
+        <div style="display:flex; align-items: center; gap:4px">
+
+            
+            
+
+            
+            
+            
+            
+
+            
+            
+
+            
+        </div>
+        
+            <div>
+                 <a target="_blank" rel="noopener noreferrer" href="https://gohugo.io/">Hugo</a>,  <a target="_blank" rel="noopener noreferrer" href="https://github.com/hugo-theme-anubis2/hugo-theme-anubis2">Anubis2</a>.<br>
+            </div>
+        
+    </div>
+
+    <p class="h-card vcard">
+
+    <a href=http://localhost:1313/ class="p-name u-url url fn" rel="me">map[name:isbsh]</a>
+
+    
+
+    
+</p>
+
+</footer>
+
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+
+
+
+
+    
+
+
+
+
+<html lang="ja-jp" data-theme="">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+        
+<meta charset="utf-8">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<meta name="theme-name" content="Anubis2">
+
+<title>Week05 : Understanding and Accepting exist on different layers, too far apart. - isbsh</title>
+
+<meta name="description" content="2025.1.27~2.2。
+確定拠出型年金（iDeCo）お取引状況のお知らせが着弾。去年のあたまに少し構成見直してみたらまあまあ増えてて嬉しい。
+
+
+
+仕事は相変わらず特にギアが上がるでもなく淡々と進んでおり、金曜にはサポートに入ってもらうフリーのスタッフの人たちと打ち合わせをしたのだけど、もうこれからお願いしますねという作業説明の打ち合わせなのに「すいません、週末しか作業できなさそうで…」と言われてしまいちょっと困った。まあ作業自体は終わるとは思うのだけど、それよりもフリーの人がそんなムーブしてて大丈夫なのかということの方が少し心配。自分も比較的仕事断りがちな人間だからどの口が言うかねって感じかも知れないが。">
+
+
+
+
+
+<link rel="icon" type="image/x-icon" href="http://localhost:1313/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="http://localhost:1313/favicon.png">
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+<style>
+  body {
+    visibility: hidden;
+    opacity: 0;
+  }
+</style>
+
+<noscript>
+  <style>
+    body {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+</noscript>
+
+
+
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <link rel="stylesheet" href="/css/style.4c42aa0abeac804c4933c54677c449cea1f723caae778425d031e98565a0cdef.css" integrity="sha256-TEKqCr6sgExJM8VGd8RJzqH3I8qud4Ql0DHphWWgze8=">
+    
+
+
+
+
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <link rel="stylesheet" href="/css/style.9c1888ebff42c0224ce04dac10cb2c401f1b77f54f78e8d87d73c3bed781c263.css" integrity="sha256-nBiI6/9CwCJM4E2sEMssQB8bd/VPeOjYfXPDvteBwmM=">
+    
+
+
+
+
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <link rel="stylesheet" href="/css/style.acd606c0fce58853afe0248d37bb41acbbcdd8b1aca2412b6c0fa760da0137f3.css" integrity="sha256-rNYGwPzliFOv4CSNN7tBrLvN2LGsokErbA&#43;nYNoBN/M=">
+    
+
+
+
+
+
+
+
+
+
+  
+
+
+
+    
+    
+
+    
+    
+    
+      
+    
+
+    
+    
+      <link rel="stylesheet" href="/css/style.min.341da4a25e07c147305f19e8c14d98b17901b35944589384f4f05b81095e9f38.css" integrity="sha256-NB2kol4HwUcwXxnowU2YsXkBs1lEWJOE9PBbgQlenzg=" crossorigin="anonymous">
+    
+    
+
+    
+    
+
+    
+    
+    
+      
+    
+
+    
+    
+      <link rel="stylesheet" href="/css/style.min.ed5c481a16e6cdd0703319cf989b1d3510951691d1672769cca50e146a711e9c.css" integrity="sha256-7VxIGhbmzdBwMxnPmJsdNRCVFpHRZydpzKUOFGpxHpw=" crossorigin="anonymous">
+    
+    
+
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous">
+      
+
+
+
+
+    
+    
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4" crossorigin="anonymous"></script>
+      
+
+
+
+
+
+
+  
+
+
+
+    
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <script src="/js/script.672e2309c296e07c18bcd08b28d797a56222ff941d65f308fba3158c44885b14.js" type="text/javascript" charset="utf-8" integrity="sha256-Zy4jCcKW4HwYvNCLKNeXpWIi/5QdZfMI&#43;6MVjESIWxQ="></script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</head>
+<body>
+    <a class="skip-main" href="#main"></a>
+    <div class="container">
+        <header class="common-header">
+            
+                <div class="header-top">
+    <div class="header-top-left">
+        <h1 class="site-title noselect">
+    <a href="/">isbsh</a>
+</h1>
+
+        
+
+  
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+        <div class="theme-switcher">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-sun-high"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14.828 14.828a4 4 0 1 0 -5.656 -5.656a4 4 0 0 0 5.656 5.656z" /><path d="M6.343 17.657l-1.414 1.414" /><path d="M6.343 6.343l-1.414 -1.414" /><path d="M17.657 6.343l1.414 -1.414" /><path d="M17.657 17.657l1.414 1.414" /><path d="M4 12h-2" /><path d="M12 4v-2" /><path d="M20 12h2" /><path d="M12 20v2" /></svg>
+
+
+</span>
+
+        </div>
+    
+
+    <script>
+        const STORAGE_KEY = 'user-color-scheme'
+        const defaultTheme = "auto"
+
+        let currentTheme
+        let switchButton
+        let autoDefinedScheme = window.matchMedia('(prefers-color-scheme: dark)')
+
+        function switchTheme(e) {
+            currentTheme = (currentTheme === 'dark') ? 'light' : 'dark';
+            if (localStorage) localStorage.setItem(STORAGE_KEY, currentTheme);
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            changeGiscusTheme(currentTheme);
+            document.body.dispatchEvent(new CustomEvent(currentTheme + "-theme-set"));
+        }
+
+        const autoChangeScheme = e => {
+            currentTheme = e.matches ? 'dark' : 'light'
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            changeGiscusTheme(currentTheme);
+            document.body.dispatchEvent(new CustomEvent(currentTheme + "-theme-set"));
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            switchButton = document.querySelector('.theme-switcher')
+            currentTheme = detectCurrentScheme()
+
+            if (currentTheme === 'auto') {
+                autoChangeScheme(autoDefinedScheme);
+                autoDefinedScheme.addListener(autoChangeScheme);
+            } else {
+                document.documentElement.setAttribute('data-theme', currentTheme)
+            }
+
+            if (switchButton) {
+                switchButton.addEventListener('click', switchTheme, false)
+            }
+
+            showContent();
+        })
+
+        function detectCurrentScheme() {
+            if (localStorage !== null && localStorage.getItem(STORAGE_KEY)) {
+                return localStorage.getItem(STORAGE_KEY)
+            }
+            if (defaultTheme) {
+                return defaultTheme
+            }
+            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+
+        function showContent() {
+            document.body.style.visibility = 'visible';
+            document.body.style.opacity = 1;
+        }
+
+        function changeGiscusTheme (theme) {
+            function sendMessage(message) {
+              const iframe = document.querySelector('iframe.giscus-frame');
+              if (!iframe) return;
+              iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+            }
+
+            sendMessage({
+              setConfig: {
+                theme: theme
+              }
+            });
+        }
+    </script>
+
+
+        <ul class="social-icons noselect">
+
+ 
+
+
+    
+
+
+
+
+
+    
+        <li>
+            <a href="https://nightly.fedibird.com/@isbsh" title="Mastodon" rel="me">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-mastodon"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18.648 15.254c-1.816 1.763 -6.648 1.626 -6.648 1.626a18.262 18.262 0 0 1 -3.288 -.256c1.127 1.985 4.12 2.81 8.982 2.475c-1.945 2.013 -13.598 5.257 -13.668 -7.636l-.026 -1.154c0 -3.036 .023 -4.115 1.352 -5.633c1.671 -1.91 6.648 -1.666 6.648 -1.666s4.977 -.243 6.648 1.667c1.329 1.518 1.352 2.597 1.352 5.633s-.456 4.074 -1.352 4.944z" /><path d="M12 11.204v-2.926c0 -1.258 -.895 -2.278 -2 -2.278s-2 1.02 -2 2.278v4.722m4 -4.722c0 -1.258 .895 -2.278 2 -2.278s2 1.02 2 2.278v4.722" /></svg>
+
+
+</span>
+
+            </a>
+        </li>
+    
+
+    
+        <li>
+            <a href="https://isbsh.bsky.social" title="Bluesky" rel="me">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-bluesky"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6.335 5.144c-1.654 -1.199 -4.335 -2.127 -4.335 .826c0 .59 .35 4.953 .556 5.661c.713 2.463 3.13 2.75 5.444 2.369c-4.045 .665 -4.889 3.208 -2.667 5.41c1.03 1.018 1.913 1.59 2.667 1.59c2 0 3.134 -2.769 3.5 -3.5c.333 -.667 .5 -1.167 .5 -1.5c0 .333 .167 .833 .5 1.5c.366 .731 1.5 3.5 3.5 3.5c.754 0 1.637 -.571 2.667 -1.59c2.222 -2.203 1.378 -4.746 -2.667 -5.41c2.314 .38 4.73 .094 5.444 -2.369c.206 -.708 .556 -5.072 .556 -5.661c0 -2.953 -2.68 -2.025 -4.335 -.826c-2.293 1.662 -4.76 5.048 -5.665 6.856c-.905 -1.808 -3.372 -5.194 -5.665 -6.856z" /></svg>
+
+</span>
+
+            </a>
+        </li>
+    
+
+
+
+
+
+
+    <li>
+            <a href="/index.xml" title="RSS" rel="me">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-rss"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M4 4a16 16 0 0 1 16 16" /><path d="M4 11a9 9 0 0 1 9 9" /></svg>
+
+
+</span>
+
+            </a>
+        </li>
+    
+
+</ul>
+
+    </div>
+    <div class="header-top-right">
+
+    </div>
+</div>
+
+
+    <nav class="noselect">
+        
+        
+        <a class="" href="http://localhost:1313/" title="">Home</a>
+        
+        <a class="" href="http://localhost:1313/about/" title="">About</a>
+        
+        <a class="" href="http://localhost:1313/categories/" title="">Categories</a>
+        
+        <a class="" href="http://localhost:1313/tags/" title="">Tags</a>
+        
+        <a class="" href="http://localhost:1313/posts/" title="">Archive</a>
+        
+    </nav>
+
+
+
+
+
+    
+
+
+
+
+    <script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$','$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  };
+
+  window.addEventListener('load', (event) => {
+      document.querySelectorAll("mjx-container").forEach(function(x){
+        x.parentElement.classList += 'has-jax'})
+    });
+
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+
+
+
+
+            
+        </header>
+        <main id="main" tabindex="-1">
+            
+    
+
+    <article class="post h-entry">
+        <div class="post-header">
+            <header>
+                
+                
+                
+                <h1 class="p-name post-title ">Week05 : Understanding and Accepting exist on different layers, too far apart.</h1>
+                
+
+            </header>
+            
+
+    
+
+
+
+<div class="post-info noselect">
+    
+        <div class="post-date dt-published">
+            <time datetime="2025-02-05">2025-02-05</time>
+            
+        </div>
+    
+
+    <a class="post-hidden-url u-url" href="/2025/02/week05-understanding-and-accepting-exist-on-different-layers-too-far-apart./">/2025/02/week05-understanding-and-accepting-exist-on-different-layers-too-far-apart./</a>
+    <a href="http://localhost:1313/" class="p-name p-author post-hidden-author h-card" rel="me">map[name:isbsh]</a>
+
+
+    <div class="post-taxonomies">
+        
+            <ul class="post-categories">
+                
+                    
+                    <li><a href="/categories/weekly-log">Weekly log</a></li>
+                
+            </ul>
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+        
+
+  
+
+
+
+
+  
+  
+  
+  <details class="toc noselect">
+    <summary>Table of Contents</summary>
+    <div class="inner"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#読んだ本">読んだ本</a></li>
+    <li><a href="#読んだ記事聴いたポッドキャスト">読んだ記事・聴いたポッドキャスト</a></li>
+    <li><a href="#遊んだゲーム">遊んだゲーム</a></li>
+    <li><a href="#行った展示">行った展示</a></li>
+    <li><a href="#新譜">新譜</a></li>
+  </ul>
+</nav></div>
+  </details>
+  
+
+
+
+<script>
+  var toc = document.querySelector(".toc");
+  if (toc) {
+    toc.addEventListener("click", function () {
+      if (event.target.tagName !== "A") {
+        event.preventDefault();
+        if (this.open) {
+          this.open = false;
+          this.classList.remove("expanded");
+        } else {
+          this.open = true;
+          this.classList.add("expanded");
+        }
+      }
+    });
+  }
+</script>
+
+        <div class="content e-content">
+            <p>2025.1.27~2.2。<br>
+確定拠出型年金（iDeCo）お取引状況のお知らせが着弾。去年のあたまに少し構成見直してみたらまあまあ増えてて嬉しい。</p>
+<figure><img src="/images/images/250130.webp">
+</figure>
+
+<p>仕事は相変わらず特にギアが上がるでもなく淡々と進んでおり、金曜にはサポートに入ってもらうフリーのスタッフの人たちと打ち合わせをしたのだけど、もうこれからお願いしますねという作業説明の打ち合わせなのに「すいません、週末しか作業できなさそうで…」と言われてしまいちょっと困った。まあ作業自体は終わるとは思うのだけど、それよりもフリーの人がそんなムーブしてて大丈夫なのかということの方が少し心配。自分も比較的仕事断りがちな人間だからどの口が言うかねって感じかも知れないが。</p>
+<h2 id="読んだ本" >
+<div>
+    <a href="#%e8%aa%ad%e3%82%93%e3%81%a0%e6%9c%ac">
+        
+    </a>
+    読んだ本
+</div>
+</h2>
+<ul>
+<li>『地上適応困難症 ファン・モガSFF短編セレクション』ファン・モガ</li>
+<li>『KISSA BY KISSA 路上と喫茶 - 僕が日本を歩いて旅する理由』クレイグ・モド</li>
+<li>『メメントラブドール』市街地ギャオ</li>
+</ul>
+<p>薄めの本をザクザク読み進める。</p>
+<p>『地上適応困難症』は文フリで買った韓国の女性SF作家の短編集。どれも韓国の静謐なSFという感じで、収録作のうち、研究目的でベルーガの群れに入り込んだロボットベルーガのAIが主人公の『私の新たなる海へ』と、「モーメント」として売買される他人の記憶をVRで疑似体験できるようになった近未来で、あるモーメントに出会った主人公がその作者にコンタクトをとる事を通じて自分のつらい過去に向き合う『モーメント・アーケード』がとりわけよかった。そのほか長い期間日本で暮らしている韓国人による視線による、贖罪だったり外から来た人からみたコミュニティの実像というものがぐさぐさ来るような作品もあって短いながら読みごたえがある。</p>
+<p>『KISSA BY KISSA』は何週間か前のRebuildにゲスト出演していた作者の本で、そのポッドキャストがすごく面白かったので買って読んでみた。900km以上自分の脚で中山道を歩いて旅しながら、道中の喫茶店に入ってはコーヒーとピザトーストを食べて回った記録。文章の描写も写真も素晴らしかった。表紙にもなっているカナデアンコーヒーハウスとかがやばすぎて、もう閉めてしまった事まで含めて夢みたいな佇まい。純喫茶というと都内だと今は逆に鼻白んでしまうところもあるけど、好きな店とか見つけて通いたい気持ちにもなってくる。</p>
+<p>『メメントラブドール』は男の娘コンカフェでバイトしながら「ノンケ喰い」と称してマッチングアプリで男をひっかけて行為に及んではそれを撮影してSNSの裏アカに投稿している若手Sler社員という、いろんなペルソナを使い分けながら生きているどうしようもない人間のどうしようもない綱渡りの日々の話。その手の固有名詞がバンバン出て来たり、だいぶ毒々しくてくらくらするけどそこまで含めて面白かった。ペルソナの話が主題であるらしいけど、男の娘コンカフェの他の店員とか客とのやりとりに、ジェンダーとかセクシャリティとか溶けてよくわかんなくなっているように感じられたのが印象に残ってる。</p>
+<blockquote>
+<p>欲しいのか欲しくないのかわからないものばかり拾い集めて、要るのか要らないのかわからないままそれでも溢れてしまうから順に捨てていく。時代のゴミばかりが延々と続く道の先で遠巻きに指をさされながら歩く私がいる。世界は優しすぎるから、投棄する私を誰も責めない。致命傷を負わせてくれない。さっさと殺してくれたらよかったのに。ベッドから私に延びる視線が直線から放物線に変わったあと、わざとらしい咳払いが聞こえた。<br>
+（市街地ギャオ『メメントラブドール』, p127）</p>
+</blockquote>
+<h2 id="読んだ記事聴いたポッドキャスト" >
+<div>
+    <a href="#%e8%aa%ad%e3%82%93%e3%81%a0%e8%a8%98%e4%ba%8b%e8%81%b4%e3%81%84%e3%81%9f%e3%83%9d%e3%83%83%e3%83%89%e3%82%ad%e3%83%a3%e3%82%b9%e3%83%88">
+        
+    </a>
+    読んだ記事・聴いたポッドキャスト
+</div>
+</h2>
+<ul>
+<li>「質問がひどすぎる」フジ会見で記者側に批判&ndash;経営陣が同情される異例の事態に（石川温） - CNET Japan<br>
+<a href="https://japan.cnet.com/article/35228713/">https://japan.cnet.com/article/35228713/</a></li>
+<li>フジ側と記者側、10時間会見で双方に見えた「課題」　西田亮介氏：朝日新聞<br>
+<a href="https://digital.asahi.com/articles/AST1X2TY9T1XPTIL00KM.html">https://digital.asahi.com/articles/AST1X2TY9T1XPTIL00KM.html</a></li>
+<li>【特集】フジの記者会見とメディアの課題（松谷創一郎×田中東子×野口みな子×荻上チキ×南部広美）- TBSラジオ 荻上チキ・Session<br>
+<a href="https://www.youtube.com/watch?v=Sj_Me-YoRTs">https://www.youtube.com/watch?v=Sj_Me-YoRTs</a></li>
+<li>「狂気を止めよう」――ガザでの虐殺に異を唱えたイスラエル人高校教師は、ある日突然、逮捕された - Dialogue for People<br>
+<a href="https://japan.cnet.com/article/35228713/">https://d4p.world/30338/</a></li>
+</ul>
+<h2 id="遊んだゲーム" >
+<div>
+    <a href="#%e9%81%8a%e3%82%93%e3%81%a0%e3%82%b2%e3%83%bc%e3%83%a0">
+        
+    </a>
+    遊んだゲーム
+</div>
+</h2>
+<ul>
+<li>『LOK Digital』</li>
+<li>『アレンジャー・ロールパズリングの旅』</li>
+</ul>
+<p>LOKをクリア、というかエンドクレジットを見るとこまでは一応終わった。どういうゲームかというと、たとえば「LOK」とか「TLAK」とかステージごとに追加されていくルールの文字列をつなげては消してって最終的に全てのマスを消したらクリアという純粋なパズル。場当たり的にやっててもすっと解けることがあるようなゲームバランスではあるんだけど、それなりに考えて解法が見つかった時の気持ちよさが最後まで続くのがとてもよかった。それから音楽と音も気持ちいい。</p>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/ofCYQGRWcS4?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+<p>アレンジャーもパズルなんだけど、こっちはストーリーがあってグリッドで仕切られたマップをスライドして動ける主人公が、途中の行き止まりとか仕掛けを解いて進んでいきながら自分の居場所を探すみたいな。文字で説明するのが難しいけどとにかくそんな感じなんだけど、これも程々の難しさで面白い。以前プレイした『Carto』ってパズルゲームのグラフィックをやっていた人がこのゲームにも関わっている（というかいろいろ凄い人たちが一緒になって作ったらしい）とかでグラフィックもかわいくて良い。</p>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/ZIy7q0HhnDw?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+<h2 id="行った展示" >
+<div>
+    <a href="#%e8%a1%8c%e3%81%a3%e3%81%9f%e5%b1%95%e7%a4%ba">
+        
+    </a>
+    行った展示
+</div>
+</h2>
+<ul>
+<li>といだあずさ個展「となりにいた人」（Gallery John）</li>
+</ul>
+<p>土曜日、といださんの個展を見に鎌倉の材木座まで行って来た。ポスターカラーをベタ塗りした半紙を切り貼りして人の顔を構成した作品がメインで、質感があんまり見たこと無い感じだったのがおもしろかった。人の顔の作品はコンポジションがシビアそうでもっとピンピンに詰めるところもあるのかなと思ったけど、今回展示されていた作品くらいある程度のゆるさもあった方が良さそうなのかもしれず、この先作り続けるならまた見てみたいと思う。自分はその人の顔の作品よりも端材で作ったらしい、人が複数いる引きの絵の作品が好きではあった。
+観ながらといださんやふゆさんと1年ぶりくらいにあれこれ会話。息子さんもめちゃめちゃ元気でよかった。</p>
+<p><figure><img src="/images/2025/0201_toida01.webp">
+</figure>
+
+<figure><img src="/images/2025/0201_toida02.webp">
+</figure>
+
+<figure><img src="/images/2025/0201_toida03.webp">
+</figure>
+</p>
+<h2 id="新譜" >
+<div>
+    <a href="#%e6%96%b0%e8%ad%9c">
+        
+    </a>
+    新譜
+</div>
+</h2>
+<p>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/bRa5W0fQGrc?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div><br>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/23urWKmHS6o?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div></p>
+        </div>
+
+    </article>
+
+    
+    
+        
+    
+
+    
+        
+        
+    
+
+    
+        
+    
+    
+    <div class="pagination post-pagination">
+        <div class="left pagination-item ">
+            
+                <a href="/2025/02/week06-it-will-be-gone-someday-but-not-now/">Week06 : It will be gone someday but not now</a>
+            
+        </div>
+        <div class="right pagination-item ">
+            
+                <a href="/2025/01/week04-hell-is-empty/">Week04 : Hell Is Empty</a>
+            
+        </div>
+    </div>
+
+
+
+
+
+    
+
+    
+        
+
+
+    
+
+    
+
+    
+    
+    
+
+        </main>
+        
+            <footer class="common-footer noselect">
+    
+    
+
+    <div class="common-footer-bottom">
+        
+
+        <div style="display: flex; align-items: center; gap:8px">
+            ©  isbsh,  2025
+            
+        </div>
+        <div style="display:flex; align-items: center; gap:4px">
+
+            
+            
+
+            
+            
+            
+            
+
+            
+            
+
+            
+        </div>
+        
+            <div>
+                 <a target="_blank" rel="noopener noreferrer" href="https://gohugo.io/">Hugo</a>,  <a target="_blank" rel="noopener noreferrer" href="https://github.com/hugo-theme-anubis2/hugo-theme-anubis2">Anubis2</a>.<br>
+            </div>
+        
+    </div>
+
+    <p class="h-card vcard">
+
+    <a href=http://localhost:1313/ class="p-name u-url url fn" rel="me">map[name:isbsh]</a>
+
+    
+
+    
+</p>
+
+</footer>
+
+        
+    </div>
+</body>
+</html>

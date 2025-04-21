@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+
+
+
+
+    
+
+
+
+
+<html lang="ja-jp" data-theme="">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+        
+<meta charset="utf-8">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<meta name="theme-name" content="Anubis2">
+
+<title>Week 43 - isbsh</title>
+
+<meta name="description" content="今週も仕事は緩慢な感じ、だけど去年の作業データをいくつかレンダリングし直さないとならなくなって、なんだかねっとりした負荷のある週だった。
+というのも、仕事場のiMacのOSをMontereyにアップデートしたことで、去年バージョン2019のAEで作ったデータが上手く開けなくなってしまい（2019で開くと描画エラー、2022で開くとフッテージが破損する）、急遽使ってない別のiMacを引っ張り出して作業する羽目になったせい。ただでさえレンダリングって何回も見直す必要があったりやり直したりで、手なんかほとんど動かしてないのに疲れるものなのに、余計に疲れてしまった。
+既に提出したものにミスがあった事とかまた出し直すって事も、なんらポジティブなものではないし。
+そんな中、先週注文したM2積んだ11インチのiPad Proを受け取ったり、知り合いがダブつかせたチケットを頂いて冨樫義博展に行って久しぶりに会う人と話せたりと、それなりのうるおいはあった他、チェウォンさんのステージ映像なども引き続き雪崩れ込んできたりして助かった。">
+
+
+
+
+
+<link rel="icon" type="image/x-icon" href="http://localhost:1313/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="http://localhost:1313/favicon.png">
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+<style>
+  body {
+    visibility: hidden;
+    opacity: 0;
+  }
+</style>
+
+<noscript>
+  <style>
+    body {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+</noscript>
+
+
+
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <link rel="stylesheet" href="/css/style.4c42aa0abeac804c4933c54677c449cea1f723caae778425d031e98565a0cdef.css" integrity="sha256-TEKqCr6sgExJM8VGd8RJzqH3I8qud4Ql0DHphWWgze8=">
+    
+
+
+
+
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <link rel="stylesheet" href="/css/style.9c1888ebff42c0224ce04dac10cb2c401f1b77f54f78e8d87d73c3bed781c263.css" integrity="sha256-nBiI6/9CwCJM4E2sEMssQB8bd/VPeOjYfXPDvteBwmM=">
+    
+
+
+
+
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <link rel="stylesheet" href="/css/style.acd606c0fce58853afe0248d37bb41acbbcdd8b1aca2412b6c0fa760da0137f3.css" integrity="sha256-rNYGwPzliFOv4CSNN7tBrLvN2LGsokErbA&#43;nYNoBN/M=">
+    
+
+
+
+
+
+
+
+
+
+  
+
+
+
+    
+    
+
+    
+    
+    
+      
+    
+
+    
+    
+      <link rel="stylesheet" href="/css/style.min.341da4a25e07c147305f19e8c14d98b17901b35944589384f4f05b81095e9f38.css" integrity="sha256-NB2kol4HwUcwXxnowU2YsXkBs1lEWJOE9PBbgQlenzg=" crossorigin="anonymous">
+    
+    
+
+    
+    
+
+    
+    
+    
+      
+    
+
+    
+    
+      <link rel="stylesheet" href="/css/style.min.ed5c481a16e6cdd0703319cf989b1d3510951691d1672769cca50e146a711e9c.css" integrity="sha256-7VxIGhbmzdBwMxnPmJsdNRCVFpHRZydpzKUOFGpxHpw=" crossorigin="anonymous">
+    
+    
+
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous">
+      
+
+
+
+
+    
+    
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4" crossorigin="anonymous"></script>
+      
+
+
+
+
+
+
+  
+
+
+
+    
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <script src="/js/script.672e2309c296e07c18bcd08b28d797a56222ff941d65f308fba3158c44885b14.js" type="text/javascript" charset="utf-8" integrity="sha256-Zy4jCcKW4HwYvNCLKNeXpWIi/5QdZfMI&#43;6MVjESIWxQ="></script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</head>
+<body>
+    <a class="skip-main" href="#main"></a>
+    <div class="container">
+        <header class="common-header">
+            
+                <div class="header-top">
+    <div class="header-top-left">
+        <h1 class="site-title noselect">
+    <a href="/">isbsh</a>
+</h1>
+
+        
+
+  
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+        <div class="theme-switcher">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-sun-high"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14.828 14.828a4 4 0 1 0 -5.656 -5.656a4 4 0 0 0 5.656 5.656z" /><path d="M6.343 17.657l-1.414 1.414" /><path d="M6.343 6.343l-1.414 -1.414" /><path d="M17.657 6.343l1.414 -1.414" /><path d="M17.657 17.657l1.414 1.414" /><path d="M4 12h-2" /><path d="M12 4v-2" /><path d="M20 12h2" /><path d="M12 20v2" /></svg>
+
+
+</span>
+
+        </div>
+    
+
+    <script>
+        const STORAGE_KEY = 'user-color-scheme'
+        const defaultTheme = "auto"
+
+        let currentTheme
+        let switchButton
+        let autoDefinedScheme = window.matchMedia('(prefers-color-scheme: dark)')
+
+        function switchTheme(e) {
+            currentTheme = (currentTheme === 'dark') ? 'light' : 'dark';
+            if (localStorage) localStorage.setItem(STORAGE_KEY, currentTheme);
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            changeGiscusTheme(currentTheme);
+            document.body.dispatchEvent(new CustomEvent(currentTheme + "-theme-set"));
+        }
+
+        const autoChangeScheme = e => {
+            currentTheme = e.matches ? 'dark' : 'light'
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            changeGiscusTheme(currentTheme);
+            document.body.dispatchEvent(new CustomEvent(currentTheme + "-theme-set"));
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            switchButton = document.querySelector('.theme-switcher')
+            currentTheme = detectCurrentScheme()
+
+            if (currentTheme === 'auto') {
+                autoChangeScheme(autoDefinedScheme);
+                autoDefinedScheme.addListener(autoChangeScheme);
+            } else {
+                document.documentElement.setAttribute('data-theme', currentTheme)
+            }
+
+            if (switchButton) {
+                switchButton.addEventListener('click', switchTheme, false)
+            }
+
+            showContent();
+        })
+
+        function detectCurrentScheme() {
+            if (localStorage !== null && localStorage.getItem(STORAGE_KEY)) {
+                return localStorage.getItem(STORAGE_KEY)
+            }
+            if (defaultTheme) {
+                return defaultTheme
+            }
+            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+
+        function showContent() {
+            document.body.style.visibility = 'visible';
+            document.body.style.opacity = 1;
+        }
+
+        function changeGiscusTheme (theme) {
+            function sendMessage(message) {
+              const iframe = document.querySelector('iframe.giscus-frame');
+              if (!iframe) return;
+              iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+            }
+
+            sendMessage({
+              setConfig: {
+                theme: theme
+              }
+            });
+        }
+    </script>
+
+
+        <ul class="social-icons noselect">
+
+ 
+
+
+    
+
+
+
+
+
+    
+        <li>
+            <a href="https://nightly.fedibird.com/@isbsh" title="Mastodon" rel="me">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-mastodon"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18.648 15.254c-1.816 1.763 -6.648 1.626 -6.648 1.626a18.262 18.262 0 0 1 -3.288 -.256c1.127 1.985 4.12 2.81 8.982 2.475c-1.945 2.013 -13.598 5.257 -13.668 -7.636l-.026 -1.154c0 -3.036 .023 -4.115 1.352 -5.633c1.671 -1.91 6.648 -1.666 6.648 -1.666s4.977 -.243 6.648 1.667c1.329 1.518 1.352 2.597 1.352 5.633s-.456 4.074 -1.352 4.944z" /><path d="M12 11.204v-2.926c0 -1.258 -.895 -2.278 -2 -2.278s-2 1.02 -2 2.278v4.722m4 -4.722c0 -1.258 .895 -2.278 2 -2.278s2 1.02 2 2.278v4.722" /></svg>
+
+
+</span>
+
+            </a>
+        </li>
+    
+
+    
+        <li>
+            <a href="https://isbsh.bsky.social" title="Bluesky" rel="me">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-bluesky"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6.335 5.144c-1.654 -1.199 -4.335 -2.127 -4.335 .826c0 .59 .35 4.953 .556 5.661c.713 2.463 3.13 2.75 5.444 2.369c-4.045 .665 -4.889 3.208 -2.667 5.41c1.03 1.018 1.913 1.59 2.667 1.59c2 0 3.134 -2.769 3.5 -3.5c.333 -.667 .5 -1.167 .5 -1.5c0 .333 .167 .833 .5 1.5c.366 .731 1.5 3.5 3.5 3.5c.754 0 1.637 -.571 2.667 -1.59c2.222 -2.203 1.378 -4.746 -2.667 -5.41c2.314 .38 4.73 .094 5.444 -2.369c.206 -.708 .556 -5.072 .556 -5.661c0 -2.953 -2.68 -2.025 -4.335 -.826c-2.293 1.662 -4.76 5.048 -5.665 6.856c-.905 -1.808 -3.372 -5.194 -5.665 -6.856z" /></svg>
+
+</span>
+
+            </a>
+        </li>
+    
+
+
+
+
+
+
+    <li>
+            <a href="/index.xml" title="RSS" rel="me">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-rss"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M4 4a16 16 0 0 1 16 16" /><path d="M4 11a9 9 0 0 1 9 9" /></svg>
+
+
+</span>
+
+            </a>
+        </li>
+    
+
+</ul>
+
+    </div>
+    <div class="header-top-right">
+
+    </div>
+</div>
+
+
+    <nav class="noselect">
+        
+        
+        <a class="" href="http://localhost:1313/" title="">Home</a>
+        
+        <a class="" href="http://localhost:1313/about/" title="">About</a>
+        
+        <a class="" href="http://localhost:1313/categories/" title="">Categories</a>
+        
+        <a class="" href="http://localhost:1313/tags/" title="">Tags</a>
+        
+        <a class="" href="http://localhost:1313/posts/" title="">Archive</a>
+        
+    </nav>
+
+
+
+
+
+    
+
+
+
+
+    <script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$','$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  };
+
+  window.addEventListener('load', (event) => {
+      document.querySelectorAll("mjx-container").forEach(function(x){
+        x.parentElement.classList += 'has-jax'})
+    });
+
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+
+
+
+
+            
+        </header>
+        <main id="main" tabindex="-1">
+            
+    
+
+    <article class="post h-entry">
+        <div class="post-header">
+            <header>
+                
+                
+                
+                <h1 class="p-name post-title ">Week 43</h1>
+                
+
+            </header>
+            
+
+    
+
+
+
+<div class="post-info noselect">
+    
+        <div class="post-date dt-published">
+            <time datetime="2022-10-31">2022-10-31</time>
+            
+        </div>
+    
+
+    <a class="post-hidden-url u-url" href="/2022/10/week-43/">/2022/10/week-43/</a>
+    <a href="http://localhost:1313/" class="p-name p-author post-hidden-author h-card" rel="me">map[name:isbsh]</a>
+
+
+    <div class="post-taxonomies">
+        
+            <ul class="post-categories">
+                
+                    
+                    <li><a href="/categories/weekly-log">Weekly Log</a></li>
+                
+            </ul>
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+        
+
+  
+
+
+
+
+
+
+<script>
+  var toc = document.querySelector(".toc");
+  if (toc) {
+    toc.addEventListener("click", function () {
+      if (event.target.tagName !== "A") {
+        event.preventDefault();
+        if (this.open) {
+          this.open = false;
+          this.classList.remove("expanded");
+        } else {
+          this.open = true;
+          this.classList.add("expanded");
+        }
+      }
+    });
+  }
+</script>
+
+        <div class="content e-content">
+            <p>今週も仕事は緩慢な感じ、だけど去年の作業データをいくつかレンダリングし直さないとならなくなって、なんだかねっとりした負荷のある週だった。</p>
+<p>というのも、仕事場のiMacのOSをMontereyにアップデートしたことで、去年バージョン2019のAEで作ったデータが上手く開けなくなってしまい（2019で開くと描画エラー、2022で開くとフッテージが破損する）、急遽使ってない別のiMacを引っ張り出して作業する羽目になったせい。ただでさえレンダリングって何回も見直す必要があったりやり直したりで、手なんかほとんど動かしてないのに疲れるものなのに、余計に疲れてしまった。</p>
+<p>既に提出したものにミスがあった事とかまた出し直すって事も、なんらポジティブなものではないし。</p>
+<p>そんな中、先週注文したM2積んだ11インチのiPad Proを受け取ったり、知り合いがダブつかせたチケットを頂いて冨樫義博展に行って久しぶりに会う人と話せたりと、それなりのうるおいはあった他、チェウォンさんのステージ映像なども引き続き雪崩れ込んできたりして助かった。</p>
+<hr>
+<h3 id="antifragilele-sserafim-kim-chaewon-facecam-뮤직뱅크music-bank-221028" >
+<div>
+    <a href="#antifragilele-sserafim-kim-chaewon-facecam-%eb%ae%a4%ec%a7%81%eb%b1%85%ed%81%acmusic-bank-221028">
+        
+    </a>
+    <strong>&lsquo;ANTIFRAGILE&rsquo;(LE SSERAFIM KIM CHAEWON Facecam) @뮤직뱅크(Music Bank) 221028</strong>
+</div>
+</h3>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/rfmIwaiLDE8?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+<p>ありがとうございます。ありがとうございます。</p>
+<hr>
+<h3 id="acid-angel-from-asiasss---generation" >
+<div>
+    <a href="#acid-angel-from-asiasss---generation">
+        
+    </a>
+    Acid Angel from Asia.SSS - &lsquo;Generation&rsquo;
+</div>
+</h3>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/0cZ7o0Wn_dc?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+<p>JYP出身で初期LOONAのプロデューサーだったチョンビョンギが作ったMODHAUSのグループっていうのと、メンバーのキムナギョンさんがBIBIの妹っていうところで情報を軽く追ってたtripleSのサブユニット。SNSとか見てるとObjektがどうとかCOSMOがどうとか、情報供給がやや過多気味なせいで、細かく追うのも面倒になってほったらかしてたらティザーなどもほとんど見れていなくて、気が付いたらデビューしていた。</p>
+<p>.SSS で tripleSのサブユニットだよって意味の表記になるってことなのか、その辺まだなんかルールがいっぱいありそうで難しいけど、もういっこのユニットが Krystal Eyes という名前だという事はなんとなく把握しました。</p>
+<p>LOONAやってたひとというのも納得できる作りこんだ感じと曲と、もろもろよいと思います。</p>
+<hr>
+<h3 id="ジュリアンバトラーの真実の生涯" >
+<div>
+    <a href="#%e3%82%b8%e3%83%a5%e3%83%aa%e3%82%a2%e3%83%b3%e3%83%90%e3%83%88%e3%83%a9%e3%83%bc%e3%81%ae%e7%9c%9f%e5%ae%9f%e3%81%ae%e7%94%9f%e6%b6%af">
+        
+    </a>
+    ジュリアン・バトラーの真実の生涯
+</div>
+</h3>
+<p>読み終わった。</p>
+<p>今年の初めになんとなく見ていたみんなのつぶやき文学賞の国内部門で1位になっていて、その際に解説されていた「実際の欧米文学史を下敷きにした、ジュリアン・バトラーという全く架空の人物の回想録の日本語訳という体のフィクション」というたてつけが面白そうだなと思って、結構前に買っていたものの、結構な分厚さに若干慄いて後回しにしていたのをようやく読んだら、めちゃくちゃ面白くてババッと読めてしまった。</p>
+<p>正直に言えば、カポーティとかゴア・ヴィダルとか、文中に出てくる現実の作家については名前こそ知っていても作品とか文学史における立ち位置について全く無知だったのだけど、それぞれがどういう作家だったかについては、この回想録の作者（という体）であるアンソニー・アンダーソンの口を通して無理なく語られていて理解できるようになっているのも、至れり尽くせりという感じで非常に読みやすかった。もちろんその辺の時代背景や文学史についての教養がある人であればもっと楽しめるんじゃないかとは思うけども、それによって読者が選別されないのは嬉しい。</p>
+<p>また、単純に登場人物のジュリアン・バトラーやこの回想録を書いている（としている）アンソニー・アンダーソンことジョージ・ジョンという人物が魅力的な深みがあるので、終盤に至るころにはこれがメタフィクション的な仕組みのある作品とか抜きにしても面白いじゃんなどと思っていたら、本編の後、翻訳者としての川本直氏によるあとがきで再度その辺りの面白みが立ち上がってくるのが最高に良かった。</p>
+<hr>
+<h3 id="ipad-pro-11インチ-gen4" >
+<div>
+    <a href="#ipad-pro-11%e3%82%a4%e3%83%b3%e3%83%81-gen4">
+        
+    </a>
+    iPad Pro 11インチ Gen4
+</div>
+</h3>
+<p>2年前に買った12.9インチのiPad Proががっつり描くにはやや小さく、持ち歩いて電子書籍を読んだりするには重くてデカいなと思っていたので買い替えた。結果iPad Proは11インチが最高という結論に。</p>
+<p>しかし新しいからという理由でM2積んだProにしたけど、この度動くようになったというDavinci ResolveをiPadで使う予定もないのだし、Procreateで仕事でもない絵描く程度ならAirでも良かったんじゃないかという気はしないでもないが、その辺は考えない事にする。</p>
+<p>ちなみに買う際にオンラインでTrade Inによる下取りの手続きをしたのだけど、オンラインで決済してしまうとストア受け取りにしてもその場ので下取りは出来ず（厳密にいえば出来るけど一回キャンセルして再度支払いになる）、結局オンラインで本人確認書類をアップロードする羽目になってややめんどくさかった。Trade Inで下取りに出す時はストアで直接買うが吉っぽい。</p>
+<hr>
+<h3 id="冨樫義博展" >
+<div>
+    <a href="#%e5%86%a8%e6%a8%ab%e7%be%a9%e5%8d%9a%e5%b1%95">
+        
+    </a>
+    冨樫義博展
+</div>
+</h3>
+<p>知り合いのRさんが友達と一緒に申し込んだらば、どちらも当たってしまってチケットがダブついちゃったので、という事で譲っていただき、六本木ヒルズの森アーツセンターギャラリーでやってるこちらの展示に行ってきた。入場待機列で同じくチケットを譲り受けたK君と特に一緒に見ようとも言ってなかったがばったり会ったので合流して入場。</p>
+<p>キャリア総ざらいで色んなものが見られるのかなと思ったら、原画とちょっとしたメモだけのシンプルな展示だなというのが正直な感想で、幽遊白書の連載が直撃していた世代でもあるので勝手に多少なりとも思い入れのある漫画家であるような気がしていたけど、いざ展示を前にしてみるとびっくりするくらい思い入れが無いことに気がついて、観ながら若干醒めた気持ちになってしまった。</p>
+<p>井上雄彦なんかもそんな気がしているけど、ジャンプのこの時期の人達は、80年代から90年代にかけての少年漫画の絵柄のテンプレっぽい絵からそれぞれの絵になっていく様が作品の中に残っているのが面白いなと思う。</p>
+<p>あとは大ゴマの決め絵で形がとれてなくても結構勢いで押し切ってしまう割り切りの良さとか。</p>
+<p>最後、展示を観終えて物販エリアをのぞいたら列も長くてだるいので何も買わずに出ようと思ったら、物販エリアに入るのは既定ルートみたいになっており、わざわざスタッフの人に声を掛けないと出られないように作りになっているのがまあまあ衝撃だった。グッズ買ってこそ展覧会っしょっていう圧。</p>
+<hr>
+<h3 id="六本木の中国茶房8で" >
+<div>
+    <a href="#%e5%85%ad%e6%9c%ac%e6%9c%a8%e3%81%ae%e4%b8%ad%e5%9b%bd%e8%8c%b6%e6%88%bf8%e3%81%a7">
+        
+    </a>
+    六本木の中国茶房8で
+</div>
+</h3>
+<p>冨樫展に一緒に入ったK君とはこの日会うのが1年半ぶりくらいだったので、会場を出てからまあ軽く飯でもという話になり、六本木で店を探すのもかったるいのでヒルズの脇にある中国茶房8にインして、最近やってる仕事とか会社の話にはじまり、漫画とか映画、アニメ、ゲームの話とかしながら5,6時間飲んだ。</p>
+<p>彼みたいに優秀かつ既に相当がんばってる人間に向かって、自分がアドバイスめいたことを口にするのもおこがましいのだけど、彼が友達とnoteで定期的にやってる漫画をより広く届けるにはどうしたらいいのかというよう事について、酔った勢いでもっとこうしたらああしたらなんて軽々に言ってしまったのでちょっと反省している。</p>
+<p>その他「Disco Elysium」とか「In Other Waters」とか面白いのに身の回りにあんまり薦められるような人がいない作品なんかも教えたりして楽しい時間だった。</p>
+<ul>
+<li>Twitterむり</li>
+<li>noteのリアクションが少ない</li>
+<li>藤本タツキのいいとことよくないとこ</li>
+<li>新海誠と細田守の暴力性の違い</li>
+<li>宮崎駿が作る世界観のバックボーン</li>
+<li>in Other Waters</li>
+<li>Cyberpunk2077</li>
+<li>Trigger作品</li>
+<li>洒落怖</li>
+<li>ディックとヴォネガット</li>
+<li>タルコフスキー</li>
+<li>ピンチョン</li>
+<li>士郎正宗の脚注の異常さ</li>
+<li>lainと小中千昭</li>
+<li>結局教養があった方がいい</li>
+<li>ユージンくん</li>
+<li>セルアニメの撮影技法</li>
+<li>スパチャ文化について</li>
+<li>最近Serani PojiのCDを買った</li>
+<li>まずはコミティア</li>
+</ul>
+<hr>
+<h3 id="fediverse" >
+<div>
+    <a href="#fediverse">
+        
+    </a>
+    Fediverse
+</div>
+</h3>
+<p>なんとなくHugoのテーマを眺めていたら、TwitterとかGitHubとか、プロフィールのところにあなたがやってるこんなウェブサービスのアイコンが置けますよというような説明の中に、Prelomaとか見慣れない名前がいくつかあったので調べてみたところ、Mastodonをはじめとする分散型SNSの名前だというのを知り、ついでにそうした分散型SNSはそれぞれで閉じておらずプロトコルが同じであれば他のSNSのユーザーをフォロー等してタイムラインを作る事が出来るようになっている、Fediverseという概念を初めて知った。</p>
+<p>という訳で面白そうだし、イーロン・マスクがどうこうとか関係なくTwitterはいい加減しんどいというか、ひろゆきみたいな人間だったり政治家だったり雑に極端な事言って耳目を集めて議論を巻き起こすのが善し、みたいになってる社会の数の内に入りたくないという気持ちがふつふつと盛り上がっていたところだったので、Fedibird.comという日本のMastodonインスタンスでアカウントを作った。</p>
+<p><a href="https://fedibird.com/@isbsh">https://fedibird.com/@isbsh</a></p>
+<p>Twitterやめようという覚悟までして作ったわけでもないんだけど、あそこのトラフィックに加担したくないのだから、アカウントは残しつつ停止させてもいいかなと思っている。どうせ何人も見ていなくて、Twitterに書き込もうがFedibirdに書き込もうが虚しさは大差がないので。</p>
+<hr>
+<h3 id="今週のmma" >
+<div>
+    <a href="#%e4%bb%8a%e9%80%b1%e3%81%aemma">
+        
+    </a>
+    今週のMMA
+</div>
+</h3>
+<p>UFCとBellatorがあったのだけど、Bellatorはイタリア開催でド深夜、UFCは朝と来たので、生で見るのは諦めて日曜の昼にかいつまんで何試合か見た。</p>
+<p>どちらもそこまで印象に残るような試合は無かった中、Bellatorのメインで序盤から組んでオモプラッタとかを仕掛けるピコロッティを危なげなく処理して倒したベルナウイの完璧なコントロールがかっこよかった。</p>
+<p>ケイタ―はご愁傷様。サークリングしてる相手にあんな風に無理に飛び膝を当てようとすると危ないというのがわかった。</p>
+        </div>
+
+    </article>
+
+    
+    
+        
+    
+
+    
+        
+        
+    
+
+    
+        
+    
+    
+    <div class="pagination post-pagination">
+        <div class="left pagination-item ">
+            
+                <a href="/2022/11/week-44/">Week 44</a>
+            
+        </div>
+        <div class="right pagination-item ">
+            
+                <a href="/2022/10/week-42/">Week 42</a>
+            
+        </div>
+    </div>
+
+
+
+
+
+    
+
+    
+        
+
+
+    
+
+    
+
+    
+    
+    
+
+        </main>
+        
+            <footer class="common-footer noselect">
+    
+    
+
+    <div class="common-footer-bottom">
+        
+
+        <div style="display: flex; align-items: center; gap:8px">
+            ©  isbsh,  2025
+            
+        </div>
+        <div style="display:flex; align-items: center; gap:4px">
+
+            
+            
+
+            
+            
+            
+            
+
+            
+            
+
+            
+        </div>
+        
+            <div>
+                 <a target="_blank" rel="noopener noreferrer" href="https://gohugo.io/">Hugo</a>,  <a target="_blank" rel="noopener noreferrer" href="https://github.com/hugo-theme-anubis2/hugo-theme-anubis2">Anubis2</a>.<br>
+            </div>
+        
+    </div>
+
+    <p class="h-card vcard">
+
+    <a href=http://localhost:1313/ class="p-name u-url url fn" rel="me">map[name:isbsh]</a>
+
+    
+
+    
+</p>
+
+</footer>
+
+        
+    </div>
+</body>
+</html>

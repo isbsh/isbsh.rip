@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+
+
+
+
+    
+
+
+
+
+<html lang="ja-jp" data-theme="">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+        
+<meta charset="utf-8">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<meta name="theme-name" content="Anubis2">
+
+<title>Week 49 - isbsh</title>
+
+<meta name="description" content="今週はあんまし記憶がない。">
+
+
+
+
+
+<link rel="icon" type="image/x-icon" href="http://localhost:1313/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="http://localhost:1313/favicon.png">
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+<style>
+  body {
+    visibility: hidden;
+    opacity: 0;
+  }
+</style>
+
+<noscript>
+  <style>
+    body {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+</noscript>
+
+
+
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <link rel="stylesheet" href="/css/style.4c42aa0abeac804c4933c54677c449cea1f723caae778425d031e98565a0cdef.css" integrity="sha256-TEKqCr6sgExJM8VGd8RJzqH3I8qud4Ql0DHphWWgze8=">
+    
+
+
+
+
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <link rel="stylesheet" href="/css/style.9c1888ebff42c0224ce04dac10cb2c401f1b77f54f78e8d87d73c3bed781c263.css" integrity="sha256-nBiI6/9CwCJM4E2sEMssQB8bd/VPeOjYfXPDvteBwmM=">
+    
+
+
+
+
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <link rel="stylesheet" href="/css/style.acd606c0fce58853afe0248d37bb41acbbcdd8b1aca2412b6c0fa760da0137f3.css" integrity="sha256-rNYGwPzliFOv4CSNN7tBrLvN2LGsokErbA&#43;nYNoBN/M=">
+    
+
+
+
+
+
+
+
+
+
+  
+
+
+
+    
+    
+
+    
+    
+    
+      
+    
+
+    
+    
+      <link rel="stylesheet" href="/css/style.min.341da4a25e07c147305f19e8c14d98b17901b35944589384f4f05b81095e9f38.css" integrity="sha256-NB2kol4HwUcwXxnowU2YsXkBs1lEWJOE9PBbgQlenzg=" crossorigin="anonymous">
+    
+    
+
+    
+    
+
+    
+    
+    
+      
+    
+
+    
+    
+      <link rel="stylesheet" href="/css/style.min.ed5c481a16e6cdd0703319cf989b1d3510951691d1672769cca50e146a711e9c.css" integrity="sha256-7VxIGhbmzdBwMxnPmJsdNRCVFpHRZydpzKUOFGpxHpw=" crossorigin="anonymous">
+    
+    
+
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous">
+      
+
+
+
+
+    
+    
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4" crossorigin="anonymous"></script>
+      
+
+
+
+
+
+
+  
+
+
+
+    
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <script src="/js/script.672e2309c296e07c18bcd08b28d797a56222ff941d65f308fba3158c44885b14.js" type="text/javascript" charset="utf-8" integrity="sha256-Zy4jCcKW4HwYvNCLKNeXpWIi/5QdZfMI&#43;6MVjESIWxQ="></script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</head>
+<body>
+    <a class="skip-main" href="#main"></a>
+    <div class="container">
+        <header class="common-header">
+            
+                <div class="header-top">
+    <div class="header-top-left">
+        <h1 class="site-title noselect">
+    <a href="/">isbsh</a>
+</h1>
+
+        
+
+  
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+        <div class="theme-switcher">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-sun-high"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14.828 14.828a4 4 0 1 0 -5.656 -5.656a4 4 0 0 0 5.656 5.656z" /><path d="M6.343 17.657l-1.414 1.414" /><path d="M6.343 6.343l-1.414 -1.414" /><path d="M17.657 6.343l1.414 -1.414" /><path d="M17.657 17.657l1.414 1.414" /><path d="M4 12h-2" /><path d="M12 4v-2" /><path d="M20 12h2" /><path d="M12 20v2" /></svg>
+
+
+</span>
+
+        </div>
+    
+
+    <script>
+        const STORAGE_KEY = 'user-color-scheme'
+        const defaultTheme = "auto"
+
+        let currentTheme
+        let switchButton
+        let autoDefinedScheme = window.matchMedia('(prefers-color-scheme: dark)')
+
+        function switchTheme(e) {
+            currentTheme = (currentTheme === 'dark') ? 'light' : 'dark';
+            if (localStorage) localStorage.setItem(STORAGE_KEY, currentTheme);
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            changeGiscusTheme(currentTheme);
+            document.body.dispatchEvent(new CustomEvent(currentTheme + "-theme-set"));
+        }
+
+        const autoChangeScheme = e => {
+            currentTheme = e.matches ? 'dark' : 'light'
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            changeGiscusTheme(currentTheme);
+            document.body.dispatchEvent(new CustomEvent(currentTheme + "-theme-set"));
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            switchButton = document.querySelector('.theme-switcher')
+            currentTheme = detectCurrentScheme()
+
+            if (currentTheme === 'auto') {
+                autoChangeScheme(autoDefinedScheme);
+                autoDefinedScheme.addListener(autoChangeScheme);
+            } else {
+                document.documentElement.setAttribute('data-theme', currentTheme)
+            }
+
+            if (switchButton) {
+                switchButton.addEventListener('click', switchTheme, false)
+            }
+
+            showContent();
+        })
+
+        function detectCurrentScheme() {
+            if (localStorage !== null && localStorage.getItem(STORAGE_KEY)) {
+                return localStorage.getItem(STORAGE_KEY)
+            }
+            if (defaultTheme) {
+                return defaultTheme
+            }
+            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+
+        function showContent() {
+            document.body.style.visibility = 'visible';
+            document.body.style.opacity = 1;
+        }
+
+        function changeGiscusTheme (theme) {
+            function sendMessage(message) {
+              const iframe = document.querySelector('iframe.giscus-frame');
+              if (!iframe) return;
+              iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+            }
+
+            sendMessage({
+              setConfig: {
+                theme: theme
+              }
+            });
+        }
+    </script>
+
+
+        <ul class="social-icons noselect">
+
+ 
+
+
+    
+
+
+
+
+
+    
+        <li>
+            <a href="https://nightly.fedibird.com/@isbsh" title="Mastodon" rel="me">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-mastodon"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18.648 15.254c-1.816 1.763 -6.648 1.626 -6.648 1.626a18.262 18.262 0 0 1 -3.288 -.256c1.127 1.985 4.12 2.81 8.982 2.475c-1.945 2.013 -13.598 5.257 -13.668 -7.636l-.026 -1.154c0 -3.036 .023 -4.115 1.352 -5.633c1.671 -1.91 6.648 -1.666 6.648 -1.666s4.977 -.243 6.648 1.667c1.329 1.518 1.352 2.597 1.352 5.633s-.456 4.074 -1.352 4.944z" /><path d="M12 11.204v-2.926c0 -1.258 -.895 -2.278 -2 -2.278s-2 1.02 -2 2.278v4.722m4 -4.722c0 -1.258 .895 -2.278 2 -2.278s2 1.02 2 2.278v4.722" /></svg>
+
+
+</span>
+
+            </a>
+        </li>
+    
+
+    
+        <li>
+            <a href="https://isbsh.bsky.social" title="Bluesky" rel="me">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-bluesky"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6.335 5.144c-1.654 -1.199 -4.335 -2.127 -4.335 .826c0 .59 .35 4.953 .556 5.661c.713 2.463 3.13 2.75 5.444 2.369c-4.045 .665 -4.889 3.208 -2.667 5.41c1.03 1.018 1.913 1.59 2.667 1.59c2 0 3.134 -2.769 3.5 -3.5c.333 -.667 .5 -1.167 .5 -1.5c0 .333 .167 .833 .5 1.5c.366 .731 1.5 3.5 3.5 3.5c.754 0 1.637 -.571 2.667 -1.59c2.222 -2.203 1.378 -4.746 -2.667 -5.41c2.314 .38 4.73 .094 5.444 -2.369c.206 -.708 .556 -5.072 .556 -5.661c0 -2.953 -2.68 -2.025 -4.335 -.826c-2.293 1.662 -4.76 5.048 -5.665 6.856c-.905 -1.808 -3.372 -5.194 -5.665 -6.856z" /></svg>
+
+</span>
+
+            </a>
+        </li>
+    
+
+
+
+
+
+
+    <li>
+            <a href="/index.xml" title="RSS" rel="me">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-rss"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M4 4a16 16 0 0 1 16 16" /><path d="M4 11a9 9 0 0 1 9 9" /></svg>
+
+
+</span>
+
+            </a>
+        </li>
+    
+
+</ul>
+
+    </div>
+    <div class="header-top-right">
+
+    </div>
+</div>
+
+
+    <nav class="noselect">
+        
+        
+        <a class="" href="http://localhost:1313/" title="">Home</a>
+        
+        <a class="" href="http://localhost:1313/about/" title="">About</a>
+        
+        <a class="" href="http://localhost:1313/categories/" title="">Categories</a>
+        
+        <a class="" href="http://localhost:1313/tags/" title="">Tags</a>
+        
+        <a class="" href="http://localhost:1313/posts/" title="">Archive</a>
+        
+    </nav>
+
+
+
+
+
+    
+
+
+
+
+    <script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$','$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  };
+
+  window.addEventListener('load', (event) => {
+      document.querySelectorAll("mjx-container").forEach(function(x){
+        x.parentElement.classList += 'has-jax'})
+    });
+
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+
+
+
+
+            
+        </header>
+        <main id="main" tabindex="-1">
+            
+    
+
+    <article class="post h-entry">
+        <div class="post-header">
+            <header>
+                
+                
+                
+                <h1 class="p-name post-title ">Week 49</h1>
+                
+
+            </header>
+            
+
+    
+
+
+
+<div class="post-info noselect">
+    
+        <div class="post-date dt-published">
+            <time datetime="2022-12-12">2022-12-12</time>
+            
+        </div>
+    
+
+    <a class="post-hidden-url u-url" href="/2022/12/week-49/">/2022/12/week-49/</a>
+    <a href="http://localhost:1313/" class="p-name p-author post-hidden-author h-card" rel="me">map[name:isbsh]</a>
+
+
+    <div class="post-taxonomies">
+        
+            <ul class="post-categories">
+                
+                    
+                    <li><a href="/categories/weekly-log">Weekly Log</a></li>
+                
+            </ul>
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+        
+
+  
+
+
+
+
+
+
+<script>
+  var toc = document.querySelector(".toc");
+  if (toc) {
+    toc.addEventListener("click", function () {
+      if (event.target.tagName !== "A") {
+        event.preventDefault();
+        if (this.open) {
+          this.open = false;
+          this.classList.remove("expanded");
+        } else {
+          this.open = true;
+          this.classList.add("expanded");
+        }
+      }
+    });
+  }
+</script>
+
+        <div class="content e-content">
+            <p>今週はあんまし記憶がない。</p>
+<hr>
+<h3 id="本の森ちゅうおう" >
+<div>
+    <a href="#%e6%9c%ac%e3%81%ae%e6%a3%ae%e3%81%a1%e3%82%85%e3%81%86%e3%81%8a%e3%81%86">
+        
+    </a>
+    本の森ちゅうおう
+</div>
+</h3>
+<p>「勤労福祉会館」という名の、具体的にはどう利用するのかあんまりよく分からないままだった施設がもう10年位（てきとう）前に取り壊され、その跡地に図書館が出来るっぽいという話があるにはあったが、建設業者の入札がなかなか決まらないとかなんとかで、そこそこの広さの敷地が長い間ほったらかされていたのが、2,3年前にようやく工事が始まって、つい先日図書館が完成した。</p>
+<p>計画を区のページか何かでチラ見した時は「店舗との複合施設になる」みたいな文言を目にしたような記憶があり、てっきりもっとがっつり飲食店とかが何件も入る建物になるものだと思い込んでいたのだけど、1階のエントランス横に小さめのカフェがあるだけで、あとは郷土資料館があるだけの、思いの外まっすぐ図書館だったので良かった。名前がいちいち口に出すのがめんどくさい感じで、どう読んだものか悩ましいのはともかく。</p>
+<p>建物は、5階建ての2階から5階が図書館になっており、北側がガラス張りになっていて採光面が広いおかげで、歩き回ってみるとそこまで広くも無いけど、開放感があって狭くも感じないような雰囲気。そういえば図書館絡みのニュースで「窓がデカすぎて本が焼けるのでは」みたいな意見が出てくるのよく目にするけど、直射日光が入らなければ大丈夫だったりするんだろうか。時間はかかるけどいずれは焼けそうな気がしないでもない。</p>
+<p>また縦の移動が多くなる作りは、エレベーターがあるにせよ足腰の悪い人にとってはアクセシビリティが良くなさそうには感じてしまった。まあそこまで頻繁に階をまたいで利用する利用者は多くないのかも知れないけど。</p>
+<p>蔵書に関してはそんなに確かめていないものの、なんとなく絵本や児童書の棚にスペースが割かれていたというか、2階の半分が当てられていたのは印象が良い。</p>
+<p>これが出来る前の家から最寄りの図書館は、築地の区役所の半地下みたいな空間にあったので、全体的に薄暗く、新しく越してきた人などにとっては、特別蔵書が多いわけでもない以上はあんまりそそられない施設だったろうなと思うのだが、自分が子どもの頃は他に軽い気持ちで行く図書館の選択肢もなかったし、読みたいものは自分で買ってしまうようになる以前は普通に利用していたんだよなというのを思い出す。</p>
+<p>数少ない漫画っぽい要素だったホビージャパンを熟読していたなとか、児童コーナーにはイラストを描いて投稿箱のようなところに提出すると貼りだしてくれるので、ガンダムとか描いていたなとか。</p>
+<p>そんな思い出話はともかく、せっかく近場に綺麗な図書館があるのだしこまめに利用してやりたいところ。</p>
+<hr>
+<h3 id="大叔母の葬儀" >
+<div>
+    <a href="#%e5%a4%a7%e5%8f%94%e6%af%8d%e3%81%ae%e8%91%ac%e5%84%80">
+        
+    </a>
+    大叔母の葬儀
+</div>
+</h3>
+<p>先週末に亡くなった大叔母の葬儀。配偶者であった大叔父の葬儀が、本人の希望で無宗教形式だったので今回もそうなのだろうと思っていたら、普通に曹洞宗の僧侶が般若心経を読み上げる普通のやつで眠かった。後で訊いたところによると、大学教員だった大叔父はかかわりの深い人も多く、スピーチする人に事欠かなかったからそれでも成り立ったのだけど、そこまでではない大叔母の場合そうもいかず、間が持たないなということになったらしい。なんともかんとも…って感じだけど、少なくても人を集めてなんとかセレモニーをまとまった形にするのに日本の仏教って一番手っ取り早いのだなというのを改めて感じる。</p>
+<p>通夜の後、集まっていた親戚で葬儀場の食堂みたいな部屋で飯を食べながら、いろいろ話をしていて初めて知ったのだけど、祖母や大叔母は本当は9人きょうだいで、間に何人も知らない親戚がいたらしい。また2人とも出生から朝鮮半島で、祖母に至っては彼の地で10代の頃から先生のようなこともしていた、みたいな新情報もありいろいろ驚きだった。こういう話を知るほど、やっぱり生きてる内に直接聞きたかったなと思ってしまう。</p>
+<hr>
+<h3 id="ヘルシンキ-生活の練習朴沙羅" >
+<div>
+    <a href="#%e3%83%98%e3%83%ab%e3%82%b7%e3%83%b3%e3%82%ad-%e7%94%9f%e6%b4%bb%e3%81%ae%e7%b7%b4%e7%bf%92%e6%9c%b4%e6%b2%99%e7%be%85">
+        
+    </a>
+    『ヘルシンキ 生活の練習』朴沙羅
+</div>
+</h3>
+<p>読んだ。とてもよかった。</p>
+<p>いわゆる北欧のライフスタイルを安易に礼賛するようなテキストではなく、筆者がフィンランドでの子育てや仕事を通して、ここはここでおかしいのではみたいなツッコミを入れながら、優劣の話に矮小化せずに日本との違いを咀嚼して、日本における生きづらさの根っこにあるものを慎重に探るような内容だった。</p>
+<p>社会とか公について考えるよいヒントになると思う。</p>
+<blockquote>
+<p>だから、子どもは、世間というか人様というか、公に迷惑をかける存在ではないのだ。というか、公というのは「迷惑」の対象ではなく、私が利用する対象だ。私に背くものが公ではなく、公のために私が我慢しなければならないのではない。
+私は税金の形ですでに公に奉仕し、公はそれをだいたい全員に配分する。配分を受ける量が少ない人（例えばその年たまたま健康で医療にかからなかった人）は、税金が戻ってくる。公は、多様な幸福を追求する個別の私のためにある。 (p264)</p>
+</blockquote>
+<hr>
+<h3 id="そのほか" >
+<div>
+    <a href="#%e3%81%9d%e3%81%ae%e3%81%bb%e3%81%8b">
+        
+    </a>
+    そのほか
+</div>
+</h3>
+<ul>
+<li><a href="https://www.videonews.com/marugeki-talk/1130">吉弘憲介×三木義一×神保哲生：なぜ「ふるさと納税」が国家の根幹に関わる大問題なのか | videonews.com</a></li>
+<li><a href="https://www.videonews.com/politico/2">石破茂×角谷浩一×神保哲生：安保3文書改定のどこが問題なのか | videonews.com</a></li>
+<li>防衛費増額とその為のこのタイミングでの増税みたいな話は、これこそ解散して民意を問うとかしていい話では。流石にここで乗れるやつは盲目的なマゾだけしかいないと思うけど。</li>
+<li>Bellator 289 バンタム級GPだけ。パッチ―ミックスの極め力とストッツの謎判定。</li>
+<li>UFC 282 メイン2試合の判定がよく分からない感じだったけど、トプリアのパフォーマンスが超よかった。</li>
+</ul>
+        </div>
+
+    </article>
+
+    
+    
+        
+    
+
+    
+        
+        
+    
+
+    
+        
+    
+    
+    <div class="pagination post-pagination">
+        <div class="left pagination-item ">
+            
+                <a href="/2022/12/week-50/">Week 50</a>
+            
+        </div>
+        <div class="right pagination-item ">
+            
+                <a href="/2022/12/2022%E5%B9%B4-%E9%9F%93%E5%9B%BD%E3%81%AE%E3%81%A1%E3%82%87%E3%81%86%E3%81%A9%E3%82%88%E3%81%8B%E3%81%A3%E3%81%9F%E3%82%84%E3%81%A4/">2022年 韓国のちょうどよかったやつ</a>
+            
+        </div>
+    </div>
+
+
+
+
+
+    
+
+    
+        
+
+
+    
+
+    
+
+    
+    
+    
+
+        </main>
+        
+            <footer class="common-footer noselect">
+    
+    
+
+    <div class="common-footer-bottom">
+        
+
+        <div style="display: flex; align-items: center; gap:8px">
+            ©  isbsh,  2025
+            
+        </div>
+        <div style="display:flex; align-items: center; gap:4px">
+
+            
+            
+
+            
+            
+            
+            
+
+            
+            
+
+            
+        </div>
+        
+            <div>
+                 <a target="_blank" rel="noopener noreferrer" href="https://gohugo.io/">Hugo</a>,  <a target="_blank" rel="noopener noreferrer" href="https://github.com/hugo-theme-anubis2/hugo-theme-anubis2">Anubis2</a>.<br>
+            </div>
+        
+    </div>
+
+    <p class="h-card vcard">
+
+    <a href=http://localhost:1313/ class="p-name u-url url fn" rel="me">map[name:isbsh]</a>
+
+    
+
+    
+</p>
+
+</footer>
+
+        
+    </div>
+</body>
+</html>

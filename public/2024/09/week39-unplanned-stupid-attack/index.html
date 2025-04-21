@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+
+
+
+
+    
+
+
+
+
+<html lang="ja-jp" data-theme="">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+        
+<meta charset="utf-8">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<meta name="theme-name" content="Anubis2">
+
+<title>Week39 : Unplanned Stupid Attack - isbsh</title>
+
+<meta name="description" content="2024/9/23~29。
+先週酷かったのどの痛みこそだいぶおさまったものの、うっすら風邪っぽい状態は引き摺ってどこかボーっとしてた週。
+またひとつ年も取ったりもしていて、それによって風邪自体について回復スピードこそ昔よりも遅くなったという訳でもないと思っているけど、手指や脚の関節とか日常無意識に酷使したりダメージを与えているようなところについては確実に傷みやすくなっているのは自覚しているので、あんまり不用意に調子を崩さないようにしていきたいところ。
+と言って現状仕事を頑張り過ぎてるなんてことは全くなく、今現在仕事もほぼほぼ休みで、ちゃんと休まねばというよりは弛緩し切って不摂生に偏らないようにせんと…という感じ。">
+
+
+
+
+
+<link rel="icon" type="image/x-icon" href="http://localhost:1313/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="http://localhost:1313/favicon.png">
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+<style>
+  body {
+    visibility: hidden;
+    opacity: 0;
+  }
+</style>
+
+<noscript>
+  <style>
+    body {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+</noscript>
+
+
+
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <link rel="stylesheet" href="/css/style.4c42aa0abeac804c4933c54677c449cea1f723caae778425d031e98565a0cdef.css" integrity="sha256-TEKqCr6sgExJM8VGd8RJzqH3I8qud4Ql0DHphWWgze8=">
+    
+
+
+
+
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <link rel="stylesheet" href="/css/style.9c1888ebff42c0224ce04dac10cb2c401f1b77f54f78e8d87d73c3bed781c263.css" integrity="sha256-nBiI6/9CwCJM4E2sEMssQB8bd/VPeOjYfXPDvteBwmM=">
+    
+
+
+
+
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <link rel="stylesheet" href="/css/style.acd606c0fce58853afe0248d37bb41acbbcdd8b1aca2412b6c0fa760da0137f3.css" integrity="sha256-rNYGwPzliFOv4CSNN7tBrLvN2LGsokErbA&#43;nYNoBN/M=">
+    
+
+
+
+
+
+
+
+
+
+  
+
+
+
+    
+    
+
+    
+    
+    
+      
+    
+
+    
+    
+      <link rel="stylesheet" href="/css/style.min.341da4a25e07c147305f19e8c14d98b17901b35944589384f4f05b81095e9f38.css" integrity="sha256-NB2kol4HwUcwXxnowU2YsXkBs1lEWJOE9PBbgQlenzg=" crossorigin="anonymous">
+    
+    
+
+    
+    
+
+    
+    
+    
+      
+    
+
+    
+    
+      <link rel="stylesheet" href="/css/style.min.ed5c481a16e6cdd0703319cf989b1d3510951691d1672769cca50e146a711e9c.css" integrity="sha256-7VxIGhbmzdBwMxnPmJsdNRCVFpHRZydpzKUOFGpxHpw=" crossorigin="anonymous">
+    
+    
+
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous">
+      
+
+
+
+
+    
+    
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4" crossorigin="anonymous"></script>
+      
+
+
+
+
+
+
+  
+
+
+
+    
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <script src="/js/script.672e2309c296e07c18bcd08b28d797a56222ff941d65f308fba3158c44885b14.js" type="text/javascript" charset="utf-8" integrity="sha256-Zy4jCcKW4HwYvNCLKNeXpWIi/5QdZfMI&#43;6MVjESIWxQ="></script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</head>
+<body>
+    <a class="skip-main" href="#main"></a>
+    <div class="container">
+        <header class="common-header">
+            
+                <div class="header-top">
+    <div class="header-top-left">
+        <h1 class="site-title noselect">
+    <a href="/">isbsh</a>
+</h1>
+
+        
+
+  
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+        <div class="theme-switcher">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-sun-high"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14.828 14.828a4 4 0 1 0 -5.656 -5.656a4 4 0 0 0 5.656 5.656z" /><path d="M6.343 17.657l-1.414 1.414" /><path d="M6.343 6.343l-1.414 -1.414" /><path d="M17.657 6.343l1.414 -1.414" /><path d="M17.657 17.657l1.414 1.414" /><path d="M4 12h-2" /><path d="M12 4v-2" /><path d="M20 12h2" /><path d="M12 20v2" /></svg>
+
+
+</span>
+
+        </div>
+    
+
+    <script>
+        const STORAGE_KEY = 'user-color-scheme'
+        const defaultTheme = "auto"
+
+        let currentTheme
+        let switchButton
+        let autoDefinedScheme = window.matchMedia('(prefers-color-scheme: dark)')
+
+        function switchTheme(e) {
+            currentTheme = (currentTheme === 'dark') ? 'light' : 'dark';
+            if (localStorage) localStorage.setItem(STORAGE_KEY, currentTheme);
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            changeGiscusTheme(currentTheme);
+            document.body.dispatchEvent(new CustomEvent(currentTheme + "-theme-set"));
+        }
+
+        const autoChangeScheme = e => {
+            currentTheme = e.matches ? 'dark' : 'light'
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            changeGiscusTheme(currentTheme);
+            document.body.dispatchEvent(new CustomEvent(currentTheme + "-theme-set"));
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            switchButton = document.querySelector('.theme-switcher')
+            currentTheme = detectCurrentScheme()
+
+            if (currentTheme === 'auto') {
+                autoChangeScheme(autoDefinedScheme);
+                autoDefinedScheme.addListener(autoChangeScheme);
+            } else {
+                document.documentElement.setAttribute('data-theme', currentTheme)
+            }
+
+            if (switchButton) {
+                switchButton.addEventListener('click', switchTheme, false)
+            }
+
+            showContent();
+        })
+
+        function detectCurrentScheme() {
+            if (localStorage !== null && localStorage.getItem(STORAGE_KEY)) {
+                return localStorage.getItem(STORAGE_KEY)
+            }
+            if (defaultTheme) {
+                return defaultTheme
+            }
+            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+
+        function showContent() {
+            document.body.style.visibility = 'visible';
+            document.body.style.opacity = 1;
+        }
+
+        function changeGiscusTheme (theme) {
+            function sendMessage(message) {
+              const iframe = document.querySelector('iframe.giscus-frame');
+              if (!iframe) return;
+              iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+            }
+
+            sendMessage({
+              setConfig: {
+                theme: theme
+              }
+            });
+        }
+    </script>
+
+
+        <ul class="social-icons noselect">
+
+ 
+
+
+    
+
+
+
+
+
+    
+        <li>
+            <a href="https://nightly.fedibird.com/@isbsh" title="Mastodon" rel="me">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-mastodon"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18.648 15.254c-1.816 1.763 -6.648 1.626 -6.648 1.626a18.262 18.262 0 0 1 -3.288 -.256c1.127 1.985 4.12 2.81 8.982 2.475c-1.945 2.013 -13.598 5.257 -13.668 -7.636l-.026 -1.154c0 -3.036 .023 -4.115 1.352 -5.633c1.671 -1.91 6.648 -1.666 6.648 -1.666s4.977 -.243 6.648 1.667c1.329 1.518 1.352 2.597 1.352 5.633s-.456 4.074 -1.352 4.944z" /><path d="M12 11.204v-2.926c0 -1.258 -.895 -2.278 -2 -2.278s-2 1.02 -2 2.278v4.722m4 -4.722c0 -1.258 .895 -2.278 2 -2.278s2 1.02 2 2.278v4.722" /></svg>
+
+
+</span>
+
+            </a>
+        </li>
+    
+
+    
+        <li>
+            <a href="https://isbsh.bsky.social" title="Bluesky" rel="me">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-bluesky"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6.335 5.144c-1.654 -1.199 -4.335 -2.127 -4.335 .826c0 .59 .35 4.953 .556 5.661c.713 2.463 3.13 2.75 5.444 2.369c-4.045 .665 -4.889 3.208 -2.667 5.41c1.03 1.018 1.913 1.59 2.667 1.59c2 0 3.134 -2.769 3.5 -3.5c.333 -.667 .5 -1.167 .5 -1.5c0 .333 .167 .833 .5 1.5c.366 .731 1.5 3.5 3.5 3.5c.754 0 1.637 -.571 2.667 -1.59c2.222 -2.203 1.378 -4.746 -2.667 -5.41c2.314 .38 4.73 .094 5.444 -2.369c.206 -.708 .556 -5.072 .556 -5.661c0 -2.953 -2.68 -2.025 -4.335 -.826c-2.293 1.662 -4.76 5.048 -5.665 6.856c-.905 -1.808 -3.372 -5.194 -5.665 -6.856z" /></svg>
+
+</span>
+
+            </a>
+        </li>
+    
+
+
+
+
+
+
+    <li>
+            <a href="/index.xml" title="RSS" rel="me">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-rss"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M4 4a16 16 0 0 1 16 16" /><path d="M4 11a9 9 0 0 1 9 9" /></svg>
+
+
+</span>
+
+            </a>
+        </li>
+    
+
+</ul>
+
+    </div>
+    <div class="header-top-right">
+
+    </div>
+</div>
+
+
+    <nav class="noselect">
+        
+        
+        <a class="" href="http://localhost:1313/" title="">Home</a>
+        
+        <a class="" href="http://localhost:1313/about/" title="">About</a>
+        
+        <a class="" href="http://localhost:1313/categories/" title="">Categories</a>
+        
+        <a class="" href="http://localhost:1313/tags/" title="">Tags</a>
+        
+        <a class="" href="http://localhost:1313/posts/" title="">Archive</a>
+        
+    </nav>
+
+
+
+
+
+    
+
+
+
+
+    <script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$','$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  };
+
+  window.addEventListener('load', (event) => {
+      document.querySelectorAll("mjx-container").forEach(function(x){
+        x.parentElement.classList += 'has-jax'})
+    });
+
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+
+
+
+
+            
+        </header>
+        <main id="main" tabindex="-1">
+            
+    
+
+    <article class="post h-entry">
+        <div class="post-header">
+            <header>
+                
+                
+                
+                <h1 class="p-name post-title ">Week39 : Unplanned Stupid Attack</h1>
+                
+
+            </header>
+            
+
+    
+
+
+
+<div class="post-info noselect">
+    
+        <div class="post-date dt-published">
+            <time datetime="2024-09-30">2024-09-30</time>
+            
+        </div>
+    
+
+    <a class="post-hidden-url u-url" href="/2024/09/week39-unplanned-stupid-attack/">/2024/09/week39-unplanned-stupid-attack/</a>
+    <a href="http://localhost:1313/" class="p-name p-author post-hidden-author h-card" rel="me">map[name:isbsh]</a>
+
+
+    <div class="post-taxonomies">
+        
+            <ul class="post-categories">
+                
+                    
+                    <li><a href="/categories/weekly-log">Weekly log</a></li>
+                
+            </ul>
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+        
+
+  
+
+
+
+
+  
+  
+  
+  <details class="toc noselect">
+    <summary>Table of Contents</summary>
+    <div class="inner"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#今週の時事">今週の時事</a></li>
+    <li><a href="#今週観た映画">今週観た映画</a>
+      <ul>
+        <li><a href="#lie-lie-lie">『Lie Lie Lie』</a></li>
+        <li><a href="#ナミビアの砂漠">『ナミビアの砂漠』</a></li>
+        <li><a href="#そばかす">『そばかす』</a></li>
+      </ul>
+    </li>
+    <li><a href="#海のはじまり">海のはじまり</a></li>
+    <li><a href="#今週のmma">今週のMMA</a>
+      <ul>
+        <li><a href="#ufc-fightnight-243">UFC FIghtNight 243</a></li>
+        <li><a href="#rizin48">RIZIN.48</a></li>
+      </ul>
+    </li>
+    <li><a href="#uci-世界選手権">UCI 世界選手権</a></li>
+    <li><a href="#そのほか">そのほか</a></li>
+  </ul>
+</nav></div>
+  </details>
+  
+
+
+
+<script>
+  var toc = document.querySelector(".toc");
+  if (toc) {
+    toc.addEventListener("click", function () {
+      if (event.target.tagName !== "A") {
+        event.preventDefault();
+        if (this.open) {
+          this.open = false;
+          this.classList.remove("expanded");
+        } else {
+          this.open = true;
+          this.classList.add("expanded");
+        }
+      }
+    });
+  }
+</script>
+
+        <div class="content e-content">
+            <p>2024/9/23~29。</p>
+<p>先週酷かったのどの痛みこそだいぶおさまったものの、うっすら風邪っぽい状態は引き摺ってどこかボーっとしてた週。</p>
+<p>またひとつ年も取ったりもしていて、それによって風邪自体について回復スピードこそ昔よりも遅くなったという訳でもないと思っているけど、手指や脚の関節とか日常無意識に酷使したりダメージを与えているようなところについては確実に傷みやすくなっているのは自覚しているので、あんまり不用意に調子を崩さないようにしていきたいところ。</p>
+<p>と言って現状仕事を頑張り過ぎてるなんてことは全くなく、今現在仕事もほぼほぼ休みで、ちゃんと休まねばというよりは弛緩し切って不摂生に偏らないようにせんと…という感じ。</p>
+<h2 id="今週の時事" >
+<div>
+    <a href="#%e4%bb%8a%e9%80%b1%e3%81%ae%e6%99%82%e4%ba%8b">
+        
+    </a>
+    今週の時事
+</div>
+</h2>
+<ul>
+<li>細江英公逝去</li>
+<li>袴田さん無罪判決</li>
+<li>立憲民主党代表に野田佳彦が選出</li>
+<li>自民党総裁に石破茂が選出</li>
+</ul>
+<p>立憲は自民に比べたら誰が代表になっても正直そこまでやることも変わらないのでは、というか正直なところ今の党勢で何を訴えようが、各々のテーマに共感する支持者の溜飲が少し下がるだけで何も変わらないだろうと思っていて、どこと共闘なり将来の連立を想定するなんて話よりは、そろそろ候補者増やして単独でも与党が担えるレベルの土台を作れよと思う。国民民主辺りとまた再編なんて話もなくはないようだけど、そんなもんどうせまたバラバラになるに決まっているし。</p>
+<p>そうは言ってもどこかと手を組まないと自民の牙城を崩せないのが現状ではあるのだろうけど、だからって今の維新なんて万博と兵庫県の問題でガンガン支持率下げ続けているターンだと思うので、急いで連携をアピールするのって選挙に向けての打算であっても共産党以上にリスキーなんではという気がする。というか少なくとも馬場伸幸が代表の内は距離置いてもらえないだろうか。シンプルにあいつは嫌いなので。</p>
+<p>石破茂に関してはずっと一定のラインの信用をもって見てきた政治家で、そうであるが故に自民党の総裁にはこのままなれないんだろうと思っていたので、決選投票で逆転したのを見た時はびっくりして声が出てしまった。</p>
+<p>ともあれこうなったからには、かねてから彼が訴えていた防災省の設置や日米地位協定の見直し、選択的夫婦別姓や同性婚といった法制度は、いい加減前に進めてくれるんでしょうねと思いたい。また、党の本当の刷新を思うのなら裏金議員の公認はしないで、安倍派の顔色伺わなければいけないような状態を早くどうにかして欲しい。<br>
+その道筋が選挙までに示せたりでもしたら、ますます立憲をはじめ野党が選挙で苦戦するのは目に見えていて、政権交代も遠のきそうではあって複雑ではあるんだけど。</p>
+<p>なんて不安も含みながら無邪気にいろいろ期待はしているものの、一度総裁あるいは総理大臣になってしまえば党勢維持みたいな論理が優先されて、それまでずっと訴えてきた事もスッと無かった事にされそうではあるし、どんどん幻滅させられるのだろうなとも思っている。いきなりやらないと言っていた早期の衆院解散もやってしまうようだし。</p>
+<p>なので期待はしすぎず、変に選挙に勝たせ過ぎない有権者のバランス感覚がますます重要なのだろうけど、それが無いのが日本の一番の問題なんだよなっていう。</p>
+<h2 id="今週観た映画" >
+<div>
+    <a href="#%e4%bb%8a%e9%80%b1%e8%a6%b3%e3%81%9f%e6%98%a0%e7%94%bb">
+        
+    </a>
+    今週観た映画
+</div>
+</h2>
+<h3 id="lie-lie-lie" >
+<div>
+    <a href="#lie-lie-lie">
+        
+    </a>
+    『Lie Lie Lie』
+</div>
+</h3>
+<p>『Lie Lie Lie』は神保町シアターでの特集上映が連日満員で見れずじまいだったのが、今月のアンコール上映でようやく。<br>
+正直YouTubeに切り抜かれた断片から想像していたより映画全体としては歪な作品ではあったのだけど、ハッタリで人生がドリブンしていく痛快さと台詞回しの軽妙さが気持ちいい映画だった。主演の3人のビジュアルの仕上がり具合もその軽妙さにバチっとはまっていてかっこよい。</p>
+<p>観に行った回に、たまたま連日の盛況ぶりを聞きつけてか中原俊監督が来場していて、上映後には簡単な舞台挨拶と質疑応答などもあり。曰く Bonnie Pink の曲の起用は自分で意図していたものではなく、会社からプッシュされてっていうよくある大人の事情から来るものだったらしいのだけど、聴いてみたらとても良くて映画のテーマとも合致するという事で結果オーライだったとか。</p>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/rwxmkqyJYl0?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+<h3 id="ナミビアの砂漠" >
+<div>
+    <a href="#%e3%83%8a%e3%83%9f%e3%83%93%e3%82%a2%e3%81%ae%e7%a0%82%e6%bc%a0">
+        
+    </a>
+    『ナミビアの砂漠』
+</div>
+</h3>
+<p>『ナミビアの砂漠』は評判に違わず、一言では形容しにくいが確実に面白い映画で、簡単に「現代の生きづらさ」とか「フェミニズムの～」みたいなワードでまとめられもしそうだけど、そうはしたくない何かがあった。カメラワークだったり音のミキシングだったり編集だったり、いろんなところに監督の意図が張り巡らされていて明確な狙いがあって、それがトータルで何を表してるかって言うと言語化しにくい、その難しさについてずっと考えさせられるというか。単に弱い立場にいる人をエンパワーします、みたいなものの1段2段先に到達しているように思う。</p>
+<p>そして、それに輪をかけてとにもかくにも言葉以上に雄弁な河合優実さんの身体性がやばかった。</p>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/1ON52PRB8Tc?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+<h3 id="そばかす" >
+<div>
+    <a href="#%e3%81%9d%e3%81%b0%e3%81%8b%e3%81%99">
+        
+    </a>
+    『そばかす』
+</div>
+</h3>
+<p>『そばかす』は録画してあったものを iPad で鑑賞。<br>
+とかく恋愛伴侶規範を押しつけられがちな社会における、アセクシュアルの人の生き方についての話で、アセクシュアルっていうマイノリティをエンパワメントというか寄り添うような映画だった。上でそういうものを軽く見るような書き方をしておいてなんなのだけど、こういうものはこういうものでやはり必要な作品なんだろう。</p>
+<p>かと言って劇中に「アセクシュアル」みたいな用語を出して解説に終始するようなものになってはおらず、なかなか誰かと親密に付き合える人間関係を構築する事が叶わないというような、あくまでも個人のつらさにフォーカスしていたのも良かった。<br>
+途中いくら何でも強引で不自然に感じるプロットもあるのだけど、まあそれはそれとして。<br>
+主演の三浦透子さんをはじめ、伊藤万理華さんと前田敦子さんの役どころと芝居も良かった。</p>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/g4tQNpR2iys?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+<h2 id="海のはじまり" >
+<div>
+    <a href="#%e6%b5%b7%e3%81%ae%e3%81%af%e3%81%98%e3%81%be%e3%82%8a">
+        
+    </a>
+    海のはじまり
+</div>
+</h2>
+<p>今週というと世間的には完全に『虎に翼』で持ち切りなんだろうけど、NHK の朝ドラは習慣的になかなか追えず見ずじまい。観ていたのはフジの月9でやっていた風間大樹演出の『海のはじまり』のみ。</p>
+<p>かと言って良い印象を持って最後まで見続けていたかというとそういう感じでもなく、シリーズを通しての主人公への負荷の掛け方だったり、各登場人物の行動原理などが悪い意味でみんなシンプルで多面性に欠けていることもあり、腹のあたりを強すぎず弱すぎずな力でずっと押し込まれているようなしんどさがあるドラマで、どうしてこれを月曜から観ているのだろうか…みたいな事を思いながら観ていた。</p>
+<p>ただそんな中で池松壮亮さん演じる津野は、主人公に悪態をつきたくなるのもわかる、かといって直接妊娠や中絶とかには関わらない事もあってかしんどすぎない背景のあるキャラクターとして、一番リアリティをもって成立していてとても良かった。</p>
+<p>とりあえず風間大樹さんはフジじゃないところ、少なくとも他の人の脚本の作品をやってほしいと思います。</p>
+<h2 id="今週のmma" >
+<div>
+    <a href="#%e4%bb%8a%e9%80%b1%e3%81%aemma">
+        
+    </a>
+    今週のMMA
+</div>
+</h2>
+<h3 id="ufc-fightnight-243" >
+<div>
+    <a href="#ufc-fightnight-243">
+        
+    </a>
+    UFC FIghtNight 243
+</div>
+</h3>
+<p>UFC はメインだけ。FIghtPass を解約して U-NEXT で観るようになってからというもの、だいぶ追うモチベーションが減速気味。</p>
+<p>モイカノvs.サンドゥニは、1Rにサンドゥニのミドルキックの蹴り足を掴んでモイカノがテイクダウンに成功すると、そのまま上からの肘で顔面をボコボコに。その後なんとか3Rまでは進んだものの完全に瞼が腫れて目が塞がっておりドクターストップ。パリ大会で主役に据えたフランス人選手があんな負け方したら各方面辛い思いをしそうで、そんな空気を一切読まずに潰したモイカノの個人的な好感度がなんか爆上がりした。</p>
+<h3 id="rizin48" >
+<div>
+    <a href="#rizin48">
+        
+    </a>
+    RIZIN.48
+</div>
+</h3>
+<p>RIZIN はドライな見方をすれば「で誰がダウトベックとシェイドゥライエフに勝てるんすか…?」って話にしかならないのが正直なところだけど、個々の試合はそれなりに面白くていい大会だった。</p>
+<p>萩原京平、金太郎辺りの Covid 下で外国人選手が呼べなくなった事による国内選手ボーナス期間中に名を売った選手たちが軒並み頭打ち状態で、下から来た選手に食われていてしみじみ。萩原にはなんか頑張ってほしいと思わせる何かがあるけども、いい加減 DEEP とかでもっと試合数重ねていく方向に切り替えるのがいいような気もする。それはともかく金太郎を冷静にボクシングで処理した秋元はいい選手。</p>
+<p>佐藤将光vs.牛久は、フルラウンド使ってあの手この手で削ってコントロールするのが狙いの佐藤に対して、その辺りの勝つプランが観客側からするとここ数試合全く見えなくなっている牛久は、まさにそれがそのまま出たような試合だった。でも佐藤みたいな選手がちゃんとポジティブに評価されているのは良いことだと思う。</p>
+<p>元谷vs.太田は、距離を詰めパンチを振り回して当てたい太田と、その太田のパンチが届かない距離を保ちつつノーガードからモーションの見えにくいストレートをピンポイントで狙う元谷の、噛み合った緊張感があるいい試合。絶えず太田が前に出てパンチを振るので太田優勢に観る雰囲気もありそうだけど、ヒット数からしたら判定では元谷の方に軍配が上がるかなと思ったら、最終ラウンドにコーナーで太田が組みに入るもポジションが甘く、立たれそうになったのを嫌がってか組み直そうとした隙を突いて元谷がバックテイク、そのまま片手でチョークを極めてしまった。首に回した右手を反対の脇を使って締めるMMAでは珍しいがグラップリングでは最近よく見る形らしい。面白かった。</p>
+<p>井上vs.スーチョルも似た構図なのだけど、井上は更にボクシングが上手く、ジャブを刺してからすぐにバックステップして相手のパンチを避けた後にまた更にステップインしてワンツーを当てるみたいな事をしていてちょっと完成度が違った。これは元谷もそうだったのだけど、コーナー付近を背負って詰められた時にはほとんど自分の手を出さずにサークリングに徹して、絶えず空間的な優位を失わないようにしていたのも印象的だった。</p>
+<p>サトシvs.グスタボはちょっと事故感もあるKOで、これだったらまた組んでもいいのではと思ってしまった。</p>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/yWiuHADX4Rs?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+<h2 id="uci-世界選手権" >
+<div>
+    <a href="#uci-%e4%b8%96%e7%95%8c%e9%81%b8%e6%89%8b%e6%a8%a9">
+        
+    </a>
+    UCI 世界選手権
+</div>
+</h2>
+<p>先週のタイムトライアルに引き続き今週はロード。</p>
+<p>女子の方は、優勝候補筆頭のオランダのフォレリングがライバルのコペッキ―を入れずに追走の小集団を形成に成功し、同時にオランダとしては逃げにも選手を乗せていたので、これは圧倒的な数的有利の状況じゃんと思いきや、それを活かせないまま優勝候補たちの小集団でゴール前のスプリントに雪崩れ込んで、結果ベルギーのコペッキーが優勝。</p>
+<p>オランダにしてみれば、逃げてる選手を勝たせるためにフォレリング達はとりあえず抑えに徹して、追わせるのは他の国に任せても良さそうなものをめちゃくちゃ牽引に回ったりしていたのが正直不可解な立ち回りだったんだけど、男子に比べて選手の実力が拮抗している事だったり、オランダの選手層が厚いが故に戦術を絞り切れなかった事や、無線が使えない世界選手権ならではの展開だったんだろう。
+なんにしても、このやきもきさせる心理戦はザ・ロードレースだよなと思わされた。</p>
+<p>男子の方はというと、まさに女子のフォレリングにこれだけの爆発力があったらね…というかそういうレベルを遥かに超えたポガチャルの独走劇。残り100kmで追走のアタックを仕掛けて程なくして先頭に追い付くと、51kmから単独で逃げ切りっていう意味の分からなさ。マチューとレムコがいるのに。</p>
+<p>これでジロ・ツールのダブルツールに加えて、世界選手権も同じ年に制覇っていう、過去にメルクスとロッシュが成し得ていないトリプルクラウンを達成したという事だそうで、ここ数年の自転車ファンは何十年に一度かの黄金期をリアルタイムで目撃しているんだなと改めて思わされる。</p>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/iEQHNIojXMM?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+<h2 id="そのほか" >
+<div>
+    <a href="#%e3%81%9d%e3%81%ae%e3%81%bb%e3%81%8b">
+        
+    </a>
+    そのほか
+</div>
+</h2>
+<ul>
+<li>代々木公園で久しぶりに外飲み。ロストテクノロジーの話をし続ける我々。菊地姫奈さんと『ナミビアの砂漠』と「月刊」シリーズ。</li>
+<li>ユージンくんとも久しぶりに会って映画とかゲームの話。最近は自分の天井が見えてしまっていることが悩みらしい。</li>
+</ul>
+        </div>
+
+    </article>
+
+    
+    
+        
+    
+
+    
+        
+        
+    
+
+    
+        
+    
+    
+    <div class="pagination post-pagination">
+        <div class="left pagination-item ">
+            
+                <a href="/2024/10/week40-tennis-is-a-relationship/">Week40 : Tennis is a relationship</a>
+            
+        </div>
+        <div class="right pagination-item ">
+            
+                <a href="/2024/09/week38-paying-google-to-escape-google/">Week38 : Paying Google to &rsquo;escape&rsquo; Google</a>
+            
+        </div>
+    </div>
+
+
+
+
+
+    
+
+    
+        
+
+
+    
+
+    
+
+    
+    
+    
+
+        </main>
+        
+            <footer class="common-footer noselect">
+    
+    
+
+    <div class="common-footer-bottom">
+        
+
+        <div style="display: flex; align-items: center; gap:8px">
+            ©  isbsh,  2025
+            
+        </div>
+        <div style="display:flex; align-items: center; gap:4px">
+
+            
+            
+
+            
+            
+            
+            
+
+            
+            
+
+            
+        </div>
+        
+            <div>
+                 <a target="_blank" rel="noopener noreferrer" href="https://gohugo.io/">Hugo</a>,  <a target="_blank" rel="noopener noreferrer" href="https://github.com/hugo-theme-anubis2/hugo-theme-anubis2">Anubis2</a>.<br>
+            </div>
+        
+    </div>
+
+    <p class="h-card vcard">
+
+    <a href=http://localhost:1313/ class="p-name u-url url fn" rel="me">map[name:isbsh]</a>
+
+    
+
+    
+</p>
+
+</footer>
+
+        
+    </div>
+</body>
+</html>
