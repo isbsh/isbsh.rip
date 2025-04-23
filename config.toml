@@ -93,4 +93,4 @@ style              = 'catppuccin-frappe' # Find more style at here: https://swap
 tabWidth           = 4
 
 [permalinks]
-  posts = "/:year/:slug/"
+  posts = "/posts/:year/:slug/"

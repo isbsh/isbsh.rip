@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+
+
+
+
+    
+
+
+
+
+<html lang="ja-jp" data-theme="">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+        
+<meta charset="utf-8">
+<meta name="HandheldFriendly" content="True">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<meta name="theme-name" content="Anubis2">
+
+<title>Week 29 - isbsh</title>
+
+<meta name="description" content="ぬるっと仕事が再開。久しぶりに仕事場に来たら、隣の部屋で韓国語が飛び交うようになっていたのだが、別にスタッフがKPOPや韓国ドラマ等に突如ドハマリして韓国語を話しだしたという訳ではなく、普通に向こうのスタッフが参加するプロジェクトが動いてるっぽげ。">
+
+
+
+
+
+<link rel="icon" type="image/x-icon" href="http://localhost:1313/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="http://localhost:1313/favicon.png">
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+<style>
+  body {
+    visibility: hidden;
+    opacity: 0;
+  }
+</style>
+
+<noscript>
+  <style>
+    body {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+</noscript>
+
+
+
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <link rel="stylesheet" href="/css/style.4c42aa0abeac804c4933c54677c449cea1f723caae778425d031e98565a0cdef.css" integrity="sha256-TEKqCr6sgExJM8VGd8RJzqH3I8qud4Ql0DHphWWgze8=">
+    
+
+
+
+
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <link rel="stylesheet" href="/css/style.9c1888ebff42c0224ce04dac10cb2c401f1b77f54f78e8d87d73c3bed781c263.css" integrity="sha256-nBiI6/9CwCJM4E2sEMssQB8bd/VPeOjYfXPDvteBwmM=">
+    
+
+
+
+
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <link rel="stylesheet" href="/css/style.acd606c0fce58853afe0248d37bb41acbbcdd8b1aca2412b6c0fa760da0137f3.css" integrity="sha256-rNYGwPzliFOv4CSNN7tBrLvN2LGsokErbA&#43;nYNoBN/M=">
+    
+
+
+
+
+
+
+
+
+
+  
+
+
+
+    
+    
+
+    
+    
+    
+      
+    
+
+    
+    
+      <link rel="stylesheet" href="/css/style.min.341da4a25e07c147305f19e8c14d98b17901b35944589384f4f05b81095e9f38.css" integrity="sha256-NB2kol4HwUcwXxnowU2YsXkBs1lEWJOE9PBbgQlenzg=" crossorigin="anonymous">
+    
+    
+
+    
+    
+
+    
+    
+    
+      
+    
+
+    
+    
+      <link rel="stylesheet" href="/css/style.min.ed5c481a16e6cdd0703319cf989b1d3510951691d1672769cca50e146a711e9c.css" integrity="sha256-7VxIGhbmzdBwMxnPmJsdNRCVFpHRZydpzKUOFGpxHpw=" crossorigin="anonymous">
+    
+    
+
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous">
+      
+
+
+
+
+    
+    
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4" crossorigin="anonymous"></script>
+      
+
+
+
+
+
+
+  
+
+
+
+    
+
+    
+
+
+
+
+
+    
+    
+    
+
+    
+        <script src="/js/script.672e2309c296e07c18bcd08b28d797a56222ff941d65f308fba3158c44885b14.js" type="text/javascript" charset="utf-8" integrity="sha256-Zy4jCcKW4HwYvNCLKNeXpWIi/5QdZfMI&#43;6MVjESIWxQ="></script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</head>
+<body>
+    <a class="skip-main" href="#main"></a>
+    <div class="container">
+        <header class="common-header">
+            
+                <div class="header-top">
+    <div class="header-top-left">
+        <h1 class="site-title noselect">
+    <a href="/">isbsh</a>
+</h1>
+
+        
+
+  
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+        <div class="theme-switcher">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-sun-high"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14.828 14.828a4 4 0 1 0 -5.656 -5.656a4 4 0 0 0 5.656 5.656z" /><path d="M6.343 17.657l-1.414 1.414" /><path d="M6.343 6.343l-1.414 -1.414" /><path d="M17.657 6.343l1.414 -1.414" /><path d="M17.657 17.657l1.414 1.414" /><path d="M4 12h-2" /><path d="M12 4v-2" /><path d="M20 12h2" /><path d="M12 20v2" /></svg>
+
+
+</span>
+
+        </div>
+    
+
+    <script>
+        const STORAGE_KEY = 'user-color-scheme'
+        const defaultTheme = "auto"
+
+        let currentTheme
+        let switchButton
+        let autoDefinedScheme = window.matchMedia('(prefers-color-scheme: dark)')
+
+        function switchTheme(e) {
+            currentTheme = (currentTheme === 'dark') ? 'light' : 'dark';
+            if (localStorage) localStorage.setItem(STORAGE_KEY, currentTheme);
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            changeGiscusTheme(currentTheme);
+            document.body.dispatchEvent(new CustomEvent(currentTheme + "-theme-set"));
+        }
+
+        const autoChangeScheme = e => {
+            currentTheme = e.matches ? 'dark' : 'light'
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            changeGiscusTheme(currentTheme);
+            document.body.dispatchEvent(new CustomEvent(currentTheme + "-theme-set"));
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            switchButton = document.querySelector('.theme-switcher')
+            currentTheme = detectCurrentScheme()
+
+            if (currentTheme === 'auto') {
+                autoChangeScheme(autoDefinedScheme);
+                autoDefinedScheme.addListener(autoChangeScheme);
+            } else {
+                document.documentElement.setAttribute('data-theme', currentTheme)
+            }
+
+            if (switchButton) {
+                switchButton.addEventListener('click', switchTheme, false)
+            }
+
+            showContent();
+        })
+
+        function detectCurrentScheme() {
+            if (localStorage !== null && localStorage.getItem(STORAGE_KEY)) {
+                return localStorage.getItem(STORAGE_KEY)
+            }
+            if (defaultTheme) {
+                return defaultTheme
+            }
+            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+
+        function showContent() {
+            document.body.style.visibility = 'visible';
+            document.body.style.opacity = 1;
+        }
+
+        function changeGiscusTheme (theme) {
+            function sendMessage(message) {
+              const iframe = document.querySelector('iframe.giscus-frame');
+              if (!iframe) return;
+              iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+            }
+
+            sendMessage({
+              setConfig: {
+                theme: theme
+              }
+            });
+        }
+    </script>
+
+
+        <ul class="social-icons noselect">
+
+ 
+
+
+    
+
+
+
+
+
+    
+        <li>
+            <a href="https://nightly.fedibird.com/@isbsh" title="Mastodon" rel="me">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-mastodon"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18.648 15.254c-1.816 1.763 -6.648 1.626 -6.648 1.626a18.262 18.262 0 0 1 -3.288 -.256c1.127 1.985 4.12 2.81 8.982 2.475c-1.945 2.013 -13.598 5.257 -13.668 -7.636l-.026 -1.154c0 -3.036 .023 -4.115 1.352 -5.633c1.671 -1.91 6.648 -1.666 6.648 -1.666s4.977 -.243 6.648 1.667c1.329 1.518 1.352 2.597 1.352 5.633s-.456 4.074 -1.352 4.944z" /><path d="M12 11.204v-2.926c0 -1.258 -.895 -2.278 -2 -2.278s-2 1.02 -2 2.278v4.722m4 -4.722c0 -1.258 .895 -2.278 2 -2.278s2 1.02 2 2.278v4.722" /></svg>
+
+
+</span>
+
+            </a>
+        </li>
+    
+
+    
+        <li>
+            <a href="https://isbsh.bsky.social" title="Bluesky" rel="me">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-bluesky"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6.335 5.144c-1.654 -1.199 -4.335 -2.127 -4.335 .826c0 .59 .35 4.953 .556 5.661c.713 2.463 3.13 2.75 5.444 2.369c-4.045 .665 -4.889 3.208 -2.667 5.41c1.03 1.018 1.913 1.59 2.667 1.59c2 0 3.134 -2.769 3.5 -3.5c.333 -.667 .5 -1.167 .5 -1.5c0 .333 .167 .833 .5 1.5c.366 .731 1.5 3.5 3.5 3.5c.754 0 1.637 -.571 2.667 -1.59c2.222 -2.203 1.378 -4.746 -2.667 -5.41c2.314 .38 4.73 .094 5.444 -2.369c.206 -.708 .556 -5.072 .556 -5.661c0 -2.953 -2.68 -2.025 -4.335 -.826c-2.293 1.662 -4.76 5.048 -5.665 6.856c-.905 -1.808 -3.372 -5.194 -5.665 -6.856z" /></svg>
+
+</span>
+
+            </a>
+        </li>
+    
+
+
+
+
+
+
+    <li>
+            <a href="/index.xml" title="RSS" rel="me">
+            <span class="inline-svg">
+
+    
+
+
+    
+    
+    
+    
+    
+
+    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-rss"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M4 4a16 16 0 0 1 16 16" /><path d="M4 11a9 9 0 0 1 9 9" /></svg>
+
+
+</span>
+
+            </a>
+        </li>
+    
+
+</ul>
+
+    </div>
+    <div class="header-top-right">
+
+    </div>
+</div>
+
+
+    <nav class="noselect">
+        
+        
+        <a class="" href="http://localhost:1313/" title="">Home</a>
+        
+        <a class="" href="http://localhost:1313/about/" title="">About</a>
+        
+        <a class="" href="http://localhost:1313/categories/" title="">Categories</a>
+        
+        <a class="" href="http://localhost:1313/tags/" title="">Tags</a>
+        
+        <a class="" href="http://localhost:1313/posts/" title="">Archive</a>
+        
+    </nav>
+
+
+
+
+
+    
+
+
+
+
+    <script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$','$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  };
+
+  window.addEventListener('load', (event) => {
+      document.querySelectorAll("mjx-container").forEach(function(x){
+        x.parentElement.classList += 'has-jax'})
+    });
+
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+
+
+
+
+            
+        </header>
+        <main id="main" tabindex="-1">
+            
+    
+
+    <article class="post h-entry">
+        <div class="post-header">
+            <header>
+                
+                
+                
+                <h1 class="p-name post-title ">Week 29</h1>
+                
+
+            </header>
+            
+
+    
+
+
+
+<div class="post-info noselect">
+    
+        <div class="post-date dt-published">
+            <time datetime="2022-07-26">2022-07-26</time>
+            
+        </div>
+    
+
+    <a class="post-hidden-url u-url" href="/posts/2022/week-29/">/posts/2022/week-29/</a>
+    <a href="http://localhost:1313/" class="p-name p-author post-hidden-author h-card" rel="me">map[name:isbsh]</a>
+
+
+    <div class="post-taxonomies">
+        
+            <ul class="post-categories">
+                
+                    
+                    <li><a href="/categories/weekly-log">Weekly Log</a></li>
+                
+            </ul>
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+        
+
+  
+
+
+
+
+
+
+<script>
+  var toc = document.querySelector(".toc");
+  if (toc) {
+    toc.addEventListener("click", function () {
+      if (event.target.tagName !== "A") {
+        event.preventDefault();
+        if (this.open) {
+          this.open = false;
+          this.classList.remove("expanded");
+        } else {
+          this.open = true;
+          this.classList.add("expanded");
+        }
+      }
+    });
+  }
+</script>
+
+        <div class="content e-content">
+            <p>ぬるっと仕事が再開。久しぶりに仕事場に来たら、隣の部屋で韓国語が飛び交うようになっていたのだが、別にスタッフがKPOPや韓国ドラマ等に突如ドハマリして韓国語を話しだしたという訳ではなく、普通に向こうのスタッフが参加するプロジェクトが動いてるっぽげ。</p>
+<hr>
+<h3 id="ツールドフランス2022-3週目" >
+<div>
+    <a href="#%e3%83%84%e3%83%bc%e3%83%ab%e3%83%89%e3%83%95%e3%83%a9%e3%83%b3%e3%82%b92022-3%e9%80%b1%e7%9b%ae">
+        
+    </a>
+    ツール・ド・フランス2022 3週目
+</div>
+</h3>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/No-gODD2A7Q?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+<p>今年のツールが終わってしまった。</p>
+<p>最終日のパリ・シャンゼリゼ大通りに向かうステージ21は、最後のスプリントを除いて伝統的にパレード走行になるので、前日のタイムトライアルの結果で総合順位が固まる形に実質なっている。で、そのタイムトライアルステージを終えて総合首位の特別ジャージであるマイヨジョーヌを着ていたのは誰かと言いますと、オランダの自転車チーム、ユンボヴィズマに所属するデンマーク人選手ヨナス・ヴィンゲゴーでした。めちゃんこ強かった。</p>
+<p>3週目ではピレネー山脈の山岳コースが3ステージ組み込まれており、そのどこかの登りで2020年と2021年の総合順位を制した若干23歳の天才タデイ・ポガチャルがマイヨジョーヌを奪還すべく仕掛けてくるアタックの成否が見どころで、昨年の走りっぷりを見て以来ユンボファンである事は一旦棚上げして、今大会のユンボの盤石っぷりを崩す場面が見られるなら見てみたい、という気持ちでポガチャルを応援しながら見守っていたのだが…終わってみればヴィンゲゴーとユンボのチーム力が完全に制圧しちゃいましたねという感じ。</p>
+<p>常に前方で複数名のメンバーを残して走ってきたユンボに対して、序盤からUAEのチームメイトがCovid-19だったりレース中のアクシデントで離脱してゆく中、ほぼほぼ単騎で対応を迫られてきたそこまでの疲れの蓄積なんでしょうか。ことごとくアタックは潰されてタイム差を縮めるどころか最終的には広げられ、去年などはこの化け物なんなの…という無双っぷりだった彼もまた人間なんだな…という現実を見せられ、安心するような寂しいような謎の感覚に。底が見えたからとか弱さが見えたからではないんだけど、去年よりも好きになったというか応援したくなる選手になった。なってしまった。</p>
+<p>ちなみにタイム差が決定的になったステージ18の下り区間でポガチャルが落車して遅れた際に、先行したヴィンゲゴーがポガチャルを待ち、追いついたポガチャルが感謝の握手を求めて手を差し伸べるという、このステージとツール全体のハイライトのひとつとして刻まれるような美しい場面があった。感動したがりなスポーツファンがついついスポーツマンシップに勃起を禁じ得なくなってしまうようなやつが。<br>
+ただレースが終わって冷静に考えてみれば、美談に見えるこの場面の実態は、単に下りでは得意なポガチャルに先行させた方が安定するから待っただけなのでは…だとか、ここで多少離されたとしても今のポガチャル相手であれば次の登りで捲れるっしょという自信があったから…だとか、ヴィンゲゴーがいたって冷静かつシビアな判断をしただけの結果のようにも感じている。何をどこまでヴィンゲゴーが計算していたのかはわからないけども、結果としてこの場面で完全にヴィンゲゴーが昨年の絶対王者ポガチャルに対して完全に精神的優位なポジションに立った訳で、下剋上的なスポーツの残酷な一面が現れたハイライトだったとも言えそう。</p>
+<p>そんなポガチャルとは対照的に今回これまで以上化け物じみた走りをしていたのが、ヴィンゲゴーのアシストでありスプリンターエースでもあるベルギー人のワウト・ファンアールトになります。シクロクロス出身で、去年は超級山岳モンヴァントゥとタイムトライアルとシャンゼリゼのスプリントという、本来勝つ選手の脚質が異なるはずのステージの3つで優勝してしまった、雑に例えれば短距離と長距離の陸上競技で勝ってしまうような人間で、更に雑に言えば大谷翔平みたいなやつと言えばだいたい伝わりますでしょうか。</p>
+<p>今大会、去年みたいな超級山岳でのステージ優勝こそ獲らなかったものの、序盤にマイヨジョーヌを着ながら単騎でアタックしてそのまま優勝したり、ユンボ全体が落車のアクシデントに巻き込まれがちだった石畳のステージでは遅れるチームメイト達を一人でグイグイ牽引してタイム差を戻したり、挙句の果てには、本来山岳でずっとずっと強いはずのポガチャルをヴィンゲゴーを牽引しながら引き離す始末。八面六臂の活躍とはまさにこの事で、この選手がいなかったら今年のツールは全然違った結果になっていたのではと思ってしまう。ヴィンゲゴー個人の強さも勿論疑いがないのだけど、全ステージに渡ってファンアールトが序盤からアタックを仕掛けてレーススピードを上げる事で、ポガチャルを含めた全選手に負荷をかけ続けるような展開を作っていなかったら、ヴィンゲゴーはここまで他の選手にタイム差をつけていなかったんじゃなかろうか。多分だけど。</p>
+<p>惜しむらくは同じシクロクロス出身でファンアールトと子供の頃からライバル関係だったアルペシン・ドゥクーニンクに所属するオランダ人選手、マチュー・ファンデルプールが全く振るわず、2週目の途中でリタイアしてしまった事。今年のファンアールトの活躍を見てしまったら、彼とマチューが同じ感じでやり合うところをいつか見たい…</p>
+<p>とにかく今年のツール・ド・フランスが例年にも増してはちゃめちゃ面白かったよという話でした。</p>
+<p>Best moments of the 2022 Tour de France<br>
+<a href="https://www.youtube.com/watch?v=oH-UMCxeEkI">https://www.youtube.com/watch?v=oH-UMCxeEkI</a></p>
+<hr>
+<h3 id="new-jeans" >
+<div>
+    <a href="#new-jeans">
+        
+    </a>
+    New Jeans
+</div>
+</h3>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/tVIXY14aJms?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+<p>ミンヒジン氏がどうこうというの、実は過去の仕事も含めてあんまり具体的には把握してなかったりするのだけども、とりあえず出てくる曲が全部おしゃれ。自分の趣味からすればあんまり猫も杓子もバキバキしたのばっかやらんでも「こういうのでいいんだよ」感があり。</p>
+<p>あとは、自分が気にかけて追っているNMIXXあたりの活動とかを見ていると大丈夫かしら…と勝手に心配になる事が多いのに比べると単純にいろいろ余裕を感じてしまいます。ずるい。</p>
+<p>しかしメンバーの認識とかはせぬまま時が流れそうな気がします。とりあえず若めのアイドルはおっきくなるまで解像度上げて個体認識しないで騒がずにおくのが吉、がここ最近の態度の方針です。</p>
+<hr>
+<h3 id="調査報道記者-国策の闇を暴く仕事" >
+<div>
+    <a href="#%e8%aa%bf%e6%9f%bb%e5%a0%b1%e9%81%93%e8%a8%98%e8%80%85-%e5%9b%bd%e7%ad%96%e3%81%ae%e9%97%87%e3%82%92%e6%9a%b4%e3%81%8f%e4%bb%95%e4%ba%8b">
+        
+    </a>
+    調査報道記者 国策の闇を暴く仕事
+</div>
+</h3>
+<p>毎日新聞を辞めたフリーランスの記者の人の本。主に原発周辺の調査報道をいかにして行ってきたかについて。また行政がいかに意思決定のプロセスを隠したがるシステムであるか、何を隠そうとするのか、公開情報や情報開示請求、聞き込みのような地道に外堀を埋めていく作業で浮き彫りにしていく調査報道について。</p>
+<p>読んでいても行政の専門用語などでどうしてもついつい目が滑りがちになったりして、途中まで集中して読むのが結構大変だったが、この本の前に読んだ『朝日新聞政治部』に比べてだいぶ読みごたえがある。</p>
+<p>しかし、まず何よりも本の中に扱われているそれぞれの報道について、自分がほとんど把握できていない事について恥ずかしくなった。</p>
+<p>とは言え、どの報道にしても特定の誰かが個人の利益を目論んでひどい事をしていた！なんて分かりやすい内容の話は無く、原発のような国策の場合は決定事項の透明性や説明責任よりも、ただ決められた方針を遂行する事が目的化しやすく、途中で計画の無理や矛盾が明らかになろうと個々の人間の責任と判断で立ち止まる事無く隠蔽しながら進むだけ…みたいなハンナ・アーレントが言うところの「凡庸な悪」の積み重なった話なのであって、そこに興味を持って理解するモチベーションを持ち続ける事も周りの人に共有する事も結構ハードル高い話だなと読み終わってみてもやっぱり思ってしまう。</p>
+<p>ていうか、行政がまともになってくれれば済む話だろって話ではあるし、市民の一人ひとりにこうした負荷をかけずに済むようなちゃんとした仕組みを作ってくれや…という気持ちになるんだけど、そういう仕組みを構築するのもまともな市民社会があってのものなわけで…なんというか社会むずすぎ。</p>
+<p><a href="https://www.akashi.co.jp/book/b607677.html">https://www.akashi.co.jp/book/b607677.html</a></p>
+<hr>
+<h3 id="今週のmma" >
+<div>
+    <a href="#%e4%bb%8a%e9%80%b1%e3%81%aemma">
+        
+    </a>
+    今週のMMA
+</div>
+</h3>
+<ul>
+<li>ツール優先のためONEは未視聴。</li>
+<li>Bellator 283。ウスマン・ヌルマゴメドフ（ウスマゴ）がただ強い。あとムサエフが秒殺デビュー。</li>
+<li>UFC London。 またど深夜の中継で寝ながら観戦の為ぼんやり。モカエフの不発…クリロフに処られたグスタフソンさん…なんだかんだでやる事やってるピンブレットの強さ。あとはメイソン・ジョーンズの前がかりな攻撃を結構冷静にさばいてたルドヴィト・クラインが良かった。</li>
+</ul>
+<hr>
+<h3 id="そのほか" >
+<div>
+    <a href="#%e3%81%9d%e3%81%ae%e3%81%bb%e3%81%8b">
+        
+    </a>
+    そのほか
+</div>
+</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=E2crWvShSCc">HYOLYN - Ah yeah</a></li>
+<li><a href="https://www.youtube.com/watch?v=3GWw2p_X6Lg">Aitch - 1989</a> Fools Goldサンプリングしてた。</li>
+<li>ボンベイ値上がり。あいびきキーマ、肉っぽくておいしいけどやっぱちょっと高い。</li>
+<li>中目黒の某でたべた冷やしトムヤンクン風なんたらがあんまり…でかく冷たいエビが水槽の臭い嗅いでるような気分になったので、この店ではエビを避けるべきと心に刻んだ。</li>
+<li>Strayやってる。探索ゲーと思わせて結構リニアな作り。十分可愛くて面白いけど、もう少し無意味な動作が自由に出来たらなとは思ってしまう。あとちょっと酔う。</li>
+<li>母の誕生日。日傘を差し上げようと注文したが、在庫の部品が破損してたとかで当日に間に合わず。当日はなぜか父が旅行に出かけてしまい、翌日帰宅してきたのに合わせて兄が到来し皆で食事。</li>
+</ul>
+        </div>
+
+    </article>
+
+    
+    
+        
+    
+
+    
+        
+        
+    
+
+    
+        
+    
+    
+    <div class="pagination post-pagination">
+        <div class="left pagination-item ">
+            
+                <a href="/posts/2022/week-30/">Week 30</a>
+            
+        </div>
+        <div class="right pagination-item ">
+            
+                <a href="/posts/2022/week-28/">Week 28</a>
+            
+        </div>
+    </div>
+
+
+
+
+
+    
+
+    
+        
+
+
+    
+
+    
+
+    
+    
+    
+
+        </main>
+        
+            <footer class="common-footer noselect">
+    
+    
+
+    <div class="common-footer-bottom">
+        
+
+        <div style="display: flex; align-items: center; gap:8px">
+            ©  isbsh,  2025
+            
+        </div>
+        <div style="display:flex; align-items: center; gap:4px">
+
+            
+            
+
+            
+            
+            
+            
+
+            
+            
+
+            
+        </div>
+        
+            <div>
+                 <a target="_blank" rel="noopener noreferrer" href="https://gohugo.io/">Hugo</a>,  <a target="_blank" rel="noopener noreferrer" href="https://github.com/hugo-theme-anubis2/hugo-theme-anubis2">Anubis2</a>.<br>
+            </div>
+        
+    </div>
+
+    <p class="h-card vcard">
+
+    <a href=http://localhost:1313/ class="p-name u-url url fn" rel="me">map[name:isbsh]</a>
+
+    
+
+    
+</p>
+
+</footer>
+
+        
+    </div>
+</body>
+</html>
