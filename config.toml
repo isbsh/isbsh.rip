@@ -1,6 +1,6 @@
 baseURL = "https://isbsh.rip"
 languageCode = "ja-jp"
-defaultContentLanguage = "ja"
+defaultContentLanguage = "en"
 title = "isbsh"
 theme = "anubis2"
 
