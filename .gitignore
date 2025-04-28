@@ -1,0 +1,6 @@
+# Hugo生成物
+/public/
+/resources/
+
+# Mac特有のゴミファイル
+.DS_Store

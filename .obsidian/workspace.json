@@ -165,8 +165,7 @@
       "canvas:新規キャンバスを作成": false,
       "daily-notes:今日のデイリーノートを開く": false,
       "templates:テンプレートを挿入": false,
-      "command-palette:コマンドパレットを開く": false,
-      "templater-obsidian:Templater": false
+      "command-palette:コマンドパレットを開く": false
     }
   },
   "active": "7a5a500ac1274a09",
