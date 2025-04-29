@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/2025/2025_w17.md",
+                "file": "content/posts/2025/2025_w18.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025_w17"
+              "title": "2025_w18"
             }
           }
         ]
@@ -160,6 +160,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-git:Open Git source control": false,
       "switcher:クイックスイッチャーを開く": false,
       "graph:グラフビューを開く": false,
       "canvas:新規キャンバスを作成": false,
@@ -171,11 +172,12 @@
   },
   "active": "7a5a500ac1274a09",
   "lastOpenFiles": [
+    "content/posts/2025/2025_w17.md",
+    "archetypes/template.md",
+    "content/posts/2025/2025_w18.md",
     "content/posts/2025/2025_w14.md",
     "content/posts/2025/2025_w15.md",
     "content/posts/2025/2025_w16.md",
-    "content/posts/2025/2025_w17.md",
-    "content/posts/2025/2025_w18.md",
     "content/posts/2025/week18.md",
     "content/posts/_templates/template.md.sb-5c72372b-91t72h",
     "content/posts/2025/2025-Week18.md",

@@ -1,6 +1,6 @@
 {
   "command_timeout": 5,
-  "templates_folder": "content/posts/_templates",
+  "templates_folder": "archetypes",
   "templates_pairs": [
     [
       "",
@@ -29,10 +29,10 @@
   "syntax_highlighting": true,
   "syntax_highlighting_mobile": false,
   "enabled_templates_hotkeys": [
-    ""
+    "archetypes/template.md"
   ],
   "startup_templates": [
-    "content/posts/_templates/template.md"
+    ""
   ],
   "intellisense_render": 1
 }
