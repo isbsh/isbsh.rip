@@ -4,3 +4,7 @@
 
 # Mac特有のゴミファイル
 .DS_Store
+
+/.obsidian/
+
+/content/posts/_templates/

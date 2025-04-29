@@ -1,4 +1,5 @@
 {
-  "template": "",
-  "folder": "content/posts/2025"
+  "template": "content/posts/_templates/template",
+  "folder": "content/posts/2025",
+  "format": "YYYY_[w]ww"
 }

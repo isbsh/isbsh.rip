@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/2025/2025_w16.md",
+                "file": "content/posts/2025/2025_w17.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025_w16"
+              "title": "2025_w17"
             }
           }
         ]
@@ -165,25 +165,35 @@
       "canvas:新規キャンバスを作成": false,
       "daily-notes:今日のデイリーノートを開く": false,
       "templates:テンプレートを挿入": false,
-      "command-palette:コマンドパレットを開く": false
+      "command-palette:コマンドパレットを開く": false,
+      "templater-obsidian:Templater": false
     }
   },
   "active": "7a5a500ac1274a09",
   "lastOpenFiles": [
+    "content/posts/2025/2025_w14.md",
+    "content/posts/2025/2025_w15.md",
+    "content/posts/2025/2025_w16.md",
     "content/posts/2025/2025_w17.md",
+    "content/posts/2025/2025_w18.md",
+    "content/posts/2025/week18.md",
+    "content/posts/_templates/template.md.sb-5c72372b-91t72h",
+    "content/posts/2025/2025-Week18.md",
+    "content/posts/_templates/template.md",
+    "content/posts/無題のファイル.md",
+    "無題のファイル.md",
+    "content/posts/2025/無題のファイル.md",
+    "content/posts/2025/2025-04-28.md",
+    "content/posts/_templates/20250428-null.md",
+    "content/posts/_templates",
+    "content/posts/_Templates",
+    "content/posts/_Template",
+    "content/posts/名称未設定フォルダ",
     "public/page/36/index.html",
     "public/page/36",
     "public/page/35/index.html",
     "public/page/35",
     "public/page/34/index.html",
-    "public/page/34",
-    "public/page/33/index.html",
-    "public/page/33",
-    "public/page/32/index.html",
-    "public/page/32",
-    "content/posts/2025/2025_w16.md",
-    "content/posts/2025/無題のファイル.md",
-    "無題のファイル.md",
     "content/posts/2025/2025-04-23.md",
     "archetypes/posts_obsidian.md",
     "archetypes/posts - Copy.md",

@@ -1,6 +1,6 @@
 {
   "command_timeout": 5,
-  "templates_folder": "archetypes",
+  "templates_folder": "content/posts/_templates",
   "templates_pairs": [
     [
       "",
@@ -32,7 +32,7 @@
     ""
   ],
   "startup_templates": [
-    "archetypes/posts_obsidian.md"
+    "content/posts/_templates/template.md"
   ],
   "intellisense_render": 1
 }
