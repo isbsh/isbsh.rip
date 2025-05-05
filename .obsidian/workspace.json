@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/2025/2025_w16.md",
+                "file": "content/posts/2025/2025_w17.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025_w16"
+              "title": "2025_w17"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/2025/2025_w16.md",
+                "file": "content/posts/2025/2025_w17.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "2025_w16へのバックリンク"
+              "title": "2025_w17へのバックリンク"
             }
           },
           {
@@ -166,12 +166,16 @@
       "daily-notes:今日のデイリーノートを開く": false,
       "templates:テンプレートを挿入": false,
       "command-palette:コマンドパレットを開く": false,
-      "templater-obsidian:Templater": false
+      "templater-obsidian:Templater": false,
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "7a5a500ac1274a09",
   "lastOpenFiles": [
+    "archetypes/posts_obsidian.md",
     "content/posts/2025/2025_w17.md",
+    "content/posts/2025/2025-05-04.md",
+    "content/posts/2025/2025_w16.md",
     "public/page/36/index.html",
     "public/page/36",
     "public/page/35/index.html",
@@ -182,11 +186,9 @@
     "public/page/33",
     "public/page/32/index.html",
     "public/page/32",
-    "content/posts/2025/2025_w16.md",
     "content/posts/2025/無題のファイル.md",
     "無題のファイル.md",
     "content/posts/2025/2025-04-23.md",
-    "archetypes/posts_obsidian.md",
     "archetypes/posts - Copy.md",
     "2025-04-23.md"
   ]
