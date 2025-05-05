@@ -1,13 +1,6 @@
 [
   "templater-obsidian",
-<<<<<<< HEAD
+  "obsidian-linter",
   "obsidian-git",
-  "obsidian-linter",
   "obsidian-front-matter-title-plugin"
-=======
-  "obsidian-front-matter-title-plugin",
-  "dataview",
-  "obsidian-linter",
-  "obsidian-git"
->>>>>>> origin/main
 ]
