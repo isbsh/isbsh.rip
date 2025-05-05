@@ -32,7 +32,11 @@
     "archetypes/template.md"
   ],
   "startup_templates": [
+<<<<<<< HEAD
+    "arche"
+=======
     ""
+>>>>>>> origin/main
   ],
   "intellisense_render": 1
 }

@@ -1,7 +1,6 @@
 [
   "templater-obsidian",
-  "obsidian-front-matter-title-plugin",
-  "dataview",
   "obsidian-linter",
-  "obsidian-git"
+  "obsidian-git",
+  "obsidian-front-matter-title-plugin"
 ]
