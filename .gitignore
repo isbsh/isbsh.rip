@@ -5,4 +5,4 @@
 # Mac特有のゴミファイル
 .DS_Store
 
-/.obsidian/plugins/
+/.obsidian/*
