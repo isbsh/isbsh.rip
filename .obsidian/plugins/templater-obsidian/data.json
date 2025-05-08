@@ -1,6 +1,6 @@
 {
   "command_timeout": 5,
-  "templates_folder": "archetypes",
+  "templates_folder": "",
   "templates_pairs": [
     [
       "",
@@ -12,11 +12,11 @@
   "enable_system_commands": false,
   "shell_path": "",
   "user_scripts_folder": "",
-  "enable_folder_templates": false,
+  "enable_folder_templates": true,
   "folder_templates": [
     {
       "folder": "archetypes",
-      "template": "archetypes/posts_obsidian.md"
+      "template": "archetypes/template.md"
     }
   ],
   "enable_file_templates": false,
@@ -29,14 +29,10 @@
   "syntax_highlighting": true,
   "syntax_highlighting_mobile": false,
   "enabled_templates_hotkeys": [
-    "archetypes/template.md"
+    ""
   ],
   "startup_templates": [
-<<<<<<< HEAD
-    "arche"
-=======
     ""
->>>>>>> origin/main
   ],
   "intellisense_render": 1
 }
