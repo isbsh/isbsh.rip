@@ -1,6 +1,6 @@
 {
   "commitMessage": "edit: {{files}} {{date}}",
-  "autoCommitMessage": "edit: {{files}} {{date}}",
+  "autoCommitMessage": "auto commit / edit: {{files}} {{date}}",
   "commitDateFormat": "YYYY-MM-DD HH:mm:ss",
   "autoSaveInterval": 3,
   "autoPushInterval": 5,
