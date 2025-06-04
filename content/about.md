@@ -24,5 +24,5 @@ toc: false
 
 
 ### game, music, etc
-- [steamcommunity.com/id/isbsh](http:///steamcommunity.com/id/isbsh)
+- [steamcommunity.com/id/isbsh](https://steamcommunity.com/id/isbsh)
 - [bandcamp.com/isbsh](https://bandcamp.com/isbsh)
