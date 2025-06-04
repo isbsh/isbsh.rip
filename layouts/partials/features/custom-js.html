@@ -1,13 +1,13 @@
 {{ $anubis2_customJS := site.Params.Anubis2.customJS }}
 
 {{ range $anubis2_customJS }}
-    <!-- Support remote custom css -->
+    <!-- Support remote custom js -->
     {{ if or (hasPrefix . "http") (hasPrefix . "https") }}
       <script src="{{ . }}" crossorigin="anonymous"></script>
       {{ continue }}
     {{ end }}
 
-    <!-- Load local custom css -->
+    <!-- Load local custom js -->
     {{ $r := "" }}
     {{ with resources.Get .  }}
       {{ $r = . }}
