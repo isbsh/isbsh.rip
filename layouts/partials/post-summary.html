@@ -5,13 +5,7 @@
             {{ $iconPath := printf "%sicon.svg" .File.Dir }}
             {{ if fileExists $iconPath }}
             <style>
-                .post-icon- {
-                        {
-                        $random
-                    }
-                }
-
-                ::before {
+                .post-icon- {{$random}}::before {
                     display: inline-block;
                     content: '';
                     background: url("/{{ $iconPath }}");
