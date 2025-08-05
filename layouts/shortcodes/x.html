@@ -17,20 +17,19 @@
   {{- $url := printf "https://x.com/%v/status/%v" .user .id -}}
   {{- $query := querify "url" $url "dnt" .dnt -}}
   {{- $request := printf "https://publish.x.com/oembed?%s" $query -}}
-  
-  {{- $request := dict "url" (.Get 0) "method" "get" }}
-{{- $remote := resources.GetRemote $request }}
-{{- with $remote }}
-  {{- with .Err }}
-    {{- warnidf "shortcode-x-getremote" "The %q shortcode was unable to retrieve the remote data: %s. See %s" $.ctx.Name . $.ctx.Position -}}
-  {{- else with .Value }}
-    {{- (. | transform.Unmarshal).html | safeHTML -}}
-  {{- else }}
-    {{- warnidf "shortcode-x-getremote" "The %q shortcode was unable to retrieve the remote data. See %s" $.ctx.Name $.ctx.Position -}}
-  {{- end }}
-{{- else }}
-  {{- warnidf "shortcode-x-getremote" "The %q shortcode failed and returned nil. See %s" $.ctx.Name $.ctx.Position -}}
-{{- end }}
 
-  {{- end -}}
+  {{- $request := dict "url" (.Get 0) "method" "get" }}
+  {{- $remote := resources.GetRemote $request }}
+  {{- if $remote }}
+    {{- if $remote.Err }}
+      {{- warnidf "shortcode-x-getremote" "The %q shortcode was unable to retrieve the remote data: %s. See %s" $.ctx.Name $remote.Err $.ctx.Position -}}
+    {{- else if $remote.Value }}
+      {{- ($remote.Value | transform.Unmarshal).html | safeHTML -}}
+    {{- else }}
+      {{- warnidf "shortcode-x-getremote" "The %q shortcode was unable to retrieve the remote data. See %s" $.ctx.Name $.ctx.Position -}}
+    {{- end }}
+  {{- else }}
+    {{- warnidf "shortcode-x-getremote" "The %q shortcode failed and returned nil. See %s" $.ctx.Name $.ctx.Position -}}
+  {{- end }}
+
 {{- end -}}
