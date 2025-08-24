@@ -13,6 +13,7 @@ name = "isbsh"
 [params]
 description = "isbsh log"
 dateFormat = "2006-01-02"
+timeZone = "Asia/Tokyo"
 paginationSinglePost = true
 
 readNextPosts = 2
