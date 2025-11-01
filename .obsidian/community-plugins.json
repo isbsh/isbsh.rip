@@ -3,5 +3,6 @@
   "obsidian-linter",
   "obsidian-git",
   "obsidian-front-matter-title-plugin",
-  "dataview"
+  "dataview",
+  "obsidian-shellcommands"
 ]
