@@ -2,5 +2,5 @@
   "promptDelete": false,
   "spellcheck": false,
   "strictLineBreaks": true,
-  "showLineNumber": true
+  "showLineNumber": false
 }
