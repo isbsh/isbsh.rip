@@ -26,3 +26,28 @@ toc: false
 ### game, music, etc
 - [steamcommunity.com/id/isbsh](http://steamcommunity.com/id/isbsh)
 - [bandcamp.com/isbsh](https://bandcamp.com/isbsh)
+
+
+### ALL TIME BEST VIDEOGAME
+- Borderlands 2
+- 仁王2
+- In Other Waters
+- In Stars And Time
+- Cyberpunk 2077
+- サガフロンティア
+- Wipeout XL
+- 十三機兵防衛圏
+- ANTHEM
+- 第4次スーパーロボット大戦S
+
+### ALL TIME BEST FILM
+-  （ハル）
+- ハッシュ!
+- レイチェルの結婚
+- ガメラ2 レギオン襲来
+- アポカリプト
+- ブックスマート
+- 切腹
+- 女は二度生まれる
+- ミッション 非情の掟
+- ソーシャル・ネットワーク
