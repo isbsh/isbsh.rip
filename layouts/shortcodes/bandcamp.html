@@ -1,0 +1,133 @@
+{{- /*
+Bandcamp のプレイヤーを埋め込む。
+
+album か track のどちらか一方は必須。ID は Bandcamp のページで
+「Share / Embed」→「Embed this album」を開いたときに出てくる
+埋め込みコードの `album=123456789` / `track=123456789` の数値。
+
+@param {int} [album] アルバム ID
+@param {int} [track] トラック ID
+@param {int} [t] アルバム埋め込みで最初に選択しておくトラック番号（1 始まり）
+@param {string} [size=large] プレイヤーの大きさ。large か small
+@param {string} [artwork=small] ジャケットの出し方。small / big / none
+@param {bool} [tracklist=false] トラックリストを表示するか
+@param {bool} [transparent=true] 背景を透過するか
+@param {bool} [minimal=false] 最小構成の見た目にするか
+@param {string} [bgcol=ffffff] 背景色（# なしの 16 進）
+@param {string} [linkcol=0687f5] リンク色（# なしの 16 進）
+@param {string} [width] iframe の幅。省略時は size / artwork から自動計算（Bandcamp のプレイヤーは幅が固定で、外側の iframe だけ広げても中身は伸びず左に寄って余白が出るため、100% にはしない）
+@param {string} [height] iframe の高さ。省略時は size / artwork / tracklist から自動計算
+@param {string} [class] iframe の class 属性。指定するとスタイル属性を出さずこちらに委ねる（article img/video や youtube shortcode と横幅・余白を揃えたい場合など）
+@param {string} [url] 埋め込みが読めない環境向けフォールバックリンクの URL
+@param {string} [title] iframe の title 属性、およびフォールバックリンクの文言
+
+@returns {template.HTML}
+
+@example {{< bandcamp album="1234567890" >}}
+@example {{< bandcamp album="1234567890" artwork="big" tracklist=true url="https://artist.bandcamp.com/album/foo" title="Foo by Artist" >}}
+@example {{< bandcamp track="9876543210" size="small" >}}
+*/}}
+
+{{- $album := .Get "album" }}
+{{- $track := .Get "track" }}
+
+{{- if and (not $album) (not $track) }}
+  {{- errorf "The %q shortcode requires either an album or track argument. See %s" .Name .Position }}
+{{- else if and $album $track }}
+  {{- errorf "The %q shortcode accepts album or track, but not both. See %s" .Name .Position }}
+{{- else }}
+
+  {{- /* 既定値 */}}
+  {{- $size := or (.Get "size") "large" }}
+  {{- $artwork := or (.Get "artwork") "small" }}
+  {{- $bgcol := or (.Get "bgcol") "ffffff" }}
+  {{- $linkcol := or (.Get "linkcol") "0687f5" }}
+  {{- $title := or (.Get "title") "Bandcamp player" }}
+  {{- $class := .Get "class" }}
+
+  {{- /* Hugo は未クォートの true/false を bool として渡してくるので両方受ける */}}
+  {{- $tracklist := in (slice "true" true 1) (.Get "tracklist") }}
+  {{- $minimal := in (slice "true" true 1) (.Get "minimal") }}
+  {{- $transparent := not (in (slice "false" false 0) (.Get "transparent")) }}
+
+  {{- /*
+    幅・高さは Bandcamp のプレイヤーの実サイズに合わせた目安値。width / height で上書きできる。
+    Bandcamp のプレイヤーは横幅が可変ではなく固定サイズなので、iframe だけ 100% に広げても
+    中身は伸びず左寄せで余白が出る。artwork=big（幅 700px / 高さ 804px）は実機で計測して確認済み。
+    それ以外の組み合わせは Bandcamp の一般的な埋め込みコードの値に基づく未検証の目安なので、
+    見た目がズレる場合は width / height で個別に上書きしてほしい。
+  */}}
+  {{- $width := "400px" }}
+  {{- $height := "120px" }}
+  {{- if eq $size "small" }}
+    {{- $width = "350px" }}
+    {{- $height = "42px" }}
+  {{- else if eq $artwork "big" }}
+    {{- $width = "700px" }}
+    {{- $height = cond $tracklist "1000px" "804px" }}
+  {{- else }}
+    {{- $height = cond $tracklist "296px" "120px" }}
+  {{- end }}
+  {{- $width = or (.Get "width") $width }}
+  {{- $height = or (.Get "height") $height }}
+
+  {{- /* src は /key=value/ をスラッシュで連ねる Bandcamp 独自の形式 */}}
+  {{- $segments := slice }}
+  {{- with $album }}
+    {{- $segments = $segments | append (printf "album=%s" .) }}
+  {{- else }}
+    {{- $segments = $segments | append (printf "track=%s" $track) }}
+  {{- end }}
+  {{- $segments = $segments | append (printf "size=%s" $size) }}
+  {{- $segments = $segments | append (printf "bgcol=%s" (strings.TrimPrefix "#" $bgcol)) }}
+  {{- $segments = $segments | append (printf "linkcol=%s" (strings.TrimPrefix "#" $linkcol)) }}
+  {{- if ne $size "small" }}
+    {{- $segments = $segments | append (printf "tracklist=%t" $tracklist) }}
+    {{- $segments = $segments | append (printf "artwork=%s" $artwork) }}
+  {{- end }}
+  {{- if $minimal }}
+    {{- $segments = $segments | append "minimal=true" }}
+  {{- end }}
+  {{- if $transparent }}
+    {{- $segments = $segments | append "transparent=true" }}
+  {{- end }}
+  {{- with .Get "t" }}
+    {{- $segments = $segments | append (printf "t=%s" .) }}
+  {{- end }}
+  {{- $src := printf "https://bandcamp.com/EmbeddedPlayer/%s/" (delimit $segments "/") }}
+
+  {{- /*
+    article 内の img / video と同じ display: block; margin: 0 auto .5em; を当てて、
+    youtube shortcode の div ラップと横幅・左右の余白が揃うようにする。
+    幅は固定値だが max-width: 100% でスマホ幅などコンテナより狭い場合にはみ出さないようにし、
+    margin: 0 auto でコンテナの中央に置く。
+    class を指定したときはこのデフォルトスタイルを出さずそちらに委ねる。
+  */}}
+  {{- $iframeStyle := "" }}
+  {{- if not $class }}
+    {{- $iframeStyle = printf "border: 0; display: block; width: %s; max-width: 100%%; height: %s; margin: 0 auto .5em;" $width $height }}
+  {{- end }}
+
+  {{- /*
+    class と style を条件分岐で書き分けると html/template の文脈解析が
+    崩れて ZgotmplZ にエスケープされることがあるため、youtube shortcode と同様に
+    dict + range + safeHTMLAttr で組み立てる。
+  */}}
+  {{- $iframeAttributes := dict
+    "class" $class
+    "style" $iframeStyle
+    "src" $src
+    "title" $title
+    "loading" "lazy"
+    "seamless" "seamless"
+  }}
+
+  {{- /* 出力 */}}
+  <iframe
+    {{- range $k, $v := $iframeAttributes }}
+      {{- if $v }}
+        {{- printf " %s=%q" $k $v | safeHTMLAttr }}
+      {{- end }}
+    {{- end }}
+  >{{ with .Get "url" }}<a href="{{ . }}">{{ $title }}</a>{{ end }}</iframe>
+{{- end }}
