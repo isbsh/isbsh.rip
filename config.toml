@@ -95,3 +95,5 @@ tabWidth           = 4
 
 [permalinks]
   posts = "/posts/:year/:slug/"
+[services.rss]
+  limit = 20
