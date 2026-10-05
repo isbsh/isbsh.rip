@@ -4,5 +4,6 @@
   "obsidian-git",
   "obsidian-front-matter-title-plugin",
   "dataview",
-  "terminal"
+  "terminal",
+  "obsidian-cloudinary-uploader"
 ]
