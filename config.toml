@@ -86,6 +86,9 @@ defaultMarkdownHandler = 'goldmark'
 [markup.goldmark.renderer]
 unsafe = true # Enable unsafe mode to have a better experience
 
+[markup.goldmark.parser]
+wrapStandAloneImageWithinParagraph = false # Let render-image.html emit <figure> for standalone images
+
 [markup.highlight]
 anchorLineNos      = false
 codeFences         = true # tested with true and false. Both work.

@@ -1,0 +1,20 @@
+{{- /* Markdown images. Cloudinary URLs without transformations get the same defaults as the figure shortcode usage. */ -}}
+{{- $src := .Destination -}}
+{{- $width := "" -}}
+{{- if strings.Contains $src "res.cloudinary.com" -}}
+  {{- $width = "730" -}}
+  {{- if findRE `/image/upload/v\d+/` $src -}}
+    {{- $src = replace $src "/image/upload/" "/image/upload/q_auto,f_auto,c_limit,w_1460/" -}}
+  {{- end -}}
+{{- end -}}
+{{- $img := printf `<img src="%s"%s%s loading="lazy">` ($src | safeURL) (cond (ne .PlainText "") (printf ` alt="%s"` .PlainText) "") (cond (ne $width "") (printf ` width="%s"` $width) "") -}}
+{{- if .IsBlock -}}
+<figure>
+  {{ $img | safeHTML }}
+  {{- with .Title }}
+  <figcaption><p>{{ . | markdownify }}</p></figcaption>
+  {{- end }}
+</figure>
+{{- else -}}
+{{ $img | safeHTML }}
+{{- end -}}
