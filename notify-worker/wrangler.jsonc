@@ -1,0 +1,39 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "isbsh-notify",
+	"main": "src/index.js",
+	"compatibility_date": "2026-09-01",
+	// workers.dev URL is only used for the manual /run trigger
+	"workers_dev": true,
+	"preview_urls": false,
+	"triggers": {
+		// Every 15 minutes
+		"crons": [
+			"*/15 * * * *"
+		]
+	},
+	"kv_namespaces": [
+		// Create with: npx wrangler kv namespace create STATE
+		{
+			"binding": "STATE",
+			"id": "a765ce47c85e4c7097bd434821b3d18a",
+			"remote": true
+		}
+	],
+	"vars": {
+		"FEED_URL": "https://isbsh.rip/index.xml",
+		"MASTODON_INSTANCE": "https://nightly.fedibird.com",
+		"MASTODON_VISIBILITY": "public",
+		"BSKY_SERVICE": "https://bsky.social",
+		"BSKY_IDENTIFIER": "isbsh.bsky.social",
+		"POST_TEMPLATE": "ブログを更新しました: {title}\n{url}",
+		"DRY_RUN": "false"
+	},
+	"observability": {
+		"enabled": true
+	}
+	// Secrets (npx wrangler secret put <NAME>):
+	//   MASTODON_TOKEN     access token with write:statuses scope
+	//   BSKY_APP_PASSWORD  Bluesky app password
+	//   RUN_TOKEN          optional; enables manual trigger via GET /run
+}
