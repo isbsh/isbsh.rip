@@ -16,7 +16,7 @@ tags:
 <!--more-->
 
 今年読んでとりわけ良かった本3冊
-{{<image src="/images/2022/12/2022_books.webp">}}
+{{<image src="https://res.cloudinary.com/isbsh/image/upload/q_auto,f_auto,c_limit,w_1460/v1792119601/2022_books.webp">}}
 - 『美の進化 性選択は人間と動物をどう変えたか』リチャード・O・プラム
 - 『女と刀』中村きい子
 - 『ジュリアン・バトラーの真実の生涯』川本直
