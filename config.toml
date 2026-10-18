@@ -75,6 +75,15 @@ identifier = "archive"
 url = "/posts/"
 weight = 4
 
+[[menu.main]]
+name = "Sketch"
+identifier = "sketch"
+url = "/sketch/"
+weight = 5
+
+[caches.getresource]
+maxAge = "1h" # Re-fetch the Cloudinary sketch list on local builds
+
 [taxonomies]
 category = "categories"
 tag = "tags"

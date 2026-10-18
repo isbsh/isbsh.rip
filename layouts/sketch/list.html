@@ -1,0 +1,208 @@
+{{ define "main" }}
+    <div class="index-content">
+        {{ .Content }}
+    </div>
+
+    <h1 class="post-title">{{ .Title }}</h1>
+
+    {{/* Images tagged "sketch" on Cloudinary, fetched at build time via the
+        client-side resource list (requires "Resource list" to be unrestricted). */}}
+    {{ $cloud := "https://res.cloudinary.com/isbsh/image" }}
+    {{ $items := slice }}
+    {{ with try (resources.GetRemote (printf "%s/list/sketch.json" $cloud)) }}
+        {{ with .Err }}
+            {{ warnf "sketch gallery: failed to fetch Cloudinary list: %s" . }}
+        {{ else with .Value }}
+            {{/* Pre-sort by id so same-day sketches keep a stable order. */}}
+            {{ range sort (. | transform.Unmarshal).resources "public_id" "desc" }}
+                {{/* Sort by the drawing date in the public_id (YYMMDD or
+                    YYYYMMDD, optionally with dashes), not created_at, which is
+                    the upload date. Fall back to created_at for ids without a date. */}}
+                {{ $id := .public_id }}
+                {{ $date := "" }}
+                {{ $long := index (findRE `20\d{6}` (replace $id "-" "") 1) 0 }}
+                {{ if findRE `^\d{6}(\D|$)` $id }}
+                    {{ $date = substr $id 0 6 }}
+                {{ else if $long }}
+                    {{ $date = substr $long 2 6 }}
+                {{ else }}
+                    {{ $date = (time .created_at).Format "060102" }}
+                {{ end }}
+                {{ $path := printf "v%d/%s.%s" (int .version) $id .format }}
+                {{ $items = $items | append (dict
+                    "date" (int $date)
+                    "label" (printf "20%s-%s-%s" (substr $date 0 2) (substr $date 2 2) (substr $date 4 2))
+                    "thumb" (printf "%s/upload/c_fill,g_auto,w_480,h_480,q_auto,f_auto/%s" $cloud $path)
+                    "full" (printf "%s/upload/q_auto,f_auto,c_limit,w_1460/%s" $cloud $path)
+                ) }}
+            {{ end }}
+        {{ end }}
+    {{ end }}
+
+    {{ with $items }}
+        <div class="sketch-gallery">
+            {{ range sort . "date" "desc" }}
+                <a class="sketch-item" href="{{ .full }}" title="{{ .label }}">
+                    <img src="{{ .thumb }}" alt="{{ .label }}" width="480" height="480" loading="lazy" decoding="async">
+                </a>
+            {{ end }}
+        </div>
+
+        <dialog class="sketch-viewer">
+            <img alt="">
+            <p class="sketch-viewer-label"></p>
+            <button type="button" class="sketch-viewer-nav sketch-viewer-prev" aria-label="Previous">&#8249;</button>
+            <button type="button" class="sketch-viewer-nav sketch-viewer-next" aria-label="Next">&#8250;</button>
+        </dialog>
+    {{ else }}
+        <p>No sketches to show.</p>
+    {{ end }}
+
+    <style>
+        .sketch-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: 6px;
+            margin-top: 1em;
+        }
+        .sketch-item {
+            display: block;
+            aspect-ratio: 1;
+            overflow: hidden;
+            border-radius: 4px;
+            background: var(--card-color);
+            border-bottom: none;
+        }
+        .sketch-item:hover {
+            border-bottom: none;
+        }
+        .sketch-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: opacity 0.2s;
+        }
+        .sketch-item:hover img {
+            opacity: 0.8;
+        }
+        /* Fill the viewport and center with flex: Tailwind's preflight resets
+            margin to 0, which breaks the default margin: auto centering of <dialog>. */
+        .sketch-viewer {
+            position: fixed;
+            inset: 0;
+            width: 100vw;
+            height: 100vh;
+            max-width: none;
+            max-height: none;
+            margin: 0;
+            padding: 0;
+            border: none;
+            background: transparent;
+            cursor: zoom-out;
+        }
+        .sketch-viewer[open] {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .sketch-viewer::backdrop {
+            background: rgba(0, 0, 0, 0.85);
+        }
+        .sketch-viewer img {
+            display: block;
+            max-width: 95vw;
+            max-height: 88vh;
+            object-fit: contain;
+            margin: 0 auto;
+        }
+        .sketch-viewer-label {
+            margin: 0.5em 0 0;
+            text-align: center;
+            color: #ccc;
+            font-size: 0.9em;
+        }
+        .sketch-viewer-nav {
+            position: fixed;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 2.5em;
+            height: 2.5em;
+            padding: 0;
+            border: none;
+            border-radius: 50%;
+            background: rgba(0, 0, 0, 0.4);
+            color: #fff;
+            font-size: 1.6em;
+            line-height: 1;
+            cursor: pointer;
+        }
+        .sketch-viewer-nav:hover {
+            background: rgba(0, 0, 0, 0.7);
+        }
+        .sketch-viewer-prev {
+            left: 0.5em;
+        }
+        .sketch-viewer-next {
+            right: 0.5em;
+        }
+    </style>
+
+    <script>
+        (() => {
+            const items = [...document.querySelectorAll(".sketch-item")];
+            const viewer = document.querySelector(".sketch-viewer");
+            if (!viewer || !viewer.showModal) return;
+            const img = viewer.querySelector("img");
+            const label = viewer.querySelector(".sketch-viewer-label");
+            let current = 0;
+
+            const show = (i) => {
+                current = (i + items.length) % items.length;
+                img.src = items[current].href;
+                img.alt = label.textContent = items[current].title;
+                // Preload neighbors so moving to them feels instant.
+                [current - 1, current + 1].forEach((n) => {
+                    new Image().src = items[(n + items.length) % items.length].href;
+                });
+            };
+
+            items.forEach((item, i) => {
+                item.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    show(i);
+                    viewer.showModal();
+                });
+            });
+            viewer.querySelector(".sketch-viewer-prev").addEventListener("click", (e) => {
+                e.stopPropagation();
+                show(current - 1);
+            });
+            viewer.querySelector(".sketch-viewer-next").addEventListener("click", (e) => {
+                e.stopPropagation();
+                show(current + 1);
+            });
+            viewer.addEventListener("click", () => viewer.close());
+            viewer.addEventListener("close", () => img.removeAttribute("src"));
+            document.addEventListener("keydown", (e) => {
+                if (!viewer.open) return;
+                if (e.key === "ArrowRight") show(current + 1);
+                if (e.key === "ArrowLeft") show(current - 1);
+            });
+
+            // Swipe left/right to move between images on touch screens.
+            let touchX = null;
+            viewer.addEventListener("touchstart", (e) => {
+                touchX = e.touches.length === 1 ? e.touches[0].clientX : null;
+            }, { passive: true });
+            viewer.addEventListener("touchend", (e) => {
+                if (touchX === null) return;
+                const dx = e.changedTouches[0].clientX - touchX;
+                touchX = null;
+                if (Math.abs(dx) < 50) return;
+                show(dx < 0 ? current + 1 : current - 1);
+            });
+        })();
+    </script>
+{{ end }}
